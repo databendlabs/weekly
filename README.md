@@ -1,0 +1,2 @@
+# weekly
+Datafuse weekly
