@@ -13,6 +13,7 @@ Below is a list of some major changes that we don’t want you to miss.
 - **Datafuse CLI**: All-in-one tool for setting up, managing with Datafuse. by [@BohuTANG](https://github.com/BohuTANG) ([#950](https://github.com/datafuselabs/datafuse/pull/950)).
 - **arrow -> arrow2**: Improve performance in some scenarios, especially aggregate functions, [see benchmark](https://github.com/datafuselabs/datafuse/pull/1239#issuecomment-890861288). by [@sundy-li](https://github.com/sundy-li) ([#1239](https://github.com/datafuselabs/datafuse/pull/1239)).
 - **catalog as meta-store client & TableMetaCache**. by [@dantengsky](https://github.com/dantengsky) ([#1212](https://github.com/datafuselabs/datafuse/pull/1212))
+- **disk backed meta store** under dev. by [@drmingdrmer](https://github.com/drmingdrmer) ([#1212](https://github.com/datafuselabs/datafuse/pull/1248))
 - **migrate to rust 2021**: Powered by `nightly-2021-08-03`, thanks to the Rust team. by [@PsiACE](https://github.com/PsiACE) ([#1159](https://github.com/datafuselabs/datafuse/pull/1159)).
 
 ## Changlogs
