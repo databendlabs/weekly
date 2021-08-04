@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://datafuse.rs/weekly/sitemap.xml
+Sitemap: https://datafuselabs.github.io/weekly/sitemap.xml
