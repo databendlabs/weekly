@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://datafuse.rs/weekly"
+base_url = "https://datafuselabs.github.io/weekly/"
 
 theme = "terminimal"
 
