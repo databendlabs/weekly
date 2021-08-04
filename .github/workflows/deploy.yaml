@@ -1,15 +1,27 @@
-on: push
 name: Build and deploy on push
+
+on:
+  push:
+    branches: [main]
+
 jobs:
-  build:
-    name: build_and_deploy
+  publish:
     runs-on: ubuntu-latest
     steps:
-    - name: checkout
-      uses: actions/checkout@master
-    - name: shalzz/zola-deploy-action
-      uses: shalzz/zola-deploy-action@master
-      env:
-        PAGES_BRANCH: gh-pages
-        TOKEN: $GITHUB_ACTOR:${{ secrets.TOKEN }}
-        BUILD_FLAGS: --drafts
+      - name: checkout
+        uses: actions/checkout@master
+
+      - name: Install Zola
+        run: |
+          wget https://github.com/getzola/zola/releases/download/v0.14.0/zola-v0.14.0-x86_64-unknown-linux-gnu.tar.gz
+          tar xvf zola-v0.14.0-x86_64-unknown-linux-gnu.tar.gz
+
+      - name: Build site
+        run: ./zola build
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./public
