@@ -5,18 +5,18 @@ slug = "2021-08-11-datafuse-weekly"
 draft = false
 +++
 
-Datafuse, a Modern Real-Time Data Processing & Analytics DBMS with Cloud-Native Architecture, built to make the Data Cloud easy.
+Datafuse, is a Modern Real-Time Data Processing & Analytics DBMS with a Cloud-Native Architecture, built to make the Data Cloud easy.
 
 ## Big changes
 
 Below is a list of some major changes that we don’t want you to miss.
 
-- **datafuse cli add package list & switch command** by [@BohuTANG](https://github.com/BohuTANG). ([#1308](https://github.com/datafuselabs/datafuse/pull/1308) & [#1314](https://github.com/datafuselabs/datafuse/pull/1314))
+- **add datafuse cli commands for package list & switch** by [@BohuTANG](https://github.com/BohuTANG). ([#1308](https://github.com/datafuselabs/datafuse/pull/1308) & [#1314](https://github.com/datafuselabs/datafuse/pull/1314))
 - **use auto vectorized compute for some cases** by [@sundy-li](https://github.com/sundy-li). ([#1395](https://github.com/datafuselabs/datafuse/pull/1395))
 - **a series of refactors related to storage layer operations** by [@drmingdrmer](https://github.com/drmingdrmer). ([#1411](https://github.com/datafuselabs/datafuse/pull/1411) [#1410](https://github.com/datafuselabs/datafuse/pull/1410) [#1378](https://github.com/datafuselabs/datafuse/pull/1378) etc.)
 - **introduce alpha version performance tests** by [@ZhiHanZ](https://github.com/ZhiHanZ). ([#1281](https://github.com/datafuselabs/datafuse/pull/1281))
 - **TLS RPC for Query and Store services/clients** by [@dantengsky](https://github.com/dantengsky). ([#1290](https://github.com/datafuselabs/datafuse/pull/1290))
-- **support kill query or connection statement** by [@zhang2014](https://github.com/zhang2014). ([#1280](https://github.com/datafuselabs/datafuse/pull/1280))
+- **support kill for query or connection statement** by [@zhang2014](https://github.com/zhang2014). ([#1280](https://github.com/datafuselabs/datafuse/pull/1280))
 - **flatten the directory structure & unify the name style** by [@PsiACE](https://github.com/PsiACE). ([#1404](https://github.com/datafuselabs/datafuse/pull/1404))
 
 ## Changlogs
@@ -46,7 +46,11 @@ Thanks to your contribution, datafuse becomes better!
 
 ## Meet Us
 
-You are welcome to join the [Datafuse Community](https://github.com/datafuselabs/). We look forward to you being one of our contributors or trialers.
+Please join the [Datafuse Community](https://github.com/datafuselabs/) if you are interested in Datafuse.
+
+We are looking forward to seeing you try our code. We have a strong team behind you to ensure a smooth experience in trying our code for your projects.
+If you are a hacker passionate about database internals, feel free to play with our code.
+You can submit [issues](https://github.com/datafuselabs/datafuse/issues) for any problems you find. We also highly appreciate any of your pull requests.
 
 - [GitHub Discussions](https://github.com/datafuselabs/datafuse/discussions)
 - [Slack Channel](https://datafusecloud.slack.com/join/shared_invite/zt-nojrc9up-50IRla1Y1h56rqwCTkkDJA)
