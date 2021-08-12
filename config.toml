@@ -1,6 +1,8 @@
 # The URL the site will be built for
 base_url = "https://datafuselabs.github.io/weekly"
 
+title = "Datafuse Weekly"
+
 theme = "terminimal"
 
 # Whether to automatically compile all Sass files in the sass directory
