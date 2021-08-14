@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://your-docusaurus-test-site.com/weekly</id>
+    <title>Datafuse Blog</title>
+    <updated>2021-08-11T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://your-docusaurus-test-site.com/weekly"/>
+    <subtitle>Datafuse Blog</subtitle>
+    <icon>https://your-docusaurus-test-site.com/img/favicon.png</icon>
+    <entry>
+        <title type="html"><![CDATA[This week in Datafuse #2]]></title>
+        <id>2021-08-11-datafuse-weekly</id>
+        <link href="https://your-docusaurus-test-site.com/weekly/2021-08-11-datafuse-weekly"/>
+        <updated>2021-08-11T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Datafuse, is a Modern Real-Time Data Processing & Analytics DBMS with a Cloud-Native Architecture, built to make the Data Cloud easy.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[This week in Datafuse #1]]></title>
+        <id>2021-08-04-datafuse-weekly</id>
+        <link href="https://your-docusaurus-test-site.com/weekly/2021-08-04-datafuse-weekly"/>
+        <updated>2021-08-04T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Datafuse, a Modern Real-Time Data Processing & Analytics DBMS with Cloud-Native Architecture, built to make the Data Cloud easy.]]></summary>
+    </entry>
+</feed>

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdatafuse=self.webpackChunkdatafuse||[]).push([[1907],{5062:function(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"This week in Datafuse #2","permalink":"/zh-CN/weekly/2021-08-11-datafuse-weekly"},{"title":"This week in Datafuse #1","permalink":"/zh-CN/weekly/2021-08-04-datafuse-weekly"}]}')}}]);

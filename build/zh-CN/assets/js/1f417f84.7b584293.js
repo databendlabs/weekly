@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdatafuse=self.webpackChunkdatafuse||[]).push([[7681],{9344:function(a){a.exports=JSON.parse('{"allTagsPath":"/zh-CN/blog/tags","slug":"firebolt","name":"firebolt","count":1,"permalink":"/zh-CN/blog/tags/firebolt"}')}}]);

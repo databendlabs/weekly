@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdatafuse=self.webpackChunkdatafuse||[]).push([[2535],{5641:function(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Rust, Datafuse and the Cloud Warehouse\uff081\uff09\u4e91\u65f6\u4ee3\u6570\u4ed3\u67b6\u6784\u8bbe\u8ba1","permalink":"/blog/2021-08-08-datafuse-cloud-warehouse-arch"}]}')}}]);

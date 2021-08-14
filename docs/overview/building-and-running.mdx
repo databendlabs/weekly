@@ -1,0 +1,103 @@
+---
+id: building-and-running
+title: Installion
+---
+
+This document describes how to build and run [FuseQuery](https://github.com/datafuselabs/datafuse/tree/master/fusequery) as a distributed query engine.
+
+## 1. Deploy
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+<Tabs
+  defaultValue="docker"
+  values={[
+    { label: "Run with Docker(Recommended)", value: "docker" },
+    { label: "Release binary", value: "binary" },
+    { label: "From source", value: "source" },
+  ]}
+>
+<TabItem value="docker">
+
+```shell
+  $ docker pull datafuselabs/datafuse
+  $ docker run --init --rm -p3307:3307 datafuselabs/datafuse
+```
+
+  </TabItem>
+  <TabItem value="binary">
+
+```shell
+$ curl -fsS https://raw.githubusercontent.com/datafuselabs/datafuse/master/scripts/installer/install-datafuse.sh | bash
+```
+
+  </TabItem>
+  <TabItem value="source">
+
+```shell
+$ git clone https://github.com/datafuselabs/datafuse.git
+$ cd datafuse
+$ make setup
+$ make run
+```
+
+  </TabItem>
+</Tabs>
+
+## 2. Client
+
+<Tabs
+ defaultValue="mysql"
+  values={[
+    { label: "MySQL Client", value: "mysql" },
+    { label: "ClickHouse Client", value: "clickhouse-client" },
+  ]}
+>
+<TabItem value="mysql">
+
+:::tip
+numbers(N) – A table for test with the single `number` column (UInt64) that contains integers from 0 to N-1.
+:::
+
+```shell
+
+$ mysql -h127.0.0.1 -P3307
+
+mysql> SELECT avg(number) FROM numbers(1000000000);
++-------------+
+| avg(number) |
++-------------+
+| 499999999.5 |
++-------------+
+1 row in set (0.05 sec)
+```
+
+</TabItem>
+<TabItem value='clickhouse-client'>
+
+:::tip
+numbers(N) – A table for test with the single `number` column (UInt64) that contains integers from 0 to N-1.
+:::
+
+```shell
+$ clickhouse client --host 0.0.0.0 --port 9001
+```
+
+```shell
+datafuse :) SELECT avg(number) FROM numbers(1000000000);
+
+SELECT avg(number)
+  FROM numbers(1000000000)
+
+Query id: 89e06fba-1d57-464d-bfb0-238df85a2e66
+
+┌─avg(number)─┐
+│ 499999999.5 │
+└─────────────┘
+
+1 rows in set. Elapsed: 0.062 sec. Processed 1.00 billion rows, 8.01 GB (16.16 billion rows/s., 129.38 GB/s.)
+```
+
+</TabItem>
+</Tabs>

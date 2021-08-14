@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdatafuse=self.webpackChunkdatafuse||[]).push([[749],{852:function(a){a.exports=JSON.parse('{"allTagsPath":"/zh-CN/blog/tags","slug":"snowflake","name":"snowflake","count":1,"permalink":"/zh-CN/blog/tags/snowflake"}')}}]);

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Datafuse Blog</title>
+        <link>https://your-docusaurus-test-site.com/weekly</link>
+        <description>Datafuse Blog</description>
+        <lastBuildDate>Wed, 11 Aug 2021 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[This week in Datafuse #2]]></title>
+            <link>https://your-docusaurus-test-site.com/weekly/2021-08-11-datafuse-weekly</link>
+            <guid>2021-08-11-datafuse-weekly</guid>
+            <pubDate>Wed, 11 Aug 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Datafuse, is a Modern Real-Time Data Processing & Analytics DBMS with a Cloud-Native Architecture, built to make the Data Cloud easy.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[This week in Datafuse #1]]></title>
+            <link>https://your-docusaurus-test-site.com/weekly/2021-08-04-datafuse-weekly</link>
+            <guid>2021-08-04-datafuse-weekly</guid>
+            <pubDate>Wed, 04 Aug 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Datafuse, a Modern Real-Time Data Processing & Analytics DBMS with Cloud-Native Architecture, built to make the Data Cloud easy.]]></description>
+        </item>
+    </channel>
+</rss>

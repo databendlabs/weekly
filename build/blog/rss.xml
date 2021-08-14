@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Datafuse Blog</title>
+        <link>https://your-docusaurus-test-site.com/blog</link>
+        <description>Datafuse Blog</description>
+        <lastBuildDate>Sun, 08 Aug 2021 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Rust, Datafuse and the Cloud Warehouse（1）云时代数仓架构设计]]></title>
+            <link>https://your-docusaurus-test-site.com/blog/2021-08-08-datafuse-cloud-warehouse-arch</link>
+            <guid>2021-08-08-datafuse-cloud-warehouse-arch</guid>
+            <pubDate>Sun, 08 Aug 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[传统数仓架构不适合云？]]></description>
+        </item>
+    </channel>
+</rss>
