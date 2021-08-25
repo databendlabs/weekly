@@ -23,6 +23,7 @@ Below is a list of some major changes that we don’t want you to miss.
 
 You can check the changelogs of Datafuse nightly to learn about our latest developments.
 
+- [v0.4.81-nightly](https://github.com/datafuselabs/datafuse/releases/tag/v0.4.81-nightly)
 - [v0.4.80-nightly](https://github.com/datafuselabs/datafuse/releases/tag/v0.4.80-nightly)
 - [v0.4.79-nightly](https://github.com/datafuselabs/datafuse/releases/tag/v0.4.79-nightly)
 - [v0.4.78-nightly](https://github.com/datafuselabs/datafuse/releases/tag/v0.4.78-nightly)
