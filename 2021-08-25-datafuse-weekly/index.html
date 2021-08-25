@@ -48,11 +48,11 @@
         
     <div class="post">
         
-    <h1 class="post-title"><a href="https://datafuselabs.github.io/weekly/2021-08-18-datafuse-weekly/">This week in Datafuse #3</a></h1>
+    <h1 class="post-title"><a href="https://datafuselabs.github.io/weekly/2021-08-25-datafuse-weekly/">This week in Datafuse #4</a></h1>
     <div class="post-meta-inline">
         
     <span class="post-date">
-            2021-08-18
+            2021-08-25
         </span>
 
     </div>
@@ -65,32 +65,36 @@
 <h2 id="big-changes">Big changes</h2>
 <p>Below is a list of some major changes that we don’t want you to miss.</p>
 <ul>
-<li><strong>add ValuesSource and CsvSource</strong> by <a href="https://github.com/sundy-li">@sundy-li</a>. (<a href="https://github.com/datafuselabs/datafuse/pull/1484">#1484</a>)</li>
-<li><strong>introducing a custom HashMap to try to improve group by performance</strong> by <a href="https://github.com/zhang2014">@zhang2014</a>. (<a href="https://github.com/datafuselabs/datafuse/pull/1443">#1443</a>)</li>
-<li><strong>cli: change to clap from structopt</strong> by <a href="https://github.com/ZhiHanZ">@ZhiHanZ</a>. ([#1491]https://github.com/datafuselabs/datafuse/pull/1491))</li>
-<li><strong>implement Contains operation</strong> by <a href="https://github.com/jyizheng">@jyizheng</a>. (<a href="https://github.com/datafuselabs/datafuse/pull/1379">#1379</a>)</li>
-<li><strong>a series of new features make the storage layer better</strong> by <a href="https://github.com/drmingdrmer">@drmingdrmer</a>. (<a href="https://github.com/datafuselabs/datafuse/pull/1461">#1461</a> <a href="https://github.com/datafuselabs/datafuse/pull/1479">#1479</a> <a href="https://github.com/datafuselabs/datafuse/pull/1439">#1439</a> etc.)</li>
-<li><strong>fix panic while reading data parts</strong> by <a href="https://github.com/dantengsky">@dantengsky</a>. (<a href="https://github.com/datafuselabs/datafuse/pull/1489">#1489</a>)</li>
-<li><strong>add datafuse design whitepaper to website</strong> by <a href="https://github.com/BohuTANG">@BohuTANG</a>. (<a href="https://github.com/datafuselabs/datafuse/pull/1490">#1490</a> &amp; <a href="https://github.com/datafuselabs/datafuse/pull/1493">#1493</a>)</li>
+<li><strong>IDX-1428: common indexing</strong> by <a href="https://github.com/BohuTANG">@BohuTANG</a>. (<a href="https://github.com/datafuselabs/datafuse/pull/1437">#1437</a>)</li>
+<li><strong>add windowFunnel function</strong> by <a href="https://github.com/sundy-li">@sundy-li</a>. (<a href="https://github.com/datafuselabs/datafuse/pull/1519">#1519</a>)</li>
+<li><strong>add if function</strong> by <a href="https://github.com/zhyass">@zhyass</a>. (<a href="https://github.com/datafuselabs/datafuse/pull/1505">#1505</a>)</li>
+<li><strong>refactor SQL parser (WIP)</strong> by <a href="https://github.com/leiysky">@leiysky</a>. (<a href="https://github.com/datafuselabs/datafuse/pull/1477">#1477</a> &amp; <a href="https://github.com/datafuselabs/datafuse/pull/1523">#1523</a> &amp; <a href="https://github.com/datafuselabs/datafuse/pull/1540">#1505</a>)</li>
+<li><strong>Object Store Data Access Layer</strong> by <a href="https://github.com/dantengsky">@dantengsky</a>. (<a href="https://github.com/datafuselabs/datafuse/pull/1442">#1442</a>)</li>
+<li><strong>making distributed systems more robust</strong> by <a href="https://github.com/drmingdrmer">@drmingdrmer</a>. (<a href="https://github.com/datafuselabs/datafuse/pull/1569">#1569</a> <a href="https://github.com/datafuselabs/datafuse/pull/1546">#1546</a> etc.)</li>
 </ul>
 <h2 id="changlogs">Changlogs</h2>
 <p>You can check the changelogs of Datafuse nightly to learn about our latest developments.</p>
 <ul>
-<li><a href="https://github.com/datafuselabs/datafuse/releases/tag/v0.4.81-nightly">v0.4.81-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/datafuse/releases/tag/v0.4.80-nightly">v0.4.80-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/datafuse/releases/tag/v0.4.79-nightly">v0.4.79-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/datafuse/releases/tag/v0.4.78-nightly">v0.4.78-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/datafuse/releases/tag/v0.4.77-nightly">v0.4.77-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/datafuse/releases/tag/v0.4.76-nightly">v0.4.76-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/datafuse/releases/tag/v0.4.75-nightly">v0.4.75-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/datafuse/releases/tag/v0.4.88-nightly">v0.4.88-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/datafuse/releases/tag/v0.4.87-nightly">v0.4.87-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/datafuse/releases/tag/v0.4.86-nightly">v0.4.86-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/datafuse/releases/tag/v0.4.85-nightly">v0.4.85-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/datafuse/releases/tag/v0.4.84-nightly">v0.4.84-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/datafuse/releases/tag/v0.4.83-nightly">v0.4.83-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/datafuse/releases/tag/v0.4.82-nightly">v0.4.82-nightly</a></li>
+</ul>
+<h2 id="ecosystem-upstream">Ecosystem/Upstream</h2>
+<p>From open source, for open source. The Datafuse team is also committed to contributing to the Rust ecosystem and upstream dependencies.</p>
+<ul>
+<li><a href="https://github.com/sqlparser-rs/sqlparser-rs/pull/312">sqlparser-rs #312: Add fuzzer based on honggfuzz</a>: Generate some random bytes for the fuzz test. by <a href="https://github.com/PsiACE/">@PsiACE</a></li>
+<li><a href="https://github.com/rust-lang/hashbrown/pull/261">hashbrown #261: Upgrade rand to 0.8.3</a>: Use <code>seed_from_u64</code> instead of <code>from_seed</code> to avoid cross-platform issues. by <a href="https://github.com/PsiACE/">@PsiACE</a></li>
 </ul>
 <h2 id="thanks">Thanks</h2>
 <p>Thanks to your contribution, datafuse becomes better!</p>
 <ul>
-<li><a href="https://github.com/junli1026">@junli1026</a>:Fix read_opt_scalar and add test (<a href="https://github.com/datafuselabs/datafuse/pull/1446">#1446</a>) and add test for array builder (<a href="https://github.com/datafuselabs/datafuse/pull/1468">#1468</a>)</li>
-<li><a href="https://github.com/yjhmelody">@yjhmelody</a>: Fix variadic_arguments of LogicFunction (<a href="https://github.com/datafuselabs/datafuse/pull/1486">#1486</a>)</li>
-<li><a href="https://github.com/koushiro">@koushiro</a>: Use <code>#[from]</code> attribute of <code>thiserror::Error</code> proc macro, and remove some boilerplate code (<a href="https://github.com/datafuselabs/datafuse/pull/1507">#1507</a>)</li>
-<li><a href="https://github.com/jackwener">@jackwener</a>: Send slack notification when performance tests standalone start, fail or success (<a href="https://github.com/datafuselabs/datafuse/pull/1450">#1450</a>)</li>
+<li><a href="https://github.com/jyz0309">@jyz0309</a>:Add parser used time metric (<a href="https://github.com/datafuselabs/datafuse/pull/1586">#1586</a>) and add optimize histogram metric (<a href="https://github.com/datafuselabs/datafuse/pull/1524">#1524</a>)</li>
+<li><a href="https://github.com/mapleFU">@mapleFU</a>: Support SHOW TABLES LIKE pattern and Where expr (<a href="https://github.com/datafuselabs/datafuse/pull/1518">#1518</a>) and add SHOW TABLES LIKE pattern and Where expr to doc (<a href="https://github.com/datafuselabs/datafuse/pull/1541">#1541</a>)</li>
+<li><a href="https://github.com/dust1">@dust1</a>: Add Support SHOW TABLES FROM statament (<a href="https://github.com/datafuselabs/datafuse/pull/1555">#1555</a>)</li>
 </ul>
 <h2 id="meet-us">Meet Us</h2>
 <p>Please join the <a href="https://github.com/datafuselabs/">Datafuse Community</a> if you are interested in Datafuse.</p>
@@ -111,17 +115,10 @@ You can submit <a href="https://github.com/datafuselabs/datafuse/issues">issues<
                 <hr />
             </div>
             <div class="pagination__buttons">
-                    <span class="button previous">
-                        <a href="https://datafuselabs.github.io/weekly/2021-08-25-datafuse-weekly/">
-                            <span class="button__icon">←</span>&nbsp;
-                            <span class="button__text">This week in Datafuse #4</span>
-                        </a>
-                    </span>
-                
                 
                     <span class="button next">
-                        <a href="https://datafuselabs.github.io/weekly/2021-08-11-datafuse-weekly/">
-                            <span class="button__text">This week in Datafuse #2</span>&nbsp;
+                        <a href="https://datafuselabs.github.io/weekly/2021-08-18-datafuse-weekly/">
+                            <span class="button__text">This week in Datafuse #3</span>&nbsp;
                             <span class="button__icon">→</span>
                         </a>
                     </span>
