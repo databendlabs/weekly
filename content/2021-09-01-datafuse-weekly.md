@@ -16,6 +16,7 @@ Below is a list of some major changes that we don’t want you to miss.
 - **use custom HashMap for `HashMethodKind::Serializer`** by [@zhang2014](https://github.com/zhang2014). ([#1500](https://github.com/datafuselabs/datafuse/pull/1500))
 - **a series of refactors on catalog** by [@BohuTANG](https://github.com/BohuTANG). ([#1642](https://github.com/datafuselabs/datafuse/pull/1642), [#1643](https://github.com/datafuselabs/datafuse/pull/1643), [#1644](https://github.com/datafuselabs/datafuse/pull/1644))
 - **cross compile for arm-based architecture** by [@ZhiHanZ](https://github.com/ZhiHanZ). ([#1689](https://github.com/datafuselabs/datafuse/pull/1689))
+- **refactor some warp services to axum** by [@ZhiHanZ](https://github.com/ZhiHanZ). ([#1654](https://github.com/datafuselabs/datafuse/pull/1654))
 
 ## Changlogs
 
