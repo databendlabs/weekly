@@ -51,7 +51,7 @@ menu_items = [
     {name = "archive", url = "$BASE_URL/archive"},
 
     # set newtab to true to make the link open in new tab
-    {name = "github", url = "https://github.com/datafuselabs/weekly", newtab = true},
+    {name = "github", url = "https://github.com/datafuselabs/datafuse", newtab = true},
 ]
 
 # Whether to show links to earlier and later posts
