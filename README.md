@@ -1,6 +1,6 @@
-# This week in Datafuse
+# This week in Databend
 
-_**Datafuse Weekly**_ is powered by [*zola*](https://github.com/getzola/zola) with the [*terminimal*](https://github.com/pawroman/zola-theme-terminimal/) theme.
+_**Databend Weekly**_ is powered by [*zola*](https://github.com/getzola/zola) with the [*terminimal*](https://github.com/pawroman/zola-theme-terminimal/) theme.
 
 ## Editor Related
 
