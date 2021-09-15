@@ -1,7 +1,7 @@
 # The URL the site will be built for
 base_url = "https://datafuselabs.github.io/weekly"
 
-title = "Datafuse Weekly"
+title = "Databend Weekly"
 
 theme = "terminimal"
 
@@ -30,7 +30,7 @@ render_emoji = true
 # Put all your custom variables here
 
 # The logo text - defaults to "Terminimal theme"
-logo_text = "Datafuse Weekly"
+logo_text = "Databend Weekly"
 
 # Author name: when specified, modifies the default
 # copyright text. Apart from author, it will
@@ -51,7 +51,7 @@ menu_items = [
     {name = "archive", url = "$BASE_URL/archive"},
 
     # set newtab to true to make the link open in new tab
-    {name = "github", url = "https://github.com/datafuselabs/datafuse", newtab = true},
+    {name = "github", url = "https://github.com/datafuselabs/databend", newtab = true},
 ]
 
 # Whether to show links to earlier and later posts
