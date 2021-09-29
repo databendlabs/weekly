@@ -49,6 +49,82 @@
         <div class="posts">
                 <div class="post on-list">
                     
+    <h1 class="post-title"><a href="https://datafuselabs.github.io/weekly/2021-09-29-databend-weekly/">This week in Databend #9</a></h1>
+    <div class="post-meta-inline">
+        
+    <span class="post-date">
+            2021-09-29
+        </span>
+
+    </div>
+
+    
+
+                    
+        <div class="post-content">
+            <p><a href="https://github.com/datafuselabs/databend">Databend</a> aimed to be an open source <strong>elastic</strong> and <strong>reliable</strong> cloud warehouse, it offers blazing fast query and combines elasticity, simplicity, low cost of the cloud, built to make the Data Cloud easy.</p>
+<h2 id="big-changes">Big changes</h2>
+<p>Below is a list of some major changes that we don’t want you to miss.</p>
+<h3 id="features">Features</h3>
+<ul>
+<li><strong>cluster management with namespace</strong>  by <a href="https://github.com/zhang2014">@zhang2014</a>. (<a href="https://github.com/datafuselabs/databend/pull/1731">#1731</a>)</li>
+<li><strong>add toStartOfWeek</strong> by <a href="https://github.com/dust1">@dust1</a> (<a href="https://github.com/datafuselabs/databend/pull/1942">#1848</a>)</li>
+<li><strong>add interval functions add/subtract months, seconds etc.</strong> by <a href="https://github.com/junli1026">@junli1026</a> (<a href="https://github.com/datafuselabs/databend/pull/1887">#1887</a>)</li>
+<li><strong>support expr isNull and isNotNull</strong> by <a href="https://github.com/zhyass">@zhyass</a>. (<a href="https://github.com/datafuselabs/databend/pull/1947">#1947</a>)</li>
+</ul>
+<h3 id="refactor">Refactor</h3>
+<ul>
+<li><strong>a series of refactorings around common-kv (kvlocal)</strong> by <a href="https://github.com/drmingdrmer">@drmingdrmer</a>, like
+<ul>
+<li><strong>move local kv into standalone crate /kvlocal to break potential cyclic dependency</strong> (<a href="https://github.com/datafuselabs/databend/pull/1926">#1926</a>)</li>
+<li><strong>kv-local no longer depends on metasrv</strong> (<a href="https://github.com/datafuselabs/databend/pull/1960">#1960</a>)</li>
+</ul>
+</li>
+<li><strong>sync style Api Provider and KVApi</strong> by <a href="https://github.com/dantengsky">@dantengsky</a>. (<a href="https://github.com/datafuselabs/databend/pull/1939">#1939</a>)</li>
+<li><strong>split store API into more fine-grained crates</strong> by <a href="https://github.com/dantengsky">@dantengsky</a>. (<a href="https://github.com/datafuselabs/databend/pull/1952">#1952</a>)</li>
+<li><strong>move sled based store into a standalone crate</strong> by <a href="https://github.com/drmingdrmer">@drmingdrmer</a>. (<a href="https://github.com/datafuselabs/databend/pull/1953">#1953</a>)</li>
+</ul>
+<h2 id="improvement">Improvement</h2>
+<ul>
+<li><strong>reduce 90% release &amp; 70% debug binary size on linux toolchains</strong>
+<ul>
+<li><strong>strip the binary size, x86_64-unknown-linux-gnu</strong> by <a href="https://github.com/PsiACE">@PsiACE</a>. (<a href="https://github.com/datafuselabs/databend/pull/1959">#1959</a>)</li>
+<li><strong>update docker and striped arm release, aarch64-unknown-linux-gnu</strong> by <a href="https://github.com/ZhiHanZ">@ZhiHanZ</a>. (<a href="https://github.com/datafuselabs/databend/pull/1969">#1969</a>)</li>
+</ul>
+</li>
+<li><strong>introduce the query/users for all the user operations in high level</strong> by <a href="https://github.com/BohuTANG">@BohuTANG</a>. (<a href="https://github.com/datafuselabs/databend/pull/1978">#1978</a>)</li>
+<li><strong>make config clearer</strong> by <a href="https://github.com/BohuTANG">@BohuTANG</a>.(<a href="https://github.com/datafuselabs/databend/pull/1989">#1989</a>)</li>
+<li><strong>make date32 physical type to be int32</strong> by <a href="https://github.com/sundy-li">@sundy-li</a>. (<a href="https://github.com/datafuselabs/databend/pull/1990">#1990</a>)</li>
+</ul>
+<h2 id="changlogs">Changlogs</h2>
+<p>You can check the changelogs of Databend nightly to learn about our latest developments.</p>
+<ul>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.123-nightly">v0.4.123-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.122-nightly">v0.4.122-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.121-nightly">v0.4.121-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.120-nightly">v0.4.120-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.119-nightly">v0.4.119-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.118-nightly">v0.4.118-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.117-nightly">v0.4.117-nightly</a></li>
+</ul>
+<h2 id="meet-us">Meet Us</h2>
+<p>Please join the <a href="https://github.com/datafuselabs/">DatafuseLabs Community</a> if you are interested in Databend.</p>
+<p>We are looking forward to seeing you try our code. We have a strong team behind you to ensure a smooth experience in trying our code for your projects.
+If you are a hacker passionate about database internals, feel free to play with our code.</p>
+<p>You can submit <a href="https://github.com/datafuselabs/databend/issues">issues</a> for any problems you find. We also highly appreciate any of your pull requests.</p>
+<ul>
+<li><a href="https://databend.rs">Databend Website</a></li>
+<li><a href="https://twitter.com/Datafuse_Labs">Twitter</a></li>
+<li><a href="https://github.com/datafuselabs/databend/discussions">GitHub Discussions</a></li>
+<li><a href="https://datafusecloud.slack.com/join/shared_invite/zt-nojrc9up-50IRla1Y1h56rqwCTkkDJA">Slack Channel</a></li>
+</ul>
+
+        </div>
+
+                </div>
+            
+                <div class="post on-list">
+                    
     <h1 class="post-title"><a href="https://datafuselabs.github.io/weekly/2021-09-22-databend-weekly/">This week in Databend #8</a></h1>
     <div class="post-meta-inline">
         

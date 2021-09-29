@@ -48,11 +48,11 @@
         
     <div class="post">
         
-    <h1 class="post-title"><a href="https://datafuselabs.github.io/weekly/2021-09-22-databend-weekly/">This week in Databend #8</a></h1>
+    <h1 class="post-title"><a href="https://datafuselabs.github.io/weekly/2021-09-29-databend-weekly/">This week in Databend #9</a></h1>
     <div class="post-meta-inline">
         
     <span class="post-date">
-            2021-09-22
+            2021-09-29
         </span>
 
     </div>
@@ -66,41 +66,45 @@
 <p>Below is a list of some major changes that we don’t want you to miss.</p>
 <h3 id="features">Features</h3>
 <ul>
-<li><strong>add local status management for cli</strong> by <a href="https://github.com/ZhiHanZ">@ZhiHanZ</a> (<a href="https://github.com/datafuselabs/databend/pull/1892">#1892</a>)</li>
-<li><strong>add mysql_native_password (double sha1) auth support</strong> by <a href="https://github.com/sundy-li">@sundy-li</a>. (<a href="https://github.com/datafuselabs/databend/pull/1840">#1840</a>)</li>
-<li><strong>add arithmetic support for interval type</strong> by <a href="https://github.com/junli1026">@junli1026</a> (<a href="https://github.com/datafuselabs/databend/pull/1809">#1809</a>)</li>
-<li><strong>add toStartOfQuarter, toStartOfMonth</strong> by <a href="https://github.com/dust1">@dust1</a> (<a href="https://github.com/datafuselabs/databend/pull/1848">#1848</a>)</li>
+<li><strong>cluster management with namespace</strong>  by <a href="https://github.com/zhang2014">@zhang2014</a>. (<a href="https://github.com/datafuselabs/databend/pull/1731">#1731</a>)</li>
+<li><strong>add toStartOfWeek</strong> by <a href="https://github.com/dust1">@dust1</a> (<a href="https://github.com/datafuselabs/databend/pull/1942">#1848</a>)</li>
+<li><strong>add interval functions add/subtract months, seconds etc.</strong> by <a href="https://github.com/junli1026">@junli1026</a> (<a href="https://github.com/datafuselabs/databend/pull/1887">#1887</a>)</li>
+<li><strong>support expr isNull and isNotNull</strong> by <a href="https://github.com/zhyass">@zhyass</a>. (<a href="https://github.com/datafuselabs/databend/pull/1947">#1947</a>)</li>
 </ul>
 <h3 id="refactor">Refactor</h3>
 <ul>
-<li><strong>split metasrv and store</strong> by <a href="https://github.com/drmingdrmer">@drmingdrmer</a>. (<a href="https://github.com/datafuselabs/databend/pull/1879">#1879</a>)</li>
-<li><strong>a series of refactorings around metasrv</strong> by <a href="https://github.com/drmingdrmer">@drmingdrmer</a>, like
+<li><strong>a series of refactorings around common-kv (kvlocal)</strong> by <a href="https://github.com/drmingdrmer">@drmingdrmer</a>, like
 <ul>
-<li><strong>extract state machine into dir metasrv/raft/state_machine</strong> (<a href="https://github.com/datafuselabs/databend/pull/1910">#1910</a>)</li>
-<li><strong>remove unused meta API: db, table etc.</strong> (<a href="https://github.com/datafuselabs/databend/pull/1914">#1914</a>)</li>
+<li><strong>move local kv into standalone crate /kvlocal to break potential cyclic dependency</strong> (<a href="https://github.com/datafuselabs/databend/pull/1926">#1926</a>)</li>
+<li><strong>kv-local no longer depends on metasrv</strong> (<a href="https://github.com/datafuselabs/databend/pull/1960">#1960</a>)</li>
 </ul>
 </li>
+<li><strong>sync style Api Provider and KVApi</strong> by <a href="https://github.com/dantengsky">@dantengsky</a>. (<a href="https://github.com/datafuselabs/databend/pull/1939">#1939</a>)</li>
+<li><strong>split store API into more fine-grained crates</strong> by <a href="https://github.com/dantengsky">@dantengsky</a>. (<a href="https://github.com/datafuselabs/databend/pull/1952">#1952</a>)</li>
+<li><strong>move sled based store into a standalone crate</strong> by <a href="https://github.com/drmingdrmer">@drmingdrmer</a>. (<a href="https://github.com/datafuselabs/databend/pull/1953">#1953</a>)</li>
 </ul>
 <h2 id="improvement">Improvement</h2>
 <ul>
-<li><strong>add Table/Database engine providers and registries</strong> by <a href="https://github.com/dantengsky">@dantengsky</a>. (<a href="https://github.com/datafuselabs/databend/pull/1819">#1819</a>)</li>
-<li><strong>store client factory</strong> by <a href="https://github.com/dantengsky">@dantengsky</a>. (<a href="https://github.com/datafuselabs/databend/pull/1869">#1869</a>)</li>
-</ul>
-<h3 id="bug-fixes">Bug fixes</h3>
+<li><strong>reduce 90% release &amp; 70% debug binary size on linux toolchains</strong>
 <ul>
-<li><strong>fix protocol seq in AuthSwitchRequest</strong> by <a href="https://github.com/sundy-li">@sundy-li</a>. (<a href="https://github.com/datafuselabs/databend/pull/1890">#1890</a>)</li>
-<li><strong>fix get_sled_db() should not panic while holding a lock</strong> by <a href="https://github.com/drmingdrmer">@drmingdrmer</a>. (<a href="https://github.com/datafuselabs/databend/pull/1918">#1918</a>)</li>
+<li><strong>strip the binary size, x86_64-unknown-linux-gnu</strong> by <a href="https://github.com/PsiACE">@PsiACE</a>. (<a href="https://github.com/datafuselabs/databend/pull/1959">#1959</a>)</li>
+<li><strong>update docker and striped arm release, aarch64-unknown-linux-gnu</strong> by <a href="https://github.com/ZhiHanZ">@ZhiHanZ</a>. (<a href="https://github.com/datafuselabs/databend/pull/1969">#1969</a>)</li>
+</ul>
+</li>
+<li><strong>introduce the query/users for all the user operations in high level</strong> by <a href="https://github.com/BohuTANG">@BohuTANG</a>. (<a href="https://github.com/datafuselabs/databend/pull/1978">#1978</a>)</li>
+<li><strong>make config clearer</strong> by <a href="https://github.com/BohuTANG">@BohuTANG</a>.(<a href="https://github.com/datafuselabs/databend/pull/1989">#1989</a>)</li>
+<li><strong>make date32 physical type to be int32</strong> by <a href="https://github.com/sundy-li">@sundy-li</a>. (<a href="https://github.com/datafuselabs/databend/pull/1990">#1990</a>)</li>
 </ul>
 <h2 id="changlogs">Changlogs</h2>
 <p>You can check the changelogs of Databend nightly to learn about our latest developments.</p>
 <ul>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.116-nightly">v0.4.116-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.115-nightly">v0.4.115-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.114-nightly">v0.4.114-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.113-nightly">v0.4.113-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.112-nightly">v0.4.112-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.111-nightly">v0.4.111-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.110-nightly">v0.4.110-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.123-nightly">v0.4.123-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.122-nightly">v0.4.122-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.121-nightly">v0.4.121-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.120-nightly">v0.4.120-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.119-nightly">v0.4.119-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.118-nightly">v0.4.118-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.117-nightly">v0.4.117-nightly</a></li>
 </ul>
 <h2 id="meet-us">Meet Us</h2>
 <p>Please join the <a href="https://github.com/datafuselabs/">DatafuseLabs Community</a> if you are interested in Databend.</p>
@@ -123,17 +127,10 @@ If you are a hacker passionate about database internals, feel free to play with 
                 <hr />
             </div>
             <div class="pagination__buttons">
-                    <span class="button previous">
-                        <a href="https://datafuselabs.github.io/weekly/2021-09-29-databend-weekly/">
-                            <span class="button__icon">←</span>&nbsp;
-                            <span class="button__text">This week in Databend #9</span>
-                        </a>
-                    </span>
-                
                 
                     <span class="button next">
-                        <a href="https://datafuselabs.github.io/weekly/2021-09-15-databend-weekly/">
-                            <span class="button__text">This week in Databend #7</span>&nbsp;
+                        <a href="https://datafuselabs.github.io/weekly/2021-09-22-databend-weekly/">
+                            <span class="button__text">This week in Databend #8</span>&nbsp;
                             <span class="button__icon">→</span>
                         </a>
                     </span>
