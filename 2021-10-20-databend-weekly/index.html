@@ -48,11 +48,11 @@
         
     <div class="post">
         
-    <h1 class="post-title"><a href="https://datafuselabs.github.io/weekly/2021-10-13-databend-weekly/">This week in Databend #11</a></h1>
+    <h1 class="post-title"><a href="https://datafuselabs.github.io/weekly/2021-10-20-databend-weekly/">This week in Databend #12</a></h1>
     <div class="post-meta-inline">
         
     <span class="post-date">
-            2021-10-13
+            2021-10-20
         </span>
 
     </div>
@@ -68,36 +68,42 @@
 <ul>
 <li><strong>new features for cli</strong> by <a href="https://github.com/ZhiHanZ">@ZhiHanZ</a>, like
 <ul>
-<li><strong>local profile for meta service bootstrap</strong> (<a href="https://github.com/datafuselabs/databend/pull/1981">#1981</a>)</li>
-<li><strong>auto complete scripts</strong> (<a href="https://github.com/datafuselabs/databend/pull/2171">#2171</a>)</li>
+<li><strong>support mirror</strong> (<a href="https://github.com/datafuselabs/databend/pull/2267">#2267</a>)</li>
+<li><strong>support query</strong> (<a href="https://github.com/datafuselabs/databend/pull/2323">#2323</a>)</li>
 </ul>
 </li>
-<li><strong>add aggregate covariance functions</strong> by <a href="https://github.com/junli1026">@junli1026</a> (<a href="https://github.com/datafuselabs/databend/pull/2042">#2042</a>)</li>
-<li><strong>cast functions between String and Date16/Date32/DateTime32</strong> by <a href="https://github.com/sundy-li">@sundy-li</a>. (<a href="https://github.com/datafuselabs/databend/pull/2075">#2075</a>)</li>
+<li><strong>store Database in sled</strong> by <a href="https://github.com/drmingdrmer">@drmingdrmer</a> (<a href="https://github.com/datafuselabs/databend/pull/2237">#2237</a>)</li>
+<li><strong>add RangeFilter for index pruning</strong> by <a href="https://github.com/zhyass">@zhyass</a>. (<a href="https://github.com/datafuselabs/databend/pull/2256">#2256</a>)</li>
+<li><strong>add mem alloc and derive macro</strong> by <a href="https://github.com/Veeupup">@Veeupup</a>. (<a href="https://github.com/datafuselabs/databend/pull/2299">#2299</a>)</li>
+<li><strong>add toHour/toMinute/ToSecond</strong> <a href="https://github.com/GrapeBaBa">@GrapeBaBa</a> (<a href="https://github.com/datafuselabs/databend/pull/2309">#2309</a>)</li>
+<li><strong>add toMonday function</strong> by <a href="https://github.com/sundy-li">@sundy-li</a>. (<a href="https://github.com/datafuselabs/databend/pull/2317">#2317</a>)</li>
+<li><strong>add azure blob DAL</strong> by <a href="https://github.com/junli1026">@junli1026</a> (<a href="https://github.com/datafuselabs/databend/pull/2330">#2330</a>)</li>
 </ul>
 <h2 id="improvement">Improvement</h2>
 <ul>
-<li><strong>support remove constant conditions</strong> by <a href="https://github.com/zhyass">@zhyass</a>. (<a href="https://github.com/datafuselabs/databend/pull/2177">#2177</a>)</li>
-<li><strong>add filter block to data_blocks kernels</strong> by <a href="https://github.com/zhang2014">@zhang2014</a>. (<a href="https://github.com/datafuselabs/databend/pull/2114">#2114</a>)</li>
-<li><strong>impl table with embedded TableInfo</strong> by <a href="https://github.com/drmingdrmer">@drmingdrmer</a> (<a href="https://github.com/datafuselabs/databend/pull/2178">#2178</a>)</li>
-<li><strong>use TableIOContext as argument instead of DatabendQueryContext</strong> by <a href="https://github.com/drmingdrmer">@drmingdrmer</a> (<a href="https://github.com/datafuselabs/databend/pull/2111">#2111</a>)</li>
-<li><strong>col encoding mapping &amp; stats accumulator</strong> by <a href="https://github.com/dantengsky">@dantengsky</a>. (<a href="https://github.com/datafuselabs/databend/pull/2159">#2159</a>)</li>
-<li><strong>window funnel support date and datetime</strong> by <a href="https://github.com/b41sh">@b41sh</a>. (<a href="https://github.com/datafuselabs/databend/pull/2094">#2094</a>)</li>
+<li><strong>fuse table append/read (local mode only)</strong> by <a href="https://github.com/dantengsky">@dantengsky</a>. (<a href="https://github.com/datafuselabs/databend/pull/2214">#2214</a>)</li>
+<li><strong>store StateMachine::client_last_resp in sled::Tree</strong> by <a href="https://github.com/ariesdevil">@ariesdevil</a>. (<a href="https://github.com/datafuselabs/databend/pull/2223">#2223</a>)</li>
+<li><strong>refactor: decouple MetaRemoteSync into 3 componennt: remote meta access, caching, and async-to-sync conversion</strong> by <a href="https://github.com/drmingdrmer">@drmingdrmer</a> (<a href="https://github.com/datafuselabs/databend/pull/2283">#2283</a>)</li>
+<li><strong>remove DatabaseEngine</strong> by <a href="https://github.com/drmingdrmer">@drmingdrmer</a> (<a href="https://github.com/datafuselabs/databend/pull/2296">#2296</a>) &amp; <a href="https://github.com/yufan022">@yufan022</a> (<a href="https://github.com/datafuselabs/databend/pull/2297">#2297</a>)</li>
+<li><strong>add metrics for s3 client</strong> by <a href="https://github.com/flaneur2020">@flaneur2020</a>. (<a href="https://github.com/datafuselabs/databend/pull/2298">#2298</a>)</li>
+<li><strong>add flight client timeout</strong>  by <a href="https://github.com/BohuTANG">@BohuTANG</a>. (<a href="https://github.com/datafuselabs/databend/pull/2301">#2301</a>)</li>
+<li><strong>use tokio signal to process terminal signal</strong> by <a href="https://github.com/zhang2014">@zhang2014</a>. (<a href="https://github.com/datafuselabs/databend/pull/2307">#2307</a>)</li>
+<li><strong>use arrow-format instead of arrow-flight</strong> by <a href="https://github.com/PsiACE">@PsiACE</a>. (<a href="https://github.com/datafuselabs/databend/pull/2328">#2328</a>)</li>
 </ul>
 <h3 id="bug-fixes">Bug fixes</h3>
 <ul>
-<li><strong>fix namespace failure when restart query</strong> by <a href="https://github.com/zhang2014">@zhang2014</a>. (<a href="https://github.com/datafuselabs/databend/pull/2108">#2108</a>) </li>
+<li><strong>fix graceful shutdown takes at most 1 minute</strong> by <a href="https://github.com/zhang2014">@zhang2014</a>. (<a href="https://github.com/datafuselabs/databend/pull/2249">#2249</a>) </li>
+<li><strong>fix query metrics exporter issue in prometheus</strong> by <a href="https://github.com/ZhiHanZ">@ZhiHanZ</a>. (<a href="https://github.com/datafuselabs/databend/pull/2333">#2333</a>) </li>
 </ul>
 <h2 id="changlogs">Changlogs</h2>
 <p>You can check the changelogs of Databend nightly to learn about our latest developments.</p>
 <ul>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.136-nightly">v0.4.136-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.135-nightly">v0.4.135-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.134-nightly">v0.4.134-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.133-nightly">v0.4.133-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.132-nightly">v0.4.132-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.131-nightly">v0.4.131-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.130-nightly">v0.4.130-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.142-nightly">v0.4.142-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.141-nightly">v0.4.141-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.140-nightly">v0.4.140-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.139-nightly">v0.4.139-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.138-nightly">v0.4.138-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.137-nightly">v0.4.137-nightly</a></li>
 </ul>
 <h2 id="meet-us">Meet Us</h2>
 <p>Please join the <a href="https://github.com/datafuselabs/">DatafuseLabs Community</a> if you are interested in Databend.</p>
@@ -120,17 +126,10 @@ If you are a hacker passionate about database internals, feel free to play with 
                 <hr />
             </div>
             <div class="pagination__buttons">
-                    <span class="button previous">
-                        <a href="https://datafuselabs.github.io/weekly/2021-10-20-databend-weekly/">
-                            <span class="button__icon">←</span>&nbsp;
-                            <span class="button__text">This week in Databend #12</span>
-                        </a>
-                    </span>
-                
                 
                     <span class="button next">
-                        <a href="https://datafuselabs.github.io/weekly/2021-10-06-databend-weekly/">
-                            <span class="button__text">This week in Databend #10</span>&nbsp;
+                        <a href="https://datafuselabs.github.io/weekly/2021-10-13-databend-weekly/">
+                            <span class="button__text">This week in Databend #11</span>&nbsp;
                             <span class="button__icon">→</span>
                         </a>
                     </span>
