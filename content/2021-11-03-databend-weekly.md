@@ -59,7 +59,7 @@ You can check the changelogs of Databend nightly to learn about our latest devel
 
 From open source, for open source. Our team is also committed to contributing to the Rust ecosystem and upstream dependencies.
 
-- [arrow-rs #864: Add fuzzer based on honggfuzz](https://github.com/apache/arrow-rs/pull/864): Bump some deps, setup ci toolchain, fix error. by [@PsiACE](https://github.com/PsiACE/)
+- [arrow-rs #864: Bump deps](https://github.com/apache/arrow-rs/pull/864): Bump some deps, setup ci toolchain, fix error. by [@PsiACE](https://github.com/PsiACE/)
 - [arrow2 #550: Bumped Prost and Tonic](https://github.com/jorgecarleitao/arrow2/pull/550): Bump arrow-format to v0.3.0, update ci toolchain, fix error. by [@PsiACE](https://github.com/PsiACE/)
 - [arrow-format #2: Bump deps & format](https://github.com/DataEngineeringLabs/arrow-format/pull/2): Bump prost and tonic. by [@PsiACE](https://github.com/PsiACE/)
 - [pprof #82: Bump deps and make clippy happy](https://github.com/tikv/pprof-rs/pull/82): Bump prost / tonic / nix , make clippy happy. by [@PsiACE](https://github.com/PsiACE/)
