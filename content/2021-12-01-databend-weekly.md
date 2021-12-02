@@ -15,7 +15,7 @@ Below is a list of some major changes that we don't want you to miss.
 
 - **add UserGrantSet struct to manage the privileges of an user or role** by [@flaneur2020](https://github.com/flaneur2020) ([#3149](https://github.com/datafuselabs/databend/pull/3149))
 - **add GitHub datasource** by [@Veeupup](https://github.com/Veeupup). ([#3093](https://github.com/datafuselabs/databend/pull/3093))
-- **support load csv files via HTTP Stream** by [@sundy-li](https://github.com/sundy-li). ([#2878](https://github.com/datafuselabs/databend/pull/2878))
+- **support load csv files via HTTP Stream** by [@sundy-li](https://github.com/sundy-li). ([#3126](https://github.com/datafuselabs/databend/pull/3126))
 - **add ignore function which can be used in performance tests** by [@sundy-li](https://github.com/sundy-li). ([#3177](https://github.com/datafuselabs/databend/pull/3177))
 - **support Projection push down for MemoryTable Engine** by [@ygf11](https://github.com/ygf11) ([#3154](https://github.com/datafuselabs/databend/pull/3154))
 - **insert overwrite stmt** by [@Veeupup](https://github.com/Veeupup). ([#3150](https://github.com/datafuselabs/databend/pull/3150))
@@ -36,7 +36,7 @@ Below is a list of some major changes that we don't want you to miss.
 
 ## Performance Improvement
 
-- **simple chunk strategy in insertion** by [@dantengsky](https://github.com/dantengsky). ([#3134](https://github.com/datafuselabs/databend/pull/3134))
+- **simple chunk strategy in insertion** by [@dantengsky](https://github.com/dantengsky). ([#3122](https://github.com/datafuselabs/databend/pull/3122))
 - **speed up min/max agg** by [@sundy-li](https://github.com/sundy-li). ([#3163](https://github.com/datafuselabs/databend/pull/3163))
 - **fix performance fallback** by [@zhang2014](https://github.com/zhang2014). ([#3140](https://github.com/datafuselabs/databend/pull/3140))
 
@@ -60,11 +60,11 @@ Databend now supports the loading of data via the following methods:
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 
-- [v0.5.31-nightly](https://github.com/datafuselabs/databend/releases/tag/v0.5.26-nightly)
-- [v0.5.30-nightly](https://github.com/datafuselabs/databend/releases/tag/v0.5.25-nightly)
-- [v0.5.29-nightly](https://github.com/datafuselabs/databend/releases/tag/v0.5.24-nightly)
-- [v0.5.28-nightly](https://github.com/datafuselabs/databend/releases/tag/v0.5.23-nightly)
-- [v0.5.27-nightly](https://github.com/datafuselabs/databend/releases/tag/v0.5.22-nightly)
+- [v0.5.31-nightly](https://github.com/datafuselabs/databend/releases/tag/v0.5.31-nightly)
+- [v0.5.30-nightly](https://github.com/datafuselabs/databend/releases/tag/v0.5.30-nightly)
+- [v0.5.29-nightly](https://github.com/datafuselabs/databend/releases/tag/v0.5.29-nightly)
+- [v0.5.28-nightly](https://github.com/datafuselabs/databend/releases/tag/v0.5.28-nightly)
+- [v0.5.27-nightly](https://github.com/datafuselabs/databend/releases/tag/v0.5.27-nightly)
 
 ## Ecosystem/Upstream
 
