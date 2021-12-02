@@ -14,7 +14,7 @@ Below is a list of some major changes that we don't want you to miss.
 ### Features
 
 - **add stage to management** by [@BohuTANG](https://github.com/BohuTANG). ([#2984](https://github.com/datafuselabs/databend/pull/2984))
-- **support Copy command from stage location into table** by [@sundy-li](https://github.com/SGZW). ([#2878](https://github.com/datafuselabs/databend/pull/2878))
+- **support Copy command from stage location into table** by [@sundy-li](https://github.com/sundy-li). ([#2878](https://github.com/datafuselabs/databend/pull/2878))
 - **support drop user** by [@SGZW](https://github.com/SGZW). ([#2913](https://github.com/datafuselabs/databend/pull/2913))
 - **support insert select query** by [@ygf11](https://github.com/ygf11). ([#2765](https://github.com/datafuselabs/databend/pull/2765))
 - **add digests functions**: `md5`, `sha1`, `sha256` by [@mshauneu](https://github.com/mshauneu) ([#2881](https://github.com/datafuselabs/databend/pull/2881))
