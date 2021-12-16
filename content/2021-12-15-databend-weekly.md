@@ -60,15 +60,15 @@ We currently have some discussions about proposals on the GitHub that may help y
 
 - **Query Cache**
 
-  Clever use of caching can provide effective acceleration for Databend. We are implementing a single node memory-disk level 2 cache. Perhaps we will be moving towards distributed caching soon, more discussion on design and implementation is welcome, let's hear your thoughts. Related discussions [#3433](https://github.com/datafuselabs/databend/discussions/3433).
+  Clever use of caching can provide effective acceleration for Databend. We are implementing a single node memory-disk level 2 cache. Perhaps we will be moving towards distributed caching soon, more discussion on design and implementation is welcome, let's hear your thoughts. Related discussion [#3478](https://github.com/datafuselabs/databend/discussions/3478).
 
 - **Re-organise our building systems**
 
-  Our current build / test system is quite complex. We have Makeflie, Dockerfile(s), and a lot of shell / python scripts. We want to build a build/test/benchmark system based on the Rust style, so if you have any good ideas, please feel free to share to us. Related discussions [#3419](https://github.com/datafuselabs/databend/discussions/3419).
+  Our current build / test system is quite complex. We have Makeflie, Dockerfile(s), and a lot of shell / python scripts. We want to build a build/test/benchmark system based on the Rust style, so if you have any good ideas, please feel free to share to us. Related discussion [#3419](https://github.com/datafuselabs/databend/discussions/3419).
 
 - **Refactor CI pipleline into stages**
 
-  If you're interested in GitHub workflows, then take a look at this proposal. By [refactoring CI](https://github.com/datafuselabs/databend/issues/3344), we have effectively reduced blocking and been able to maintain it better. Related discussions [#3415](https://github.com/datafuselabs/databend/discussions/3415).
+  If you're interested in GitHub workflows, then take a look at this proposal. By [refactoring CI](https://github.com/datafuselabs/databend/issues/3344), we have effectively reduced blocking and been able to maintain it better. Related discussion [#3415](https://github.com/datafuselabs/databend/discussions/3415).
 
 ## Changlogs
 
