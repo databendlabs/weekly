@@ -53,14 +53,12 @@ In the last week we have introduced an experimental UDF engine, thanks [@liangha
 
 **Create a UDF**
 
-We can easily create a user-defined function by `CREATE FUNCTION <fn-name> = <fn-expr>`, where `<fn-expr>` should be a valid expression in which the variable numbers are incremented from 0 .
-
-Let's create a custom function to calculate the mean of two numbers together.
+Databend supports the use of expressions as user defined functions. We can easily create a user-defined function in [lambda-like style](https://github.com/datafuselabs/databend/discussions/3672) with `CREATE FUNCTION <fn-name> AS (<fn-param0>, ...) -> <fn-expr>`. Let's create a custom function to calculate the mean of two numbers together.
 
 ```sql
-mysql> CREATE FUNCTION mean2number = '(@0 + @1) / 2';
-Query OK, 0 rows affected (0.02 sec)
-Read 0 rows, 0 B in 0.021 sec., 0 rows/sec., 0 B/sec.
+mysql> CREATE FUNCTION mean2number AS (x, y) -> (x + y) / 2;
+Query OK, 0 rows affected (0.05 sec)
+Read 0 rows, 0 B in 0.037 sec., 0 rows/sec., 0 B/sec.
 ```
 
 **Call a UDF**
@@ -75,7 +73,7 @@ mysql> SELECT mean2number(150, 250);
 |               200 |
 +-------------------+
 1 row in set (0.02 sec)
-Read 1 rows, 1 B in 0.004 sec., 228.44 rows/sec., 228.44 B/sec.
+Read 1 rows, 1 B in 0.018 sec., 55.59 rows/sec., 55.59 B/sec.
 ```
 
 ## Changlogs
