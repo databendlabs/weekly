@@ -110,11 +110,10 @@
 <h3 id="have-fun-with-databend-udf-user-defined-function">Have fun with Databend UDF (User Defined Function)</h3>
 <p>In the last week we have introduced an experimental UDF engine, thanks <a href="https://github.com/lianghanzhen">@lianghanzhen</a>. Let's try it out together.</p>
 <p><strong>Create a UDF</strong></p>
-<p>We can easily create a user-defined function by <code>CREATE FUNCTION &lt;fn-name&gt; = &lt;fn-expr&gt;</code>, where <code>&lt;fn-expr&gt;</code> should be a valid expression in which the variable numbers are incremented from 0 .</p>
-<p>Let's create a custom function to calculate the mean of two numbers together.</p>
-<pre data-lang="sql" style="background-color:#151515;color:#e8e8d3;" class="language-sql "><code class="language-sql" data-lang="sql"><span>mysql&gt; CREATE FUNCTION </span><span style="color:#fad07a;">mean2number </span><span>= </span><span style="color:#556633;">&#39;</span><span style="color:#99ad6a;">(@0 + @1) / 2</span><span style="color:#556633;">&#39;</span><span>;
-</span><span>Query OK, </span><span style="color:#cf6a4c;">0</span><span> rows affected (</span><span style="color:#cf6a4c;">0</span><span>.</span><span style="color:#cf6a4c;">02</span><span> sec)
-</span><span>Read </span><span style="color:#cf6a4c;">0</span><span> rows, </span><span style="color:#cf6a4c;">0</span><span> B in </span><span style="color:#cf6a4c;">0</span><span>.</span><span style="color:#cf6a4c;">021</span><span> sec., </span><span style="color:#cf6a4c;">0</span><span> rows/sec., </span><span style="color:#cf6a4c;">0</span><span> B/sec.
+<p>Databend supports the use of expressions as user defined functions. We can easily create a user-defined function in <a href="https://github.com/datafuselabs/databend/discussions/3672">lambda-like style</a> with <code>CREATE FUNCTION &lt;fn-name&gt; AS (&lt;fn-param0&gt;, ...) -&gt; &lt;fn-expr&gt;</code>. Let's create a custom function to calculate the mean of two numbers together.</p>
+<pre data-lang="sql" style="background-color:#151515;color:#e8e8d3;" class="language-sql "><code class="language-sql" data-lang="sql"><span>mysql&gt; CREATE FUNCTION mean2number </span><span style="color:#fad07a;">AS</span><span> (x, y) -&gt; (x + y) / </span><span style="color:#cf6a4c;">2</span><span>;
+</span><span>Query OK, </span><span style="color:#cf6a4c;">0</span><span> rows affected (</span><span style="color:#cf6a4c;">0</span><span>.</span><span style="color:#cf6a4c;">05</span><span> sec)
+</span><span>Read </span><span style="color:#cf6a4c;">0</span><span> rows, </span><span style="color:#cf6a4c;">0</span><span> B in </span><span style="color:#cf6a4c;">0</span><span>.</span><span style="color:#cf6a4c;">037</span><span> sec., </span><span style="color:#cf6a4c;">0</span><span> rows/sec., </span><span style="color:#cf6a4c;">0</span><span> B/sec.
 </span></code></pre>
 <p><strong>Call a UDF</strong></p>
 <p>Calling UDF is the same as calling any other function. In the following example we have calculated the mean of 150 and 250.</p>
@@ -125,7 +124,7 @@
 </span><span>|               </span><span style="color:#cf6a4c;">200</span><span> |
 </span><span>+</span><span style="color:#888888;">-------------------+
 </span><span style="color:#cf6a4c;">1</span><span> row in set (</span><span style="color:#cf6a4c;">0</span><span>.</span><span style="color:#cf6a4c;">02</span><span> sec)
-</span><span>Read </span><span style="color:#cf6a4c;">1</span><span> rows, </span><span style="color:#cf6a4c;">1</span><span> B in </span><span style="color:#cf6a4c;">0</span><span>.</span><span style="color:#cf6a4c;">004</span><span> sec., </span><span style="color:#cf6a4c;">228</span><span>.</span><span style="color:#cf6a4c;">44</span><span> rows/sec., </span><span style="color:#cf6a4c;">228</span><span>.</span><span style="color:#cf6a4c;">44</span><span> B/sec.
+</span><span>Read </span><span style="color:#cf6a4c;">1</span><span> rows, </span><span style="color:#cf6a4c;">1</span><span> B in </span><span style="color:#cf6a4c;">0</span><span>.</span><span style="color:#cf6a4c;">018</span><span> sec., </span><span style="color:#cf6a4c;">55</span><span>.</span><span style="color:#cf6a4c;">59</span><span> rows/sec., </span><span style="color:#cf6a4c;">55</span><span>.</span><span style="color:#cf6a4c;">59</span><span> B/sec.
 </span></code></pre>
 <h2 id="changlogs">Changlogs</h2>
 <p>You can check the changelogs of Databend nightly to learn about our latest developments.</p>
