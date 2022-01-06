@@ -1,7 +1,7 @@
 +++
 title = "This week in Databend #23"
 date = 2022-01-05
-slug = "2021-01-05-databend-weekly"
+slug = "2022-01-05-databend-weekly"
 draft = false
 +++
 
