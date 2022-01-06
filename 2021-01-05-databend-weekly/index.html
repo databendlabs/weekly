@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Databend Weekly</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="robots" content="noodp"/>
+
+    <link rel="stylesheet" href="https://weekly.databend.rs/style.css">
+    <link rel="stylesheet" href="https://weekly.databend.rs/color/blue.css">
+
+    <link rel="stylesheet" href="https://weekly.databend.rs/font-hack.css">
+
+    </head>
+
+<body class="">
+<div class="container">
+    
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__logo">
+                    
+                <a href="https://weekly.databend.rs" style="text-decoration: none;">
+                    <div class="logo">
+                            Databend Weekly
+                        </div>
+                </a>
+            </div>
+        </div>
+
+        <nav class="menu">
+            <ul class="menu__inner">
+                
+                <li class="active"><a href="https://weekly.databend.rs">weekly</a></li>
+            
+                <li><a href="https://weekly.databend.rs/archive">archive</a></li>
+            
+                <li><a href="https://github.com/datafuselabs/databend" target="_blank" rel="noopener noreferrer">github</a></li>
+            
+                <li><a href="https://databend.rs/overview/building-and-running" target="_blank" rel="noopener noreferrer">docs</a></li>
+            </ul>
+        </nav>
+    
+    </header>
+    
+
+    <div class="content">
+        
+    <div class="post">
+        
+    <h1 class="post-title"><a href="https://weekly.databend.rs/2021-01-05-databend-weekly/">This week in Databend #23</a></h1>
+    <div class="post-meta-inline">
+        
+    <span class="post-date">
+            2022-01-05
+        </span>
+
+    </div>
+
+    
+
+        
+        <div class="post-content">
+            <p><a href="https://github.com/datafuselabs/databend">Databend</a> aimed to be an open source <strong>elastic</strong> and <strong>reliable</strong> cloud warehouse, it offers blazing fast query and combines elasticity, simplicity, low cost of the cloud, built to make the Data Cloud easy.</p>
+<h2 id="big-changes">Big changes</h2>
+<p>Below is a list of some major changes that we don't want you to miss.</p>
+<h3 id="features">Features</h3>
+<ul>
+<li><strong>add proxy mode access check</strong> by <a href="https://github.com/BohuTANG">@BohuTANG</a>. (<a href="https://github.com/datafuselabs/databend/pull/3776">#3776</a>)</li>
+<li><strong>add basic tokio-console support</strong> by <a href="https://github.com/PsiACE">@PsiACE</a>. (<a href="https://github.com/datafuselabs/databend/pull/3739">#3739</a>)</li>
+<li><strong>add generate command for bendctl</strong> by <a href="https://github.com/kevinw66">@kevinw66</a>. (<a href="https://github.com/datafuselabs/databend/pull/3732">#3732</a>)</li>
+</ul>
+<h2 id="improvement">Improvement</h2>
+<ul>
+<li><strong>add more metrics to query_log</strong> by <a href="https://github.com/dantengsky">@dantengsky</a>. (<a href="https://github.com/datafuselabs/databend/pull/3773">#3773</a>)</li>
+<li><strong>make parquet reader works with only one stream reader</strong> by <a href="https://github.com/dantengsky">@dantengsky</a>. (<a href="https://github.com/datafuselabs/databend/pull/3757">#3757</a>)</li>
+<li><strong>fuse metadata cache</strong> by <a href="https://github.com/Veeupup">@Veeupup</a>. (<a href="https://github.com/datafuselabs/databend/pull/3761">#3761</a>)</li>
+<li><strong>UDF refinement</strong> by <a href="https://github.com/lianghanzhen">@lianghanzhen</a>. (<a href="https://github.com/datafuselabs/databend/pull/3743">#3743</a>)</li>
+<li><strong>cli up improvement</strong> by <a href="https://github.com/sundy-li/">@sundy-li</a>. (<a href="https://github.com/datafuselabs/databend/pull/3699">#3699</a>)</li>
+<li><strong>replace arrow flight with gRPC</strong> by <a href="https://github.com/ariesdevil/">@ariesdevil</a>. (<a href="https://github.com/datafuselabs/databend/pull/3606">#3606</a>)</li>
+<li><strong>improve origin array builder &amp; make nullable/no-nullable builder support</strong> by <a href="https://github.com/Veeupup">@Veeupup</a>. (<a href="https://github.com/datafuselabs/databend/pull/3700">#3700</a>)</li>
+</ul>
+<h2 id="performance-improvement">Performance Improvement</h2>
+<ul>
+<li><strong>improve performance of arithmetic functions</strong> by <a href="https://github.com/zhyass">@zhyass</a> (<a href="https://github.com/datafuselabs/databend/pull/3697">#3697</a>)</li>
+<li><strong>table read performance tweaking</strong> by <a href="https://github.com/dantengsky">@dantengsky</a>. (<a href="https://github.com/datafuselabs/databend/pull/3718">#3718</a>)</li>
+</ul>
+<h3 id="bug-fixes">Bug fixes</h3>
+<ul>
+<li><strong>support as case-insensitive when create udf</strong> by <a href="https://github.com/kevinw66">@kevinw66</a>. (<a href="https://github.com/datafuselabs/databend/pull/3703">#3703</a>)</li>
+</ul>
+<h2 id="tips">Tips</h2>
+<p>Let's learn a weekly tip from Databend.</p>
+<h3 id="tracing-in-databend">Tracing in Databend</h3>
+<p>Databend using Rust's tracing ecosystem <a href="https://github.com/tokio-rs/tracing">tokio-tracing</a> to do log and profile.</p>
+<p><strong>Distributed tracing with Jaeger</strong></p>
+<p><a href="https://github.com/jaegertracing/jaeger">Jaeger</a>, is a distributed tracing platform. It can be used for monitoring microservices-based distributed systems.</p>
+<ul>
+<li>
+<p>4 steps to enable Jaeger monitor</p>
+<ul>
+<li>build databend-query: <code>cargo build --bin databend-query</code></li>
+<li>run with <code>DEBUG</code> log level: <code>LOG_LEVEL=DEBUG ./databend-query</code></li>
+<li>start jaeger: <code>docker run -d -p6831:6831/udp -p6832:6832/udp -p16686:16686 jaegertracing/all-in-one:latest</code></li>
+<li>Open http://127.0.0.1:16686/</li>
+</ul>
+</li>
+<li>
+<p>Jaeger Tracing Show</p>
+</li>
+</ul>
+<p><img src="../images/jaeger-tracing-show.png" alt="jaeger-tracing-show" /></p>
+<ul>
+<li>Read More: https://databend.rs/dev/development/tracing#distributed-tracing-with-jaeger</li>
+</ul>
+<p><strong>Explore and diagnose with tokio-console</strong></p>
+<p><a href="https://github.com/tokio-rs/console">tokio-console</a> is a diagnostics and debugging tool for asynchronous Rust programs.</p>
+<ul>
+<li>
+<p>3 steps to enable console subscriber</p>
+<ul>
+<li>build databend-query with rustflags &amp; features: <code>RUSTFLAGS=&quot;--cfg tokio_unstable&quot; cargo build --bin databend-query --features tokio-console</code></li>
+<li>run with the log level of <code>TRACE</code>: <code>LOG_LEVEL=TRACE databend-query</code></li>
+<li>run <code>tokio-console</code></li>
+</ul>
+</li>
+<li>
+<p>Run tokio-console to explore databend-query</p>
+</li>
+</ul>
+<p><img src="../images/query-console.png" alt="query-console" /></p>
+<ul>
+<li>Read More: https://databend.rs/dev/development/tracing#explore-and-diagnose-with-tokio-console</li>
+</ul>
+<h2 id="changlogs">Changlogs</h2>
+<p>You can check the changelogs of Databend nightly to learn about our latest developments.</p>
+<ul>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.6.25-nightly">v0.6.25-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.6.24-nightly">v0.6.24-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.6.23-nightly">v0.6.23-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.6.22-nightly">v0.6.22-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.6.21-nightly">v0.6.21-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.6.20-nightly">v0.6.20-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.6.19-nightly">v0.6.19-nightly</a></li>
+</ul>
+<h2 id="ecosystem-upstream">Ecosystem/Upstream</h2>
+<p>From open source, for open source. Our team is also committed to contributing to the Rust ecosystem and upstream dependencies.</p>
+<ul>
+<li><a href="https://github.com/jorgecarleitao/arrow2/pull/730">arrow2 #73: add cargo check to benchmarks</a> by <a href="https://github.com/sundy-li/">@sundy-li</a>.</li>
+</ul>
+<h2 id="meet-us">Meet Us</h2>
+<p>Please join the <a href="https://github.com/datafuselabs/">DatafuseLabs Community</a> if you are interested in Databend.</p>
+<p>We are looking forward to seeing you try our code. We have a strong team behind you to ensure a smooth experience in trying our code for your projects.
+If you are a hacker passionate about database internals, feel free to play with our code.</p>
+<p>You can submit <a href="https://github.com/datafuselabs/databend/issues">issues</a> for any problems you find. We also highly appreciate any of your pull requests.</p>
+<ul>
+<li><a href="https://databend.rs">Databend Website</a></li>
+<li><a href="https://twitter.com/Datafuse_Labs">Twitter</a></li>
+<li><a href="https://github.com/datafuselabs/databend/discussions">GitHub Discussions</a></li>
+<li><a href="https://datafusecloud.slack.com/join/shared_invite/zt-nojrc9up-50IRla1Y1h56rqwCTkkDJA">Slack Channel</a></li>
+</ul>
+
+        </div>
+
+        
+        <div class="pagination">
+            <div class="pagination__title">
+                <span class="pagination__title-h">Thanks for reading! Read other posts?</span>
+                <hr />
+            </div>
+            <div class="pagination__buttons">
+                
+                    <span class="button next">
+                        <a href="https://weekly.databend.rs/2021-12-29-databend-weekly/">
+                            <span class="button__text">This week in Databend #22</span>&nbsp;
+                            <span class="button__icon">→</span>
+                        </a>
+                    </span>
+                </div>
+        </div>
+    
+    </div>
+
+    </div>
+
+    
+    <footer class="footer">
+        <div class="footer__inner">
+                <div class="copyright">
+                        <span>© 
+    2022
+ Datafuse Labs</span>
+                    <span class="copyright-theme">
+                        <span class="copyright-theme-sep">:: </span>
+                        Theme: <a href="https://github.com/pawroman/zola-theme-terminimal/">Terminimal</a> by pawroman
+                    </span>
+                </div>
+            </div>
+    </footer>
+    
+
+</div>
+</body>
+
+</html>
