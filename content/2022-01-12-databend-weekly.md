@@ -25,7 +25,7 @@ Below is a list of some major changes that we don't want you to miss.
 - **split the apply_cmd function to sub functions** by [@lichuang](https://github.com/lichuang). ([#3831](https://github.com/datafuselabs/databend/pull/3831))
 - **refine cache** by [@dantengsky](https://github.com/dantengsky). ([#3798](https://github.com/datafuselabs/databend/pull/3798))
 - **improve for expression monotonicity visitor** by [@zhyass](https://github.com/zhyass). ([#3783](https://github.com/datafuselabs/databend/pull/3783)
-- **add priv checksimplify the grant verify logic** by [@flaneur2020](https://github.com/flaneur2020). ([#3804](https://github.com/datafuselabs/databend/pull/3804))
+- **simplify the grant verify logic** by [@flaneur2020](https://github.com/flaneur2020). ([#3804](https://github.com/datafuselabs/databend/pull/3804))
 
 ### Bug fixes
 
