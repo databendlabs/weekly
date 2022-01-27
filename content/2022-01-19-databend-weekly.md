@@ -35,7 +35,7 @@ Below is a list of some major changes that we don't want you to miss.
 
 ### Experimental
 
-- **add datavalues2** by [@sundy-li](https://github.com/sundy-li). ([#3857](https://github.com/datafuselabs/databend/pull/3857)). 
+- **add datavalues2** by [@sundy-li](https://github.com/sundy-li). ([#3857](https://github.com/datafuselabs/databend/pull/3857)).
 
 A series of refactorings will be carried out at [datavalues-dev](https://github.com/datafuselabs/databend/tree/datavalues-dev) branch to complete the migration. See [RFC - new datavalues system design](https://databend.rs/dev/rfcs/query/new-datavalues-system).
 
