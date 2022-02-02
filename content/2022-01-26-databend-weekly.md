@@ -82,3 +82,4 @@ You can submit [issues](https://github.com/datafuselabs/databend/issues) for any
 - [Twitter](https://twitter.com/Datafuse_Labs)
 - [GitHub Discussions](https://github.com/datafuselabs/databend/discussions)
 - [Slack Channel](https://datafusecloud.slack.com/join/shared_invite/zt-nojrc9up-50IRla1Y1h56rqwCTkkDJA)
+
