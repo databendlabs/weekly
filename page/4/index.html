@@ -51,6 +51,81 @@
         <div class="posts">
                 <div class="post on-list">
                     
+    <h1 class="post-title"><a href="https://weekly.databend.rs/2021-10-27-databend-weekly/">This week in Databend #13</a></h1>
+    <div class="post-meta-inline">
+        
+    <span class="post-date">
+            2021-10-27
+        </span>
+
+    </div>
+
+    
+
+                    
+        <div class="post-content">
+            <p><a href="https://github.com/datafuselabs/databend">Databend</a> aimed to be an open source <strong>elastic</strong> and <strong>reliable</strong> cloud warehouse, it offers blazing fast query and combines elasticity, simplicity, low cost of the cloud, built to make the Data Cloud easy.</p>
+<h2 id="big-changes">Big changes</h2>
+<p>Below is a list of some major changes that we don’t want you to miss.</p>
+<h3 id="features">Features</h3>
+<ul>
+<li><strong>add system.metrics table</strong> by <a href="https://github.com/flaneur2020">@flaneur2020</a>. (<a href="https://github.com/datafuselabs/databend/pull/2349">#2349</a>)</li>
+<li><strong>a simple rest api (http handler) for query</strong> by <a href="https://github.com/youngsofun">@youngsofun</a>. (<a href="https://github.com/datafuselabs/databend/pull/2379">#2379</a>)</li>
+<li><strong>new features for cli</strong> by <a href="https://github.com/ZhiHanZ">@ZhiHanZ</a>, like
+<ul>
+<li><strong>support admin and sql mode in interactive scenario</strong> (<a href="https://github.com/datafuselabs/databend/pull/2448">#2448</a>)</li>
+<li><strong>query via http</strong> (<a href="https://github.com/datafuselabs/databend/pull/2417">#2417</a>)</li>
+</ul>
+</li>
+</ul>
+<h2 id="improvement">Improvement</h2>
+<ul>
+<li><strong>add tokio runtime memory tracker</strong> by <a href="https://github.com/zhang2014">@zhang2014</a>. (<a href="https://github.com/datafuselabs/databend/pull/2356">#2356</a>)</li>
+<li><strong>enable VerifiableExpression in fuse table</strong> by <a href="https://github.com/dantengsky">@dantengsky</a>. (<a href="https://github.com/datafuselabs/databend/pull/2369">#2369</a>)</li>
+<li><strong>remote backend for fuse table</strong> by <a href="https://github.com/dantengsky">@dantengsky</a>. (<a href="https://github.com/datafuselabs/databend/pull/2355">#2355</a>)</li>
+<li><strong>move some cli commands from sync to async</strong> by <a href="https://github.com/yufan022">@yufan022</a> (<a href="https://github.com/datafuselabs/databend/pull/2297">#2297</a>)</li>
+<li><strong>store TableInfo to sled tree</strong> by <a href="https://github.com/ariesdevil">@ariesdevil</a>. (<a href="https://github.com/datafuselabs/databend/pull/2387">#2387</a>)</li>
+<li><strong>add optimization for literal false filter</strong> by <a href="https://github.com/junli1026">@junli1026</a> (<a href="https://github.com/datafuselabs/databend/pull/2427">#2427</a>)</li>
+<li><strong>eliminate Limit to optmize source to empty source</strong> by <a href="https://github.com/junli1026">@junli1026</a> (<a href="https://github.com/datafuselabs/databend/pull/2447">#2447</a>)</li>
+<li><strong>add databend_main and databend_test proc macros</strong> by <a href="https://github.com/zhang2014">@zhang2014</a>. (<a href="https://github.com/datafuselabs/databend/pull/2434">#2434</a>)</li>
+</ul>
+<h3 id="bug-fixes">Bug fixes</h3>
+<ul>
+<li><strong>fix query server hang when start failure</strong> by <a href="https://github.com/zhang2014">@zhang2014</a>. (<a href="https://github.com/datafuselabs/databend/pull/2465">#2465</a>)</li>
+<li><strong>fix docker build and release issues</strong> by <a href="https://github.com/ZhiHanZ">@ZhiHanZ</a>. (<a href="https://github.com/datafuselabs/databend/pull/2372">#2372</a>)</li>
+<li><strong>make ReadDataSource schema return schema after projection</strong> by <a href="https://github.com/sundy-li">@sundy-li</a>. (<a href="https://github.com/datafuselabs/databend/pull/2423">#2423</a>)</li>
+<li><strong>fix: http services force shutdown after some secs</strong> by <a href="https://github.com/youngsofun">@youngsofun</a>. (<a href="https://github.com/datafuselabs/databend/pull/2425">#2425</a>)</li>
+<li><strong>fix get_table bug and parquet table bug</strong> by <a href="https://github.com/drmingdrmer">@drmingdrmer</a> (<a href="https://github.com/datafuselabs/databend/pull/2400">#2400</a>)</li>
+</ul>
+<h2 id="changlogs">Changlogs</h2>
+<p>You can check the changelogs of Databend nightly to learn about our latest developments.</p>
+<ul>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.149-nightly">v0.4.149-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.148-nightly">v0.4.148-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.147-nightly">v0.4.147-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.146-nightly">v0.4.146-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.145-nightly">v0.4.145-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.144-nightly">v0.4.144-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.143-nightly">v0.4.143-nightly</a></li>
+</ul>
+<h2 id="meet-us">Meet Us</h2>
+<p>Please join the <a href="https://github.com/datafuselabs/">DatafuseLabs Community</a> if you are interested in Databend.</p>
+<p>We are looking forward to seeing you try our code. We have a strong team behind you to ensure a smooth experience in trying our code for your projects.
+If you are a hacker passionate about database internals, feel free to play with our code.</p>
+<p>You can submit <a href="https://github.com/datafuselabs/databend/issues">issues</a> for any problems you find. We also highly appreciate any of your pull requests.</p>
+<ul>
+<li><a href="https://databend.rs">Databend Website</a></li>
+<li><a href="https://twitter.com/Datafuse_Labs">Twitter</a></li>
+<li><a href="https://github.com/datafuselabs/databend/discussions">GitHub Discussions</a></li>
+<li><a href="https://datafusecloud.slack.com/join/shared_invite/zt-nojrc9up-50IRla1Y1h56rqwCTkkDJA">Slack Channel</a></li>
+</ul>
+
+        </div>
+
+                </div>
+            
+                <div class="post on-list">
+                    
     <h1 class="post-title"><a href="https://weekly.databend.rs/2021-10-20-databend-weekly/">This week in Databend #12</a></h1>
     <div class="post-meta-inline">
         
@@ -310,78 +385,6 @@ If you are a hacker passionate about database internals, feel free to play with 
 <li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.119-nightly">v0.4.119-nightly</a></li>
 <li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.118-nightly">v0.4.118-nightly</a></li>
 <li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.117-nightly">v0.4.117-nightly</a></li>
-</ul>
-<h2 id="meet-us">Meet Us</h2>
-<p>Please join the <a href="https://github.com/datafuselabs/">DatafuseLabs Community</a> if you are interested in Databend.</p>
-<p>We are looking forward to seeing you try our code. We have a strong team behind you to ensure a smooth experience in trying our code for your projects.
-If you are a hacker passionate about database internals, feel free to play with our code.</p>
-<p>You can submit <a href="https://github.com/datafuselabs/databend/issues">issues</a> for any problems you find. We also highly appreciate any of your pull requests.</p>
-<ul>
-<li><a href="https://databend.rs">Databend Website</a></li>
-<li><a href="https://twitter.com/Datafuse_Labs">Twitter</a></li>
-<li><a href="https://github.com/datafuselabs/databend/discussions">GitHub Discussions</a></li>
-<li><a href="https://datafusecloud.slack.com/join/shared_invite/zt-nojrc9up-50IRla1Y1h56rqwCTkkDJA">Slack Channel</a></li>
-</ul>
-
-        </div>
-
-                </div>
-            
-                <div class="post on-list">
-                    
-    <h1 class="post-title"><a href="https://weekly.databend.rs/2021-09-22-databend-weekly/">This week in Databend #8</a></h1>
-    <div class="post-meta-inline">
-        
-    <span class="post-date">
-            2021-09-22
-        </span>
-
-    </div>
-
-    
-
-                    
-        <div class="post-content">
-            <p><a href="https://github.com/datafuselabs/databend">Databend</a> aimed to be an open source <strong>elastic</strong> and <strong>reliable</strong> cloud warehouse, it offers blazing fast query and combines elasticity, simplicity, low cost of the cloud, built to make the Data Cloud easy.</p>
-<h2 id="big-changes">Big changes</h2>
-<p>Below is a list of some major changes that we don’t want you to miss.</p>
-<h3 id="features">Features</h3>
-<ul>
-<li><strong>add local status management for cli</strong> by <a href="https://github.com/ZhiHanZ">@ZhiHanZ</a> (<a href="https://github.com/datafuselabs/databend/pull/1892">#1892</a>)</li>
-<li><strong>add mysql_native_password (double sha1) auth support</strong> by <a href="https://github.com/sundy-li">@sundy-li</a>. (<a href="https://github.com/datafuselabs/databend/pull/1840">#1840</a>)</li>
-<li><strong>add arithmetic support for interval type</strong> by <a href="https://github.com/junli1026">@junli1026</a> (<a href="https://github.com/datafuselabs/databend/pull/1809">#1809</a>)</li>
-<li><strong>add toStartOfQuarter, toStartOfMonth</strong> by <a href="https://github.com/dust1">@dust1</a> (<a href="https://github.com/datafuselabs/databend/pull/1848">#1848</a>)</li>
-</ul>
-<h3 id="refactor">Refactor</h3>
-<ul>
-<li><strong>split metasrv and store</strong> by <a href="https://github.com/drmingdrmer">@drmingdrmer</a>. (<a href="https://github.com/datafuselabs/databend/pull/1879">#1879</a>)</li>
-<li><strong>a series of refactorings around metasrv</strong> by <a href="https://github.com/drmingdrmer">@drmingdrmer</a>, like
-<ul>
-<li><strong>extract state machine into dir metasrv/raft/state_machine</strong> (<a href="https://github.com/datafuselabs/databend/pull/1910">#1910</a>)</li>
-<li><strong>remove unused meta API: db, table etc.</strong> (<a href="https://github.com/datafuselabs/databend/pull/1914">#1914</a>)</li>
-</ul>
-</li>
-</ul>
-<h2 id="improvement">Improvement</h2>
-<ul>
-<li><strong>add Table/Database engine providers and registries</strong> by <a href="https://github.com/dantengsky">@dantengsky</a>. (<a href="https://github.com/datafuselabs/databend/pull/1819">#1819</a>)</li>
-<li><strong>store client factory</strong> by <a href="https://github.com/dantengsky">@dantengsky</a>. (<a href="https://github.com/datafuselabs/databend/pull/1869">#1869</a>)</li>
-</ul>
-<h3 id="bug-fixes">Bug fixes</h3>
-<ul>
-<li><strong>fix protocol seq in AuthSwitchRequest</strong> by <a href="https://github.com/sundy-li">@sundy-li</a>. (<a href="https://github.com/datafuselabs/databend/pull/1890">#1890</a>)</li>
-<li><strong>fix get_sled_db() should not panic while holding a lock</strong> by <a href="https://github.com/drmingdrmer">@drmingdrmer</a>. (<a href="https://github.com/datafuselabs/databend/pull/1918">#1918</a>)</li>
-</ul>
-<h2 id="changlogs">Changlogs</h2>
-<p>You can check the changelogs of Databend nightly to learn about our latest developments.</p>
-<ul>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.116-nightly">v0.4.116-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.115-nightly">v0.4.115-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.114-nightly">v0.4.114-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.113-nightly">v0.4.113-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.112-nightly">v0.4.112-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.111-nightly">v0.4.111-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.110-nightly">v0.4.110-nightly</a></li>
 </ul>
 <h2 id="meet-us">Meet Us</h2>
 <p>Please join the <a href="https://github.com/datafuselabs/">DatafuseLabs Community</a> if you are interested in Databend.</p>
