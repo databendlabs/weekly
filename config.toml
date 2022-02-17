@@ -11,7 +11,8 @@ compile_sass = true
 # The filename to use for the feed. Used as the template filename, too.
 # Defaults to "atom.xml", which has a built-in template that renders an Atom 1.0 feed.
 # There is also a built-in template "rss.xml" that renders an RSS 2.0 feed.
-feed_filename = "atom.xml"
+feed_filename = "rss.xml"
+generate_feed = true
 
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
@@ -53,6 +54,7 @@ menu_items = [
     # set newtab to true to make the link open in new tab
     {name = "github", url = "https://github.com/datafuselabs/databend", newtab = true},
     {name = "docs", url = "https://databend.rs/", newtab = true},
+    {name = "rss", url = "$BASE_URL/rss.xml", newtab = false},
 ]
 
 # Whether to show links to earlier and later posts
