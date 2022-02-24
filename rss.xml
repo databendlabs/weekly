@@ -65,8 +65,6 @@
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.6.62-nightly&quot;&gt;v0.6.68-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.6.61-nightly&quot;&gt;v0.6.67-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;ecosystem-upstream&quot;&gt;Ecosystem&#x2F;Upstream&lt;&#x2F;h2&gt;
-&lt;p&gt;From open source, for open source. Our team is also committed to contributing to the Rust ecosystem and upstream dependencies.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;meet-us&quot;&gt;Meet Us&lt;&#x2F;h2&gt;
 &lt;p&gt;Please join the &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;&quot;&gt;DatafuseLabs Community&lt;&#x2F;a&gt; if you are interested in Databend.&lt;&#x2F;p&gt;
 &lt;p&gt;We are looking forward to seeing you try our code. We have a strong team behind you to ensure a smooth experience in trying our code for your projects.
