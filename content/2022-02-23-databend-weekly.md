@@ -61,10 +61,6 @@ You can check the changelogs of Databend nightly to learn about our latest devel
 - [v0.6.68-nightly](https://github.com/datafuselabs/databend/releases/tag/v0.6.62-nightly)
 - [v0.6.67-nightly](https://github.com/datafuselabs/databend/releases/tag/v0.6.61-nightly)
 
-## Ecosystem/Upstream
-
-From open source, for open source. Our team is also committed to contributing to the Rust ecosystem and upstream dependencies.
-
 ## Meet Us
 
 Please join the [DatafuseLabs Community](https://github.com/datafuselabs/) if you are interested in Databend.
