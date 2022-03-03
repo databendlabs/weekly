@@ -82,6 +82,10 @@
 <li><strong>databend-query: zero extra cost of async trait</strong>: use GAT feature instead of <code>#[async_trait]</code> in some hot path. by <a href="https://github.com/sundy-li">@sundy-li</a>, (<a href="https://github.com/datafuselabs/databend/pull/4269">#4269</a>)</li>
 <li><strong>databend-query: implement new processor for system tables &amp; github &amp; memory &amp; null engine</strong> by <a href="https://github.com/zhang2014">@zhang2014</a>, (<a href="https://github.com/datafuselabs/databend/pull/4166">#4166</a> &amp; <a href="https://github.com/datafuselabs/databend/pull/4272">#4272</a>)</li>
 </ul>
+<h2 id="build-test-ci">Build/Test/CI</h2>
+<ul>
+<li>With <a href="https://github.com/datafuselabs/databend/pull/4229"><strong>change to wiremock from httpmock</strong></a> and a series of other PRs, <a href="https://github.com/PsiACE">@PsiACE</a> removed ~60 dependencies for clippy and test.</li>
+</ul>
 <h2 id="bug-fixes">Bug fixes</h2>
 <ul>
 <li><strong>dal_context: use ObserveReader to calculate metrics</strong>: calculate the read cost time correctly. by <a href="https://github.com/Xuanwo">@Xuanwo</a>, (<a href="https://github.com/datafuselabs/databend/pull/4298">#4298</a>)</li>
@@ -115,6 +119,28 @@
 <li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.6.74-nightly">v0.6.74-nightly</a></li>
 <li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.6.73-nightly">v0.6.73-nightly</a></li>
 </ul>
+<h2 id="ecosystem-upstream">Ecosystem/Upstream</h2>
+<p>From open source, for open source. Our team is also committed to contributing to the Rust ecosystem and upstream dependencies.</p>
+<h3 id="upstream">Upstream</h3>
+<ul>
+<li><a href="https://github.com/jorgecarleitao/arrow2/pull/871">arrow2 #871: Improved performance of filter performance via Simd selection [3x]</a> by <a href="https://github.com/sundy-li/">@sundy-li</a>.</li>
+</ul>
+<h3 id="opendal-announced-v0-1">OpenDAL announced v0.1</h3>
+<p>We announced that Open Data Access Layer is in v0.1. Let's look at what's different together.</p>
+<ul>
+<li>Observe reader support (<a href="https://github.com/datafuselabs/opendal/pull/92">opendal#92</a>)</li>
+<li>Object Stream (<a href="https://github.com/datafuselabs/opendal/pull/69">opendal#69</a>)</li>
+<li>List support (<a href="https://github.com/datafuselabs/opendal/pull/76">opendal#76</a>)</li>
+<li>Auto Region (<a href="https://github.com/datafuselabs/opendal/pull/59">opendal#59</a>)</li>
+</ul>
+<p>Welcome to use OpenDAL(<a href="https://github.com/datafuselabs/opendal">github</a>, <a href="https://crates.io/crates/opendal">crates.io</a>) to connect your data and applications.</p>
+<h3 id="big-changes-are-happening-at-openraft">Big changes are happening at OpenRaft</h3>
+<p>Although no new releases have been made recently, we have seen some important changes with <a href="https://github.com/schreter">@schreter</a>'s help.</p>
+<ul>
+<li>Refactor storage APIs to allow more clear ownership of data. (<a href="https://github.com/datafuselabs/openraft/pull/199">openraft#199</a>)</li>
+<li>Make NodeId type configurable via RaftTypeConfig. (<a href="https://github.com/datafuselabs/openraft/pull/220">openraft#220</a>)</li>
+</ul>
+<p>Feel free to visit <a href="https://github.com/datafuselabs/openraft/pulse">Insights/Pulse</a> to observe all changes, and it would be great if you would like to try it out in advance.</p>
 <h2 id="meet-us">Meet Us</h2>
 <p>Please join the <a href="https://github.com/datafuselabs/">DatafuseLabs Community</a> if you are interested in Databend.</p>
 <p>We are looking forward to seeing you try our code. We have a strong team behind you to ensure a smooth experience in trying our code for your projects.
@@ -124,7 +150,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 <li><a href="https://databend.rs">Databend Website</a></li>
 <li><a href="https://twitter.com/Datafuse_Labs">Twitter</a></li>
 <li><a href="https://github.com/datafuselabs/databend/discussions">GitHub Discussions</a></li>
-<li><a href="https://datafusecloud.slack.com/join/shared_invite/zt-nojrc9up-50IRla1Y1h56rqwCTkkDJA">Slack Channel</a>- <a href="https://datafusecloud.slack.com/join/shared_invite/zt-nojrc9up-50IRla1Y1h56rqwCTkkDJA">Slack Channel</a></li>
+<li><a href="https://datafusecloud.slack.com/join/shared_invite/zt-nojrc9up-50IRla1Y1h56rqwCTkkDJA">Slack Channel</a></li>
 </ul>
 
         </div>

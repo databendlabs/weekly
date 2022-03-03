@@ -29,6 +29,10 @@
 &lt;li&gt;&lt;strong&gt;databend-query: zero extra cost of async trait&lt;&#x2F;strong&gt;: use GAT feature instead of &lt;code&gt;#[async_trait]&lt;&#x2F;code&gt; in some hot path. by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;sundy-li&quot;&gt;@sundy-li&lt;&#x2F;a&gt;, (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;4269&quot;&gt;#4269&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;strong&gt;databend-query: implement new processor for system tables &amp;amp; github &amp;amp; memory &amp;amp; null engine&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;zhang2014&quot;&gt;@zhang2014&lt;&#x2F;a&gt;, (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;4166&quot;&gt;#4166&lt;&#x2F;a&gt; &amp;amp; &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;4272&quot;&gt;#4272&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;build-test-ci&quot;&gt;Build&#x2F;Test&#x2F;CI&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;With &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;4229&quot;&gt;&lt;strong&gt;change to wiremock from httpmock&lt;&#x2F;strong&gt;&lt;&#x2F;a&gt; and a series of other PRs, &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;PsiACE&quot;&gt;@PsiACE&lt;&#x2F;a&gt; removed ~60 dependencies for clippy and test.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;bug-fixes&quot;&gt;Bug fixes&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;dal_context: use ObserveReader to calculate metrics&lt;&#x2F;strong&gt;: calculate the read cost time correctly. by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Xuanwo&quot;&gt;@Xuanwo&lt;&#x2F;a&gt;, (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;4298&quot;&gt;#4298&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
@@ -62,6 +66,28 @@
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.6.74-nightly&quot;&gt;v0.6.74-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.6.73-nightly&quot;&gt;v0.6.73-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;ecosystem-upstream&quot;&gt;Ecosystem&#x2F;Upstream&lt;&#x2F;h2&gt;
+&lt;p&gt;From open source, for open source. Our team is also committed to contributing to the Rust ecosystem and upstream dependencies.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;upstream&quot;&gt;Upstream&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jorgecarleitao&#x2F;arrow2&#x2F;pull&#x2F;871&quot;&gt;arrow2 #871: Improved performance of filter performance via Simd selection [3x]&lt;&#x2F;a&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;sundy-li&#x2F;&quot;&gt;@sundy-li&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;opendal-announced-v0-1&quot;&gt;OpenDAL announced v0.1&lt;&#x2F;h3&gt;
+&lt;p&gt;We announced that Open Data Access Layer is in v0.1. Let&#x27;s look at what&#x27;s different together.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Observe reader support (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;opendal&#x2F;pull&#x2F;92&quot;&gt;opendal#92&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;Object Stream (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;opendal&#x2F;pull&#x2F;69&quot;&gt;opendal#69&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;List support (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;opendal&#x2F;pull&#x2F;76&quot;&gt;opendal#76&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;Auto Region (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;opendal&#x2F;pull&#x2F;59&quot;&gt;opendal#59&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Welcome to use OpenDAL(&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;opendal&quot;&gt;github&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;opendal&quot;&gt;crates.io&lt;&#x2F;a&gt;) to connect your data and applications.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;big-changes-are-happening-at-openraft&quot;&gt;Big changes are happening at OpenRaft&lt;&#x2F;h3&gt;
+&lt;p&gt;Although no new releases have been made recently, we have seen some important changes with &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;schreter&quot;&gt;@schreter&lt;&#x2F;a&gt;&#x27;s help.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Refactor storage APIs to allow more clear ownership of data. (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;openraft&#x2F;pull&#x2F;199&quot;&gt;openraft#199&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;Make NodeId type configurable via RaftTypeConfig. (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;openraft&#x2F;pull&#x2F;220&quot;&gt;openraft#220&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Feel free to visit &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;openraft&#x2F;pulse&quot;&gt;Insights&#x2F;Pulse&lt;&#x2F;a&gt; to observe all changes, and it would be great if you would like to try it out in advance.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;meet-us&quot;&gt;Meet Us&lt;&#x2F;h2&gt;
 &lt;p&gt;Please join the &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;&quot;&gt;DatafuseLabs Community&lt;&#x2F;a&gt; if you are interested in Databend.&lt;&#x2F;p&gt;
 &lt;p&gt;We are looking forward to seeing you try our code. We have a strong team behind you to ensure a smooth experience in trying our code for your projects.
@@ -71,7 +97,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&quot;&gt;Databend Website&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;Datafuse_Labs&quot;&gt;Twitter&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;discussions&quot;&gt;GitHub Discussions&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;datafusecloud.slack.com&#x2F;join&#x2F;shared_invite&#x2F;zt-nojrc9up-50IRla1Y1h56rqwCTkkDJA&quot;&gt;Slack Channel&lt;&#x2F;a&gt;- &lt;a href=&quot;https:&#x2F;&#x2F;datafusecloud.slack.com&#x2F;join&#x2F;shared_invite&#x2F;zt-nojrc9up-50IRla1Y1h56rqwCTkkDJA&quot;&gt;Slack Channel&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;datafusecloud.slack.com&#x2F;join&#x2F;shared_invite&#x2F;zt-nojrc9up-50IRla1Y1h56rqwCTkkDJA&quot;&gt;Slack Channel&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </description>
         </item>
