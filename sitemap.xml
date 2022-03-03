@@ -124,6 +124,10 @@
         <lastmod>2022-02-23</lastmod>
     </url>
     <url>
+        <loc>https://weekly.databend.rs/2022-03-02-databend-weekly/</loc>
+        <lastmod>2022-03-02</lastmod>
+    </url>
+    <url>
         <loc>https://weekly.databend.rs/archive/</loc>
     </url>
     <url>
@@ -143,5 +147,8 @@
     </url>
     <url>
         <loc>https://weekly.databend.rs/page/6/</loc>
+    </url>
+    <url>
+        <loc>https://weekly.databend.rs/page/7/</loc>
     </url>
 </urlset>
