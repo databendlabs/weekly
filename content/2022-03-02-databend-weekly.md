@@ -24,6 +24,10 @@ Below is a list of some major changes that we don't want you to miss.
 - **databend-query: zero extra cost of async trait**: use GAT feature instead of `#[async_trait]` in some hot path. by [@sundy-li](https://github.com/sundy-li), ([#4269](https://github.com/datafuselabs/databend/pull/4269))
 - **databend-query: implement new processor for system tables & github & memory & null engine** by [@zhang2014](https://github.com/zhang2014), ([#4166](https://github.com/datafuselabs/databend/pull/4166) & [#4272](https://github.com/datafuselabs/databend/pull/4272))
 
+## Build/Test/CI
+
+- With [**change to wiremock from httpmock**](https://github.com/datafuselabs/databend/pull/4229) and a series of other PRs, [@PsiACE](https://github.com/PsiACE) removed ~60 dependencies for clippy and test.
+
 ## Bug fixes
 
 - **dal_context: use ObserveReader to calculate metrics**: calculate the read cost time correctly. by [@Xuanwo](https://github.com/Xuanwo), ([#4298](https://github.com/datafuselabs/databend/pull/4298))
@@ -65,6 +69,34 @@ You can check the changelogs of Databend nightly to learn about our latest devel
 - [v0.6.74-nightly](https://github.com/datafuselabs/databend/releases/tag/v0.6.74-nightly)
 - [v0.6.73-nightly](https://github.com/datafuselabs/databend/releases/tag/v0.6.73-nightly)
 
+## Ecosystem/Upstream
+
+From open source, for open source. Our team is also committed to contributing to the Rust ecosystem and upstream dependencies.
+
+### Upstream
+
+- [arrow2 #871: Improved performance of filter performance via Simd selection [3x]](https://github.com/jorgecarleitao/arrow2/pull/871) by [@sundy-li](https://github.com/sundy-li/).
+
+### OpenDAL announced v0.1
+
+We announced that Open Data Access Layer is in v0.1. Let's look at what's different together.
+
+- Observe reader support ([opendal#92](https://github.com/datafuselabs/opendal/pull/92))
+- Object Stream ([opendal#69](https://github.com/datafuselabs/opendal/pull/69))
+- List support ([opendal#76](https://github.com/datafuselabs/opendal/pull/76))
+- Auto Region ([opendal#59](https://github.com/datafuselabs/opendal/pull/59))
+
+Welcome to use OpenDAL([github](https://github.com/datafuselabs/opendal), [crates.io](https://crates.io/crates/opendal)) to connect your data and applications.
+
+### Big changes are happening at OpenRaft
+
+Although no new releases have been made recently, we have seen some important changes with [@schreter](https://github.com/schreter)'s help.
+
+- Refactor storage APIs to allow more clear ownership of data. ([openraft#199](https://github.com/datafuselabs/openraft/pull/199))
+- Make NodeId type configurable via RaftTypeConfig. ([openraft#220](https://github.com/datafuselabs/openraft/pull/220))
+
+Feel free to visit [Insights/Pulse](https://github.com/datafuselabs/openraft/pulse) to observe all changes, and it would be great if you would like to try it out in advance.
+
 ## Meet Us
 
 Please join the [DatafuseLabs Community](https://github.com/datafuselabs/) if you are interested in Databend.
@@ -77,5 +109,4 @@ You can submit [issues](https://github.com/datafuselabs/databend/issues) for any
 - [Databend Website](https://databend.rs)
 - [Twitter](https://twitter.com/Datafuse_Labs)
 - [GitHub Discussions](https://github.com/datafuselabs/databend/discussions)
-- [Slack Channel](https://datafusecloud.slack.com/join/shared_invite/zt-nojrc9up-50IRla1Y1h56rqwCTkkDJA)- [Slack Channel](https://datafusecloud.slack.com/join/shared_invite/zt-nojrc9up-50IRla1Y1h56rqwCTkkDJA)
-
+- [Slack Channel](https://datafusecloud.slack.com/join/shared_invite/zt-nojrc9up-50IRla1Y1h56rqwCTkkDJA)
