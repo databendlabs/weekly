@@ -49,7 +49,7 @@
 &lt;h2 id=&quot;tips&quot;&gt;Tips&lt;&#x2F;h2&gt;
 &lt;p&gt;Let&#x27;s learn a weekly tip from Databend.&lt;&#x2F;p&gt;
 &lt;h3 id=&quot;deploy-databend-and-try-to-develop&quot;&gt;Deploy Databend and try to develop&lt;&#x2F;h3&gt;
-&lt;p&gt;Databend is now fully updated with online documentation, support for multiple deployment scenarios including local disk, s3, minio, and more, and a first step for application developers in Go and Python.&lt;&#x2F;p&gt;
+&lt;p&gt;Databend has now completely updated its online documentation, supports for multiple deployment scenarios including local disk, s3, minio, and more, and provides first step for application developers in Go and Python.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;strong&gt;Deploy&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&#x2F;doc&#x2F;deploy&#x2F;local&quot;&gt;With local disk&lt;&#x2F;a&gt;: https:&#x2F;&#x2F;databend.rs&#x2F;doc&#x2F;deploy&#x2F;local&lt;&#x2F;li&gt;
