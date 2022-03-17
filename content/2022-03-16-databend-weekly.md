@@ -47,7 +47,7 @@ Let's learn a weekly tip from Databend.
 
 ### Deploy Databend and try to develop
 
-Databend is now fully updated with online documentation, support for multiple deployment scenarios including local disk, s3, minio, and more, and a first step for application developers in Go and Python.
+Databend has now completely updated its online documentation, supports for multiple deployment scenarios including local disk, s3, minio, and more, and provides first step for application developers in Go and Python.
 
 **Deploy**
 
