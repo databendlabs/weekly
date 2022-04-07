@@ -51,7 +51,7 @@ You can use Databend to analyze Nginx access logs in just four steps:
 3. Install and Configure Vector, Run it
 4. Generate Nginx logs and Analyze them in Databend
 
-To learn more about how to implement it, check out [Analyzing Nginx Logs with Databend and Vector](https://databend.rs/doc/learn/analyze-nginx-logs-with-databend-and-vector#11-deploy-databend).
+To learn more about how to implement it, check out [Analyzing Nginx Logs with Databend and Vector](https://databend.rs/doc/learn/analyze-nginx-logs-with-databend-and-vector).
 
 ## Changlogs
 
