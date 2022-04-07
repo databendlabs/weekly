@@ -53,6 +53,87 @@
         <div class="posts">
                 <div class="post on-list">
                     
+    <h1 class="post-title"><a href="https://weekly.databend.rs/2022-04-06-databend-weekly/">This week in Databend #36</a></h1>
+    <div class="post-meta-inline">
+        
+    <span class="post-date">
+            2022-04-06
+        </span>
+
+    </div>
+
+    
+
+                    
+        <div class="post-content">
+            <p><a href="https://github.com/datafuselabs/databend">Databend</a> is an open source <strong>elastic</strong> and <strong>reliable</strong> Modern Cloud Data Warehouse, it offers blazing fast query and combines elasticity, simplicity, low cost of the cloud, built to make the Data Cloud easy.</p>
+<h2 id="big-changes">Big changes</h2>
+<p>Below is a list of some major changes that we don't want you to miss.</p>
+<h3 id="features">Features</h3>
+<ul>
+<li><strong>common-functions:  support <code>REGEXP_INSTR</code> function</strong> by <a href="https://github.com/nange">@nange</a>, (<a href="https://github.com/datafuselabs/databend/pull/4629">#4629</a>)</li>
+<li><strong>databend-query(processor): support complete executor</strong> by <a href="https://github.com/zhang2014">@zhang2014</a>, (<a href="https://github.com/datafuselabs/databend/pull/4639">#4639</a>)</li>
+<li><strong>databend-query: support logical view</strong> by <a href="https://github.com/Veeupup">@Veeupup</a>, (<a href="https://github.com/datafuselabs/databend/pull/4628">#4628</a>)</li>
+<li><strong>databend-query: support information_schema database</strong> by <a href="https://github.com/Veeupup">@Veeupup</a>, (<a href="https://github.com/datafuselabs/databend/pull/4672">#4672</a>)</li>
+<li><strong>*: refactor type deserialization</strong> by <a href="https://github.com/sundy-li">@sundy-li</a>, (<a href="https://github.com/datafuselabs/databend/pull/4634">#4634</a>)</li>
+</ul>
+<h2 id="improvement">Improvement</h2>
+<ul>
+<li><strong>databend-query: hide table opt <code>SNAPSHOT_LOC</code> in <code>show create</code></strong> by <a href="https://github.com/dantengsky">@dantengsky</a>, (<a href="https://github.com/datafuselabs/databend/pull/4677">#4677</a>)</li>
+<li><strong>*: refactor User/Role identity</strong> by <a href="https://github.com/Junnplus">@Junnplus</a>, (<a href="https://github.com/datafuselabs/databend/pull/4644">#4644</a>)</li>
+<li><strong>databend-query: support show full tables</strong> by <a href="https://github.com/TCeason">@TCeason</a>, (<a href="https://github.com/datafuselabs/databend/pull/4702">#4702</a>)</li>
+</ul>
+<h2 id="build-test-ci">Build/Test/CI</h2>
+<ul>
+<li><strong>link with mold in build-tool</strong> by <a href="https://github.com/everpcpc">@everpcpc</a>, (<a href="https://github.com/datafuselabs/databend/pull/4681">#4681</a>)</li>
+</ul>
+<h2 id="bug-fixes">Bug fixes</h2>
+<ul>
+<li><strong>databend-query: prohibit using reserved table option in create table statement.</strong> by <a href="https://github.com/dantengsky">@dantengsky</a>, (<a href="https://github.com/datafuselabs/databend/pull/4632">#4632</a>)</li>
+<li><strong>bump to OpenDAL v0.4 to fix copy into don't support special filename</strong> by <a href="https://github.com/Xuanwo">@Xuanwo</a>, (<a href="https://github.com/datafuselabs/databend/pull/4678">#4678</a>)</li>
+</ul>
+<h2 id="tips">Tips</h2>
+<p>Let's learn a weekly tip from Databend.</p>
+<h3 id="analyzing-nginx-logs-with-databend-and-vector">Analyzing Nginx Logs with Databend and Vector</h3>
+<p>Systems are producing all kinds metrics and logs time by time, do you want to gather them and analyze the logs in real time?</p>
+<p>Databend provides <a href="https://databend.rs/doc/integrations/vector">integration with Vector</a>, easy to do it now!</p>
+<p>You can use Databend to analyze Nginx access logs in just four steps:</p>
+<ol>
+<li>Deploy Databend, Create a Database and a Table for Nginx logs, Create a User for Vector Auth</li>
+<li>Install and Configure Nginx</li>
+<li>Install and Configure Vector, Run it</li>
+<li>Generate Nginx logs and Analyze them in Databend</li>
+</ol>
+<p>To learn more about how to implement it, check out <a href="https://databend.rs/doc/learn/analyze-nginx-logs-with-databend-and-vector#11-deploy-databend">Analyzing Nginx Logs with Databend and Vector</a>.</p>
+<h2 id="changlogs">Changlogs</h2>
+<p>You can check the changelogs of Databend nightly to learn about our latest developments.</p>
+<ul>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.7.10-nightly">v0.7.10-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.7.9-nightly">v0.7.9-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.7.8-nightly">v0.7.8-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.7.7-nightly">v0.7.7-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.7.6-nightly">v0.7.6-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.7.5-nightly">v0.7.5-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.7.4-nightly">v0.7.4-nightly</a></li>
+</ul>
+<h2 id="meet-us">Meet Us</h2>
+<p>Please join the <a href="https://github.com/datafuselabs/">DatafuseLabs Community</a> if you are interested in Databend.</p>
+<p>We are looking forward to seeing you try our code. We have a strong team behind you to ensure a smooth experience in trying our code for your projects.
+If you are a hacker passionate about database internals, feel free to play with our code.</p>
+<p>You can submit <a href="https://github.com/datafuselabs/databend/issues">issues</a> for any problems you find. We also highly appreciate any of your pull requests.</p>
+<ul>
+<li><a href="https://databend.rs">Databend Website</a></li>
+<li><a href="https://twitter.com/Datafuse_Labs">Twitter</a></li>
+<li><a href="https://github.com/datafuselabs/databend/discussions">GitHub Discussions</a></li>
+<li><a href="https://datafusecloud.slack.com/join/shared_invite/zt-nojrc9up-50IRla1Y1h56rqwCTkkDJA">Slack Channel</a></li>
+</ul>
+
+        </div>
+
+                </div>
+            
+                <div class="post on-list">
+                    
     <h1 class="post-title"><a href="https://weekly.databend.rs/2022-03-30-databend-weekly/">This week in Databend #35</a></h1>
     <div class="post-meta-inline">
         
@@ -413,112 +494,6 @@ In order to be compatible with <a href="https://docs.snowflake.com/en/sql-refere
 <li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.6.81-nightly">v0.6.81-nightly</a></li>
 <li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.6.80-nightly">v0.6.80-nightly</a></li>
 </ul>
-<h2 id="meet-us">Meet Us</h2>
-<p>Please join the <a href="https://github.com/datafuselabs/">DatafuseLabs Community</a> if you are interested in Databend.</p>
-<p>We are looking forward to seeing you try our code. We have a strong team behind you to ensure a smooth experience in trying our code for your projects.
-If you are a hacker passionate about database internals, feel free to play with our code.</p>
-<p>You can submit <a href="https://github.com/datafuselabs/databend/issues">issues</a> for any problems you find. We also highly appreciate any of your pull requests.</p>
-<ul>
-<li><a href="https://databend.rs">Databend Website</a></li>
-<li><a href="https://twitter.com/Datafuse_Labs">Twitter</a></li>
-<li><a href="https://github.com/datafuselabs/databend/discussions">GitHub Discussions</a></li>
-<li><a href="https://datafusecloud.slack.com/join/shared_invite/zt-nojrc9up-50IRla1Y1h56rqwCTkkDJA">Slack Channel</a></li>
-</ul>
-
-        </div>
-
-                </div>
-            
-                <div class="post on-list">
-                    
-    <h1 class="post-title"><a href="https://weekly.databend.rs/2022-03-02-databend-weekly/">This week in Databend #31</a></h1>
-    <div class="post-meta-inline">
-        
-    <span class="post-date">
-            2022-03-02
-        </span>
-
-    </div>
-
-    
-
-                    
-        <div class="post-content">
-            <p><a href="https://github.com/datafuselabs/databend">Databend</a> aimed to be an open source <strong>elastic</strong> and <strong>reliable</strong> cloud warehouse, it offers blazing fast query and combines elasticity, simplicity, low cost of the cloud, built to make the Data Cloud easy.</p>
-<h2 id="big-changes">Big changes</h2>
-<p>Below is a list of some major changes that we don't want you to miss.</p>
-<h3 id="features">Features</h3>
-<ul>
-<li><strong>databend-meta: add rename_table for meta api</strong>: remove old table record and add a new one in a sled-tree-transaction. by <a href="https://github.com/Junnplus">@Junnplus</a>, (<a href="https://github.com/datafuselabs/databend/pull/4288">#4288</a>)</li>
-<li><strong>databend-query: support COPY from external location(S3)</strong>: load files from a storage location (Amazon S3). by <a href="https://github.com/BohuTANG">@BohuTANG</a>, (<a href="https://github.com/datafuselabs/databend/pull/4170">#4170</a> &amp; <a href="https://github.com/datafuselabs/databend/pull/4241">#4241</a>)</li>
-<li><strong>bendctl: add package purge subcommand</strong> by <a href="https://github.com/linyihai">@linyihai</a>, (<a href="https://github.com/datafuselabs/databend/pull/4245">#4245</a>)</li>
-</ul>
-<h2 id="improvement">Improvement</h2>
-<ul>
-<li><strong>databend-query: use database_id/table_id as data file prefix</strong>: no more having all parquet files in one big directory. by <a href="https://github.com/dantengsky">@dantengsky</a>, (<a href="https://github.com/datafuselabs/databend/pull/4273">#4273</a>)</li>
-<li><strong>databend-query: support aggregate sum/avg booleans</strong> by <a href="https://github.com/everpcpc">@everpcpc</a>, (<a href="https://github.com/datafuselabs/databend/pull/4237">#4237</a>)</li>
-<li><strong>databend-query: zero extra cost of async trait</strong>: use GAT feature instead of <code>#[async_trait]</code> in some hot path. by <a href="https://github.com/sundy-li">@sundy-li</a>, (<a href="https://github.com/datafuselabs/databend/pull/4269">#4269</a>)</li>
-<li><strong>databend-query: implement new processor for system tables &amp; github &amp; memory &amp; null engine</strong> by <a href="https://github.com/zhang2014">@zhang2014</a>, (<a href="https://github.com/datafuselabs/databend/pull/4166">#4166</a> &amp; <a href="https://github.com/datafuselabs/databend/pull/4272">#4272</a>)</li>
-</ul>
-<h2 id="build-test-ci">Build/Test/CI</h2>
-<ul>
-<li>With <a href="https://github.com/datafuselabs/databend/pull/4229"><strong>change to wiremock from httpmock</strong></a> and a series of other PRs, <a href="https://github.com/PsiACE">@PsiACE</a> removed ~60 dependencies for clippy and test.</li>
-</ul>
-<h2 id="bug-fixes">Bug fixes</h2>
-<ul>
-<li><strong>dal_context: use ObserveReader to calculate metrics</strong>: calculate the read cost time correctly. by <a href="https://github.com/Xuanwo">@Xuanwo</a>, (<a href="https://github.com/datafuselabs/databend/pull/4298">#4298</a>)</li>
-</ul>
-<h2 id="tips">Tips</h2>
-<p>Let's learn a weekly tip from Databend.</p>
-<h3 id="loading-files-from-s3-external-location">Loading files from S3 External Location</h3>
-<p>Benefit from <a href="https://github.com/datafuselabs/databend/pull/4170">#4170</a> &amp; <a href="https://github.com/datafuselabs/databend/pull/4241">#4241</a>, Databend now has the ability to load CSV format files from the s3 external location.</p>
-<p>Here's an example of reading 5 lines from a file:</p>
-<pre data-lang="sql" style="background-color:#151515;color:#e8e8d3;" class="language-sql "><code class="language-sql" data-lang="sql"><span>COPY INTO ontime FROM </span><span style="color:#556633;">&#39;</span><span style="color:#99ad6a;">s3://databend-external/t_ontime/t_ontime.csv</span><span style="color:#556633;">&#39;
-</span><span>    CREDENTIALS=(aws_key_id=</span><span style="color:#556633;">&#39;</span><span style="color:#99ad6a;">&lt;your-key-id&gt;</span><span style="color:#556633;">&#39;</span><span> aws_secret_key=</span><span style="color:#556633;">&#39;</span><span style="color:#99ad6a;">&lt;your-secret-key&gt;</span><span style="color:#556633;">&#39;</span><span>)
-</span><span>    FILE_FORMAT = (type = </span><span style="color:#556633;">&quot;</span><span style="color:#99ad6a;">CSV</span><span style="color:#556633;">&quot;</span><span> field_delimiter = </span><span style="color:#556633;">&#39;</span><span style="color:#99ad6a;">\t</span><span style="color:#556633;">&#39;</span><span>  record_delimiter = </span><span style="color:#556633;">&#39;</span><span style="color:#99ad6a;">\n</span><span style="color:#556633;">&#39;</span><span> skip_header = </span><span style="color:#cf6a4c;">1</span><span>)
-</span><span>    SIZE_LIMIT=</span><span style="color:#cf6a4c;">5</span><span>; </span><span style="color:#888888;">/* only read 5 rows */
-</span><span>
-</span><span style="color:#888888;">/* Check. */
-</span><span>SELECT </span><span style="color:#ffb964;">* </span><span>FROM ontime;
-</span></code></pre>
-<p><strong>Note</strong> To learn more, check out:</p>
-<ul>
-<li><a href="https://databend.rs/user/data-loading/loading-from-external-location">Loading files from S3 External Location</a>.</li>
-<li><a href="https://databend.rs/user/sql-statement/dml/dml-copy">COPY command</a></li>
-</ul>
-<h2 id="changlogs">Changlogs</h2>
-<p>You can check the changelogs of Databend nightly to learn about our latest developments.</p>
-<ul>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.6.79-nightly">v0.6.79-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.6.78-nightly">v0.6.78-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.6.77-nightly">v0.6.77-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.6.76-nightly">v0.6.76-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.6.75-nightly">v0.6.75-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.6.74-nightly">v0.6.74-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.6.73-nightly">v0.6.73-nightly</a></li>
-</ul>
-<h2 id="ecosystem-upstream">Ecosystem/Upstream</h2>
-<p>From open source, for open source. Our team is also committed to contributing to the Rust ecosystem and upstream dependencies.</p>
-<h3 id="upstream">Upstream</h3>
-<ul>
-<li><a href="https://github.com/jorgecarleitao/arrow2/pull/871">arrow2 #871: Improved performance of filter performance via Simd selection [3x]</a> by <a href="https://github.com/sundy-li/">@sundy-li</a>.</li>
-</ul>
-<h3 id="opendal-announced-v0-1">OpenDAL announced v0.1</h3>
-<p>We announced that Open Data Access Layer is in v0.1. Let's look at what's different together.</p>
-<ul>
-<li>Observe reader support (<a href="https://github.com/datafuselabs/opendal/pull/92">opendal#92</a>)</li>
-<li>Object Stream (<a href="https://github.com/datafuselabs/opendal/pull/69">opendal#69</a>)</li>
-<li>List support (<a href="https://github.com/datafuselabs/opendal/pull/76">opendal#76</a>)</li>
-<li>Auto Region (<a href="https://github.com/datafuselabs/opendal/pull/59">opendal#59</a>)</li>
-</ul>
-<p>Welcome to use OpenDAL(<a href="https://github.com/datafuselabs/opendal">github</a>, <a href="https://crates.io/crates/opendal">crates.io</a>) to connect your data and applications.</p>
-<h3 id="big-changes-are-happening-at-openraft">Big changes are happening at OpenRaft</h3>
-<p>Although no new releases have been made recently, we have seen some important changes with <a href="https://github.com/schreter">@schreter</a>'s help.</p>
-<ul>
-<li>Refactor storage APIs to allow more clear ownership of data. (<a href="https://github.com/datafuselabs/openraft/pull/199">openraft#199</a>)</li>
-<li>Make NodeId type configurable via RaftTypeConfig. (<a href="https://github.com/datafuselabs/openraft/pull/220">openraft#220</a>)</li>
-</ul>
-<p>Feel free to visit <a href="https://github.com/datafuselabs/openraft/pulse">Insights/Pulse</a> to observe all changes, and it would be great if you would like to try it out in advance.</p>
 <h2 id="meet-us">Meet Us</h2>
 <p>Please join the <a href="https://github.com/datafuselabs/">DatafuseLabs Community</a> if you are interested in Databend.</p>
 <p>We are looking forward to seeing you try our code. We have a strong team behind you to ensure a smooth experience in trying our code for your projects.
