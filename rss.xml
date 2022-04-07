@@ -51,7 +51,7 @@
 &lt;li&gt;Install and Configure Vector, Run it&lt;&#x2F;li&gt;
 &lt;li&gt;Generate Nginx logs and Analyze them in Databend&lt;&#x2F;li&gt;
 &lt;&#x2F;ol&gt;
-&lt;p&gt;To learn more about how to implement it, check out &lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&#x2F;doc&#x2F;learn&#x2F;analyze-nginx-logs-with-databend-and-vector#11-deploy-databend&quot;&gt;Analyzing Nginx Logs with Databend and Vector&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;To learn more about how to implement it, check out &lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&#x2F;doc&#x2F;learn&#x2F;analyze-nginx-logs-with-databend-and-vector&quot;&gt;Analyzing Nginx Logs with Databend and Vector&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
