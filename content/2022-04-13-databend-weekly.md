@@ -48,7 +48,7 @@ Late last week, we proudly launched the <https://perf.databend.rs/>. This is a w
 
 All benchmarks are currently running on an Amazon EC2 server of size `c5n.9xlarge`, with 36 vCPUs and 96 GiB of memory, and an Intel Xeon Platinum 8000 processor.
 
-![Databend Performance Data](./images/databend-performance-data.png)
+![Databend Performance Data](https://weekly.databend.rs/images/databend-performance-data.png)
 
 The current performance data consists mainly of:
 - A set of numerical computation SQLs for evaluating the performance of in-memory vectorization engines, based on Databend's numbers table function providing ten billions data.
