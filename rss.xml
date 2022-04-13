@@ -48,7 +48,7 @@
 &lt;h3 id=&quot;databend-performance-data-collection-and-visualization&quot;&gt;Databend Performance Data Collection and Visualization&lt;&#x2F;h3&gt;
 &lt;p&gt;Late last week, we proudly launched the &lt;a href=&quot;https:&#x2F;&#x2F;perf.databend.rs&#x2F;&quot;&gt;https:&#x2F;&#x2F;perf.databend.rs&#x2F;&lt;&#x2F;a&gt;. This is a website for monitoring the performance of Databend&#x27;s nightly releases.&lt;&#x2F;p&gt;
 &lt;p&gt;All benchmarks are currently running on an Amazon EC2 server of size &lt;code&gt;c5n.9xlarge&lt;&#x2F;code&gt;, with 36 vCPUs and 96 GiB of memory, and an Intel Xeon Platinum 8000 processor.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;img src=&quot;.&#x2F;images&#x2F;databend-performance-data.png&quot; alt=&quot;Databend Performance Data&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;weekly.databend.rs&#x2F;images&#x2F;databend-performance-data.png&quot; alt=&quot;Databend Performance Data&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;The current performance data consists mainly of:&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;A set of numerical computation SQLs for evaluating the performance of in-memory vectorization engines, based on Databend&#x27;s numbers table function providing ten billions data.&lt;&#x2F;li&gt;
