@@ -53,6 +53,86 @@
         <div class="posts">
                 <div class="post on-list">
                     
+    <h1 class="post-title"><a href="https://weekly.databend.rs/2022-03-09-databend-weekly/">This week in Databend #32</a></h1>
+    <div class="post-meta-inline">
+        
+    <span class="post-date">
+            2022-03-09
+        </span>
+
+    </div>
+
+    
+
+                    
+        <div class="post-content">
+            <p><a href="https://github.com/datafuselabs/databend">Databend</a> aimed to be an open source <strong>elastic</strong> and <strong>reliable</strong> cloud warehouse, it offers blazing fast query and combines elasticity, simplicity, low cost of the cloud, built to make the Data Cloud easy.</p>
+<h2 id="big-changes">Big changes</h2>
+<p>Below is a list of some major changes that we don't want you to miss.</p>
+<h3 id="features">Features</h3>
+<ul>
+<li><strong>databend-query: external source with new processor</strong>: make external source(like S3) as table engine. by <a href="https://github.com/BohuTANG">@BohuTANG</a>, (<a href="https://github.com/datafuselabs/databend/pull/4277">#4277</a>)</li>
+<li><strong>functions: support <code>EXTRACT</code> &amp;&amp; <code>toYear</code></strong> by <a href="https://github.com/clark1013">@clark1013</a>, (<a href="https://github.com/datafuselabs/databend/pull/4329">#4329</a>)</li>
+</ul>
+<h2 id="improvement">Improvement</h2>
+<ul>
+<li><strong>databend-query: add more metrics into query_log table</strong>: io metrics of dal level. by <a href="https://github.com/sundy-li">@sundy-li</a>, (<a href="https://github.com/datafuselabs/databend/pull/4365">#4365</a>)</li>
+<li><strong>databend-meta: refactor role identity</strong>: remove host for role identity. by <a href="https://github.com/Junnplus">@Junnplus</a>, (<a href="https://github.com/datafuselabs/databend/pull/4370">#4370</a>)</li>
+<li><strong>databend-query: refactor the comparison function by using <code>ScalarBinaryExpression</code></strong> by <a href="https://github.com/zhyass">@zhyass</a>, (<a href="https://github.com/datafuselabs/databend/pull/4285">#4285</a>)</li>
+<li><strong>databend-query: add CALL command</strong>: impl CALL syntax parser, add Trait for system function. by <a href="https://github.com/Junnplus">@Junnplus</a>, (<a href="https://github.com/datafuselabs/databend/pull/4315">#4315</a>)</li>
+</ul>
+<h2 id="performance-improvement">Performance Improvement</h2>
+<ul>
+<li><strong>datablocks&amp;datavalues: support nullable group by</strong>: improved by 60% on the second query with metacache. by <a href="https://github.com/sundy-li">@sundy-li</a>, (<a href="https://github.com/datafuselabs/databend/pull/4340">#4340</a>)</li>
+<li><strong>datablocks: use `SmallVec`` to improve HashMethod Serialize</strong>: improved by 30%~50% in ontime dataset. by <a href="https://github.com/sundy-li">@sundy-li</a>, (<a href="https://github.com/datafuselabs/databend/pull/4353">#4353</a>)</li>
+<li><strong>datavalues: Simd Selection of column filter</strong>: improved by ~25%. by <a href="https://github.com/platoneko">@platoneko</a>, (<a href="https://github.com/datafuselabs/databend/pull/4271">#4271</a>)</li>
+</ul>
+<h2 id="bug-fixes">Bug fixes</h2>
+<ul>
+<li><strong>databend-query: fix broken tracing spans</strong> by <a href="https://github.com/dantengsky">@dantengsky</a>, (<a href="https://github.com/datafuselabs/databend/pull/4356">#4356</a>)</li>
+<li><strong>mysql servers: make async executor running inside the right runtime</strong> by <a href="https://github.com/sundy-li">@sundy-li</a>, (<a href="https://github.com/datafuselabs/databend/pull/4334">#4334</a>)</li>
+<li><strong>mysql servers: fix hangs on authenticate</strong> by <a href="https://github.com/flaneur2020">@flaneur2020</a>, (<a href="https://github.com/datafuselabs/databend/pull/4317">#4317</a>)</li>
+</ul>
+<h2 id="tips">Tips</h2>
+<p>Let's learn a weekly tip from Databend.</p>
+<h3 id="rfc-semi-structured-data-types">RFC: Semi-structured Data Types</h3>
+<p>Semi-structured data types are used to represent schemaless data formats, such as JSON, XML, and so on.
+In order to be compatible with <a href="https://docs.snowflake.com/en/sql-reference/data-types-semistructured.html">Snowflake's SQL syntax</a>, we plan to support the following three semi-structured data types:</p>
+<ul>
+<li><code>Variant</code>: A tagged universal type, which can store values of any other type, including <code>Object</code> and <code>Array</code>.</li>
+<li><code>Object</code>: Used to represent collections of key-value pairs, where the key is a non-empty string, and the value is a value of <code>Variant</code> type.</li>
+<li><code>Array</code>: Used to represent dense or sparse arrays of arbitrary size, where the index is a non-negative integer (up to 2^31-1), and values are <code>Variant</code> types.</li>
+</ul>
+<p><strong>For more information</strong> see <a href="https://databend.rs/dev/rfcs/query/semi-structured-data-types">Semi-structured data types design</a>. <strong>For ongoing work</strong> see <a href="https://github.com/datafuselabs/databend/pull/4348">databend#4348</a>.</p>
+<h2 id="changlogs">Changlogs</h2>
+<p>You can check the changelogs of Databend nightly to learn about our latest developments.</p>
+<ul>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.6.86-nightly">v0.6.86-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.6.85-nightly">v0.6.85-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.6.84-nightly">v0.6.84-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.6.83-nightly">v0.6.83-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.6.82-nightly">v0.6.82-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.6.81-nightly">v0.6.81-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.6.80-nightly">v0.6.80-nightly</a></li>
+</ul>
+<h2 id="meet-us">Meet Us</h2>
+<p>Please join the <a href="https://github.com/datafuselabs/">DatafuseLabs Community</a> if you are interested in Databend.</p>
+<p>We are looking forward to seeing you try our code. We have a strong team behind you to ensure a smooth experience in trying our code for your projects.
+If you are a hacker passionate about database internals, feel free to play with our code.</p>
+<p>You can submit <a href="https://github.com/datafuselabs/databend/issues">issues</a> for any problems you find. We also highly appreciate any of your pull requests.</p>
+<ul>
+<li><a href="https://databend.rs">Databend Website</a></li>
+<li><a href="https://twitter.com/Datafuse_Labs">Twitter</a></li>
+<li><a href="https://github.com/datafuselabs/databend/discussions">GitHub Discussions</a></li>
+<li><a href="https://datafusecloud.slack.com/join/shared_invite/zt-nojrc9up-50IRla1Y1h56rqwCTkkDJA">Slack Channel</a></li>
+</ul>
+
+        </div>
+
+                </div>
+            
+                <div class="post on-list">
+                    
     <h1 class="post-title"><a href="https://weekly.databend.rs/2022-03-02-databend-weekly/">This week in Databend #31</a></h1>
     <div class="post-meta-inline">
         
@@ -390,96 +470,6 @@ If possible, it is essential to introduce a proper automatic batch upgrade mecha
 <li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.6.55-nightly">v0.6.55-nightly</a></li>
 <li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.6.54-nightly">v0.6.54-nightly</a></li>
 <li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.6.53-nightly">v0.6.53-nightly</a></li>
-</ul>
-<h2 id="meet-us">Meet Us</h2>
-<p>Please join the <a href="https://github.com/datafuselabs/">DatafuseLabs Community</a> if you are interested in Databend.</p>
-<p>We are looking forward to seeing you try our code. We have a strong team behind you to ensure a smooth experience in trying our code for your projects.
-If you are a hacker passionate about database internals, feel free to play with our code.</p>
-<p>You can submit <a href="https://github.com/datafuselabs/databend/issues">issues</a> for any problems you find. We also highly appreciate any of your pull requests.</p>
-<ul>
-<li><a href="https://databend.rs">Databend Website</a></li>
-<li><a href="https://twitter.com/Datafuse_Labs">Twitter</a></li>
-<li><a href="https://github.com/datafuselabs/databend/discussions">GitHub Discussions</a></li>
-<li><a href="https://datafusecloud.slack.com/join/shared_invite/zt-nojrc9up-50IRla1Y1h56rqwCTkkDJA">Slack Channel</a>- <a href="https://datafusecloud.slack.com/join/shared_invite/zt-nojrc9up-50IRla1Y1h56rqwCTkkDJA">Slack Channel</a></li>
-</ul>
-
-        </div>
-
-                </div>
-            
-                <div class="post on-list">
-                    
-    <h1 class="post-title"><a href="https://weekly.databend.rs/2022-02-02-databend-weekly/">This week in Databend #27</a></h1>
-    <div class="post-meta-inline">
-        
-    <span class="post-date">
-            2022-02-02
-        </span>
-
-    </div>
-
-    
-
-                    
-        <div class="post-content">
-            <p><a href="https://github.com/datafuselabs/databend">Databend</a> aimed to be an open source <strong>elastic</strong> and <strong>reliable</strong> cloud warehouse, it offers blazing fast query and combines elasticity, simplicity, low cost of the cloud, built to make the Data Cloud easy.</p>
-<blockquote>
-<p>Happy Chinese New Year, 春节快乐，虎年大吉！</p>
-</blockquote>
-<h2 id="big-changes">Big changes</h2>
-<p>Below is a list of some major changes that we don't want you to miss.</p>
-<h3 id="features">Features</h3>
-<ul>
-<li><strong>grpc-API: export() all meta data</strong> by <a href="https://github.com/drmingdrmer">@drmingdrmer</a>. (<a href="https://github.com/datafuselabs/databend/pull/4016">#4016</a>)</li>
-<li><strong>add tokenizer for the new sql parser</strong> by <a href="https://github.com/andylokandy">@andylokandy</a>. (<a href="https://github.com/datafuselabs/databend/pull/4024">#4024</a>)</li>
-</ul>
-<h2 id="improvement">Improvement</h2>
-<ul>
-<li><strong>cluster level global settings</strong> by <a href="https://github.com/BohuTANG">@BohuTANG</a>. (track in <a href="https://github.com/datafuselabs/databend/issues/3933">#3933</a>, there have been 4 related PRs)</li>
-</ul>
-<h3 id="bug-fixes">Bug fixes</h3>
-<ul>
-<li><strong>fix unable to get field name bug</strong> by <a href="https://github.com/zhyass">@zhyass</a>. (<a href="https://github.com/datafuselabs/databend/pull/4014">#4014</a>)</li>
-</ul>
-<h3 id="build-test-ci">Build / Test / CI</h3>
-<ul>
-<li><strong>add UT for catalogsL</strong> by <a href="https://github.com/sunisdown">@sunisdown</a>. (<a href="https://github.com/datafuselabs/databend/pull/3893">#3893</a>).</li>
-<li><strong>refact test dir</strong> by <a href="https://github.com/wangzhen11aaa">@wangzhen11aaa</a> (<a href="https://github.com/datafuselabs/databend/pull/4020">#4020</a>) and <a href="https://github.com/BohuTANG">@BohuTANG</a> (<a href="https://github.com/datafuselabs/databend/pull/4032">#4032</a>).</li>
-</ul>
-<p>Databend has always wanted to build stable, highly reliable data warehouses, we welcome everyone to come along and help us improve code quality &amp; test coverage.</p>
-<h3 id="experimental">Experimental</h3>
-<ul>
-<li><strong>dal2: eliminate type parameters in DAL</strong> by <a href="https://github.com/Xuanwo">@Xuanwo</a>. (<a href="https://github.com/datafuselabs/databend/pull/4001">#4001</a>).</li>
-<li><strong>other functions migrate to Function2 trait</strong> by <a href="https://github.com/junli1026">@junli1026</a>. (<a href="https://github.com/datafuselabs/databend/pull/4036">#4036</a>, merged into <code>datavalues-dev</code> branch).</li>
-</ul>
-<h2 id="tips">Tips</h2>
-<p>Let's learn a weekly tip from Databend.</p>
-<h3 id="roadmap-2022">Roadmap 2022</h3>
-<p>It's February 2022 and just in time for the Chinese New Year, let's take a look at Databend's roadmap for 2022.</p>
-<p><strong>Work in Progress</strong></p>
-<ul>
-<li>Query cluster track <a href="https://github.com/datafuselabs/databend/issues/747">#747</a></li>
-<li>RBAC Privileges <a href="https://github.com/datafuselabs/databend/issues/2793">#2793</a></li>
-<li>New planner framework <a href="https://github.com/datafuselabs/databend/issues/1217">#1217</a></li>
-<li>Database sharings <a href="https://github.com/datafuselabs/databend/issues/3430">#3430</a></li>
-<li>Stage <a href="https://github.com/datafuselabs/databend/issues/2976">#2976</a></li>
-<li>Index design <a href="https://github.com/datafuselabs/databend/issues/3711">#3711</a></li>
-<li>Push-Based + Pull-Based processor</li>
-<li>Continuous Benchmarking <a href="https://github.com/datafuselabs/databend/issues/3084">#3084</a></li>
-<li>Databend cli <a href="https://github.com/datafuselabs/databend/issues/938">#938</a></li>
-<li>Online playground</li>
-</ul>
-<p>For more information, please see <a href="https://databend.rs/dev/roadmap">databend.rs - Roadmap 2022</a> or <a href="https://github.com/datafuselabs/databend/issues/3706">issue - Roadmap 2022</a> .</p>
-<h2 id="changlogs">Changlogs</h2>
-<p>You can check the changelogs of Databend nightly to learn about our latest developments.</p>
-<ul>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.6.52-nightly">v0.6.52-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.6.51-nightly">v0.6.51-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.6.50-nightly">v0.6.50-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.6.49-nightly">v0.6.49-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.6.48-nightly">v0.6.48-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.6.47-nightly">v0.6.47-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.6.46-nightly">v0.6.46-nightly</a></li>
 </ul>
 <h2 id="meet-us">Meet Us</h2>
 <p>Please join the <a href="https://github.com/datafuselabs/">DatafuseLabs Community</a> if you are interested in Databend.</p>
