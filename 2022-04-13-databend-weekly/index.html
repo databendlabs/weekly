@@ -98,18 +98,19 @@
 <h2 id="tips">Tips</h2>
 <p>Let's learn a weekly tip from Databend.</p>
 <h3 id="databend-performance-data-collection-and-visualization">Databend Performance Data Collection and Visualization</h3>
-<p>Late last week, we proudly launched the <a href="https://perf.databend.rs/">https://perf.databend.rs/</a>. This is a website for monitoring the performance of Databend's nightly releases.</p>
-<p>All benchmarks are currently running on an Amazon EC2 server of size <code>c5n.9xlarge</code>, with 36 vCPUs and 96 GiB of memory, and an Intel Xeon Platinum 8000 processor.</p>
+<p>Late last week, we proudly announced the <a href="https://perf.databend.rs/">https://perf.databend.rs/</a>. This is a website for monitoring the performance of Databend's nightly releases.</p>
+<p>All benchmarks are currently running on an Amazon EC2 server of size <code>c5n.9xlarge</code>, with 36 vCPUs and 96 GiB of memory, with Intel Xeon Platinum 8000 processors.</p>
 <p><img src="https://weekly.databend.rs/images/databend-performance-data.png" alt="Databend Performance Data" /></p>
-<p>The current performance data consists mainly of:</p>
+<p>The current benchmarks consists of:</p>
 <ul>
 <li>A set of numerical computation SQLs for evaluating the performance of in-memory vectorization engines, based on Databend's numbers table function providing ten billions data.</li>
-<li>A common set of SQLs for air traffic analysis, based on the publicly available OnTime dataset from the U.S. Department of Transportation, 60.8 GB of CSV data, 202687654 records.</li>
+<li>A common set of SQLs for air traffic analysis, based on the publicly available OnTime dataset from the U.S. Department of Transportation, 60.8 GB of CSV, 202687654 records.</li>
 </ul>
 <p>To view the source code, please visit <a href="https://github.com/datafuselabs/databend-perf">GitHub - datafuselabs/databend-perf</a>:</p>
 <ul>
 <li><a href="https://github.com/datafuselabs/databend-perf/tree/main/collector">collector</a>: stores daily performance data for each nightly release.</li>
-<li><a href="https://github.com/datafuselabs/databend-perf/tree/main/collector">benchmarks</a>: contains the benchmark suite defined by the yaml format.</li>
+<li>[benchmarks](https://github.com/datafuselabs/databend-perf/tree/main/
+benchmarks): contains the benchmark suite defined by the yaml format.</li>
 </ul>
 <h2 id="changlogs">Changlogs</h2>
 <p>You can check the changelogs of Databend nightly to learn about our latest developments.</p>
