@@ -46,7 +46,7 @@ Let's learn a weekly tip from Databend.
 
 Late last week, we proudly announced the <https://perf.databend.rs/>. This is a website for monitoring the performance of Databend's nightly releases.
 
-All benchmarks are currently running on an Amazon EC2 server of size `c5n.9xlarge`, with 36 vCPUs and 96 GiB of memory, with Intel Xeon Platinum 8000 processors.
+All benchmarks are currently running on an Amazon EC2 server of size `c5n.9xlarge`, with 36 vCPUs and 96 GiB of memory, and Intel Xeon Platinum 8000 processors.
 
 ![Databend Performance Data](https://weekly.databend.rs/images/databend-performance-data.png)
 
@@ -57,8 +57,7 @@ The current benchmarks consists of:
 To view the source code, please visit [GitHub - datafuselabs/databend-perf](https://github.com/datafuselabs/databend-perf):
 
 - [collector](https://github.com/datafuselabs/databend-perf/tree/main/collector): stores daily performance data for each nightly release.
-- [benchmarks](https://github.com/datafuselabs/databend-perf/tree/main/
-benchmarks): contains the benchmark suite defined by the yaml format.
+- [benchmarks](https://github.com/datafuselabs/databend-perf/tree/main/benchmarks): contains the benchmark suite defined by the yaml format.
 
 ## Changlogs
 
