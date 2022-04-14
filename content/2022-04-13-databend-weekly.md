@@ -44,20 +44,21 @@ Let's learn a weekly tip from Databend.
 
 ### Databend Performance Data Collection and Visualization
 
-Late last week, we proudly launched the <https://perf.databend.rs/>. This is a website for monitoring the performance of Databend's nightly releases.
+Late last week, we proudly announced the <https://perf.databend.rs/>. This is a website for monitoring the performance of Databend's nightly releases.
 
-All benchmarks are currently running on an Amazon EC2 server of size `c5n.9xlarge`, with 36 vCPUs and 96 GiB of memory, and an Intel Xeon Platinum 8000 processor.
+All benchmarks are currently running on an Amazon EC2 server of size `c5n.9xlarge`, with 36 vCPUs and 96 GiB of memory, with Intel Xeon Platinum 8000 processors.
 
 ![Databend Performance Data](https://weekly.databend.rs/images/databend-performance-data.png)
 
-The current performance data consists mainly of:
+The current benchmarks consists of:
 - A set of numerical computation SQLs for evaluating the performance of in-memory vectorization engines, based on Databend's numbers table function providing ten billions data.
-- A common set of SQLs for air traffic analysis, based on the publicly available OnTime dataset from the U.S. Department of Transportation, 60.8 GB of CSV data, 202687654 records.
+- A common set of SQLs for air traffic analysis, based on the publicly available OnTime dataset from the U.S. Department of Transportation, 60.8 GB of CSV, 202687654 records.
 
 To view the source code, please visit [GitHub - datafuselabs/databend-perf](https://github.com/datafuselabs/databend-perf):
 
 - [collector](https://github.com/datafuselabs/databend-perf/tree/main/collector): stores daily performance data for each nightly release.
-- [benchmarks](https://github.com/datafuselabs/databend-perf/tree/main/collector): contains the benchmark suite defined by the yaml format.
+- [benchmarks](https://github.com/datafuselabs/databend-perf/tree/main/
+benchmarks): contains the benchmark suite defined by the yaml format.
 
 ## Changlogs
 
