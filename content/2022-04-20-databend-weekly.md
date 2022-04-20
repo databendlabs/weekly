@@ -26,7 +26,7 @@ Below is a list of some major changes that we don't want you to miss.
 - **common-functions: refine the functions name from `xY` to `x_y`** by [@BohuTANG](https://github.com/BohuTANG), ([#4915](https://github.com/datafuselabs/databend/pull/4915), [#4906](https://github.com/datafuselabs/databend/pull/4906) and [#4884](https://github.com/datafuselabs/databend/pull/4884))
 - **common-meta: metasrv has to be compatible with 20220413-34e89c9** by [@drmingdrmer](https://github.com/drmingdrmer ), ([#4901](https://github.com/datafuselabs/databend/pull/4901))
 - **databend-query: compatible with mysql insert and select** by [@TCeason](https://github.com/TCeason), ([#4883](https://github.com/datafuselabs/databend/pull/4883))
-- **common-functions: replace `FactoryCreator` with `FactoryCreatorWithTypes`` for functions** by [@zhyass](https://github.com/zhyass), ([#4688](https://github.com/datafuselabs/databend/pull/4688))
+- **common-functions: replace `FactoryCreator` with `FactoryCreatorWithTypes` for functions** by [@zhyass](https://github.com/zhyass), ([#4688](https://github.com/datafuselabs/databend/pull/4688))
 
 ## Build / Testing / CI
 
@@ -61,6 +61,8 @@ To experience it, there are only three steps:
 - Edit/Download [databend.ipynb](https://datafuse-1253727613.cos.ap-hongkong.myqcloud.com/integration/databend.ipynb), start the notebook.
 
 ![Databend with Jupyter Notebook](https://datafuse-1253727613.cos.ap-hongkong.myqcloud.com/integration/integration-gui-jupyter.png)
+
+You can check out <https://databend.rs/doc/integrations/gui-tool/jupyter> to learn more.
 
 ## Changlogs
 
