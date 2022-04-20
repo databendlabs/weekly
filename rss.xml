@@ -31,7 +31,7 @@
 &lt;li&gt;&lt;strong&gt;common-functions: refine the functions name from &lt;code&gt;xY&lt;&#x2F;code&gt; to &lt;code&gt;x_y&lt;&#x2F;code&gt;&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;BohuTANG&quot;&gt;@BohuTANG&lt;&#x2F;a&gt;, (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;4915&quot;&gt;#4915&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;4906&quot;&gt;#4906&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;4884&quot;&gt;#4884&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;strong&gt;common-meta: metasrv has to be compatible with 20220413-34e89c9&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;drmingdrmer&quot;&gt;@drmingdrmer&lt;&#x2F;a&gt;, (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;4901&quot;&gt;#4901&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;strong&gt;databend-query: compatible with mysql insert and select&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;TCeason&quot;&gt;@TCeason&lt;&#x2F;a&gt;, (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;4883&quot;&gt;#4883&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;common-functions: replace &lt;code&gt;FactoryCreator&lt;&#x2F;code&gt; with `FactoryCreatorWithTypes`` for functions&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;zhyass&quot;&gt;@zhyass&lt;&#x2F;a&gt;, (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;4688&quot;&gt;#4688&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;common-functions: replace &lt;code&gt;FactoryCreator&lt;&#x2F;code&gt; with &lt;code&gt;FactoryCreatorWithTypes&lt;&#x2F;code&gt; for functions&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;zhyass&quot;&gt;@zhyass&lt;&#x2F;a&gt;, (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;4688&quot;&gt;#4688&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;build-testing-ci&quot;&gt;Build &#x2F; Testing &#x2F; CI&lt;&#x2F;h2&gt;
 &lt;ul&gt;
@@ -61,6 +61,7 @@
 &lt;li&gt;Edit&#x2F;Download &lt;a href=&quot;https:&#x2F;&#x2F;datafuse-1253727613.cos.ap-hongkong.myqcloud.com&#x2F;integration&#x2F;databend.ipynb&quot;&gt;databend.ipynb&lt;&#x2F;a&gt;, start the notebook.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;datafuse-1253727613.cos.ap-hongkong.myqcloud.com&#x2F;integration&#x2F;integration-gui-jupyter.png&quot; alt=&quot;Databend with Jupyter Notebook&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;You can check out &lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&#x2F;doc&#x2F;integrations&#x2F;gui-tool&#x2F;jupyter&quot;&gt;https:&#x2F;&#x2F;databend.rs&#x2F;doc&#x2F;integrations&#x2F;gui-tool&#x2F;jupyter&lt;&#x2F;a&gt; to learn more.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
