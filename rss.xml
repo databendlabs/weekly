@@ -7,7 +7,84 @@
         <generator>Zola</generator>
         <language>en</language>
         <atom:link href="https://weekly.databend.rs/rss.xml" rel="self" type="application/rss+xml"/>
-        <lastBuildDate>Wed, 13 Apr 2022 00:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Wed, 20 Apr 2022 00:00:00 +0000</lastBuildDate>
+        <item>
+            <title>This week in Databend #38</title>
+            <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
+            <link>https://weekly.databend.rs/2022-04-20-databend-weekly/</link>
+            <guid>https://weekly.databend.rs/2022-04-20-databend-weekly/</guid>
+            <description>&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&quot;&gt;Databend&lt;&#x2F;a&gt; is an open source &lt;strong&gt;elastic&lt;&#x2F;strong&gt; and &lt;strong&gt;reliable&lt;&#x2F;strong&gt; Modern Cloud Data Warehouse, it offers blazing fast query and combines elasticity, simplicity, low cost of the cloud, built to make the Data Cloud easy.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;big-changes&quot;&gt;Big changes&lt;&#x2F;h2&gt;
+&lt;p&gt;Below is a list of some major changes that we don&#x27;t want you to miss.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;features&quot;&gt;Features&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;databend-query(parser): add select statement&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;andylokandy&quot;&gt;@andylokandy&lt;&#x2F;a&gt;, (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;4941&quot;&gt;#4941&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;databend-query: support mysqldump dump schema&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;BohuTANG&quot;&gt;@BohuTANG&lt;&#x2F;a&gt;, (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;4972&quot;&gt;#4972&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;databend-query: refine new planner framework&lt;&#x2F;strong&gt;: use trait object to represent plans to make it more extensible. by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;leiysky&quot;&gt;@leiysky&lt;&#x2F;a&gt;, (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;4895&quot;&gt;#4895&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;databend-query: create user if not exists on JWT authenticate&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Junnplus&quot;&gt;@Junnplus&lt;&#x2F;a&gt;, (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;4924&quot;&gt;#4924&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;databend-meta: support watch api&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;lichuang&quot;&gt;@lichuang&lt;&#x2F;a&gt;, (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;4779&quot;&gt;#4779&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;databend-query(parser): support keyword &lt;code&gt;DATABASE&lt;&#x2F;code&gt; synonym &lt;code&gt;SCHEMA&lt;&#x2F;code&gt;&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;TCeason&quot;&gt;@TCeason&lt;&#x2F;a&gt;, (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;4855&quot;&gt;#4855&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;improvement&quot;&gt;Improvement&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;databend-query: reconstruct type: &lt;code&gt;date&#x2F;datetime&lt;&#x2F;code&gt; to simplify date type&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Veeupup&quot;&gt;@Veeupup&lt;&#x2F;a&gt;, (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;4921&quot;&gt;#4921&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;common-functions: refine the functions name from &lt;code&gt;xY&lt;&#x2F;code&gt; to &lt;code&gt;x_y&lt;&#x2F;code&gt;&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;BohuTANG&quot;&gt;@BohuTANG&lt;&#x2F;a&gt;, (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;4915&quot;&gt;#4915&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;4906&quot;&gt;#4906&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;4884&quot;&gt;#4884&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;common-meta: metasrv has to be compatible with 20220413-34e89c9&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;drmingdrmer&quot;&gt;@drmingdrmer&lt;&#x2F;a&gt;, (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;4901&quot;&gt;#4901&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;databend-query: compatible with mysql insert and select&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;TCeason&quot;&gt;@TCeason&lt;&#x2F;a&gt;, (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;4883&quot;&gt;#4883&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;common-functions: replace &lt;code&gt;FactoryCreator&lt;&#x2F;code&gt; with `FactoryCreatorWithTypes`` for functions&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;zhyass&quot;&gt;@zhyass&lt;&#x2F;a&gt;, (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;4688&quot;&gt;#4688&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;build-testing-ci&quot;&gt;Build &#x2F; Testing &#x2F; CI&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;tests: add native mysql client uexpect&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;sundy-li&quot;&gt;@sundy-li&lt;&#x2F;a&gt;, (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;4956&quot;&gt;#4956&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;performance-improvement&quot;&gt;Performance Improvement&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;databend-query(processor): replace global mutex with atomic&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;zhang2014&quot;&gt;@zhang2014&lt;&#x2F;a&gt;, (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;4905&quot;&gt;#4905&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;bug-fixes&quot;&gt;Bug fixes&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;common-functions(cast): fix the behavior of null to boolean&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;sundy-li&quot;&gt;@sundy-li&lt;&#x2F;a&gt;, (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;4911&quot;&gt;#4911&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;databend-query(group_by): fix group by with negative value&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;zhang2014&quot;&gt;@zhang2014&lt;&#x2F;a&gt;, (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;4902&quot;&gt;#4902&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;databend-query(transform_limit): fixes limit and offset with one block&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;zhang2014&quot;&gt;@zhang2014&lt;&#x2F;a&gt;, (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;4907&quot;&gt;#4907&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;databend-query(interpreters): fix empty query&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;cadl&quot;&gt;@cadl&lt;&#x2F;a&gt;, (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;4894&quot;&gt;#4894&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;*: fix show grants from inherited role&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Junnplus&quot;&gt;@Junnplus&lt;&#x2F;a&gt;, (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;4873&quot;&gt;#4873&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;tips&quot;&gt;Tips&lt;&#x2F;h2&gt;
+&lt;p&gt;Let&#x27;s learn a weekly tip from Databend.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;visualization-databend-data-in-jupyter-notebook&quot;&gt;Visualization Databend data in Jupyter Notebook&lt;&#x2F;h3&gt;
+&lt;p&gt;The Jupyter Notebook is the original web application for creating and sharing computational documents. It offers a simple, streamlined, document-centric experience.&lt;&#x2F;p&gt;
+&lt;p&gt;Recently, we have worked on improving Databend&#x27;s compatibility with the MySQL&#x2F;Clickhouse ecosystem to provide a better experience. Thanks to improved support for sqlalchemy, we can now interact with data in Databend in Jupyter Notebook.&lt;&#x2F;p&gt;
+&lt;p&gt;To experience it, there are only three steps:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a Databend User, see also &lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&#x2F;doc&#x2F;reference&#x2F;sql&#x2F;ddl&#x2F;user&#x2F;user-create-user&quot;&gt;databend.rs - CREATE USER&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;Install Some Python Package: &lt;code&gt;jupyterlab&lt;&#x2F;code&gt;, &lt;code&gt;notebook&lt;&#x2F;code&gt;, &lt;code&gt;sqlalchemy&lt;&#x2F;code&gt; and &lt;code&gt;pandas&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;Edit&#x2F;Download &lt;a href=&quot;https:&#x2F;&#x2F;datafuse-1253727613.cos.ap-hongkong.myqcloud.com&#x2F;integration&#x2F;databend.ipynb&quot;&gt;databend.ipynb&lt;&#x2F;a&gt;, start the notebook.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;datafuse-1253727613.cos.ap-hongkong.myqcloud.com&#x2F;integration&#x2F;integration-gui-jupyter.png&quot; alt=&quot;Databend with Jupyter Notebook&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.7.24-nightly&quot;&gt;v0.7.24-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.7.23-nightly&quot;&gt;v0.7.23-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.7.22-nightly&quot;&gt;v0.7.22-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.7.21-nightly&quot;&gt;v0.7.21-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.7.20-nightly&quot;&gt;v0.7.20-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.7.19-nightly&quot;&gt;v0.7.19-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.7.18-nightly&quot;&gt;v0.7.18-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;meet-us&quot;&gt;Meet Us&lt;&#x2F;h2&gt;
+&lt;p&gt;Please join the &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;&quot;&gt;DatafuseLabs Community&lt;&#x2F;a&gt; if you are interested in Databend.&lt;&#x2F;p&gt;
+&lt;p&gt;We are looking forward to seeing you try our code. We have a strong team behind you to ensure a smooth experience in trying our code for your projects.
+If you are a hacker passionate about database internals, feel free to play with our code.&lt;&#x2F;p&gt;
+&lt;p&gt;You can submit &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;issues&quot;&gt;issues&lt;&#x2F;a&gt; for any problems you find. We also highly appreciate any of your pull requests.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&quot;&gt;Databend Website&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;Datafuse_Labs&quot;&gt;Twitter&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;discussions&quot;&gt;GitHub Discussions&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;datafusecloud.slack.com&#x2F;join&#x2F;shared_invite&#x2F;zt-nojrc9up-50IRla1Y1h56rqwCTkkDJA&quot;&gt;Slack Channel&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</description>
+        </item>
         <item>
             <title>This week in Databend #37</title>
             <pubDate>Wed, 13 Apr 2022 00:00:00 +0000</pubDate>
