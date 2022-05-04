@@ -7,7 +7,83 @@
         <generator>Zola</generator>
         <language>en</language>
         <atom:link href="https://weekly.databend.rs/rss.xml" rel="self" type="application/rss+xml"/>
-        <lastBuildDate>Wed, 27 Apr 2022 00:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Wed, 04 May 2022 00:00:00 +0000</lastBuildDate>
+        <item>
+            <title>This week in Databend #40</title>
+            <pubDate>Wed, 04 May 2022 00:00:00 +0000</pubDate>
+            <link>https://weekly.databend.rs/2022-05-04-databend-weekly/</link>
+            <guid>https://weekly.databend.rs/2022-05-04-databend-weekly/</guid>
+            <description>&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&quot;&gt;Databend&lt;&#x2F;a&gt; is an open source &lt;strong&gt;elastic&lt;&#x2F;strong&gt; and &lt;strong&gt;reliable&lt;&#x2F;strong&gt; Modern Cloud Data Warehouse, it offers blazing fast query and combines elasticity, simplicity, low cost of the cloud, built to make the Data Cloud easy.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;big-changes&quot;&gt;Big changes&lt;&#x2F;h2&gt;
+&lt;p&gt;Below is a list of some major changes that we don&#x27;t want you to miss.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;features&quot;&gt;Features&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;databend-query(common): introduce a helper ExpressionEvaluator to simplify expression evaluation&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;leiysky&quot;&gt;@leiysky&lt;&#x2F;a&gt;, (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;5108&quot;&gt;#5108&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;databend-query(parser):  support more statements&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;andylokandy&quot;&gt;@andylokandy&lt;&#x2F;a&gt;, (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;5089&quot;&gt;#5089&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;databend-query: aggregator in new planner&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;xudong963&quot;&gt;@xudong963&lt;&#x2F;a&gt;, (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;5027&quot;&gt;#5027&lt;&#x2F;a&gt; &amp;amp; &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;5115&quot;&gt;#5115&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;common-functions: add scalar function &lt;code&gt;humanize&lt;&#x2F;code&gt;&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;cadl&quot;&gt;@cadl&lt;&#x2F;a&gt;, (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;5073&quot;&gt;#5073&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;improvement&quot;&gt;Improvement&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;databend-query(processor): refactor insert into query for fuse engine&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;zhang2014&quot;&gt;@zhang2014&lt;&#x2F;a&gt;, (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;5139&quot;&gt;#5139&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;datablocks: add gather kernels for datablock&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;sundy-li&quot;&gt;@sundy-li&lt;&#x2F;a&gt;, (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;5114&quot;&gt;#5114&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;common-meta: &lt;code&gt;CreateDatabaseReq&lt;&#x2F;code&gt;&#x2F;&lt;code&gt;DropDatabaseReq&lt;&#x2F;code&gt; use &lt;code&gt;DatabaseNameIdent&lt;&#x2F;code&gt; to specify to db to create&#x2F;delete&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;drmingdrmer&quot;&gt;@drmingdrmer&lt;&#x2F;a&gt;, (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;5102&quot;&gt;#5102&lt;&#x2F;a&gt; &amp;amp; &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;5104&quot;&gt;#5104&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;common-functions: specialize &lt;code&gt;CastFunction&lt;&#x2F;code&gt; with from type&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;leiysky&quot;&gt;@leiysky&lt;&#x2F;a&gt;, (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;5124&quot;&gt;#5124&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;datavalues: remove useless precision convert &amp;amp; remove tz in type timestamp&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Veeupup&quot;&gt;@Veeupup&lt;&#x2F;a&gt;, (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;5084&quot;&gt;#5084&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;datavalues: using enum_dispatch to represent data_type&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;PsiACE&quot;&gt;@PsiACE&lt;&#x2F;a&gt;, (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;5063&quot;&gt;#5063&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;documentation&quot;&gt;Documentation&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;add how-to guides page&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;BohuTANG&quot;&gt;@BohuTANG&lt;&#x2F;a&gt;, (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;5113&quot;&gt;#5113&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;add category for some functions&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jiahui-97&quot;&gt;@jiahui-97&lt;&#x2F;a&gt;, (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;4843&quot;&gt;#4843&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;bug-fixes&quot;&gt;Bug fixes&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;databend-query:  fix &lt;code&gt;trim&lt;&#x2F;code&gt; function&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jiahui-97&quot;&gt;@jiahui-97&lt;&#x2F;a&gt;, (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;5136&quot;&gt;#5136&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;databend-query: manually drop the aggregate states to avoid memory leak&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;sundy-li&quot;&gt;@sundy-li&lt;&#x2F;a&gt;, (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;5056&quot;&gt;#5056&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;databend-query: fix clickhouse worker hang when interpreter fail to execute&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;chowc&quot;&gt;@chowc&lt;&#x2F;a&gt;, (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;5091&quot;&gt;#5091&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;tips&quot;&gt;Tips&lt;&#x2F;h2&gt;
+&lt;p&gt;Let&#x27;s learn a weekly tip from Databend.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;rfc-new-sql-logic-test-framework&quot;&gt;RFC | New SQL Logic Test Framework&lt;&#x2F;h3&gt;
+&lt;p&gt;The Stateless&#x2F;Stateful test suite is used in Databend to ensure that the query results are correct. However, it has some shortages in current logic test which should be improved.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Comparing output from binary to a result file cannot be extended to other protocols.&lt;&#x2F;li&gt;
+&lt;li&gt;The result file cannot show the result for each statement.&lt;&#x2F;li&gt;
+&lt;li&gt;Currently, we do not provide error handling for sql logic tests&lt;&#x2F;li&gt;
+&lt;li&gt;We could not extend sql logic statement with sorting, retry and other logics.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;So, we plan to refactor this testing solution to introduce an extended version of &lt;a href=&quot;https:&#x2F;&#x2F;www.sqlite.org&#x2F;sqllogictest&#x2F;doc&#x2F;trunk&#x2F;about.wiki&quot;&gt;sqllogictest&lt;&#x2F;a&gt;. The statement spec could be categorized to following fields:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;statement ok&lt;&#x2F;code&gt;: the sql statement is correct and the output is expected success.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;statement error &amp;lt;error regex&amp;gt;&lt;&#x2F;code&gt;: the sql statement output is expected error.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;statement query &amp;lt;desired_query_schema_type&amp;gt; &amp;lt;options&amp;gt; &amp;lt;labels&amp;gt;&lt;&#x2F;code&gt;: the sql statement output is expected success with desired result.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;You can check out &lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&#x2F;doc&#x2F;contributing&#x2F;rfcs&#x2F;new_sql_logic_test_framework&quot;&gt;RFC | New SQL Logic Test Framework&lt;&#x2F;a&gt; to learn more.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.7.38-nightly&quot;&gt;v0.7.38-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.7.37-nightly&quot;&gt;v0.7.37-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.7.36-nightly&quot;&gt;v0.7.36-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.7.35-nightly&quot;&gt;v0.7.35-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.7.34-nightly&quot;&gt;v0.7.34-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.7.33-nightly&quot;&gt;v0.7.33-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.7.25-nightly&quot;&gt;v0.7.32-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;meet-us&quot;&gt;Meet Us&lt;&#x2F;h2&gt;
+&lt;p&gt;Please join the &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;&quot;&gt;DatafuseLabs Community&lt;&#x2F;a&gt; if you are interested in Databend.&lt;&#x2F;p&gt;
+&lt;p&gt;We are looking forward to seeing you try our code. We have a strong team behind you to ensure a smooth experience in trying our code for your projects.
+If you are a hacker passionate about database internals, feel free to play with our code.&lt;&#x2F;p&gt;
+&lt;p&gt;You can submit &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;issues&quot;&gt;issues&lt;&#x2F;a&gt; for any problems you find. We also highly appreciate any of your pull requests.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&quot;&gt;Databend Website&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;Datafuse_Labs&quot;&gt;Twitter&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;discussions&quot;&gt;GitHub Discussions&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;datafusecloud.slack.com&#x2F;join&#x2F;shared_invite&#x2F;zt-nojrc9up-50IRla1Y1h56rqwCTkkDJA&quot;&gt;Slack Channel&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</description>
+        </item>
         <item>
             <title>This week in Databend #39</title>
             <pubDate>Wed, 27 Apr 2022 00:00:00 +0000</pubDate>
@@ -48,7 +124,7 @@
 &lt;p&gt;Let&#x27;s learn a weekly tip from Databend.&lt;&#x2F;p&gt;
 &lt;h3 id=&quot;load-data-from-mysql&quot;&gt;Load Data from MySQL&lt;&#x2F;h3&gt;
 &lt;p&gt;Databend now supports loading data into Databend from MySQL using &lt;code&gt;mysqldump&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
-&lt;p&gt;Before you start, you need to install the MySQL client and mysql-client. Of course, Databend also needs to be deployed and connected via the MySQL client, see &lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&#x2F;doc&#x2F;deploy&quot;&gt;How to Deploy Databend&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Before you start, you need to install the MySQL client and mysqldump. Of course, Databend also needs to be deployed and connected via the MySQL client, see &lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&#x2F;doc&#x2F;deploy&quot;&gt;How to Deploy Databend&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;strong&gt;Dump MySQL table schema and data to file&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
 &lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#151515;color:#e8e8d3;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span&gt;mysqldump --single-transaction --compact -uroot -proot book_db books &amp;gt; dumpbooks.sql
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;

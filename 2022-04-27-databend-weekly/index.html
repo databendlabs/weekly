@@ -100,7 +100,7 @@
 <p>Let's learn a weekly tip from Databend.</p>
 <h3 id="load-data-from-mysql">Load Data from MySQL</h3>
 <p>Databend now supports loading data into Databend from MySQL using <code>mysqldump</code>.</p>
-<p>Before you start, you need to install the MySQL client and mysql-client. Of course, Databend also needs to be deployed and connected via the MySQL client, see <a href="https://databend.rs/doc/deploy">How to Deploy Databend</a>.</p>
+<p>Before you start, you need to install the MySQL client and mysqldump. Of course, Databend also needs to be deployed and connected via the MySQL client, see <a href="https://databend.rs/doc/deploy">How to Deploy Databend</a>.</p>
 <p><strong>Dump MySQL table schema and data to file</strong></p>
 <pre data-lang="shell" style="background-color:#151515;color:#e8e8d3;" class="language-shell "><code class="language-shell" data-lang="shell"><span>mysqldump --single-transaction --compact -uroot -proot book_db books &gt; dumpbooks.sql
 </span></code></pre>
@@ -152,6 +152,13 @@ If you are a hacker passionate about database internals, feel free to play with 
                 <hr />
             </div>
             <div class="pagination__buttons">
+                    <span class="button previous">
+                        <a href="https://weekly.databend.rs/2022-05-04-databend-weekly/">
+                            <span class="button__icon">←</span>&nbsp;
+                            <span class="button__text">This week in Databend #40</span>
+                        </a>
+                    </span>
+                
                 
                     <span class="button next">
                         <a href="https://weekly.databend.rs/2022-04-20-databend-weekly/">
