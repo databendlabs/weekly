@@ -14,7 +14,8 @@ Below is a list of some major changes that we don't want you to miss.
 ### Features
 
 - **multi-catalog** by [@dantengsky](https://github.com/dantengsky), ([#4947](https://github.com/datafuselabs/databend/pull/4947))
-- **databend-query: support timezone** by [@Veeupup](https://github.com/Veeupup), ([#4878](https://github.com/datafuselabs/databend/pull/4878))
+- **implement hash inner join** by [@leiysky](https://github.com/leiysky), ([#5175](https://github.com/datafuselabs/databend/pull/5175))
+- **support timezone** by [@Veeupup](https://github.com/Veeupup), ([#4878](https://github.com/datafuselabs/databend/pull/4878))
 - **impl alter database rename** by [@zhyass](https://github.com/zhyass), ([#5286](https://github.com/datafuselabs/databend/pull/5286))
 - **change all the KV from serde to protobuf** by [@lichuang](https://github.com/lichuang), ([#5289](https://github.com/datafuselabs/databend/pull/5289) & [#5296](https://github.com/datafuselabs/databend/pull/5296))
 
@@ -40,6 +41,28 @@ Below is a list of some major changes that we don't want you to miss.
 
 - **databend-query(pipeline): fix state machine of hash join** by [@leiysky](https://github.com/leiysky), ([#5242](https://github.com/datafuselabs/databend/pull/5242))
 - **databend-query(parser):  show alternative tokens even if the branch is optional** by [@andylokandy](https://github.com/andylokandy), ([#5230](https://github.com/datafuselabs/databend/pull/5230))
+
+## Tips
+
+Let's learn a weekly tip from Databend.
+
+### Start a Databend Cluster
+
+Databend has been designed from day one to be a cloud-native and distributed data warehouse.
+
+The new databend-query node only needs to register itself to the databend-meta with the same `cluster_id`, they will autodiscovery and formed into a cluster.
+
+![Cluster Arch](https://datafuse-1253727613.cos.ap-hongkong.myqcloud.com/deploy-minio-cluster.png)
+
+Read the following article to start your first Databend cluster:
+
+- [Start a Local Query Cluster](https://databend.rs/doc/deploy/cluster-minio)
+- [Start a Query Cluster on Kubernetes](https://databend.rs/doc/deploy/cluster-k8s-minio)
+
+**Note**
+
+- Databend Cluster mode only works on shared storage(AWS S3 or MinIO s3-like storage).
+- This cluster mainly used for testing purpose, it is not targeted for production use.
 
 ## Changlogs
 
