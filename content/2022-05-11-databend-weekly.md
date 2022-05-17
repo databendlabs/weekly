@@ -16,7 +16,7 @@ Below is a list of some major changes that we don't want you to miss.
 - **multi-catalog** by [@dantengsky](https://github.com/dantengsky), ([#4947](https://github.com/datafuselabs/databend/pull/4947))
 - **implement hash inner join** by [@leiysky](https://github.com/leiysky), ([#5175](https://github.com/datafuselabs/databend/pull/5175))
 - **support timezone** by [@Veeupup](https://github.com/Veeupup), ([#4878](https://github.com/datafuselabs/databend/pull/4878))
-- **impl alter database rename** by [@zhyass](https://github.com/zhyass), ([#5286](https://github.com/datafuselabs/databend/pull/5286))
+- **impl alter database rename** by [@TCeason](https://github.com/TCeason), ([#5286](https://github.com/datafuselabs/databend/pull/5286))
 - **change all the KV from serde to protobuf** by [@lichuang](https://github.com/lichuang), ([#5289](https://github.com/datafuselabs/databend/pull/5289) & [#5296](https://github.com/datafuselabs/databend/pull/5296))
 
 **Migrate to new planner**
