@@ -53,6 +53,80 @@
         <div class="posts">
                 <div class="post on-list">
                     
+    <h1 class="post-title"><a href="https://weekly.databend.rs/2021-09-15-databend-weekly/">This week in Databend #7</a></h1>
+    <div class="post-meta-inline">
+        
+    <span class="post-date">
+            2021-09-15
+        </span>
+
+    </div>
+
+    
+
+                    
+        <div class="post-content">
+            <p><a href="https://github.com/datafuselabs/databend">Databend</a> aimed to be an open source <strong>elastic</strong> and <strong>reliable</strong> cloud warehouse, it offers blazing fast query and combines elasticity, simplicity, low cost of the cloud, built to make the Data Cloud easy.</p>
+<h2 id="big-changes">Big changes</h2>
+<p>Below is a list of some major changes that we don’t want you to miss.</p>
+<h3 id="refactor">Refactor</h3>
+<ul>
+<li><strong>rename datafuse to databend</strong> by <a href="mailto:opensource@datafuselabs.com">Databend Authors</a></li>
+<li><strong>refactor datasources</strong> by <a href="https://github.com/BohuTANG">@BohuTANG</a>. (<a href="https://github.com/datafuselabs/databend/pull/1808">#1808</a>, <a href="https://github.com/datafuselabs/databend/pull/1813">#1813</a>, <a href="https://github.com/datafuselabs/databend/pull/1817">#1817</a> etc.)</li>
+<li><strong>refactor and add mTLS client auth for http service</strong> by <a href="https://github.com/ZhiHanZ">@ZhiHanZ</a> (<a href="https://github.com/datafuselabs/databend/pull/1771">#1771</a>)</li>
+</ul>
+<h3 id="features">Features</h3>
+<ul>
+<li><strong>add LocalKVStore: a KVApi impl backed with a sled tree</strong> by <a href="https://github.com/drmingdrmer">@drmingdrmer</a>. (<a href="https://github.com/datafuselabs/databend/pull/1754">#1754</a>)</li>
+<li><strong>initial work for saving table meta in obj storage</strong> by <a href="https://github.com/dantengsky">@dantengsky</a>. (<a href="https://github.com/datafuselabs/databend/pull/1694">#1694</a>)</li>
+<li><strong>add Interval suppport</strong> by <a href="https://github.com/junli1026">@junli1026</a> (<a href="https://github.com/datafuselabs/databend/pull/1752">#1752</a>)</li>
+<li><strong>add toStartOfYear,toStartOfISOYear</strong> by <a href="https://github.com/dust1">@dust1</a> (<a href="https://github.com/datafuselabs/databend/pull/1826">#1826</a>)</li>
+<li><strong>add toYYYYMMDDhhmmss</strong> by <a href="https://github.com/ygf11">@ygf11</a> (<a href="https://github.com/datafuselabs/databend/pull/1767">#1767</a>)</li>
+<li><strong>add a basic credits table</strong> by <a href="https://github.com/PsiACE">@PsiACE</a> (<a href="https://github.com/datafuselabs/databend/pull/1778">#1778</a>)</li>
+</ul>
+<h3 id="bug-fixes">Bug fixes</h3>
+<ul>
+<li><strong>fix count function with not null column</strong>  by <a href="https://github.com/zhang2014">@zhang2014</a>. (<a href="https://github.com/datafuselabs/databend/pull/1794">#1794</a>)</li>
+<li><strong>fix insert remote table of parquet format with DateTime types</strong> by <a href="https://github.com/sundy-li">@sundy-li</a>. (<a href="https://github.com/datafuselabs/databend/pull/1765">#1765</a>)</li>
+<li><strong>fix unary arithmetics function err fix unary arithmetics function err</strong> by <a href="https://github.com/zhyass">@zhyass</a>. (<a href="https://github.com/datafuselabs/databend/pull/1842">#1842</a>)</li>
+</ul>
+<h3 id="rfcs">RFCs</h3>
+<ul>
+<li><strong>RFC: New SQL planner framework</strong> by <a href="https://github.com/leiysky">@leiysky</a>. (<a href="https://github.com/datafuselabs/databend/pull/1837">#1837</a></li>
+</ul>
+<h2 id="changlogs">Changlogs</h2>
+<p>You can check the changelogs of Databend nightly to learn about our latest developments.</p>
+<ul>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.109-nightly">v0.4.109-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.108-nightly">v0.4.108-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.107-nightly">v0.4.107-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.106-nightly">v0.4.106-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.105-nightly">v0.4.105-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.104-nightly">v0.4.104-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.103-nightly">v0.4.103-nightly</a></li>
+</ul>
+<h2 id="ecosystem-upstream">Ecosystem/Upstream</h2>
+<p>From open source, for open source. Our team is also committed to contributing to the Rust ecosystem and upstream dependencies.</p>
+<ul>
+<li><a href="https://github.com/onur/cargo-license/pull/49">cargo-license #49: bump deps</a> by <a href="https://github.com/PsiACE/">@PsiACE</a></li>
+</ul>
+<h2 id="meet-us">Meet Us</h2>
+<p>Please join the <a href="https://github.com/datafuselabs/">DatafuseLabs Community</a> if you are interested in Databend.</p>
+<p>We are looking forward to seeing you try our code. We have a strong team behind you to ensure a smooth experience in trying our code for your projects.
+If you are a hacker passionate about database internals, feel free to play with our code.</p>
+<p>You can submit <a href="https://github.com/datafuselabs/databend/issues">issues</a> for any problems you find. We also highly appreciate any of your pull requests.</p>
+<ul>
+<li><a href="https://twitter.com/Datafuse_Labs">Twitter</a></li>
+<li><a href="https://github.com/datafuselabs/databend/discussions">GitHub Discussions</a></li>
+<li><a href="https://datafusecloud.slack.com/join/shared_invite/zt-nojrc9up-50IRla1Y1h56rqwCTkkDJA">Slack Channel</a></li>
+</ul>
+
+        </div>
+
+                </div>
+            
+                <div class="post on-list">
+                    
     <h1 class="post-title"><a href="https://weekly.databend.rs/2021-09-08-datafuse-weekly/">This week in Datafuse #6</a></h1>
     <div class="post-meta-inline">
         
@@ -290,69 +364,6 @@ You can submit <a href="https://github.com/datafuselabs/datafuse/issues">issues<
 <li><a href="https://github.com/yjhmelody">@yjhmelody</a>: Fix variadic_arguments of LogicFunction (<a href="https://github.com/datafuselabs/datafuse/pull/1486">#1486</a>)</li>
 <li><a href="https://github.com/koushiro">@koushiro</a>: Use <code>#[from]</code> attribute of <code>thiserror::Error</code> proc macro, and remove some boilerplate code (<a href="https://github.com/datafuselabs/datafuse/pull/1507">#1507</a>)</li>
 <li><a href="https://github.com/jackwener">@jackwener</a>: Send slack notification when performance tests standalone start, fail or success (<a href="https://github.com/datafuselabs/datafuse/pull/1450">#1450</a>)</li>
-</ul>
-<h2 id="meet-us">Meet Us</h2>
-<p>Please join the <a href="https://github.com/datafuselabs/">Datafuse Community</a> if you are interested in Datafuse.</p>
-<p>We are looking forward to seeing you try our code. We have a strong team behind you to ensure a smooth experience in trying our code for your projects.
-If you are a hacker passionate about database internals, feel free to play with our code.
-You can submit <a href="https://github.com/datafuselabs/datafuse/issues">issues</a> for any problems you find. We also highly appreciate any of your pull requests.</p>
-<ul>
-<li><a href="https://github.com/datafuselabs/datafuse/discussions">GitHub Discussions</a></li>
-<li><a href="https://datafusecloud.slack.com/join/shared_invite/zt-nojrc9up-50IRla1Y1h56rqwCTkkDJA">Slack Channel</a></li>
-</ul>
-
-        </div>
-
-                </div>
-            
-                <div class="post on-list">
-                    
-    <h1 class="post-title"><a href="https://weekly.databend.rs/2021-08-11-datafuse-weekly/">This week in Datafuse #2</a></h1>
-    <div class="post-meta-inline">
-        
-    <span class="post-date">
-            2021-08-11
-        </span>
-
-    </div>
-
-    
-
-                    
-        <div class="post-content">
-            <p>Datafuse, is a Modern Real-Time Data Processing &amp; Analytics DBMS with a Cloud-Native Architecture, built to make the Data Cloud easy.</p>
-<h2 id="big-changes">Big changes</h2>
-<p>Below is a list of some major changes that we don’t want you to miss.</p>
-<ul>
-<li><strong>add datafuse cli commands for package list &amp; switch</strong> by <a href="https://github.com/BohuTANG">@BohuTANG</a>. (<a href="https://github.com/datafuselabs/datafuse/pull/1308">#1308</a> &amp; <a href="https://github.com/datafuselabs/datafuse/pull/1314">#1314</a>)</li>
-<li><strong>use auto vectorized compute for some cases</strong> by <a href="https://github.com/sundy-li">@sundy-li</a>. (<a href="https://github.com/datafuselabs/datafuse/pull/1395">#1395</a>)</li>
-<li><strong>a series of refactors related to storage layer operations</strong> by <a href="https://github.com/drmingdrmer">@drmingdrmer</a>. (<a href="https://github.com/datafuselabs/datafuse/pull/1411">#1411</a> <a href="https://github.com/datafuselabs/datafuse/pull/1410">#1410</a> <a href="https://github.com/datafuselabs/datafuse/pull/1378">#1378</a> etc.)</li>
-<li><strong>introduce alpha version performance tests</strong> by <a href="https://github.com/ZhiHanZ">@ZhiHanZ</a>. (<a href="https://github.com/datafuselabs/datafuse/pull/1281">#1281</a>)</li>
-<li><strong>TLS RPC for Query and Store services/clients</strong> by <a href="https://github.com/dantengsky">@dantengsky</a>. (<a href="https://github.com/datafuselabs/datafuse/pull/1290">#1290</a>)</li>
-<li><strong>support kill for query or connection statement</strong> by <a href="https://github.com/zhang2014">@zhang2014</a>. (<a href="https://github.com/datafuselabs/datafuse/pull/1280">#1280</a>)</li>
-<li><strong>flatten the directory structure &amp; unify the name style</strong> by <a href="https://github.com/PsiACE">@PsiACE</a>. (<a href="https://github.com/datafuselabs/datafuse/pull/1404">#1404</a>)</li>
-</ul>
-<h2 id="changlogs">Changlogs</h2>
-<p>You can check the changelogs of Datafuse nightly to learn about our latest developments.</p>
-<ul>
-<li><a href="https://github.com/datafuselabs/datafuse/releases/tag/v0.4.74-nightly">v0.4.74-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/datafuse/releases/tag/v0.4.73-nightly">v0.4.73-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/datafuse/releases/tag/v0.4.72-nightly">v0.4.72-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/datafuse/releases/tag/v0.4.71-nightly">v0.4.71-nightly</a></li>
-</ul>
-<h2 id="ecosystem-upstream">Ecosystem/Upstream</h2>
-<p>From open source, for open source. The Datafuse team is also committed to contributing to the Rust ecosystem and upstream dependencies.</p>
-<ul>
-<li><a href="https://github.com/jorgecarleitao/arrow2/pull/254">arrow2 #254: Added wrapping_cast to cast kernels</a>: introduce CastOptions to cast kernels. by <a href="https://github.com/sundy-li">@sundy-li</a></li>
-<li><a href="https://github.com/apache/arrow-rs/pull/656">arrow-rs #656 (WIP)</a> and <a href="https://github.com/jorgecarleitao/arrow2/pull/251">arrow-2 #251</a>: Prettytable is unmaintained. Change to comfy-table. by <a href="https://github.com/PsiACE/">@PsiACE</a></li>
-</ul>
-<h2 id="thanks">Thanks</h2>
-<p>Thanks to your contribution, datafuse becomes better!</p>
-<ul>
-<li><a href="https://github.com/SGZW">@SGZW</a>: Add config for DFS storage &amp; raft meta storage (<a href="https://github.com/datafuselabs/datafuse/pull/1288">#1288</a>), and refactor for test (<a href="https://github.com/datafuselabs/datafuse/pull/1370">#1370</a>).</li>
-<li><a href="https://github.com/dust1">@dust1</a>: log query string when mysql_session error. (<a href="https://github.com/datafuselabs/datafuse/pull/1353">#1353</a>)</li>
-<li><a href="https://github.com/ives9638">@ives9638</a>: Improve filter performance. (<a href="https://github.com/datafuselabs/datafuse/pull/1343">#1343</a>)</li>
-<li><a href="https://github.com/xuyifangreeneyes">@xuyifangreeneyes</a>: fix mysql client borderline missing for EXPLAIN statement. (<a href="https://github.com/datafuselabs/datafuse/pull/1335">#1335</a>)</li>
 </ul>
 <h2 id="meet-us">Meet Us</h2>
 <p>Please join the <a href="https://github.com/datafuselabs/">Datafuse Community</a> if you are interested in Datafuse.</p>
