@@ -51,4 +51,4 @@ If you are a hacker passionate about database internals, feel free to play with 
 You can submit [issues](https://github.com/datafuselabs/datafuse/issues) for any problems you find. We also highly appreciate any of your pull requests.
 
 - [GitHub Discussions](https://github.com/datafuselabs/datafuse/discussions)
-- [Slack Channel](https://datafusecloud.slack.com/join/shared_invite/zt-nojrc9up-50IRla1Y1h56rqwCTkkDJA)
+- [Slack Channel](https://link.databend.rs/join-slack)

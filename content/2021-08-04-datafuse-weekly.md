@@ -43,4 +43,4 @@ From open source, for open source. The Datafuse team is also committed to contri
 You are welcome to join the [Datafuse Community](https://github.com/datafuselabs/). We look forward to you being one of our contributors or trialers.
 
 - [GitHub Discussions](https://github.com/datafuselabs/datafuse/discussions)
-- [Slack Channel](https://datafusecloud.slack.com/join/shared_invite/zt-nojrc9up-50IRla1Y1h56rqwCTkkDJA)
+- [Slack Channel](https://link.databend.rs/join-slack)
