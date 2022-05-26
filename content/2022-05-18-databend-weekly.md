@@ -94,6 +94,7 @@ FROM
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 
+- [v0.7.52-nightly](https://github.com/datafuselabs/databend/releases/tag/v0.7.52-nightly)
 - [v0.7.51-nightly](https://github.com/datafuselabs/databend/releases/tag/v0.7.51-nightly)
 - [v0.7.50-nightly](https://github.com/datafuselabs/databend/releases/tag/v0.7.50-nightly)
 - [v0.7.49-nightly](https://github.com/datafuselabs/databend/releases/tag/v0.7.49-nightly)
