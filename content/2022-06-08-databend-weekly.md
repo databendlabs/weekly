@@ -20,7 +20,7 @@ Below is a list of some major changes that we don't want you to miss.
 **meta**
 
 - add gc out of drop retention time data schema API and unit tests ([#5746](https://github.com/datafuselabs/databend/pull/5746))
-- protobuf message has to persist `MIN_COMPATIBLE_VER` ([#5746](https://github.com/datafuselabs/databend/pull/5746))
+- protobuf message has to persist `MIN_COMPATIBLE_VER` ([#5785](https://github.com/datafuselabs/databend/pull/5785))
 
 **functions**
 
