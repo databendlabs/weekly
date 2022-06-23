@@ -124,7 +124,7 @@ select * from vip_info cross join gift;
 Output:
 
 ```
-| Client_ID | Region    | Region    |
+| Client_ID | Region    | Gift      |
 | --------- | --------- | --------- |
 | 101       | Toronto   | Croissant |
 | 101       | Toronto   | Donut     |
