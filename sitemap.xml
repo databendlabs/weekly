@@ -204,6 +204,10 @@
         <lastmod>2022-07-13</lastmod>
     </url>
     <url>
+        <loc>https://weekly.databend.rs/2022-07-20-databend-weekly/</loc>
+        <lastmod>2022-07-20</lastmod>
+    </url>
+    <url>
         <loc>https://weekly.databend.rs/archive/</loc>
     </url>
     <url>
@@ -211,6 +215,9 @@
     </url>
     <url>
         <loc>https://weekly.databend.rs/page/10/</loc>
+    </url>
+    <url>
+        <loc>https://weekly.databend.rs/page/11/</loc>
     </url>
     <url>
         <loc>https://weekly.databend.rs/page/2/</loc>
