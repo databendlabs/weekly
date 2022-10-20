@@ -158,7 +158,7 @@
 <li><a href="https://databend.rs/doc/reference/sql/explain-cmds/explain-memo">DOC | EXPLAIN MEMO</a></li>
 </ul>
 <h4 id="tips-on-presign">Tips on <code>PRESIGN</code></h4>
-<p>Since x was merged, Databend supports <code>PRESIGN</code> to generate the pre-signed URL for a staged file.</p>
+<p>Since <a href="https://github.com/datafuselabs/databend/pull/6529">#6529</a> was merged, Databend supports <code>PRESIGN</code> to generate the pre-signed URL for a staged file.</p>
 <pre data-lang="SQL" style="background-color:#151515;color:#e8e8d3;" class="language-SQL "><code class="language-SQL" data-lang="SQL"><span>PRESIGN [{ DOWNLOAD | UPLOAD }] @&lt;stage_name&gt;/.../&lt;file_name&gt; [ EXPIRE = &lt;expire_in_seconds&gt; ]
 </span></code></pre>
 <p><code>[{ DOWNLOAD | UPLOAD }]</code> specifies that the pre-signed URL is used for download or upload. So once you have the corresponding pre-signed URL, you can use <code>curl</code> to download or upload the file.</p>
@@ -231,6 +231,13 @@ If you are a hacker passionate about database internals, feel free to play with 
                 <hr />
             </div>
             <div class="pagination__buttons">
+                    <span class="button previous">
+                        <a href="https://weekly.databend.rs/2022-10-19-databend-weekly/">
+                            <span class="button__icon">←</span>&nbsp;
+                            <span class="button__text">This week in Databend #64</span>
+                        </a>
+                    </span>
+                
                 
                     <span class="button next">
                         <a href="https://weekly.databend.rs/2022-10-05-databend-weekly/">
