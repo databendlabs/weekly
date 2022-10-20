@@ -114,7 +114,7 @@ EXPLAIN MEMO <query_statement>
 
 #### Tips on `PRESIGN`
 
-Since x was merged, Databend supports `PRESIGN` to generate the pre-signed URL for a staged file.
+Since [#6529](https://github.com/datafuselabs/databend/pull/6529) was merged, Databend supports `PRESIGN` to generate the pre-signed URL for a staged file.
 
 ```SQL
 PRESIGN [{ DOWNLOAD | UPLOAD }] @<stage_name>/.../<file_name> [ EXPIRE = <expire_in_seconds> ]
