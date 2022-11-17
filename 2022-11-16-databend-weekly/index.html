@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Databend Weekly</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="robots" content="noodp"/>
+
+    <link rel="stylesheet" href="https://weekly.databend.rs/style.css">
+    <link rel="stylesheet" href="https://weekly.databend.rs/color/blue.css">
+
+    <link rel="stylesheet" href="https://weekly.databend.rs/font-hack.css">
+
+    </head>
+
+<body class="">
+<div class="container">
+    
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__logo">
+                    
+                <a href="https://weekly.databend.rs" style="text-decoration: none;">
+                    <div class="logo">
+                            Databend Weekly
+                        </div>
+                </a>
+            </div>
+        </div>
+
+        <nav class="menu">
+            <ul class="menu__inner">
+                
+                <li class="active"><a href="https://weekly.databend.rs">weekly</a></li>
+            
+                <li><a href="https://weekly.databend.rs/archive">archive</a></li>
+            
+                <li><a href="https://github.com/datafuselabs/databend" target="_blank" rel="noopener noreferrer">github</a></li>
+            
+                <li><a href="https://databend.rs/" target="_blank" rel="noopener noreferrer">docs</a></li>
+            
+                <li><a href="https://weekly.databend.rs/rss.xml">rss</a></li>
+            </ul>
+        </nav>
+    
+    </header>
+    
+
+    <div class="content">
+        
+    <div class="post">
+        
+    <h1 class="post-title"><a href="https://weekly.databend.rs/2022-11-16-databend-weekly/">This week in Databend #68</a></h1>
+    <div class="post-meta-inline">
+        
+    <span class="post-date">
+            2022-11-16
+        </span>
+
+    </div>
+
+    
+
+        
+        <div class="post-content">
+            <p><a href="https://github.com/datafuselabs/databend">Databend</a> is a powerful cloud data warehouse. Built for elasticity and efficiency. Free and open. Also available in the cloud: <a href="https://app.databend.com">https://app.databend.com</a> .</p>
+<h2 id="what-s-changed">What's Changed</h2>
+<p>Below is a list of some major changes that we don't want you to miss.</p>
+<h3 id="exciting-new-features-sparkles">Exciting New Features ✨</h3>
+<p><strong>metrics</strong></p>
+<ul>
+<li>add metrics for query detail (<a href="https://github.com/datafuselabs/databend/pull/8800">#8800</a>)</li>
+</ul>
+<p><strong>multiple catalog</strong></p>
+<ul>
+<li>multiple catalog config (<a href="https://github.com/datafuselabs/databend/pull/8743">#8743</a>)</li>
+</ul>
+<p><strong>query</strong></p>
+<ul>
+<li>adjust max io requests when read block data to avoid oom (<a href="https://github.com/datafuselabs/databend/pull/8726">#8726</a>)</li>
+<li>change <code>PrecommitBlock</code> serde from <code>serde_json</code> to <code>bincode</code> (<a href="https://github.com/datafuselabs/databend/pull/8726">#8726</a>)</li>
+<li>support parallel final aggregator, 4X faster! (<a href="https://github.com/datafuselabs/databend/pull/8577">#8577</a>)</li>
+<li>parallel merge for distribute query (<a href="https://github.com/datafuselabs/databend/pull/8811">#8811</a>)</li>
+</ul>
+<p><strong>storage</strong></p>
+<ul>
+<li>shuffle segments during distributed pruning (<a href="https://github.com/datafuselabs/databend/pull/8793">#8793</a>)</li>
+<li>add shuffle policy for Partitions (<a href="https://github.com/datafuselabs/databend/pull/8814">#8814</a>)</li>
+</ul>
+<p><strong>new expression</strong></p>
+<ul>
+<li>add calc domain for comparison (<a href="https://github.com/datafuselabs/databend/pull/8754">#8754</a>)</li>
+</ul>
+<h3 id="code-refactor-tada">Code Refactor 🎉</h3>
+<p><strong>io</strong></p>
+<ul>
+<li>replace <code>NestedCheckpointReader</code> with <code>Cursor</code> (<a href="https://github.com/datafuselabs/databend/pull/8716">#8716</a>)</li>
+</ul>
+<p><strong>handler</strong></p>
+<ul>
+<li>use <code>FieldEncoder</code> to encode data (<a href="https://github.com/datafuselabs/databend/pull/8733">#8733</a>)</li>
+</ul>
+<p><strong>format</strong></p>
+<ul>
+<li>refactor with <code>FieldEncoder</code> (<a href="https://github.com/datafuselabs/databend/pull/8778">#8778</a>)</li>
+</ul>
+<p><strong>query</strong></p>
+<ul>
+<li>unified hashtable interface (<a href="https://github.com/datafuselabs/databend/pull/8681">#8681</a>)</li>
+</ul>
+<p><strong>storage</strong></p>
+<ul>
+<li>compact block (<a href="https://github.com/datafuselabs/databend/pull/8679">#8679</a>)</li>
+</ul>
+<p><strong>new expression</strong></p>
+<ul>
+<li>refine domain (<a href="https://github.com/datafuselabs/databend/pull/8755">#8755</a>)</li>
+<li>allow sparse column id in chunk (<a href="https://github.com/datafuselabs/databend/pull/8789">#8789</a>)</li>
+</ul>
+<h3 id="thoughtful-bug-fix-wrench">Thoughtful Bug Fix 🔧</h3>
+<p><strong>handler</strong></p>
+<ul>
+<li>correct databend types to mysql types (<a href="https://github.com/datafuselabs/databend/pull/8745">#8745</a>)</li>
+</ul>
+<p><strong>functions</strong></p>
+<ul>
+<li><code>l_col like r_col</code> will generate a hashmap based on <code>r_col</code>, if <code>r_col</code> is huge, it will be oom kill (<a href="https://github.com/datafuselabs/databend/pull/8737">#8737</a>)</li>
+</ul>
+<h2 id="news">News</h2>
+<p>Let's take a look at what's new at Datafuse Labs &amp; Databend each week.</p>
+<h4 id="shuffle-policy-for-partitions">Shuffle Policy for Partitions</h4>
+<p>For cache affinity, we consider some strategies when re-shuffle partitions in <code>plan_fragemnt.rs::redistribute_source_fragment</code>, default kind is <code>Seq</code>.</p>
+<pre style="background-color:#151515;color:#e8e8d3;"><code><span>pub enum PartitionsShuffleKind {
+</span><span>    // Bind the Partition to executor one by one with order.
+</span><span>    Seq,
+</span><span>    // Bind the Partition to executor by partition.hash()%executor_nums order.
+</span><span>    Mod,
+</span><span>    // Bind the Partition to executor by partition.rand() order.
+</span><span>    Rand,
+</span><span>}
+</span></code></pre>
+<p><strong>Learn More</strong></p>
+<ul>
+<li><a href="https://github.com/datafuselabs/databend/pull/8814">PR | add shuffle policy for Partitions</a></li>
+</ul>
+<h4 id="databend-x-rust-china-hackathon-2022">Databend x Rust China Hackathon 2022</h4>
+<p>The first <em>Rust China Hackathon Online</em> is here! The theme of this year's Hackathon is <strong>Rust for Fun</strong> and we look forward to working with you to unleash the possibilities of innovation with Rust.</p>
+<p>As a co-organiser of this year's hackathon, Databend is sponsoring an enterprise track where participants can explore the appeal of cloud-native data warehouses by creating work around Databend components or the Databend ecosystem.</p>
+<p><strong>Learn More</strong></p>
+<ul>
+<li><a href="https://github.com/datafuselabs/hackathon2022">GitHub -  datafuselabs / hackathon2022</a></li>
+</ul>
+<h2 id="issues">Issues</h2>
+<p>Meet issues you may be interested in and try to solve it.</p>
+<h4 id="switch-to-nextest-in-ci">Switch to nextest in CI</h4>
+<p><code>cargo-nextest</code> is a next-generation test runner for Rust projects.</p>
+<p>We have noticed that it is very much faster than <code>cargo test</code> on many projects. However, there are still some challenges in applying this to Databend. For example, for different types of tests, the number of threads has to be adjusted to ensure that the tests are performed quickly and correctly. Also, some of the tests may need to be rewritten to get better results.</p>
+<p><a href="https://github.com/datafuselabs/databend/issues/4376">Issue 4376: switch to nexttest in ci</a></p>
+<p>If you find it interesting, try to solve it or participate in discussions and PR reviews. Or you can click on <a href="https://link.databend.rs/i-m-feeling-lucky">https://link.databend.rs/i-m-feeling-lucky</a> to pick up a good first issue, good luck!</p>
+<h2 id="changlogs">Changlogs</h2>
+<p>You can check the changelogs of Databend nightly to learn about our latest developments.</p>
+<ul>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.8.115-nightly">v0.8.115-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.8.114-nightly">v0.8.114-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.8.113-nightly">v0.8.113-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.8.112-nightly">v0.8.112-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.8.111-nightly">v0.8.111-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.8.110-nightly">v0.8.110-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.8.109-nightly">v0.8.109-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.8.108-nightly">v0.8.108-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.8.107-nightly">v0.8.107-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.8.106-nightly">v0.8.106-nightly</a></li>
+</ul>
+<h2 id="contributors">Contributors</h2>
+<p>Thanks a lot to the contributors for their excellent work this week.</p>
+<table><thead><tr><th align="center"><a href="https://github.com/andylokandy"><img alt="andylokandy" src="https://avatars.githubusercontent.com/u/9637710?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/BohuTANG"><img alt="BohuTANG" src="https://avatars.githubusercontent.com/u/172204?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/ClSlaid"><img alt="ClSlaid" src="https://avatars.githubusercontent.com/u/44747719?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/dantengsky"><img alt="dantengsky" src="https://avatars.githubusercontent.com/u/22081156?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/apps/dependabot"><img alt="dependabot[bot]" src="https://avatars.githubusercontent.com/in/29110?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/everpcpc"><img alt="everpcpc" src="https://avatars.githubusercontent.com/u/1808802?v=4&s=117" width="117"></a></th></tr></thead><tbody>
+<tr><td align="center"><a href="https://github.com/andylokandy">andylokandy</a></td><td align="center"><a href="https://github.com/BohuTANG">BohuTANG</a></td><td align="center"><a href="https://github.com/ClSlaid">ClSlaid</a></td><td align="center"><a href="https://github.com/dantengsky">dantengsky</a></td><td align="center"><a href="https://github.com/apps/dependabot">dependabot[bot]</a></td><td align="center"><a href="https://github.com/everpcpc">everpcpc</a></td></tr>
+</tbody></table>
+<table><thead><tr><th align="center"><a href="https://github.com/lichuang"><img alt="lichuang" src="https://avatars.githubusercontent.com/u/1998569?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/apps/mergify"><img alt="mergify[bot]" src="https://avatars.githubusercontent.com/in/10562?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/RinChanNOWWW"><img alt="RinChanNOWWW" src="https://avatars.githubusercontent.com/u/33975039?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/sandflee"><img alt="sandflee" src="https://avatars.githubusercontent.com/u/5102100?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/soyeric128"><img alt="soyeric128" src="https://avatars.githubusercontent.com/u/106025534?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/sundy-li"><img alt="sundy-li" src="https://avatars.githubusercontent.com/u/3325189?v=4&s=117" width="117"></a></th></tr></thead><tbody>
+<tr><td align="center"><a href="https://github.com/lichuang">lichuang</a></td><td align="center"><a href="https://github.com/apps/mergify">mergify[bot]</a></td><td align="center"><a href="https://github.com/RinChanNOWWW">RinChanNOWWW</a></td><td align="center"><a href="https://github.com/sandflee">sandflee</a></td><td align="center"><a href="https://github.com/soyeric128">soyeric128</a></td><td align="center"><a href="https://github.com/sundy-li">sundy-li</a></td></tr>
+</tbody></table>
+<table><thead><tr><th align="center"><a href="https://github.com/TCeason"><img alt="TCeason" src="https://avatars.githubusercontent.com/u/33082201?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/wubx"><img alt="wubx" src="https://avatars.githubusercontent.com/u/320680?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/Xuanwo"><img alt="Xuanwo" src="https://avatars.githubusercontent.com/u/5351546?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/xudong963"><img alt="xudong963" src="https://avatars.githubusercontent.com/u/41979257?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/youngsofun"><img alt="youngsofun" src="https://avatars.githubusercontent.com/u/5782159?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/zhang2014"><img alt="zhang2014" src="https://avatars.githubusercontent.com/u/8087042?v=4&s=117" width="117"></a></th></tr></thead><tbody>
+<tr><td align="center"><a href="https://github.com/TCeason">TCeason</a></td><td align="center"><a href="https://github.com/wubx">wubx</a></td><td align="center"><a href="https://github.com/Xuanwo">Xuanwo</a></td><td align="center"><a href="https://github.com/xudong963">xudong963</a></td><td align="center"><a href="https://github.com/youngsofun">youngsofun</a></td><td align="center"><a href="https://github.com/zhang2014">zhang2014</a></td></tr>
+</tbody></table>
+<table><thead><tr><th align="center"><a href="https://github.com/ZhiHanZ"><img alt="ZhiHanZ" src="https://avatars.githubusercontent.com/u/25170437?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/zhyass"><img alt="zhyass" src="https://avatars.githubusercontent.com/u/34016424?v=4&s=117" width="117"></a></th><th align="center"></th><th align="center"></th><th align="center"></th><th align="center"></th></tr></thead><tbody>
+<tr><td align="center"><a href="https://github.com/ZhiHanZ">ZhiHanZ</a></td><td align="center"><a href="https://github.com/zhyass">zhyass</a></td><td align="center"></td><td align="center"></td><td align="center"></td><td align="center"></td></tr>
+</tbody></table>
+<h2 id="meet-us">Meet Us</h2>
+<p>Please join the <a href="https://github.com/datafuselabs/">DatafuseLabs Community</a> if you are interested in Databend.</p>
+<p>We are looking forward to seeing you try our code. We have a strong team behind you to ensure a smooth experience in trying our code for your projects.
+If you are a hacker passionate about database internals, feel free to play with our code.</p>
+<p>You can submit <a href="https://github.com/datafuselabs/databend/issues">issues</a> for any problems you find. We also highly appreciate any of your pull requests.</p>
+<ul>
+<li><a href="https://databend.rs">Databend Website</a></li>
+<li><a href="https://weekly.databend.rs/">Weekly</a> (A weekly newsletter about Databend)</li>
+<li><a href="https://github.com/datafuselabs/databend/discussions">GitHub Discussions</a> (Feature/Bug reports, Contributions)</li>
+<li><a href="https://twitter.com/Datafuse_Labs">Twitter</a> (Get the news fast)</li>
+<li><a href="https://link.databend.rs/join-slack">Slack Channel</a> (For live discussion with the Community)</li>
+</ul>
+
+        </div>
+
+        
+        <div class="pagination">
+            <div class="pagination__title">
+                <span class="pagination__title-h">Thanks for reading! Read other posts?</span>
+                <hr />
+            </div>
+            <div class="pagination__buttons">
+                
+                    <span class="button next">
+                        <a href="https://weekly.databend.rs/2022-11-09-databend-weekly/">
+                            <span class="button__text">This week in Databend #67</span>&nbsp;
+                            <span class="button__icon">→</span>
+                        </a>
+                    </span>
+                </div>
+        </div>
+    
+    </div>
+
+    </div>
+
+    
+    <footer class="footer">
+        <div class="footer__inner">
+                <div class="copyright">
+                        <span>© 
+    2022
+ Datafuse Labs</span>
+                    <span class="copyright-theme">
+                        <span class="copyright-theme-sep">:: </span>
+                        Theme: <a href="https://github.com/pawroman/zola-theme-terminimal/">Terminimal</a> by pawroman
+                    </span>
+                </div>
+            </div>
+    </footer>
+    
+
+</div>
+</body>
+
+</html>
