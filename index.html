@@ -53,6 +53,159 @@
         <div class="posts">
                 <div class="post on-list">
                     
+    <h1 class="post-title"><a href="https://weekly.databend.rs/2022-11-23-databend-weekly/">This week in Databend #69</a></h1>
+    <div class="post-meta-inline">
+        
+    <span class="post-date">
+            2022-11-23
+        </span>
+
+    </div>
+
+    
+
+                    
+        <div class="post-content">
+            <p><a href="https://github.com/datafuselabs/databend">Databend</a> is a powerful cloud data warehouse. Built for elasticity and efficiency. Free and open. Also available in the cloud: <a href="https://app.databend.com">https://app.databend.com</a> .</p>
+<h2 id="what-s-changed">What's Changed</h2>
+<p>Below is a list of some major changes that we don't want you to miss.</p>
+<h3 id="exciting-new-features-sparkles">Exciting New Features ✨</h3>
+<p><strong>multiple catalog</strong></p>
+<ul>
+<li>implement drop user defined catalog (<a href="https://github.com/datafuselabs/databend/pull/8820">#8820</a>)</li>
+</ul>
+<p><strong>meta</strong></p>
+<ul>
+<li>add cli command to delete a key and to expire a key (<a href="https://github.com/datafuselabs/databend/pull/8858">#8858</a>)</li>
+</ul>
+<p><strong>planner</strong></p>
+<ul>
+<li>support broadcast join (<a href="https://github.com/datafuselabs/databend/pull/8779">#8779</a>)</li>
+<li>extract or clause to push down potential predicates for join (<a href="https://github.com/datafuselabs/databend/pull/8855">#8855</a>)</li>
+</ul>
+<p><strong>query</strong></p>
+<ul>
+<li>optimize count(Nullable(col)) (<a href="https://github.com/datafuselabs/databend/pull/8805">#8805</a>)</li>
+<li>support unset settings (<a href="https://github.com/datafuselabs/databend/pull/8870">#8870</a>)</li>
+<li>add distinct count aggregator and column distinct count (<a href="https://github.com/datafuselabs/databend/pull/8825">#8825</a>)</li>
+</ul>
+<p><strong>storage</strong></p>
+<ul>
+<li>compact segments in reversed order (<a href="https://github.com/datafuselabs/databend/pull/8793">#8806</a>)</li>
+</ul>
+<p><strong>new expression</strong></p>
+<ul>
+<li>geo functions (<a href="https://github.com/datafuselabs/databend/pull/8481">#8481</a>)</li>
+<li>add methods to get memory size of <code>ValueType</code>s (<a href="https://github.com/datafuselabs/databend/pull/8875">#8875</a>)</li>
+<li>add a global builtin function registry (<a href="https://github.com/datafuselabs/databend/pull/8912">#8912</a>)</li>
+</ul>
+<h3 id="code-refactor-tada">Code Refactor 🎉</h3>
+<p><strong>memory tracker</strong></p>
+<ul>
+<li>send pointer addresses to mem tracker (<a href="https://github.com/datafuselabs/databend/pull/8879">#8879</a>)</li>
+<li>add <code>StatBuffer</code> to provide fine grained mem allocation stats buffer (<a href="https://github.com/datafuselabs/databend/pull/8880">#8880</a>)</li>
+</ul>
+<p><strong>new expression</strong></p>
+<ul>
+<li>allow sparse column id for constant folder (<a href="https://github.com/datafuselabs/databend/pull/8821">#8821</a>)</li>
+</ul>
+<h3 id="build-testing-ci-infra-changes-electric-plug">Build/Testing/CI Infra Changes 🔌</h3>
+<ul>
+<li>separate sqllogic test with handler (<a href="https://github.com/datafuselabs/databend/pull/8836">#8836</a>)</li>
+</ul>
+<h3 id="thoughtful-bug-fix-wrench">Thoughtful Bug Fix 🔧</h3>
+<p><strong>base</strong></p>
+<ul>
+<li>support track processor async task (<a href="https://github.com/datafuselabs/databend/pull/8871">#8871</a>)</li>
+</ul>
+<p><strong>http handler</strong></p>
+<ul>
+<li>avoid dropping runtime when task on it not finished (<a href="https://github.com/datafuselabs/databend/pull/8894">#8894</a>)</li>
+</ul>
+<p><strong>query</strong></p>
+<ul>
+<li>remove useless memcpy when group long string (<a href="https://github.com/datafuselabs/databend/pull/8851">#8851</a>)</li>
+</ul>
+<p><strong>storage</strong></p>
+<ul>
+<li>snapshot removed unsafely during meta commit failure (<a href="https://github.com/datafuselabs/databend/pull/8850">#8850</a>)</li>
+</ul>
+<h2 id="news">News</h2>
+<p>Let's take a look at what's new at Datafuse Labs &amp; Databend each week.</p>
+<h4 id="preview-of-new-expressions-geo-functions">Preview of New Expressions: Geo Functions</h4>
+<p>By supporting Geo functions, Databend will have the ability to perform operations on geographic inputs.</p>
+<p>With the merging of <a href="https://github.com/datafuselabs/databend/pull/8481">#8481</a>, geo functions like <code>great_circle_distance</code>, <code>geo_distance</code>, <code>great_circle_angle</code> and <code>point_in_ellipses</code> are already supported in the new expression system.</p>
+<p>Databend is currently actively working on the migration to the new expressions, so keep an eye on the <a href="https://github.com/datafuselabs/databend/tree/expression">expression</a> branch for progress!</p>
+<p><strong>Learn More</strong></p>
+<ul>
+<li><a href="https://github.com/datafuselabs/databend/pull/8481">PR | geo functions</a></li>
+</ul>
+<h4 id="unset-settings">Unset Settings</h4>
+<p>The merging of <a href="https://github.com/datafuselabs/databend/pull/8870">#8870</a> brings the ability to unset settings to Databend</p>
+<p><code>UNSET</code> means to restore one or more settings to their default values. The settings will also be reset to the initial SESSION level if they were set to GLOBAL level.</p>
+<pre data-lang="sql" style="background-color:#151515;color:#e8e8d3;" class="language-sql "><code class="language-sql" data-lang="sql"><span>UNSET &lt;setting_name&gt; | ( &lt;setting_name&gt; [, &lt;setting_name&gt; ...])
+</span></code></pre>
+<p><strong>Learn More</strong></p>
+<ul>
+<li><a href="https://github.com/datafuselabs/databend/pull/8870">PR | support unset settings</a></li>
+<li><a href="https://databend.rs/doc/sql-commands/setting-cmds/unset">Docs | UNSET</a></li>
+</ul>
+<h2 id="issues">Issues</h2>
+<p>Meet issues you may be interested in and try to solve it.</p>
+<h4 id="add-compression-option-to-create-table">Add Compression Option to Create Table</h4>
+<p>Compression helps to reduce the size of databases. For IO-intensive loads, compression may provide some performance improvements.</p>
+<p>Databend plans to introduce <code>compression</code> option in the <code>create table</code> statement and support compression algorithms such as LZ4 (default) and Snappy.</p>
+<pre data-lang="sql" style="background-color:#151515;color:#e8e8d3;" class="language-sql "><code class="language-sql" data-lang="sql"><span>create table </span><span style="color:#fad07a;">t1</span><span>(a </span><span style="color:#8fbfdc;">int</span><span>) [compression=</span><span style="color:#556633;">&quot;</span><span style="color:#99ad6a;">LZ4|SNAPPY</span><span style="color:#556633;">&quot;</span><span>]
+</span></code></pre>
+<p><a href="https://github.com/datafuselabs/databend/issues/8903">Issue 8903: feat: add compression option to create table</a></p>
+<p>If you find it interesting, try to solve it or participate in discussions and PR reviews. Or you can click on <a href="https://link.databend.rs/i-m-feeling-lucky">https://link.databend.rs/i-m-feeling-lucky</a> to pick up a good first issue, good luck!</p>
+<h2 id="changlogs">Changlogs</h2>
+<p>You can check the changelogs of Databend nightly to learn about our latest developments.</p>
+<ul>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.8.125-nightly">v0.8.125-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.8.124-nightly">v0.8.124-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.8.123-nightly">v0.8.123-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.8.122-nightly">v0.8.122-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.8.121-nightly">v0.8.121-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.8.120-nightly">v0.8.120-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.8.119-nightly">v0.8.119-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.8.118-nightly">v0.8.118-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.8.117-nightly">v0.8.117-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.8.116-nightly">v0.8.116-nightly</a></li>
+</ul>
+<h2 id="contributors">Contributors</h2>
+<p>Thanks a lot to the contributors for their excellent work this week.</p>
+<table><thead><tr><th align="center"><a href="https://github.com/andylokandy"><img alt="andylokandy" src="https://avatars.githubusercontent.com/u/9637710?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/ariesdevil"><img alt="ariesdevil" src="https://avatars.githubusercontent.com/u/7812909?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/b41sh"><img alt="b41sh" src="https://avatars.githubusercontent.com/u/1070352?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/BohuTANG"><img alt="BohuTANG" src="https://avatars.githubusercontent.com/u/172204?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/Chasen-Zhang"><img alt="Chasen-Zhang" src="https://avatars.githubusercontent.com/u/15354455?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/ClSlaid"><img alt="ClSlaid" src="https://avatars.githubusercontent.com/u/44747719?v=4&s=117" width="117"></a></th></tr></thead><tbody>
+<tr><td align="center"><a href="https://github.com/andylokandy">andylokandy</a></td><td align="center"><a href="https://github.com/ariesdevil">ariesdevil</a></td><td align="center"><a href="https://github.com/b41sh">b41sh</a></td><td align="center"><a href="https://github.com/BohuTANG">BohuTANG</a></td><td align="center"><a href="https://github.com/Chasen-Zhang">Chasen-Zhang</a></td><td align="center"><a href="https://github.com/ClSlaid">ClSlaid</a></td></tr>
+</tbody></table>
+<table><thead><tr><th align="center"><a href="https://github.com/dantengsky"><img alt="dantengsky" src="https://avatars.githubusercontent.com/u/22081156?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/drmingdrmer"><img alt="drmingdrmer" src="https://avatars.githubusercontent.com/u/44069?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/everpcpc"><img alt="everpcpc" src="https://avatars.githubusercontent.com/u/1808802?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/kemingy"><img alt="kemingy" src="https://avatars.githubusercontent.com/u/12974685?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/lichuang"><img alt="lichuang" src="https://avatars.githubusercontent.com/u/1998569?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/apps/mergify"><img alt="mergify[bot]" src="https://avatars.githubusercontent.com/in/10562?v=4&s=117" width="117"></a></th></tr></thead><tbody>
+<tr><td align="center"><a href="https://github.com/dantengsky">dantengsky</a></td><td align="center"><a href="https://github.com/drmingdrmer">drmingdrmer</a></td><td align="center"><a href="https://github.com/everpcpc">everpcpc</a></td><td align="center"><a href="https://github.com/kemingy">kemingy</a></td><td align="center"><a href="https://github.com/lichuang">lichuang</a></td><td align="center"><a href="https://github.com/apps/mergify">mergify[bot]</a></td></tr>
+</tbody></table>
+<table><thead><tr><th align="center"><a href="https://github.com/RinChanNOWWW"><img alt="RinChanNOWWW" src="https://avatars.githubusercontent.com/u/33975039?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/soyeric128"><img alt="soyeric128" src="https://avatars.githubusercontent.com/u/106025534?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/sundy-li"><img alt="sundy-li" src="https://avatars.githubusercontent.com/u/3325189?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/TCeason"><img alt="TCeason" src="https://avatars.githubusercontent.com/u/33082201?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/wubx"><img alt="wubx" src="https://avatars.githubusercontent.com/u/320680?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/Xuanwo"><img alt="Xuanwo" src="https://avatars.githubusercontent.com/u/5351546?v=4&s=117" width="117"></a></th></tr></thead><tbody>
+<tr><td align="center"><a href="https://github.com/RinChanNOWWW">RinChanNOWWW</a></td><td align="center"><a href="https://github.com/soyeric128">soyeric128</a></td><td align="center"><a href="https://github.com/sundy-li">sundy-li</a></td><td align="center"><a href="https://github.com/TCeason">TCeason</a></td><td align="center"><a href="https://github.com/wubx">wubx</a></td><td align="center"><a href="https://github.com/Xuanwo">Xuanwo</a></td></tr>
+</tbody></table>
+<table><thead><tr><th align="center"><a href="https://github.com/xudong963"><img alt="xudong963" src="https://avatars.githubusercontent.com/u/41979257?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/youngsofun"><img alt="youngsofun" src="https://avatars.githubusercontent.com/u/5782159?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/zhang2014"><img alt="zhang2014" src="https://avatars.githubusercontent.com/u/8087042?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/zhyass"><img alt="zhyass" src="https://avatars.githubusercontent.com/u/34016424?v=4&s=117" width="117"></a></th><th align="center"></th><th align="center"></th></tr></thead><tbody>
+<tr><td align="center"><a href="https://github.com/xudong963">xudong963</a></td><td align="center"><a href="https://github.com/youngsofun">youngsofun</a></td><td align="center"><a href="https://github.com/zhang2014">zhang2014</a></td><td align="center"><a href="https://github.com/zhyass">zhyass</a></td><td align="center"></td><td align="center"></td></tr>
+</tbody></table>
+<h2 id="meet-us">Meet Us</h2>
+<p>Please join the <a href="https://github.com/datafuselabs/">DatafuseLabs Community</a> if you are interested in Databend.</p>
+<p>We are looking forward to seeing you try our code. We have a strong team behind you to ensure a smooth experience in trying our code for your projects.
+If you are a hacker passionate about database internals, feel free to play with our code.</p>
+<p>You can submit <a href="https://github.com/datafuselabs/databend/issues">issues</a> for any problems you find. We also highly appreciate any of your pull requests.</p>
+<ul>
+<li><a href="https://databend.rs">Databend Website</a></li>
+<li><a href="https://weekly.databend.rs/">Weekly</a> (A weekly newsletter about Databend)</li>
+<li><a href="https://github.com/datafuselabs/databend/discussions">GitHub Discussions</a> (Feature/Bug reports, Contributions)</li>
+<li><a href="https://twitter.com/Datafuse_Labs">Twitter</a> (Get the news fast)</li>
+<li><a href="https://link.databend.rs/join-slack">Slack Channel</a> (For live discussion with the Community)</li>
+</ul>
+
+        </div>
+
+                </div>
+            
+                <div class="post on-list">
+                    
     <h1 class="post-title"><a href="https://weekly.databend.rs/2022-11-16-databend-weekly/">This week in Databend #68</a></h1>
     <div class="post-meta-inline">
         
@@ -803,146 +956,6 @@ If you are a hacker passionate about database internals, feel free to play with 
 <li><a href="https://github.com/datafuselabs/databend/discussions">GitHub Discussions</a> (Feature/Bug reports, Contributions)</li>
 <li><a href="https://twitter.com/Datafuse_Labs">Twitter</a> (Get the news fast)</li>
 <li><a href="https://link.databend.rs/join-slack">Slack Channel</a> (For live discussion with the Community)</li>
-</ul>
-
-        </div>
-
-                </div>
-            
-                <div class="post on-list">
-                    
-    <h1 class="post-title"><a href="https://weekly.databend.rs/2022-10-19-databend-weekly/">This week in Databend #64</a></h1>
-    <div class="post-meta-inline">
-        
-    <span class="post-date">
-            2022-10-19
-        </span>
-
-    </div>
-
-    
-
-                    
-        <div class="post-content">
-            <p><a href="https://github.com/datafuselabs/databend">Databend</a> is a powerful cloud data warehouse. Built for elasticity and efficiency. Free and open. Also available in the cloud: <a href="https://app.databend.com">https://app.databend.com</a> .</p>
-<h2 id="what-s-changed">What's Changed</h2>
-<p>Below is a list of some major changes that we don't want you to miss.</p>
-<h3 id="exciting-new-features-sparkles">Exciting New Features ✨</h3>
-<p><strong>meta</strong></p>
-<ul>
-<li>add API <code>list_all_tables</code> (<a href="https://github.com/datafuselabs/databend/pull/8254">#8254</a>)</li>
-</ul>
-<p><strong>jsonb</strong></p>
-<ul>
-<li>jsonb functions support json string (<a href="https://github.com/datafuselabs/databend/pull/8222">#8222</a>)</li>
-</ul>
-<p><strong>planner</strong></p>
-<ul>
-<li>optimize right join (<a href="https://github.com/datafuselabs/databend/pull/8204">#8204</a>)</li>
-<li>optimize subquery by deleting redundancy join (<a href="https://github.com/datafuselabs/databend/pull/8264">#8264</a>)</li>
-</ul>
-<p><strong>query</strong></p>
-<ul>
-<li>parallel read of ndjson in copy (<a href="https://github.com/datafuselabs/databend/pull/8199">#8199</a>)</li>
-</ul>
-<p><strong>storage</strong></p>
-<ul>
-<li>add share table query (<a href="https://github.com/datafuselabs/databend/pull/8198">#8198</a>)</li>
-<li>add limit push down to fuse_snapshot (<a href="https://github.com/datafuselabs/databend/pull/8201">#8201</a>)</li>
-<li>retry fuse table write operations (<a href="https://github.com/datafuselabs/databend/pull/8244">#8244</a>)</li>
-</ul>
-<p><strong>new expression</strong></p>
-<ul>
-<li>migrate array func to func-v2 (<a href="https://github.com/datafuselabs/databend/pull/8169">#8169</a>)</li>
-<li>support cast between date/timestamp and string (<a href="https://github.com/datafuselabs/databend/pull/8147">#8147</a>)</li>
-<li>implement arithmetic functions for <code>Date</code> and <code>Timestamp</code> (<a href="https://github.com/datafuselabs/databend/pull/8202">#8202</a>)</li>
-<li>migrate date to number functions to v2 (<a href="https://github.com/datafuselabs/databend/pull/8257">#8257</a>)</li>
-<li>migrate datetime rounder functions to v2 (<a href="https://github.com/datafuselabs/databend/pull/8281">#8281</a>)</li>
-</ul>
-<h3 id="code-refactor-tada">Code Refactor 🎉</h3>
-<p><strong>meta</strong></p>
-<ul>
-<li>refactor the sled-store , remove unnecessary methods (<a href="https://github.com/datafuselabs/databend/pull/8176">#8176</a>, <a href="https://github.com/datafuselabs/databend/pull/8190">#8190</a> &amp; <a href="https://github.com/datafuselabs/databend/pull/8203">#8203</a>)</li>
-</ul>
-<p><strong>new expression</strong></p>
-<ul>
-<li>improve <code>combine_nullable</code> (<a href="https://github.com/datafuselabs/databend/pull/8191">#8191</a>)</li>
-</ul>
-<p><strong>planner</strong></p>
-<ul>
-<li>refactor hash join (<a href="https://github.com/datafuselabs/databend/pull/8173">#8173</a>)</li>
-</ul>
-<h3 id="thoughtful-bug-fix-wrench">Thoughtful Bug Fix 🔧</h3>
-<p><strong>meta</strong></p>
-<ul>
-<li><code>AsKeySpace::clear()</code> should not entire sled tree (<a href="https://github.com/datafuselabs/databend/pull/8288">#8288</a>)</li>
-</ul>
-<p><strong>sessions</strong></p>
-<ul>
-<li>fix dead lock when force kill sessions (<a href="https://github.com/datafuselabs/databend/pull/8242">#8242</a>)</li>
-</ul>
-<p><strong>pipelines</strong></p>
-<ul>
-<li>support abort for semi or anti join, right join, left join, etc. (<a href="https://github.com/datafuselabs/databend/pull/8165">#8165</a>, <a href="https://github.com/datafuselabs/databend/pull/8212">#8212</a>, <a href="https://github.com/datafuselabs/databend/pull/8245">#8245</a>, etc.)</li>
-</ul>
-<p><strong>query</strong></p>
-<ul>
-<li>query version is incorrect (<a href="https://github.com/datafuselabs/databend/pull/8272">#8272</a>)</li>
-</ul>
-<p><strong>storage</strong></p>
-<ul>
-<li>fix undrop not working as expected if table is dropped by using <code>drop table t all</code> (<a href="https://github.com/datafuselabs/databend/pull/8177">#8177</a>)</li>
-<li>fix dead lock caused by incorrect semaphore permit control (<a href="https://github.com/datafuselabs/databend/pull/8226">#8226</a>)</li>
-</ul>
-<h2 id="news">News</h2>
-<p>Let's take a look at what's new at Datafuse Labs &amp; Databend each week.</p>
-<p><strong>Add cache support for Databend Query</strong></p>
-<p>In past discussions (Issues: <a href="https://github.com/datafuselabs/databend/pull/6786">#6786</a>), Databend has planned to introduce a new cache solution to help better handle hot data.</p>
-<p>We have recently tried to push this forward and have now implemented two cache layers in OpenDAL for metadata and content data respectively, and introduced a <code>CacheOperator</code> to Databend.</p>
-<p>Next, we will consider using OpenDAL to take over Databend's existing in-memory cache, and then tune it according to practice.</p>
-<p><strong>Learn More</strong></p>
-<ul>
-<li><a href="https://databend.rs/doc/contributing/rfcs/cache">RFC | Cache</a></li>
-<li><a href="https://github.com/datafuselabs/databend/issues/6803">Tracking issue for Cache Support in databend</a></li>
-</ul>
-<h2 id="changlogs">Changlogs</h2>
-<p>You can check the changelogs of Databend nightly to learn about our latest developments.</p>
-<ul>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.8.79-nightly">v0.8.79-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.8.78-nightly">v0.8.78-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.8.77-nightly">v0.8.77-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.8.76-nightly">v0.8.76-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.8.75-nightly">v0.8.75-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.8.74-nightly">v0.8.74-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.8.73-nightly">v0.8.73-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.8.72-nightly">v0.8.72-nightly</a></li>
-</ul>
-<h2 id="contributors">Contributors</h2>
-<p>Thanks a lot to the contributors for their excellent work this week.</p>
-<table><thead><tr><th align="center"><a href="https://github.com/andylokandy"><img alt="andylokandy" src="https://avatars.githubusercontent.com/u/9637710?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/b41sh"><img alt="b41sh" src="https://avatars.githubusercontent.com/u/1070352?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/BohuTANG"><img alt="BohuTANG" src="https://avatars.githubusercontent.com/u/172204?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/dantengsky"><img alt="dantengsky" src="https://avatars.githubusercontent.com/u/22081156?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/drmingdrmer"><img alt="drmingdrmer" src="https://avatars.githubusercontent.com/u/44069?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/everpcpc"><img alt="everpcpc" src="https://avatars.githubusercontent.com/u/1808802?v=4&s=117" width="117"></a></th></tr></thead><tbody>
-<tr><td align="center"><a href="https://github.com/andylokandy">andylokandy</a></td><td align="center"><a href="https://github.com/b41sh">b41sh</a></td><td align="center"><a href="https://github.com/BohuTANG">BohuTANG</a></td><td align="center"><a href="https://github.com/dantengsky">dantengsky</a></td><td align="center"><a href="https://github.com/drmingdrmer">drmingdrmer</a></td><td align="center"><a href="https://github.com/everpcpc">everpcpc</a></td></tr>
-</tbody></table>
-<table><thead><tr><th align="center"><a href="https://github.com/leiysky"><img alt="leiysky" src="https://avatars.githubusercontent.com/u/22445410?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/lichuang"><img alt="lichuang" src="https://avatars.githubusercontent.com/u/1998569?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/apps/mergify"><img alt="mergify[bot]" src="https://avatars.githubusercontent.com/in/10562?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/PsiACE"><img alt="PsiACE" src="https://avatars.githubusercontent.com/u/36896360?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/RinChanNOWWW"><img alt="RinChanNOWWW" src="https://avatars.githubusercontent.com/u/33975039?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/sandflee"><img alt="sandflee" src="https://avatars.githubusercontent.com/u/5102100?v=4&s=117" width="117"></a></th></tr></thead><tbody>
-<tr><td align="center"><a href="https://github.com/leiysky">leiysky</a></td><td align="center"><a href="https://github.com/lichuang">lichuang</a></td><td align="center"><a href="https://github.com/apps/mergify">mergify[bot]</a></td><td align="center"><a href="https://github.com/PsiACE">PsiACE</a></td><td align="center"><a href="https://github.com/RinChanNOWWW">RinChanNOWWW</a></td><td align="center"><a href="https://github.com/sandflee">sandflee</a></td></tr>
-</tbody></table>
-<table><thead><tr><th align="center"><a href="https://github.com/soyeric128"><img alt="soyeric128" src="https://avatars.githubusercontent.com/u/106025534?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/sundy-li"><img alt="sundy-li" src="https://avatars.githubusercontent.com/u/3325189?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/TCeason"><img alt="TCeason" src="https://avatars.githubusercontent.com/u/33082201?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/wubx"><img alt="wubx" src="https://avatars.githubusercontent.com/u/320680?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/Xuanwo"><img alt="Xuanwo" src="https://avatars.githubusercontent.com/u/5351546?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/xudong963"><img alt="xudong963" src="https://avatars.githubusercontent.com/u/41979257?v=4&s=117" width="117"></a></th></tr></thead><tbody>
-<tr><td align="center"><a href="https://github.com/soyeric128">soyeric128</a></td><td align="center"><a href="https://github.com/sundy-li">sundy-li</a></td><td align="center"><a href="https://github.com/TCeason">TCeason</a></td><td align="center"><a href="https://github.com/wubx">wubx</a></td><td align="center"><a href="https://github.com/Xuanwo">Xuanwo</a></td><td align="center"><a href="https://github.com/xudong963">xudong963</a></td></tr>
-</tbody></table>
-<table><thead><tr><th align="center"><a href="https://github.com/youngsofun"><img alt="youngsofun" src="https://avatars.githubusercontent.com/u/5782159?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/zhang2014"><img alt="zhang2014" src="https://avatars.githubusercontent.com/u/8087042?v=4&s=117" width="117"></a></th><th align="center"><a href="https://github.com/zhyass"><img alt="zhyass" src="https://avatars.githubusercontent.com/u/34016424?v=4&s=117" width="117"></a></th><th align="center"></th><th align="center"></th><th align="center"></th></tr></thead><tbody>
-<tr><td align="center"><a href="https://github.com/youngsofun">youngsofun</a></td><td align="center"><a href="https://github.com/zhang2014">zhang2014</a></td><td align="center"><a href="https://github.com/zhyass">zhyass</a></td><td align="center"></td><td align="center"></td><td align="center"></td></tr>
-</tbody></table>
-<h2 id="meet-us">Meet Us</h2>
-<p>Please join the <a href="https://github.com/datafuselabs/">DatafuseLabs Community</a> if you are interested in Databend.</p>
-<p>We are looking forward to seeing you try our code. We have a strong team behind you to ensure a smooth experience in trying our code for your projects.
-If you are a hacker passionate about database internals, feel free to play with our code.</p>
-<p>You can submit <a href="https://github.com/datafuselabs/databend/issues">issues</a> for any problems you find. We also highly appreciate any of your pull requests.</p>
-<ul>
-<li><a href="https://databend.rs">Databend Website</a></li>
-<li><a href="https://weekly.databend.rs/">Weekly</a> (A weekly newsletter about Databend)</li>
-<li><a href="https://github.com/datafuselabs/databend/discussions">GitHub Discussions</a> (Feature/Bug reports, Contributions)</li>
-<li><a href="https://twitter.com/Datafuse_Labs">Twitter</a> (Get the news fast)</li>
-<li><a href="https://link.databend.rs/join-slack">Slack Channel</a> (For live discussion with the Community)</li>
-<li><a href="https://link.databend.rs/i-m-feeling-lucky">I'm feeling lucky</a> (Pick up a good first issue now!)</li>
 </ul>
 
         </div>

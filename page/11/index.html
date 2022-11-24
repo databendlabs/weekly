@@ -53,6 +53,150 @@
         <div class="posts">
                 <div class="post on-list">
                     
+    <h1 class="post-title"><a href="https://weekly.databend.rs/2021-12-08-databend-weekly/">This week in Databend #19</a></h1>
+    <div class="post-meta-inline">
+        
+    <span class="post-date">
+            2021-12-08
+        </span>
+
+    </div>
+
+    
+
+                    
+        <div class="post-content">
+            <p><a href="https://github.com/datafuselabs/databend">Databend</a> aimed to be an open source <strong>elastic</strong> and <strong>reliable</strong> cloud warehouse, it offers blazing fast query and combines elasticity, simplicity, low cost of the cloud, built to make the Data Cloud easy.</p>
+<h2 id="big-changes">Big changes</h2>
+<p>Below is a list of some major changes that we don't want you to miss.</p>
+<h3 id="features">Features</h3>
+<ul>
+<li><strong>add query log table write</strong> by <a href="https://github.com/BohuTANG">@BohuTANG</a>. (<a href="https://github.com/datafuselabs/databend/pull/3273">#3273</a>)</li>
+<li><strong>return nodes list in metasrv server</strong> by <a href="https://github.com/sunisdown">@sunisdown</a>. (<a href="https://github.com/datafuselabs/databend/pull/2943">#2943</a>)</li>
+<li><strong>support create stage statement</strong> by <a href="https://github.com/GrapeBaBa">@GrapeBaBa</a>. (<a href="https://github.com/datafuselabs/databend/pull/3253">#3253</a>)</li>
+<li><strong>default expression support</strong> by <a href="https://github.com/sundy-li/">@sundy-li</a>. (<a href="https://github.com/datafuselabs/databend/pull/3282">#3282</a>)</li>
+<li><strong>add system.query_log</strong> by <a href="https://github.com/SGZW">@SGZW</a>. (<a href="https://github.com/datafuselabs/databend/pull/3234">#3234</a>)</li>
+<li><strong>add revoke statement</strong> by <a href="https://github.com/flaneur2020">@flaneur2020</a>. (<a href="https://github.com/datafuselabs/databend/pull/3194">#3194</a>)</li>
+<li><strong>add strings functions</strong>
+<ul>
+<li><code>INSTR</code>, <code>FIELD</code>, <code>SUBSTRING</code>, <code>SUBSTR</code>, <code>MID</code>, <code>SUBSTRING_INDEX</code>, <code>REVERSE</code>, <code>REPLACE</code>, <code>STRCMP</code>, <code>SPACE</code>, <code>LEFT</code>, <code>RIGHT</code>, <code>LPAD</code>, <code>RPAD</code>, <code>CHARACTER_LENGTH</code>, <code>CHAR_LENGTH</code>, <code>ORD</code> by <a href="https://github.com/mshauneu">@mshauneu</a> (<a href="https://github.com/datafuselabs/databend/pull/3217">#3217</a>, <a href="https://github.com/datafuselabs/databend/pull/3215">#3215</a>, <a href="https://github.com/datafuselabs/databend/pull/3231">#3231</a>, etc.)</li>
+<li><code>bin_length</code> by <a href="https://github.com/radmirnovii">@radmirnovii</a> (<a href="https://github.com/datafuselabs/databend/pull/3232">#3232</a>)</li>
+<li><code>octet_length</code> by <a href="https://github.com/unconsolable">@unconsolable</a> (<a href="https://github.com/datafuselabs/databend/pull/3227">#3227</a>)</li>
+<li><code>trim</code> by <a href="https://github.com/QuantumBear">@QuantumBear</a> (<a href="https://github.com/datafuselabs/databend/pull/3196">#3196</a>)</li>
+<li><code>CONCAT</code>, <code>CONCAT_WS</code> by <a href="https://github.com/Veeupup">@Veeupup</a> (<a href="https://github.com/datafuselabs/databend/pull/3214">#3214</a>, <a href="https://github.com/datafuselabs/databend/pull/3260">#3260</a>)</li>
+</ul>
+</li>
+</ul>
+<h2 id="improvement">Improvement</h2>
+<ul>
+<li><strong>replace AppendOperationLogEntry vec[] with stream</strong> by <a href="https://github.com/junli1026">@junli1026</a> (<a href="https://github.com/datafuselabs/databend/pull/3296">#3296</a>)</li>
+<li><strong>support create table like statement</strong> by <a href="https://github.com/junli1026">@junli1026</a> (<a href="https://github.com/datafuselabs/databend/pull/3292">#3292</a>)</li>
+<li><strong>show table options</strong> by <a href="https://github.com/Junnplus">@Junnplus</a> (<a href="https://github.com/datafuselabs/databend/pull/3252">#3252</a>)</li>
+<li><strong>make <code>StateMachine::apply</code> use transaction to perform operations</strong> by <a href="https://github.com/ariesdevil">@ariesdevil</a>. (<a href="https://github.com/datafuselabs/databend/pull/3102">#3102</a>)</li>
+<li><strong>complete dates function monotonicity check</strong> by <a href="https://github.com/zhyass">@zhyass</a>. (<a href="https://github.com/datafuselabs/databend/pull/3228">#3228</a>)</li>
+<li><strong>http: refine the mod import and add http usage function</strong> by <a href="https://github.com/BohuTANG">@BohuTANG</a>. (<a href="https://github.com/datafuselabs/databend/pull/3246">#3246</a>)</li>
+<li><strong>refactoring insert interpreter</strong> by <a href="https://github.com/dantengsky">@dantengsky</a>. (<a href="https://github.com/datafuselabs/databend/pull/3226">#3226</a>)</li>
+<li><strong>[common/function] simplify get_layout_offsets</strong> by <a href="https://github.com/drmingdrmer">@drmingdrmer</a> (<a href="https://github.com/datafuselabs/databend/pull/3223">#3223</a>)</li>
+<li><strong>add monotonicity in range filter</strong> by <a href="https://github.com/zhyass">@zhyass</a>. (<a href="https://github.com/datafuselabs/databend/pull/3195">#3195</a>)</li>
+<li><strong>introduce compact statement</strong> by <a href="https://github.com/dantengsky">@dantengsky</a>. (<a href="https://github.com/datafuselabs/databend/pull/3182">#3182</a>)</li>
+</ul>
+<h2 id="performance-improvement">Performance Improvement</h2>
+<ul>
+<li><strong>string performence improvement</strong> by <a href="https://github.com/Veeupup">@Veeupup</a>. (<a href="https://github.com/datafuselabs/databend/pull/3288">#3288</a>)</li>
+</ul>
+<h3 id="bug-fixes">Bug fixes</h3>
+<ul>
+<li><strong>fix try_from_literal</strong> by <a href="https://github.com/dust1">@dust1</a>. (<a href="https://github.com/datafuselabs/databend/pull/3197">#3197</a>)</li>
+<li><strong>fix github table engine inits</strong> by <a href="https://github.com/BohuTANG">@BohuTANG</a>. (<a href="https://github.com/datafuselabs/databend/pull/3204">#3204</a>)</li>
+</ul>
+<h2 id="tips">Tips</h2>
+<p>Let's learn a weekly tip from Databend.</p>
+<h3 id="how-to-explore-github-repos-via-databend">How to explore github repos via Databend</h3>
+<p>Databend now supports GitHub as a data source, and you can read the relevant code at <a href="https://github.com/datafuselabs/databend/tree/main/query/src/storages/github">storages/github</a>.</p>
+<p><strong>create github-engine based database</strong></p>
+<p>Before running databend, your <a href="https://github.com/settings/tokens">Github Access Token</a> should be set.</p>
+<pre data-lang="shell" style="background-color:#151515;color:#e8e8d3;" class="language-shell "><code class="language-shell" data-lang="shell"><span>export GITHUB_TOKEN=&lt;your_token&gt;;
+</span></code></pre>
+<p>Create a Github powered database.</p>
+<pre data-lang="sql" style="background-color:#151515;color:#e8e8d3;" class="language-sql "><code class="language-sql" data-lang="sql"><span>databend :) create database datafuselabs </span><span style="color:#fad07a;">engine</span><span>=github;
+</span><span>
+</span><span style="color:#cf6a4c;">0</span><span> rows in set. Elapsed: </span><span style="color:#cf6a4c;">2</span><span>.</span><span style="color:#cf6a4c;">611</span><span> sec. 
+</span></code></pre>
+<p><strong>show all tables</strong></p>
+<p>Show all tables in this database, which are currently flattened. This means that Repos, issues and PRs are all in the form of tables.</p>
+<pre data-lang="sql" style="background-color:#151515;color:#e8e8d3;" class="language-sql "><code class="language-sql" data-lang="sql"><span>databend :) use datafuselabs;
+</span><span>
+</span><span style="color:#cf6a4c;">0</span><span> rows in set. Elapsed: </span><span style="color:#cf6a4c;">0</span><span>.</span><span style="color:#cf6a4c;">013</span><span> sec.
+</span><span>
+</span><span>databend :) show tables;
+</span><span>
+</span><span>+</span><span style="color:#888888;">---------------------------------+
+</span><span>| name                            |
+</span><span>+</span><span style="color:#888888;">---------------------------------+
+</span><span>| .github                         |
+</span><span>| .github_comments                |
+</span><span>| .github_issues                  |
+</span><span>| .github_prs                     |
+</span><span>| databend                        |
+</span><span>| databend-playground             |
+</span><span>| databend-playground_comments    |
+</span><span>| databend-playground_issues      |
+</span><span>| databend-playground_prs         |
+</span><span>| databend_comments               |
+</span><span>| databend_issues                 |
+</span><span>| databend_prs                    |
+</span><span>| ...                             |
+</span><span>+</span><span style="color:#888888;">---------------------------------+
+</span><span>
+</span><span style="color:#cf6a4c;">36</span><span> rows in set. Elapsed: </span><span style="color:#cf6a4c;">0</span><span>.</span><span style="color:#cf6a4c;">053</span><span> sec. 
+</span><span>
+</span></code></pre>
+<p><strong>View basic information about a repo</strong></p>
+<pre style="background-color:#151515;color:#e8e8d3;"><code><span>databend :) select * from databend;
+</span><span>
+</span><span>+------------+----------+------------+------------+-------------+----------------+-------------------+-------------------+
+</span><span>| reposiroty | language | license    | star_count | forks_count | watchers_count | open_issues_count | subscribers_count |
+</span><span>+------------+----------+------------+------------+-------------+----------------+-------------------+-------------------+
+</span><span>| databend   | Rust     | apache-2.0 |       2661 |         252 |           2661 |               349 |                63 |
+</span><span>+------------+----------+------------+------------+-------------+----------------+-------------------+-------------------+
+</span><span>
+</span><span>1 rows in set. Elapsed: 1.368 sec. 
+</span></code></pre>
+<h2 id="changlogs">Changlogs</h2>
+<p>You can check the changelogs of Databend nightly to learn about our latest developments.</p>
+<ul>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.5.38-nightly">v0.5.38-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.5.37-nightly">v0.5.37-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.5.36-nightly">v0.5.36-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.5.35-nightly">v0.5.35-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.5.34-nightly">v0.5.34-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.5.33-nightly">v0.5.33-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.5.32-nightly">v0.5.32-nightly</a></li>
+</ul>
+<h2 id="ecosystem-upstream">Ecosystem/Upstream</h2>
+<p>From open source, for open source. Our team is also committed to contributing to the Rust ecosystem and upstream dependencies.</p>
+<ul>
+<li>arrow2 <a href="https://github.com/jorgecarleitao/arrow2/pull/641">#641</a> &amp; <a href="https://github.com/jorgecarleitao/arrow2/pull/664">#664</a>: Add lower and upper support for string. by <a href="https://github.com/Xuanwo">@Xuanwo</a></li>
+<li><a href="https://github.com/jorgecarleitao/arrow2/pull/651">arrow2 #651: Improved performance in cast Primitive to Binary/String again (4x)</a>: <code>Memcpy</code> style write, no extra copy. by <a href="https://github.com/sundy-li/">@sundy-li</a></li>
+</ul>
+<h2 id="meet-us">Meet Us</h2>
+<p>Please join the <a href="https://github.com/datafuselabs/">DatafuseLabs Community</a> if you are interested in Databend.</p>
+<p>We are looking forward to seeing you try our code. We have a strong team behind you to ensure a smooth experience in trying our code for your projects.
+If you are a hacker passionate about database internals, feel free to play with our code.</p>
+<p>You can submit <a href="https://github.com/datafuselabs/databend/issues">issues</a> for any problems you find. We also highly appreciate any of your pull requests.</p>
+<ul>
+<li><a href="https://databend.rs">Databend Website</a></li>
+<li><a href="https://twitter.com/Datafuse_Labs">Twitter</a></li>
+<li><a href="https://github.com/datafuselabs/databend/discussions">GitHub Discussions</a></li>
+<li><a href="https://link.databend.rs/join-slack">Slack Channel</a></li>
+</ul>
+
+        </div>
+
+                </div>
+            
+                <div class="post on-list">
+                    
     <h1 class="post-title"><a href="https://weekly.databend.rs/2021-12-01-databend-weekly/">This week in Databend #18</a></h1>
     <div class="post-meta-inline">
         
@@ -374,94 +518,6 @@ If you are a hacker passionate about database internals, feel free to play with 
 <li><a href="https://github.com/jorgecarleitao/arrow2/pull/561">arrow2 #561: Compute: add partial option into CastOptions</a>: Trying to be compatible with MySQL behavior. by <a href="https://github.com/sundy-li/">@sundy-li</a></li>
 <li><a href="https://github.com/datafuse-extras/sqlparser-rs/pull/7">datafuse-extras/sqlparser-rs  #7: Process escape character in quoted string</a> by <a href="https://github.com/zhyass/">@zhyass</a></li>
 <li><a href="https://github.com/programatik29/axum-server/commit/390b84cf7">axum-server rev:390b84cf7: rustls implementation</a> Bump rustls and its friends. by <a href="https://github.com/PsiACE/">@PsiACE</a></li>
-</ul>
-<h2 id="meet-us">Meet Us</h2>
-<p>Please join the <a href="https://github.com/datafuselabs/">DatafuseLabs Community</a> if you are interested in Databend.</p>
-<p>We are looking forward to seeing you try our code. We have a strong team behind you to ensure a smooth experience in trying our code for your projects.
-If you are a hacker passionate about database internals, feel free to play with our code.</p>
-<p>You can submit <a href="https://github.com/datafuselabs/databend/issues">issues</a> for any problems you find. We also highly appreciate any of your pull requests.</p>
-<ul>
-<li><a href="https://databend.rs">Databend Website</a></li>
-<li><a href="https://twitter.com/Datafuse_Labs">Twitter</a></li>
-<li><a href="https://github.com/datafuselabs/databend/discussions">GitHub Discussions</a></li>
-<li><a href="https://link.databend.rs/join-slack">Slack Channel</a></li>
-</ul>
-
-        </div>
-
-                </div>
-            
-                <div class="post on-list">
-                    
-    <h1 class="post-title"><a href="https://weekly.databend.rs/2021-11-03-databend-weekly/">This week in Databend #14</a></h1>
-    <div class="post-meta-inline">
-        
-    <span class="post-date">
-            2021-11-03
-        </span>
-
-    </div>
-
-    
-
-                    
-        <div class="post-content">
-            <p><a href="https://github.com/datafuselabs/databend">Databend</a> aimed to be an open source <strong>elastic</strong> and <strong>reliable</strong> cloud warehouse, it offers blazing fast query and combines elasticity, simplicity, low cost of the cloud, built to make the Data Cloud easy.</p>
-<h2 id="big-changes">Big changes</h2>
-<p>Below is a list of some major changes that we don’t want you to miss.</p>
-<h3 id="features">Features</h3>
-<ul>
-<li><strong>bendctl: support up api for demo</strong> by <a href="https://github.com/ZhiHanZ">@ZhiHanZ</a>. (<a href="https://github.com/datafuselabs/databend/pull/2448">#2488</a>)</li>
-<li><strong>raft-store: add Cmd::UpsertTableOptions</strong> by <a href="https://github.com/drmingdrmer">@drmingdrmer</a> (<a href="https://github.com/datafuselabs/databend/pull/2521">#2521</a>)</li>
-<li><strong>run query with a embedded meta-store</strong> by <a href="https://github.com/drmingdrmer">@drmingdrmer</a> (<a href="https://github.com/datafuselabs/databend/pull/2534">#2534</a>)</li>
-<li><strong>sqlparser: support create user statement</strong> by <a href="https://github.com/GrapeBaBa">@GrapeBaBa</a> (<a href="https://github.com/datafuselabs/databend/pull/2550">#2550</a>)</li>
-<li><strong>add top_n plan optimizer</strong> by <a href="https://github.com/junli1026">@junli1026</a> (<a href="https://github.com/datafuselabs/databend/pull/2515">#2515</a>)</li>
-<li><strong>add endpoint url param for s3 dal</strong> by <a href="https://github.com/dantengsky">@dantengsky</a>. (<a href="https://github.com/datafuselabs/databend/pull/2555">#2555</a>)</li>
-<li><strong>add basic data loading api</strong> by <a href="https://github.com/ZhiHanZ">@ZhiHanZ</a>. (<a href="https://github.com/datafuselabs/databend/pull/2611">#2611</a>)</li>
-<li><strong>add math functions</strong>
-<ul>
-<li><code>pi</code>/<code>crc32</code>/<code>trigonometric</code> by <a href="https://github.com/Junnplus">@Junnplus</a> (<a href="https://github.com/datafuselabs/databend/pull/2584">#2584</a>, <a href="https://github.com/datafuselabs/datafuse/pull/2610">#2610</a>, <a href="https://github.com/datafuselabs/databend/pull/2616">#2616</a>)</li>
-<li><code>abs</code> by <a href="https://github.com/flaneur2020">@flaneur2020</a> (<a href="https://github.com/datafuselabs/databend/pull/2596">#2596</a>)</li>
-</ul>
-</li>
-</ul>
-<h2 id="improvement">Improvement</h2>
-<ul>
-<li><strong>add TableMeta containing essential table info</strong> by <a href="https://github.com/drmingdrmer">@drmingdrmer</a> (<a href="https://github.com/datafuselabs/databend/pull/2479">#2479</a>)</li>
-<li><strong>refine the bendctl writer format and message hints</strong> by <a href="https://github.com/BohuTANG">@BohuTANG</a> (<a href="https://github.com/datafuselabs/databend/pull/2545">#2545</a>)</li>
-<li><strong>introduce fn subcommands() to the Command trait</strong> by <a href="https://github.com/flaneur2020">@flaneur2020</a>. (<a href="https://github.com/datafuselabs/databend/pull/2530">#2530</a> &amp; <a href="https://github.com/datafuselabs/databend/pull/2546">#2546</a>)</li>
-<li><strong>compare with implicit cast</strong> by <a href="https://github.com/sundy-li">@sundy-li</a>. (<a href="https://github.com/datafuselabs/databend/pull/2554">#2554</a>)</li>
-<li><strong>make date32 physical type to be int32</strong> by <a href="https://github.com/zhyass">@zhyass</a>. (<a href="https://github.com/datafuselabs/databend/pull/2578">#2578</a>)</li>
-<li><strong>introduces RootCommand as the entrypoint of all the commands</strong> by <a href="https://github.com/flaneur2020">@flaneur2020</a>. (<a href="https://github.com/datafuselabs/databend/pull/2577">#2577</a>)</li>
-<li><strong>simplify meta backend for catalog</strong> by <a href="https://github.com/drmingdrmer">@drmingdrmer</a> (<a href="https://github.com/datafuselabs/databend/pull/2590">#2590</a>)</li>
-</ul>
-<h3 id="bug-fixes">Bug fixes</h3>
-<ul>
-<li><strong>fix bendctl console quit command</strong> by <a href="https://github.com/flaneur2020">@flaneur2020</a>. (<a href="https://github.com/datafuselabs/databend/pull/2491">#2491</a>)</li>
-<li><strong>fix hang in the second insert query</strong> by <a href="https://github.com/dantengsky">@dantengsky</a>. (<a href="https://github.com/datafuselabs/databend/pull/2485">#2485</a>)</li>
-<li><strong>fix server hang when use wait in entrypoint</strong> by <a href="https://github.com/zhang2014">@zhang2014</a>. (<a href="https://github.com/datafuselabs/databend/pull/2553">#2553</a>)</li>
-<li><strong>update file descriptor limit for debug test</strong> by <a href="https://github.com/sunisdown">@sunisdown</a>. (<a href="https://github.com/datafuselabs/databend/pull/2544">#2544</a> &amp; <a href="https://github.com/datafuselabs/databend/pull/2552">#2552</a>)</li>
-<li><strong>pass limit+offset to sort pipeline</strong>  by <a href="https://github.com/junli1026">@junli1026</a> (<a href="https://github.com/datafuselabs/databend/pull/2569">#2569</a>)</li>
-</ul>
-<h2 id="changlogs">Changlogs</h2>
-<p>You can check the changelogs of Databend nightly to learn about our latest developments.</p>
-<ul>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.5.6-nightly">v0.5.6-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.5.5-nightly">v0.5.5-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.5.4-nightly">v0.5.4-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.5.3-nightly">v0.5.3-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.5.2-nightly">v0.5.2-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.5.1-nightly">v0.5.1-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.5.0-nightly">v0.5.0-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.4.150-nightly">v0.4.150-nightly</a></li>
-</ul>
-<h2 id="ecosystem-upstream">Ecosystem/Upstream</h2>
-<p>From open source, for open source. Our team is also committed to contributing to the Rust ecosystem and upstream dependencies.</p>
-<ul>
-<li><a href="https://github.com/apache/arrow-rs/pull/864">arrow-rs #864: Bump deps</a>: Bump some deps, setup ci toolchain, fix error. by <a href="https://github.com/PsiACE/">@PsiACE</a></li>
-<li><a href="https://github.com/jorgecarleitao/arrow2/pull/550">arrow2 #550: Bumped Prost and Tonic</a>: Bump arrow-format to v0.3.0, update ci toolchain, fix error. by <a href="https://github.com/PsiACE/">@PsiACE</a></li>
-<li><a href="https://github.com/DataEngineeringLabs/arrow-format/pull/2">arrow-format #2: Bump deps &amp; format</a>: Bump prost and tonic. by <a href="https://github.com/PsiACE/">@PsiACE</a></li>
-<li><a href="https://github.com/tikv/pprof-rs/pull/82">pprof #82: Bump deps and make clippy happy</a>: Bump prost / tonic / nix , make clippy happy. by <a href="https://github.com/PsiACE/">@PsiACE</a></li>
 </ul>
 <h2 id="meet-us">Meet Us</h2>
 <p>Please join the <a href="https://github.com/datafuselabs/">DatafuseLabs Community</a> if you are interested in Databend.</p>
