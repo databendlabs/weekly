@@ -7,6 +7,8 @@ draft = false
 
 [Databend](https://github.com/datafuselabs/databend) is a powerful cloud data warehouse. Built for elasticity and efficiency. Free and open. Also available in the cloud: <https://app.databend.com> .
 
+> **Special Note:** [*This Week in Databend*](https://weekly.databend.rs/) will be gradually migrated to the [*Databend Blog*](https://databend.rs/blog). We will keep the content in sync until the final migration is complete.
+
 ## What's Changed
 
 Below is a list of some major changes that we don't want you to miss.
