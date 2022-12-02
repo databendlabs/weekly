@@ -9,47 +9,47 @@ draft = false
 
 > **Special Note:** [*This Week in Databend*](https://weekly.databend.rs/) will be gradually migrated to the [*Databend Blog*](https://databend.rs/blog). We will keep the content in sync until the final migration is complete.
 
-## What's Changed
+## What's New
 
-Below is a list of some major changes that we don't want you to miss.
+Check out what we've done this week to make Databend even better for you.
 
-### Exciting New Features :sparkles:
+### Features & Improvements :sparkles:
 
-**format**
+**Format**
 
 - better checking of format options ([#8981](https://github.com/datafuselabs/databend/pull/8981))
 - add basic schema infer for parquet ([#9043](https://github.com/datafuselabs/databend/pull/9043))
 
-**query**
+**Query**
 
 - QualifiedName support 'db.table.*' and 'table.*' ([#8965](https://github.com/datafuselabs/databend/pull/8965))
 - support bulk insert without exprssion ([#8966](https://github.com/datafuselabs/databend/pull/8966))
 
-**storage**
+**Storage**
 
 - add cache layer for fuse engine ([#8830](https://github.com/datafuselabs/databend/pull/8830))
 - add system table system.memory_statistics ([#8945](https://github.com/datafuselabs/databend/pull/8945))
 - add optimize statistic ddl support ([#8891](https://github.com/datafuselabs/databend/pull/8891))
 
-### Code Refactor :tada:
+### Code Refactoring :tada:
 
-**base**
+**Base**
 
 - remove common macros ([#8936](https://github.com/datafuselabs/databend/pull/8936))
 
-**format**
+**Format**
 
 - TypeDeserializer get rid of FormatSetting ([#8950](https://github.com/datafuselabs/databend/pull/8950))
 
-**planner**
+**Planner**
 
 - refactor extract or predicate ([#8951](https://github.com/datafuselabs/databend/pull/8951))
 
-**processors**
+**Processors**
 
 - optimize join by merging build data block ([#8961](https://github.com/datafuselabs/databend/pull/8961))
 
-**new expression**
+**New Expression**
 
 - allow sparse column id in chunk, redo [#8789](https://github.com/datafuselabs/databend/pull/8789) with a new approach. ([#9008](https://github.com/datafuselabs/databend/pull/9008))
 
@@ -57,37 +57,37 @@ Below is a list of some major changes that we don't want you to miss.
 
 - i18n support with crowdin ([#8987](https://github.com/datafuselabs/databend/pull/8987), [#8997](https://github.com/datafuselabs/databend/pull/8997), etc.)
 
-### Thoughtful Bug Fix :wrench:
+### Bug Fixes :wrench:
 
-**base**
+**Base**
 
 - try fix lost tracker ([#8932](https://github.com/datafuselabs/databend/pull/8932))
 
-**meta**
+**Meta**
 
 - fix share db bug, create DatabaseIdToName if need ([#9006](https://github.com/datafuselabs/databend/pull/9006))
 
-**mysql handler**
+**Mysql handler**
 
 - fix mysql conns leak ([#8894](https://github.com/datafuselabs/databend/pull/8894))
 
-**processors**
+**Processors**
 
 - try fix update list memory leak ([#9023](https://github.com/datafuselabs/databend/pull/9023))
 
-**storage**
+**Storage**
 
 - read and write block in parallel when compact ([#8921](https://github.com/datafuselabs/databend/pull/8921))
 
-## News
+## What's On In Databend
 
-Let's take a look at what's new at Datafuse Labs & Databend each week.
+Stay connected with the latest news about Databend.
 
-#### Preview of Infer Schema
+#### Infer Schema at a Glance
 
-To load data from a stage or location, users need to create table first. However, sometimes users don't know the file schema, or the schema is too complex / too simple to be input by users.
+You usually need to create a table before loading data from a file stored on a stage or somewhere. Unfortunately, sometimes you might not know the file schema to create the table or are unable to input the schema due to its complexity. 
 
-Allowing infer schema from existing files makes our users' lives easier. Also, this feature will unlock the databend from implementing `select * from @my_stage`.
+Introducing the capability to infer schema from an existing file will make the work much easier. You will even be able to query data directly from a stage using a SELECT statement like `select * from @my_stage`.
 
 ```sql
 INFER 's3://mybucket/data.csv' FILE_FORMAT = ( TYPE = CSV );
@@ -99,7 +99,7 @@ INFER 's3://mybucket/data.csv' FILE_FORMAT = ( TYPE = CSV );
 +-------------+---------+----------+
 ```
 
-[#9043](https://github.com/datafuselabs/databend/pull/9043) has added basic schema infer for parquet. We will be moving forward with support for `select from stage` ([#7211](https://github.com/datafuselabs/databend/issues/7211)) on this basis.
+We've added support for inferring the basic schema from parquet files in [#9043](https://github.com/datafuselabs/databend/pull/9043), and we're now working on [#7211](https://github.com/datafuselabs/databend/issues/7211) to implement `select from @stage`.
 
 **Learn More**
 
@@ -107,13 +107,13 @@ INFER 's3://mybucket/data.csv' FILE_FORMAT = ( TYPE = CSV );
 - [Issue | query data from S3 location or stage](https://github.com/datafuselabs/databend/pull/7211)
 - [PR | rfc: Infer Schema](https://github.com/datafuselabs/databend/pull/8645)
 
-## Issues
+## What's Up Next
 
-Meet issues you may be interested in and try to solve it.
+We're always open to cutting-edge technologies and innovative ideas. You're more than welcome to join the community and bring them to Databend.
 
-#### Add tls support for mysql handler
+#### Add Tls Support for Mysql Handler
 
-The just released [opensrv-mysql v0.3.0](https://github.com/datafuselabs/opensrv/discussions/35) includes support for tls and it is time to introduce it for Databend.
+[opensrv-mysql v0.3.0](https://github.com/datafuselabs/opensrv/discussions/35) that was released recently includes support for TLS. It sounds like a good idea to introduce it to Databend.
 
 ```rust
 let (is_ssl, init_params) = opensrv_mysql::AsyncMysqlIntermediary::init_before_ssl(
@@ -130,11 +130,11 @@ opensrv_mysql::secure_run_with_options(shim, w, ops, tls_config, init_params).aw
 
 [Issue 8983: Feature: tls support for mysql handler](https://github.com/datafuselabs/databend/issues/8983)
 
-If you find it interesting, try to solve it or participate in discussions and PR reviews. Or you can click on <https://link.databend.rs/i-m-feeling-lucky> to pick up a good first issue, good luck!
+Please let us know if you're interested in contributing to this issue, or pick up a good first issue at <https://link.databend.rs/i-m-feeling-lucky> to get started.
 
-## Changlogs
+## Changelog
 
-You can check the changelogs of Databend nightly to learn about our latest developments.
+You can check the changelog of Databend Nightly for details about our latest developments.
 
 - [v0.8.136-nightly](https://github.com/datafuselabs/databend/releases/tag/v0.8.136-nightly)
 - [v0.8.135-nightly](https://github.com/datafuselabs/databend/releases/tag/v0.8.135-nightly)
@@ -152,33 +152,29 @@ You can check the changelogs of Databend nightly to learn about our latest devel
 
 Thanks a lot to the contributors for their excellent work this week.
 
-[<img alt="andylokandy" src="https://avatars.githubusercontent.com/u/9637710?v=4&s=117" width="117">](https://github.com/andylokandy) |[<img alt="ariesdevil" src="https://avatars.githubusercontent.com/u/7812909?v=4&s=117" width="117">](https://github.com/ariesdevil) |[<img alt="b41sh" src="https://avatars.githubusercontent.com/u/1070352?v=4&s=117" width="117">](https://github.com/b41sh) |[<img alt="BohuTANG" src="https://avatars.githubusercontent.com/u/172204?v=4&s=117" width="117">](https://github.com/BohuTANG) |[<img alt="dantengsky" src="https://avatars.githubusercontent.com/u/22081156?v=4&s=117" width="117">](https://github.com/dantengsky) |[<img alt="drmingdrmer" src="https://avatars.githubusercontent.com/u/44069?v=4&s=117" width="117">](https://github.com/drmingdrmer) |
+[<img alt="andylokandy" src="https://avatars.githubusercontent.com/u/9637710?v=4&s=117" width="117" />](https://github.com/andylokandy) |[<img alt="ariesdevil" src="https://avatars.githubusercontent.com/u/7812909?v=4&s=117" width="117" />](https://github.com/ariesdevil) |[<img alt="b41sh" src="https://avatars.githubusercontent.com/u/1070352?v=4&s=117" width="117" />](https://github.com/b41sh) |[<img alt="BohuTANG" src="https://avatars.githubusercontent.com/u/172204?v=4&s=117" width="117" />](https://github.com/BohuTANG) |[<img alt="dantengsky" src="https://avatars.githubusercontent.com/u/22081156?v=4&s=117" width="117" />](https://github.com/dantengsky) |[<img alt="drmingdrmer" src="https://avatars.githubusercontent.com/u/44069?v=4&s=117" width="117" />](https://github.com/drmingdrmer) |
 :---: |:---: |:---: |:---: |:---: |:---: |
 [andylokandy](https://github.com/andylokandy) |[ariesdevil](https://github.com/ariesdevil) |[b41sh](https://github.com/b41sh) |[BohuTANG](https://github.com/BohuTANG) |[dantengsky](https://github.com/dantengsky) |[drmingdrmer](https://github.com/drmingdrmer) |
 
-[<img alt="everpcpc" src="https://avatars.githubusercontent.com/u/1808802?v=4&s=117" width="117">](https://github.com/everpcpc) |[<img alt="flaneur2020" src="https://avatars.githubusercontent.com/u/129800?v=4&s=117" width="117">](https://github.com/flaneur2020) |[<img alt="leiysky" src="https://avatars.githubusercontent.com/u/22445410?v=4&s=117" width="117">](https://github.com/leiysky) |[<img alt="lichuang" src="https://avatars.githubusercontent.com/u/1998569?v=4&s=117" width="117">](https://github.com/lichuang) |[<img alt="mergify[bot]" src="https://avatars.githubusercontent.com/in/10562?v=4&s=117" width="117">](https://github.com/apps/mergify) |[<img alt="PsiACE" src="https://avatars.githubusercontent.com/u/36896360?v=4&s=117" width="117">](https://github.com/PsiACE) |
+[<img alt="everpcpc" src="https://avatars.githubusercontent.com/u/1808802?v=4&s=117" width="117" />](https://github.com/everpcpc) |[<img alt="flaneur2020" src="https://avatars.githubusercontent.com/u/129800?v=4&s=117" width="117" />](https://github.com/flaneur2020) |[<img alt="leiysky" src="https://avatars.githubusercontent.com/u/22445410?v=4&s=117" width="117" />](https://github.com/leiysky) |[<img alt="lichuang" src="https://avatars.githubusercontent.com/u/1998569?v=4&s=117" width="117" />](https://github.com/lichuang) |[<img alt="mergify[bot]" src="https://avatars.githubusercontent.com/in/10562?v=4&s=117" width="117" />](https://github.com/apps/mergify) |[<img alt="PsiACE" src="https://avatars.githubusercontent.com/u/36896360?v=4&s=117" width="117" />](https://github.com/PsiACE) |
 :---: |:---: |:---: |:---: |:---: |:---: |
 [everpcpc](https://github.com/everpcpc) |[flaneur2020](https://github.com/flaneur2020) |[leiysky](https://github.com/leiysky) |[lichuang](https://github.com/lichuang) |[mergify[bot]](https://github.com/apps/mergify) |[PsiACE](https://github.com/PsiACE) |
 
-[<img alt="sandflee" src="https://avatars.githubusercontent.com/u/5102100?v=4&s=117" width="117">](https://github.com/sandflee) |[<img alt="soyeric128" src="https://avatars.githubusercontent.com/u/106025534?v=4&s=117" width="117">](https://github.com/soyeric128) |[<img alt="sundy-li" src="https://avatars.githubusercontent.com/u/3325189?v=4&s=117" width="117">](https://github.com/sundy-li) |[<img alt="TCeason" src="https://avatars.githubusercontent.com/u/33082201?v=4&s=117" width="117">](https://github.com/TCeason) |[<img alt="TracyZYJ" src="https://avatars.githubusercontent.com/u/37072511?v=4&s=117" width="117">](https://github.com/TracyZYJ) |[<img alt="Xuanwo" src="https://avatars.githubusercontent.com/u/5351546?v=4&s=117" width="117">](https://github.com/Xuanwo) |
+[<img alt="sandflee" src="https://avatars.githubusercontent.com/u/5102100?v=4&s=117" width="117" />](https://github.com/sandflee) |[<img alt="soyeric128" src="https://avatars.githubusercontent.com/u/106025534?v=4&s=117" width="117" />](https://github.com/soyeric128) |[<img alt="sundy-li" src="https://avatars.githubusercontent.com/u/3325189?v=4&s=117" width="117" />](https://github.com/sundy-li) |[<img alt="TCeason" src="https://avatars.githubusercontent.com/u/33082201?v=4&s=117" width="117" />](https://github.com/TCeason) |[<img alt="TracyZYJ" src="https://avatars.githubusercontent.com/u/37072511?v=4&s=117" width="117" />](https://github.com/TracyZYJ) |[<img alt="Xuanwo" src="https://avatars.githubusercontent.com/u/5351546?v=4&s=117" width="117" />](https://github.com/Xuanwo) |
 :---: |:---: |:---: |:---: |:---: |:---: |
 [sandflee](https://github.com/sandflee) |[soyeric128](https://github.com/soyeric128) |[sundy-li](https://github.com/sundy-li) |[TCeason](https://github.com/TCeason) |[TracyZYJ](https://github.com/TracyZYJ) |[Xuanwo](https://github.com/Xuanwo) |
 
-[<img alt="xudong963" src="https://avatars.githubusercontent.com/u/41979257?v=4&s=117" width="117">](https://github.com/xudong963) |[<img alt="youngsofun" src="https://avatars.githubusercontent.com/u/5782159?v=4&s=117" width="117">](https://github.com/youngsofun) |[<img alt="yufan022" src="https://avatars.githubusercontent.com/u/30121694?v=4&s=117" width="117">](https://github.com/yufan022) |[<img alt="zhang2014" src="https://avatars.githubusercontent.com/u/8087042?v=4&s=117" width="117">](https://github.com/zhang2014) |[<img alt="zhyass" src="https://avatars.githubusercontent.com/u/34016424?v=4&s=117" width="117">](https://github.com/zhyass) | |
+[<img alt="xudong963" src="https://avatars.githubusercontent.com/u/41979257?v=4&s=117" width="117" />](https://github.com/xudong963) |[<img alt="youngsofun" src="https://avatars.githubusercontent.com/u/5782159?v=4&s=117" width="117" />](https://github.com/youngsofun) |[<img alt="yufan022" src="https://avatars.githubusercontent.com/u/30121694?v=4&s=117" width="117" />](https://github.com/yufan022) |[<img alt="zhang2014" src="https://avatars.githubusercontent.com/u/8087042?v=4&s=117" width="117" />](https://github.com/zhang2014) |[<img alt="zhyass" src="https://avatars.githubusercontent.com/u/34016424?v=4&s=117" width="117" />](https://github.com/zhyass) | |
 :---: |:---: |:---: |:---: |:---: |:---: |
 [xudong963](https://github.com/xudong963) |[youngsofun](https://github.com/youngsofun) |[yufan022](https://github.com/yufan022) |[zhang2014](https://github.com/zhang2014) |[zhyass](https://github.com/zhyass) | |
 
-## Meet Us
+## Connect With Us
 
-Please join the [DatafuseLabs Community](https://github.com/datafuselabs/) if you are interested in Databend.
+We'd love to hear from you. Feel free to run the code and see if Databend works for you. Submit an issue with your problem if you need help.
 
-We are looking forward to seeing you try our code. We have a strong team behind you to ensure a smooth experience in trying our code for your projects.
-If you are a hacker passionate about database internals, feel free to play with our code.
-
-You can submit [issues](https://github.com/datafuselabs/databend/issues) for any problems you find. We also highly appreciate any of your pull requests.
+[DatafuseLabs Community](https://github.com/datafuselabs/) is open to everyone who loves data warehouses. Please join the community and share your thoughts.
 
 - [Databend Website](https://databend.rs)
-- [Weekly](https://weekly.databend.rs/) (A weekly newsletter about Databend)
 - [GitHub Discussions](https://github.com/datafuselabs/databend/discussions) (Feature/Bug reports, Contributions)
 - [Twitter](https://twitter.com/Datafuse_Labs) (Get the news fast)
 - [Slack Channel](https://link.databend.rs/join-slack) (For live discussion with the Community)
