@@ -129,9 +129,9 @@ Thanks a lot to the contributors for their excellent work this week.
 :---: |:---: |:---: |:---: |:---: |:---: |
 [sundy-li](https://github.com/sundy-li) |[TCeason](https://github.com/TCeason) |[Xuanwo](https://github.com/Xuanwo) |[xudong963](https://github.com/xudong963) |[youngsofun](https://github.com/youngsofun) |[zhang2014](https://github.com/zhang2014) |
 
-[<img alt="ZhiHanZ" src="https://avatars.githubusercontent.com/u/25170437?v=4&s=117" width="117" />](https://github.com/ZhiHanZ) |
-:---: |
-[ZhiHanZ](https://github.com/ZhiHanZ) |
+[<img alt="ZhiHanZ" src="https://avatars.githubusercontent.com/u/25170437?v=4&s=117" width="117" />](https://github.com/ZhiHanZ) | | | | | |
+:---: |:---: |:---: |:---: |:---: |:---: |
+[ZhiHanZ](https://github.com/ZhiHanZ) | | | | | |
 
 ## Connect With Us
 
