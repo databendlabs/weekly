@@ -77,13 +77,13 @@
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;&lt;strong&gt;Learn More&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&#x2F;doc&#x2F;sql-commands&#x2F;ddl&#x2F;table&#x2F;ddl-restore-table&quot;&gt;Docs | RESTORE TABLEt&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&#x2F;doc&#x2F;sql-commands&#x2F;ddl&#x2F;table&#x2F;ddl-restore-table&quot;&gt;Docs | RESTORE TABLE&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;8967&quot;&gt;PR | alter table flashback&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;what-s-up-next&quot;&gt;What&#x27;s Up Next&lt;&#x2F;h2&gt;
 &lt;p&gt;We&#x27;re always open to cutting-edge technologies and innovative ideas. You&#x27;re more than welcome to join the community and bring them to Databend.&lt;&#x2F;p&gt;
-&lt;h4 id=&quot;add-build-information-to-the-error-report&quot;&gt;Add Build Information to the Error Report&lt;&#x2F;h4&gt;
-&lt;p&gt;Currently, Databend&#x27;s error reports consist of error codes and error messages. We would like to add build information to this to help better identify problems.&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;adding-build-information-to-error-report&quot;&gt;Adding Build Information to Error Report&lt;&#x2F;h4&gt;
+&lt;p&gt;An error report currently only contains an error code and some information about why the error occurred. When build information is available, troubleshooting will become easier.&lt;&#x2F;p&gt;
 &lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#151515;color:#e8e8d3;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#556633;&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#99ad6a;&quot;&gt;Code: xx. Error: error msg... (version ...)&lt;&#x2F;span&gt;&lt;span style=&quot;color:#556633;&quot;&gt;&amp;quot;
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;issues&#x2F;8983&quot;&gt;Issue 9117: Add Build Information to the Error Report&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
@@ -118,10 +118,10 @@
 &lt;p&gt;We&#x27;d love to hear from you. Feel free to run the code and see if Databend works for you. Submit an issue with your problem if you need help.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;&quot;&gt;DatafuseLabs Community&lt;&#x2F;a&gt; is open to everyone who loves data warehouses. Please join the community and share your thoughts.&lt;&#x2F;p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&quot;&gt;Databend Website&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;discussions&quot;&gt;GitHub Discussions&lt;&#x2F;a&gt; (Feature&#x2F;Bug reports, Contributions)&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;Datafuse_Labs&quot;&gt;Twitter&lt;&#x2F;a&gt; (Get the news fast)&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;link.databend.rs&#x2F;join-slack&quot;&gt;Slack Channel&lt;&#x2F;a&gt; (For live discussion with the Community)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&quot;&gt;Databend Official Website&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;discussions&quot;&gt;GitHub Discussions&lt;&#x2F;a&gt; (Feature requests, bug reports, and contributions)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;Datafuse_Labs&quot;&gt;Twitter&lt;&#x2F;a&gt; (Stay in the know)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;link.databend.rs&#x2F;join-slack&quot;&gt;Slack Channel&lt;&#x2F;a&gt; (Chat with the community)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </description>
         </item>
