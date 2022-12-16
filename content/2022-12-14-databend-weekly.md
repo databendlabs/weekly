@@ -94,7 +94,6 @@ To simplify, we're rolling out a set of unified file format options as follows f
 [ FILE_FORMAT = ( TYPE = { CSV | TSV | NDJSON | PARQUET | XML} [ formatTypeOptions ] ) ]
 ```
 
-
 - Please note that the current format options starting with `format_*` will be deprecated.  
 - `... FORMAT CSV ...` will still be accepted by the ClickHouse handler.
 - Support for customized formats created by `CREATE FILE FORMAT ...` will be added in a future release: `... FILE_FORMAT = (format_name = 'MyCustomCSV') ....` .
