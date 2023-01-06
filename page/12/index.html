@@ -53,6 +53,121 @@
         <div class="posts">
                 <div class="post on-list">
                     
+    <h1 class="post-title"><a href="https://weekly.databend.rs/2021-12-15-databend-weekly/">This week in Databend #20</a></h1>
+    <div class="post-meta-inline">
+        
+    <span class="post-date">
+            2021-12-15
+        </span>
+
+    </div>
+
+    
+
+                    
+        <div class="post-content">
+            <p><a href="https://github.com/datafuselabs/databend">Databend</a> aimed to be an open source <strong>elastic</strong> and <strong>reliable</strong> cloud warehouse, it offers blazing fast query and combines elasticity, simplicity, low cost of the cloud, built to make the Data Cloud easy.</p>
+<blockquote>
+<p>This week, Databend releases v0.6.0-nightly and begins a new six-week iteration.
+To learn about the main changes in v0.6, please see <a href="https://github.com/datafuselabs/databend/issues/2525">Checklist proposal: Nightly v0.6</a>.</p>
+<p>Get a sneak peek at the goals of v0.7 ? Check out <a href="https://github.com/datafuselabs/databend/issues/3428">Checklist proposal: Nightly v0.7</a>.</p>
+</blockquote>
+<h2 id="big-changes">Big changes</h2>
+<p>Below is a list of some major changes that we don't want you to miss.</p>
+<h3 id="features">Features</h3>
+<ul>
+<li><strong>[common/containers] add conn pool</strong> by <a href="https://github.com/drmingdrmer">@drmingdrmer</a> (<a href="https://github.com/datafuselabs/databend/pull/3468">#3468</a>)</li>
+<li><strong>add SHOW GRANTS [FOR xxx] statement</strong> by <a href="https://github.com/flaneur2020">@flaneur2020</a>. (<a href="https://github.com/datafuselabs/databend/pull/3366">#3366</a>)</li>
+<li><strong>KVApi support cross nodes read-after-write</strong> by <a href="https://github.com/drmingdrmer">@drmingdrmer</a> (<a href="https://github.com/datafuselabs/databend/pull/3405">#3405</a>)</li>
+<li><strong>describe stage</strong> by <a href="https://github.com/sundy-li/">@sundy-li</a>. (<a href="https://github.com/datafuselabs/databend/pull/3361">#3361</a>)</li>
+<li><strong>fuse sys funcs</strong> by <a href="https://github.com/dantengsky">@dantengsky</a>. (<a href="https://github.com/datafuselabs/databend/pull/3302">#3302</a>)</li>
+<li><strong>[common/meta/sled-store] txn-tree: add update_and_fetch()</strong> by <a href="https://github.com/drmingdrmer">@drmingdrmer</a> (<a href="https://github.com/datafuselabs/databend/pull/3329">#3329</a>)</li>
+<li><strong>add strings functions</strong>
+<ul>
+<li><code>EXPORT_SET</code>, <code>FIND_IN_SET</code> by <a href="https://github.com/mshauneu">@mshauneu</a> (<a href="https://github.com/datafuselabs/databend/pull/3343">#3343</a> &amp; <a href="https://github.com/datafuselabs/databend/pull/3375">#3375</a>)</li>
+<li><code>BIN</code> by <a href="https://github.com/dust1">@dust1</a> (<a href="https://github.com/datafuselabs/databend/pull/3300">#3300</a>)</li>
+<li><code>LENGTH</code> by <a href="https://github.com/BlackSmith96">@BlackSmith96</a> (<a href="https://github.com/datafuselabs/databend/pull/3448">#3448</a>)</li>
+</ul>
+</li>
+</ul>
+<h2 id="improvement">Improvement</h2>
+<ul>
+<li><strong>add expression nullable support</strong> by <a href="https://github.com/junli1026">@junli1026</a> (<a href="https://github.com/datafuselabs/databend/pull/3452">#3452</a>)</li>
+<li><strong>grant all privileges to the root user of localhost</strong> by <a href="https://github.com/silathdiir">@silathdiir</a> (<a href="https://github.com/datafuselabs/databend/pull/3404">#3404</a>)</li>
+<li><strong>support CTAS(Create Table As Select) statement</strong> by <a href="https://github.com/junli1026">@junli1026</a> (<a href="https://github.com/datafuselabs/databend/pull/3400">#3400</a>)</li>
+<li><strong>github issues/prs table add created/updated/closed time</strong> by <a href="https://github.com/Veeupup">@Veeupup</a> (<a href="https://github.com/datafuselabs/databend/pull/3327">#3327</a>)</li>
+<li><strong>follower forward request to leader</strong>
+<ul>
+<li><code>GetDatabase</code> by <a href="https://github.com/drmingdrmer">@drmingdrmer</a> (<a href="https://github.com/datafuselabs/databend/pull/3347">#3347</a>)</li>
+<li><code>ListTables</code>, <code>ListDatabase</code>, <code>GetTableInfo</code> by <a href="https://github.com/ariesdevil">@ariesdevil</a>. (<a href="https://github.com/datafuselabs/databend/pull/3360">#3360</a>, <a href="https://github.com/datafuselabs/databend/pull/3369">#3369</a>)</li>
+</ul>
+</li>
+<li><strong>add more query log events to query log table</strong> by <a href="https://github.com/BohuTANG">@BohuTANG</a>. (<a href="https://github.com/datafuselabs/databend/pull/3299">#3299</a>)</li>
+</ul>
+<h2 id="build-test-ci">Build / Test / CI</h2>
+<ul>
+<li><strong>refactor the whole ci into stages</strong> by <a href="https://github.com/Xuanwo">@Xuanwo</a> (<a href="https://github.com/datafuselabs/databend/issues/3344">#3344</a>)</li>
+<li><strong>apply the new test style to databend</strong> by <a href="https://github.com/PsiACE">@PsiACE</a> (track at <a href="https://github.com/datafuselabs/databend/issues/1866">#1866</a>)</li>
+</ul>
+<h3 id="bug-fixes">Bug fixes</h3>
+<ul>
+<li><strong>make logs_handler return a bytes stream</strong> by <a href="https://github.com/sunli829">@sunli829</a>. (<a href="https://github.com/datafuselabs/databend/pull/3422">#3422</a>)</li>
+<li><strong>fix string2string</strong> by <a href="https://github.com/mshauneu">@mshauneu</a>. (<a href="https://github.com/datafuselabs/databend/pull/3332">#3332</a>)</li>
+</ul>
+<h2 id="tips">Tips</h2>
+<p>Let's learn a weekly tip from Databend.</p>
+<h3 id="discuss-proposals-for-databend">Discuss proposals for Databend</h3>
+<p>We currently have some discussions about proposals on the GitHub that may help you understand the mechanics of the work or get involved.</p>
+<ul>
+<li>
+<p><strong>Query Cache</strong></p>
+<p>Clever use of caching can provide effective acceleration for Databend. We are implementing a single node memory-disk level 2 cache. Perhaps we will be moving towards distributed caching soon, more discussion on design and implementation is welcome, let's hear your thoughts. Related discussion <a href="https://github.com/datafuselabs/databend/discussions/3478">#3478</a>.</p>
+</li>
+<li>
+<p><strong>Re-organise our building systems</strong></p>
+<p>Our current build / test system is quite complex. We have Makeflie, Dockerfile(s), and a lot of shell / python scripts. We want to build a build/test/benchmark system based on the Rust style, so if you have any good ideas, please feel free to share to us. Related discussion <a href="https://github.com/datafuselabs/databend/discussions/3419">#3419</a>.</p>
+</li>
+<li>
+<p><strong>Refactor CI pipleline into stages</strong></p>
+<p>If you're interested in GitHub workflows, then take a look at this proposal. By <a href="https://github.com/datafuselabs/databend/issues/3344">refactoring CI</a>, we have effectively reduced blocking and been able to maintain it better. Related discussion <a href="https://github.com/datafuselabs/databend/discussions/3415">#3415</a>.</p>
+</li>
+</ul>
+<h2 id="changlogs">Changlogs</h2>
+<p>You can check the changelogs of Databend nightly to learn about our latest developments.</p>
+<ul>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.6.4-nightly">v0.6.4-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.6.3-nightly">v0.6.3-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.6.2-nightly">v0.6.2-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.6.1-nightly">v0.6.1-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.6.0-nightly">v0.6.0-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.5.41-nightly">v0.5.41-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.5.40-nightly">v0.5.40-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.5.39-nightly">v0.5.39-nightly</a></li>
+</ul>
+<h2 id="ecosystem-upstream">Ecosystem/Upstream</h2>
+<p>From open source, for open source. Our team is also committed to contributing to the Rust ecosystem and upstream dependencies.</p>
+<ul>
+<li><a href="https://github.com/datafuse-extras/sqlparser-rs/pull/11">datafuse-extras/sqlparser-rs #11: add column comment for create table</a> by <a href="https://github.com/Junnplus/">@Junnplus</a></li>
+<li><a href="https://github.com/datafuse-extras/sqlparser-rs/pull/12">datafuse-extras/sqlparser-rs #12: support negative numbers as value</a> by <a href="https://github.com/sundy-li/">@sundy-li</a> &amp; <a href="https://github.com/PsiACE/">@PsiACE</a></li>
+</ul>
+<h2 id="meet-us">Meet Us</h2>
+<p>Please join the <a href="https://github.com/datafuselabs/">DatafuseLabs Community</a> if you are interested in Databend.</p>
+<p>We are looking forward to seeing you try our code. We have a strong team behind you to ensure a smooth experience in trying our code for your projects.
+If you are a hacker passionate about database internals, feel free to play with our code.</p>
+<p>You can submit <a href="https://github.com/datafuselabs/databend/issues">issues</a> for any problems you find. We also highly appreciate any of your pull requests.</p>
+<ul>
+<li><a href="https://databend.rs">Databend Website</a></li>
+<li><a href="https://twitter.com/Datafuse_Labs">Twitter</a></li>
+<li><a href="https://github.com/datafuselabs/databend/discussions">GitHub Discussions</a></li>
+<li><a href="https://link.databend.rs/join-slack">Slack Channel</a></li>
+</ul>
+
+        </div>
+
+                </div>
+            
+                <div class="post on-list">
+                    
     <h1 class="post-title"><a href="https://weekly.databend.rs/2021-12-08-databend-weekly/">This week in Databend #19</a></h1>
     <div class="post-meta-inline">
         
@@ -452,88 +567,6 @@ If you are a hacker passionate about database internals, feel free to play with 
         </div>
 
                 </div>
-            
-                <div class="post on-list">
-                    
-    <h1 class="post-title"><a href="https://weekly.databend.rs/2021-11-10-databend-weekly/">This week in Databend #15</a></h1>
-    <div class="post-meta-inline">
-        
-    <span class="post-date">
-            2021-11-10
-        </span>
-
-    </div>
-
-    
-
-                    
-        <div class="post-content">
-            <p><a href="https://github.com/datafuselabs/databend">Databend</a> aimed to be an open source <strong>elastic</strong> and <strong>reliable</strong> cloud warehouse, it offers blazing fast query and combines elasticity, simplicity, low cost of the cloud, built to make the Data Cloud easy.</p>
-<h2 id="big-changes">Big changes</h2>
-<p>Below is a list of some major changes that we don't want you to miss.</p>
-<h3 id="features">Features</h3>
-<ul>
-<li><strong>support add api and support local deployment with a singe line of code</strong> by <a href="https://github.com/ZhiHanZ">@ZhiHanZ</a>. (<a href="https://github.com/datafuselabs/databend/pull/2644">#2644</a>)</li>
-<li><strong>add system.columns table</strong> by <a href="https://github.com/flaneur2020">@flaneur2020</a>. (<a href="https://github.com/datafuselabs/databend/pull/2624">#2624</a>)</li>
-<li><strong>support create user</strong> by <a href="https://github.com/BohuTANG">@BohuTANG</a> (<a href="https://github.com/datafuselabs/databend/pull/2646">#2646</a>)</li>
-<li><strong>add system users table</strong> by <a href="https://github.com/GrapeBaBa">@GrapeBaBa</a> (<a href="https://github.com/datafuselabs/databend/pull/2684">#2684</a>)</li>
-<li><strong>add show uses statement</strong> by <a href="https://github.com/Junnplus">@Junnplus</a>. (<a href="https://github.com/datafuselabs/databend/pull/2694">#2694</a>)</li>
-<li><strong>add join API to join a node to cluster</strong> by <a href="https://github.com/drmingdrmer">@drmingdrmer</a> (<a href="https://github.com/datafuselabs/databend/pull/2701">#2701</a>)</li>
-<li><strong>support graceful shutdown in metasrv</strong> by <a href="https://github.com/sunisdown">@sunisdown</a>. (<a href="https://github.com/datafuselabs/databend/pull/2699">#2699</a>)</li>
-<li><strong>add math functions</strong>
-<ul>
-<li><code>degress</code>/<code>radians</code> by <a href="https://github.com/Junnplus">@Junnplus</a> (<a href="https://github.com/datafuselabs/databend/pull/2643">#2643</a>)</li>
-<li><code>log</code>/<code>ln</code>/<code>log2</code>/<code>log10</code> by <a href="https://github.com/flaneur2020">@flaneur2020</a> (<a href="https://github.com/datafuselabs/databend/pull/2669">#2669</a> &amp; <a href="https://github.com/datafuselabs/databend/pull/2733">#2733</a>)</li>
-</ul>
-</li>
-</ul>
-<h2 id="improvement">Improvement</h2>
-<ul>
-<li><strong>migrate from Axum to Poem</strong> by <a href="https://github.com/sunli829">@sunli829</a> (<a href="https://github.com/datafuselabs/databend/pull/2670">#2670</a>)</li>
-<li><strong>impl KVApi for MetaNode to simplify upper level callers</strong> by <a href="https://github.com/drmingdrmer">@drmingdrmer</a> (<a href="https://github.com/datafuselabs/databend/pull/2726">#2726</a>)</li>
-<li><strong>impl KVApi for StateMachine</strong> by <a href="https://github.com/drmingdrmer">@drmingdrmer</a> (<a href="https://github.com/datafuselabs/databend/pull/2721">#2721</a>)</li>
-<li><strong>make push_downs work in table's read</strong> by <a href="https://github.com/sundy-li">@sundy-li</a>. (<a href="https://github.com/datafuselabs/databend/pull/2660">#2660</a>)</li>
-</ul>
-<h3 id="bug-fixes">Bug fixes</h3>
-<ul>
-<li><strong>statistics returned by Table::read_partitions should take push-down projections into account</strong> by <a href="https://github.com/dantengsky">@dantengsky</a>. (<a href="https://github.com/datafuselabs/databend/pull/2700">#2700</a>)</li>
-<li><strong>fix number table fail to generate rows</strong>  by <a href="https://github.com/junli1026">@junli1026</a> (<a href="https://github.com/datafuselabs/databend/pull/2691">#2691</a>)</li>
-<li><strong>transform like pattern to regex</strong> by <a href="https://github.com/zhyass">@zhyass</a>. (<a href="https://github.com/datafuselabs/databend/pull/2661">#2661</a>)</li>
-</ul>
-<h2 id="changlogs">Changlogs</h2>
-<p>You can check the changelogs of Databend nightly to learn about our latest developments.</p>
-<ul>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.5.13-nightly">v0.5.13-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.5.12-nightly">v0.5.12-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.5.11-nightly">v0.5.11-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.5.10-nightly">v0.5.10-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.5.9-nightly">v0.5.9-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.5.8-nightly">v0.5.8-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.5.7-nightly">v0.5.7-nightly</a></li>
-</ul>
-<h2 id="ecosystem-upstream">Ecosystem/Upstream</h2>
-<p>From open source, for open source. Our team is also committed to contributing to the Rust ecosystem and upstream dependencies.</p>
-<ul>
-<li><a href="https://github.com/jorgecarleitao/arrow2/pull/589">arrow2 #589: Allow NullArray to be casted to all other types</a>: A port of <a href="https://github.com/apache/arrow-rs/pull/884">apache/arrow-rs#884</a>. by <a href="https://github.com/flaneur2020/">@flaneur2020</a></li>
-<li><a href="https://github.com/jorgecarleitao/arrow2/pull/561">arrow2 #561: Compute: add partial option into CastOptions</a>: Trying to be compatible with MySQL behavior. by <a href="https://github.com/sundy-li/">@sundy-li</a></li>
-<li><a href="https://github.com/datafuse-extras/sqlparser-rs/pull/7">datafuse-extras/sqlparser-rs  #7: Process escape character in quoted string</a> by <a href="https://github.com/zhyass/">@zhyass</a></li>
-<li><a href="https://github.com/programatik29/axum-server/commit/390b84cf7">axum-server rev:390b84cf7: rustls implementation</a> Bump rustls and its friends. by <a href="https://github.com/PsiACE/">@PsiACE</a></li>
-</ul>
-<h2 id="meet-us">Meet Us</h2>
-<p>Please join the <a href="https://github.com/datafuselabs/">DatafuseLabs Community</a> if you are interested in Databend.</p>
-<p>We are looking forward to seeing you try our code. We have a strong team behind you to ensure a smooth experience in trying our code for your projects.
-If you are a hacker passionate about database internals, feel free to play with our code.</p>
-<p>You can submit <a href="https://github.com/datafuselabs/databend/issues">issues</a> for any problems you find. We also highly appreciate any of your pull requests.</p>
-<ul>
-<li><a href="https://databend.rs">Databend Website</a></li>
-<li><a href="https://twitter.com/Datafuse_Labs">Twitter</a></li>
-<li><a href="https://github.com/datafuselabs/databend/discussions">GitHub Discussions</a></li>
-<li><a href="https://link.databend.rs/join-slack">Slack Channel</a></li>
-</ul>
-
-        </div>
-
-                </div>
             <div class="pagination">
                 <div class="pagination__buttons">
                     <span class="button previous">
@@ -560,7 +593,7 @@ If you are a hacker passionate about database internals, feel free to play with 
         <div class="footer__inner">
                 <div class="copyright">
                         <span>© 
-    2022
+    2023
  Datafuse Labs</span>
                     <span class="copyright-theme">
                         <span class="copyright-theme-sep">:: </span>
