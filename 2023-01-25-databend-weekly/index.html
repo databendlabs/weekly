@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Databend Weekly</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="robots" content="noodp"/>
+
+    <link rel="stylesheet" href="https://weekly.databend.rs/style.css">
+    <link rel="stylesheet" href="https://weekly.databend.rs/color/blue.css">
+
+    <link rel="stylesheet" href="https://weekly.databend.rs/font-hack.css">
+
+    </head>
+
+<body class="">
+<div class="container">
+    
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__logo">
+                    
+                <a href="https://weekly.databend.rs" style="text-decoration: none;">
+                    <div class="logo">
+                            Databend Weekly
+                        </div>
+                </a>
+            </div>
+        </div>
+
+        <nav class="menu">
+            <ul class="menu__inner">
+                
+                <li class="active"><a href="https://weekly.databend.rs">weekly</a></li>
+            
+                <li><a href="https://weekly.databend.rs/archive">archive</a></li>
+            
+                <li><a href="https://github.com/datafuselabs/databend" target="_blank" rel="noopener noreferrer">github</a></li>
+            
+                <li><a href="https://databend.rs/" target="_blank" rel="noopener noreferrer">docs</a></li>
+            
+                <li><a href="https://weekly.databend.rs/rss.xml">rss</a></li>
+            </ul>
+        </nav>
+    
+    </header>
+    
+
+    <div class="content">
+        
+    <div class="post">
+        
+    <h1 class="post-title"><a href="https://weekly.databend.rs/2023-01-25-databend-weekly/">This Week in Databend #78</a></h1>
+    <div class="post-meta-inline">
+        
+    <span class="post-date">
+            2023-01-25
+        </span>
+
+    </div>
+
+    
+
+        
+        <div class="post-content">
+            <p><a href="https://github.com/datafuselabs/databend">Databend</a> is a powerful cloud data warehouse. Built for elasticity and efficiency. Free and open. Also available in the cloud: <a href="https://app.databend.com">https://app.databend.com</a> .</p>
+<blockquote>
+<p><strong>Special Note:</strong> <a href="https://weekly.databend.rs/"><em>This Week in Databend</em></a> will be gradually migrated to the <a href="https://databend.rs/blog"><em>Databend Blog</em></a>. We will keep the content in sync until the final migration is complete.</p>
+</blockquote>
+<h2 id="what-s-new">What's New</h2>
+<p>Check out what we've done this week to make Databend even better for you.</p>
+<h3 id="features-improvements-sparkles">Features &amp; Improvements ✨</h3>
+<p><strong>SQL</strong></p>
+<ul>
+<li>eliminate extra group by scalars (<a href="https://github.com/datafuselabs/databend/pull/9706">#9706</a>)</li>
+</ul>
+<p><strong>Query</strong></p>
+<ul>
+<li>add privilege check for insert/delete/optimize (<a href="https://github.com/datafuselabs/databend/pull/9664">#9664</a>)</li>
+<li>enable empty projection (<a href="https://github.com/datafuselabs/databend/pull/9675">#9675</a>)</li>
+<li>add aggregate limit in final aggregate stage (<a href="https://github.com/datafuselabs/databend/pull/9716">#9716</a>)</li>
+<li>add optional column names to create/alter view statement (<a href="https://github.com/datafuselabs/databend/pull/9715">#9715</a>)</li>
+</ul>
+<p><strong>Storage</strong></p>
+<ul>
+<li>add prewhere support in native storage format (<a href="https://github.com/datafuselabs/databend/pull/9600">#9600</a>)</li>
+</ul>
+<h3 id="code-refactoring-tada">Code Refactoring 🎉</h3>
+<p><strong>IO</strong></p>
+<ul>
+<li>move io constants to <code>common/io</code> (<a href="https://github.com/datafuselabs/databend/pull/9700">#9700</a>)</li>
+<li>refine <code>fuse/io/read</code> (<a href="https://github.com/datafuselabs/databend/pull/9711">#9711</a>)</li>
+</ul>
+<p><strong>Planner</strong></p>
+<ul>
+<li>rename <code>Scalar</code> to <code>ScalarExpr</code> (<a href="https://github.com/datafuselabs/databend/pull/9665">#9665</a>)</li>
+</ul>
+<p><strong>Storage</strong></p>
+<ul>
+<li>refactor cache layer (<a href="https://github.com/datafuselabs/databend/pull/9672">#9672</a>)</li>
+<li><code>pruner.rs</code> -&gt; <code>fuse_bloom_pruner.rs</code> (<a href="https://github.com/datafuselabs/databend/pull/9710">#9710</a>)</li>
+<li>make pruner hierarchy to chain (<a href="https://github.com/datafuselabs/databend/pull/9714">#9714</a>)</li>
+</ul>
+<h3 id="build-testing-ci-infra-changes-electric-plug">Build/Testing/CI Infra Changes 🔌</h3>
+<ul>
+<li>support setup minio storage &amp; external s3 storage in docker image (<a href="https://github.com/datafuselabs/databend/pull/9676">#9676</a>)</li>
+</ul>
+<h3 id="bug-fixes-wrench">Bug Fixes 🔧</h3>
+<p><strong>Expression</strong></p>
+<ul>
+<li>fix missing <code>simple_cast</code> (<a href="https://github.com/datafuselabs/databend/pull/9671">#9671</a>)</li>
+</ul>
+<p><strong>Query</strong></p>
+<ul>
+<li>fix <code>efficiently_memory_final_aggregator</code> result is not stable (<a href="https://github.com/datafuselabs/databend/pull/9685">#9685</a>)</li>
+<li>fix <code>max_result_rows</code> only limit output results nums (<a href="https://github.com/datafuselabs/databend/pull/9661">#9661</a>)</li>
+<li>fix query hang in two level aggregator (<a href="https://github.com/datafuselabs/databend/pull/9694">#9694</a>)</li>
+</ul>
+<p><strong>Storage</strong></p>
+<ul>
+<li>may get wrong datablocks if not sorted by output schema (<a href="https://github.com/datafuselabs/databend/pull/9470">#9470</a>)</li>
+<li>bloom filter is using wrong cache key (<a href="https://github.com/datafuselabs/databend/pull/9706">#9706</a>)</li>
+</ul>
+<h2 id="what-s-on-in-databend">What's On In Databend</h2>
+<p>Stay connected with the latest news about Databend.</p>
+<h3 id="databend-all-in-one-docker-image">Databend All-in-One Docker Image</h3>
+<p>Databend Docker Image now supports setting up MinIO storage and external AWS S3 storage.</p>
+<p>Now you can easily use a Docker image for your first experiment with Databend.***</p>
+<p><strong>Run with MinIO as backend</strong></p>
+<pre data-lang="bash" style="background-color:#151515;color:#e8e8d3;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffb964;">docker</span><span> run \
+</span><span style="color:#ffb964;">    -p</span><span> 8000:8000 \
+</span><span style="color:#ffb964;">    -p</span><span> 9000:9000 \
+</span><span style="color:#ffb964;">    -e</span><span> MINIO_ENABLED=true \
+</span><span>    datafuselabs/databend
+</span></code></pre>
+<p><strong>Run with self managed query config</strong></p>
+<pre data-lang="bash" style="background-color:#151515;color:#e8e8d3;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffb964;">docker</span><span> run \
+</span><span style="color:#ffb964;">    -p</span><span> 8000:8000 \
+</span><span style="color:#ffb964;">    -e</span><span> DATABEND_QUERY_CONFIG_FILE=/etc/databend/mine.toml \
+</span><span style="color:#ffb964;">    -v</span><span> query_config_file:/etc/databend/mine.toml \
+</span><span>    datafuselabs/databend
+</span></code></pre>
+<p><strong>Learn More</strong></p>
+<ul>
+<li><a href="https://github.com/datafuselabs/databend/pull/9676">PR | ci: support setup minio storage &amp; external s3 storage in docker image</a></li>
+<li><a href="https://hub.docker.com/r/datafuselabs/databend">Docker Hub | Databend All-in-One Docker Image</a></li>
+</ul>
+<h2 id="what-s-up-next">What's Up Next</h2>
+<p>We're always open to cutting-edge technologies and innovative ideas. You're more than welcome to join the community and bring them to Databend.</p>
+<h3 id="vector-search">Vector Search</h3>
+<p>Vector search captures the meaning and context of unstructured data, and is commonly used for text or image processing, enabling the use of semantics to find similar results and obtain more valid results than traditional keyword retrieval.</p>
+<p>Databend plans to provide users with a richer and more efficient means of querying by supporting vector search, and the introduction of Faiss Index may be an initial solution.</p>
+<p><a href="https://github.com/datafuselabs/databend/issues/9699">Issue 9699: feat: vector search (Faiss index)</a></p>
+<p>Please let us know if you're interested in contributing to this issue, or pick up a good first issue at <a href="https://link.databend.rs/i-m-feeling-lucky">https://link.databend.rs/i-m-feeling-lucky</a> to get started.</p>
+<h2 id="changelog">Changelog</h2>
+<p>You can check the changelog of Databend Nightly for details about our latest developments.</p>
+<ul>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.9.14-nightly">v0.9.14-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.9.13-nightly">v0.9.13-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.9.12-nightly">v0.9.12-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.9.11-nightly">v0.9.11-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.9.10-nightly">v0.9.10-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.9.9-nightly">v0.9.09-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.9.8-nightly">v0.9.08-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.9.7-nightly">v0.9.07-nightly</a></li>
+</ul>
+<p>We're gearing up for the v0.9 release of Databend. Stay tuned.</p>
+<h2 id="contributors">Contributors</h2>
+<p>Thanks a lot to the contributors for their excellent work this week.</p>
+<table><thead><tr><th align="center"><a href="https://github.com/andylokandy"><img alt="andylokandy" src="https://avatars.githubusercontent.com/u/9637710?v=4&s=117" width="117" /></a></th><th align="center"><a href="https://github.com/ariesdevil"><img alt="ariesdevil" src="https://avatars.githubusercontent.com/u/7812909?v=4&s=117" width="117" /></a></th><th align="center"><a href="https://github.com/b41sh"><img alt="b41sh" src="https://avatars.githubusercontent.com/u/1070352?v=4&s=117" width="117" /></a></th><th align="center"><a href="https://github.com/BohuTANG"><img alt="BohuTANG" src="https://avatars.githubusercontent.com/u/172204?v=4&s=117" width="117" /></a></th><th align="center"><a href="https://github.com/dantengsky"><img alt="dantengsky" src="https://avatars.githubusercontent.com/u/22081156?v=4&s=117" width="117" /></a></th><th align="center"><a href="https://github.com/apps/dependabot"><img alt="dependabot[bot]" src="https://avatars.githubusercontent.com/in/29110?v=4&s=117" width="117" /></a></th></tr></thead><tbody>
+<tr><td align="center"><a href="https://github.com/andylokandy">andylokandy</a></td><td align="center"><a href="https://github.com/ariesdevil">ariesdevil</a></td><td align="center"><a href="https://github.com/b41sh">b41sh</a></td><td align="center"><a href="https://github.com/BohuTANG">BohuTANG</a></td><td align="center"><a href="https://github.com/dantengsky">dantengsky</a></td><td align="center"><a href="https://github.com/apps/dependabot">dependabot[bot]</a></td></tr>
+</tbody></table>
+<table><thead><tr><th align="center"><a href="https://github.com/everpcpc"><img alt="everpcpc" src="https://avatars.githubusercontent.com/u/1808802?v=4&s=117" width="117" /></a></th><th align="center"><a href="https://github.com/flaneur2020"><img alt="flaneur2020" src="https://avatars.githubusercontent.com/u/129800?v=4&s=117" width="117" /></a></th><th align="center"><a href="https://github.com/johnhaxx7"><img alt="johnhaxx7" src="https://avatars.githubusercontent.com/u/12479235?v=4&s=117" width="117" /></a></th><th align="center"><a href="https://github.com/leiysky"><img alt="leiysky" src="https://avatars.githubusercontent.com/u/22445410?v=4&s=117" width="117" /></a></th><th align="center"><a href="https://github.com/apps/mergify"><img alt="mergify[bot]" src="https://avatars.githubusercontent.com/in/10562?v=4&s=117" width="117" /></a></th><th align="center"><a href="https://github.com/PsiACE"><img alt="PsiACE" src="https://avatars.githubusercontent.com/u/36896360?v=4&s=117" width="117" /></a></th></tr></thead><tbody>
+<tr><td align="center"><a href="https://github.com/everpcpc">everpcpc</a></td><td align="center"><a href="https://github.com/flaneur2020">flaneur2020</a></td><td align="center"><a href="https://github.com/johnhaxx7">johnhaxx7</a></td><td align="center"><a href="https://github.com/leiysky">leiysky</a></td><td align="center"><a href="https://github.com/apps/mergify">mergify[bot]</a></td><td align="center"><a href="https://github.com/PsiACE">PsiACE</a></td></tr>
+</tbody></table>
+<table><thead><tr><th align="center"><a href="https://github.com/RinChanNOWWW"><img alt="RinChanNOWWW" src="https://avatars.githubusercontent.com/u/33975039?v=4&s=117" width="117" /></a></th><th align="center"><a href="https://github.com/sandflee"><img alt="sandflee" src="https://avatars.githubusercontent.com/u/5102100?v=4&s=117" width="117" /></a></th><th align="center"><a href="https://github.com/sundy-li"><img alt="sundy-li" src="https://avatars.githubusercontent.com/u/3325189?v=4&s=117" width="117" /></a></th><th align="center"><a href="https://github.com/xudong963"><img alt="xudong963" src="https://avatars.githubusercontent.com/u/41979257?v=4&s=117" width="117" /></a></th><th align="center"><a href="https://github.com/zhang2014"><img alt="zhang2014" src="https://avatars.githubusercontent.com/u/8087042?v=4&s=117" width="117" /></a></th><th align="center"><a href="https://github.com/zhyass"><img alt="zhyass" src="https://avatars.githubusercontent.com/u/34016424?v=4&s=117" width="117" /></a></th></tr></thead><tbody>
+<tr><td align="center"><a href="https://github.com/RinChanNOWWW">RinChanNOWWW</a></td><td align="center"><a href="https://github.com/sandflee">sandflee</a></td><td align="center"><a href="https://github.com/sundy-li">sundy-li</a></td><td align="center"><a href="https://github.com/xudong963">xudong963</a></td><td align="center"><a href="https://github.com/zhang2014">zhang2014</a></td><td align="center"><a href="https://github.com/zhyass">zhyass</a></td></tr>
+</tbody></table>
+<h2 id="connect-with-us">Connect With Us</h2>
+<p>We'd love to hear from you. Feel free to run the code and see if Databend works for you. Submit an issue with your problem if you need help.</p>
+<p><a href="https://github.com/datafuselabs/">DatafuseLabs Community</a> is open to everyone who loves data warehouses. Please join the community and share your thoughts.</p>
+<ul>
+<li><a href="https://databend.rs">Databend Official Website</a></li>
+<li><a href="https://github.com/datafuselabs/databend/discussions">GitHub Discussions</a> (Feature requests, bug reports, and contributions)</li>
+<li><a href="https://twitter.com/Datafuse_Labs">Twitter</a> (Stay in the know)</li>
+<li><a href="https://link.databend.rs/join-slack">Slack Channel</a> (Chat with the community)</li>
+</ul>
+
+        </div>
+
+        
+        <div class="pagination">
+            <div class="pagination__title">
+                <span class="pagination__title-h">Thanks for reading! Read other posts?</span>
+                <hr />
+            </div>
+            <div class="pagination__buttons">
+                
+                    <span class="button next">
+                        <a href="https://weekly.databend.rs/2023-01-18-databend-weekly/">
+                            <span class="button__text">This Week in Databend #77</span>&nbsp;
+                            <span class="button__icon">→</span>
+                        </a>
+                    </span>
+                </div>
+        </div>
+    
+    </div>
+
+    </div>
+
+    
+    <footer class="footer">
+        <div class="footer__inner">
+                <div class="copyright">
+                        <span>© 
+    2023
+ Datafuse Labs</span>
+                    <span class="copyright-theme">
+                        <span class="copyright-theme-sep">:: </span>
+                        Theme: <a href="https://github.com/pawroman/zola-theme-terminimal/">Terminimal</a> by pawroman
+                    </span>
+                </div>
+            </div>
+    </footer>
+    
+
+</div>
+</body>
+
+</html>
