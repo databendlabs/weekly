@@ -7,7 +7,293 @@
         <generator>Zola</generator>
         <language>en</language>
         <atom:link href="https://weekly.databend.rs/rss.xml" rel="self" type="application/rss+xml"/>
-        <lastBuildDate>Wed, 25 Jan 2023 00:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Wed, 08 Feb 2023 00:00:00 +0000</lastBuildDate>
+        <item>
+            <title>This Week in Databend #80</title>
+            <pubDate>Wed, 08 Feb 2023 00:00:00 +0000</pubDate>
+            <link>https://weekly.databend.rs/2023-02-08-databend-weekly/</link>
+            <guid>https://weekly.databend.rs/2023-02-08-databend-weekly/</guid>
+            <description>&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&quot;&gt;Databend&lt;&#x2F;a&gt; is a modern cloud data warehouse, serving your massive-scale analytics needs at low cost and complexity. Open source alternative to Snowflake. Also available in the cloud: &lt;a href=&quot;https:&#x2F;&#x2F;app.databend.com&quot;&gt;https:&#x2F;&#x2F;app.databend.com&lt;&#x2F;a&gt; .&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Special Note:&lt;&#x2F;strong&gt; &lt;a href=&quot;https:&#x2F;&#x2F;weekly.databend.rs&#x2F;&quot;&gt;&lt;em&gt;This Week in Databend&lt;&#x2F;em&gt;&lt;&#x2F;a&gt; will be gradually migrated to the &lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&#x2F;blog&quot;&gt;&lt;em&gt;Databend Blog&lt;&#x2F;em&gt;&lt;&#x2F;a&gt;. We will keep the content in sync until the final migration is complete.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h2 id=&quot;what-s-new&quot;&gt;What&#x27;s New&lt;&#x2F;h2&gt;
+&lt;p&gt;Check out what we&#x27;ve done this week to make Databend even better for you.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;features-improvements-sparkles&quot;&gt;Features &amp;amp; Improvements ✨&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;strong&gt;Meta&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;add databend-meta config &lt;code&gt;grpc_api_advertise_host&lt;&#x2F;code&gt; (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9835&quot;&gt;#9835&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;AST&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;select from stage with files&#x2F;pattern (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9877&quot;&gt;#9877&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;parse decimal type (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9894&quot;&gt;#9894&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;Expression&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;add &lt;code&gt;Decimal128&lt;&#x2F;code&gt; and &lt;code&gt;Decimal256&lt;&#x2F;code&gt; type (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9856&quot;&gt;#9856&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;Functions&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;support &lt;code&gt;array_indexof&lt;&#x2F;code&gt; (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9840&quot;&gt;#9840&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;support array function &lt;code&gt;array_unique&lt;&#x2F;code&gt;, &lt;code&gt;array_distinct&lt;&#x2F;code&gt; (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9875&quot;&gt;#9875&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;support array aggregate functions (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9903&quot;&gt;#9903&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;Query&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;add column id in TableSchema; use column id instead of index when read and write data (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9623&quot;&gt;#9623&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;support view in &lt;code&gt;system.columns&lt;&#x2F;code&gt; (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9853&quot;&gt;#9853&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;Storage&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ParquetTable&lt;&#x2F;code&gt; support topk optimization (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9824&quot;&gt;#9824&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;Sqllogictest&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;leverage sqllogictest to benchmark tpch (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9887&quot;&gt;#9887&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;code-refactoring-tada&quot;&gt;Code Refactoring 🎉&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;strong&gt;Meta&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;remove obsolete meta service api &lt;code&gt;read_msg()&lt;&#x2F;code&gt; and &lt;code&gt;write_msg()&lt;&#x2F;code&gt; (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9891&quot;&gt;#9891&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;simplify &lt;code&gt;UserAPI&lt;&#x2F;code&gt; and &lt;code&gt;RoleAPI&lt;&#x2F;code&gt; by introducing a method &lt;code&gt;update_xx_with(id, f: FnOnce)&lt;&#x2F;code&gt; (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9921&quot;&gt;#9921&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;Cluster&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;split exchange source to reader and deserializer (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9805&quot;&gt;#9805&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;split and eliminate the status for exchange transform and sink (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9910&quot;&gt;#9910&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;Functions&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;rename some array functions add &lt;code&gt;array_&lt;&#x2F;code&gt; prefix (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9886&quot;&gt;#9886&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;Query&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;TableArgs&lt;&#x2F;code&gt; preserve info of positioned and named args (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9917&quot;&gt;#9917&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;Storage&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ParquetTable&lt;&#x2F;code&gt; list file in &lt;code&gt;read_partition&lt;&#x2F;code&gt; (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9871&quot;&gt;#9871&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;build-testing-ci-infra-changes-electric-plug&quot;&gt;Build&#x2F;Testing&#x2F;CI Infra Changes 🔌&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;support for running benchmark on PRs (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9788&quot;&gt;#9788&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;bug-fixes-wrench&quot;&gt;Bug Fixes 🔧&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;strong&gt;Functions&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;fix nullable and or domain cal (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9928&quot;&gt;#9928&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;Planner&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;fix slow planner when ndv error backtrace (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9876&quot;&gt;#9876&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;fix order by contains aggregation function (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9879&quot;&gt;#9879&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;prevent panic when delete with subquery (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9902&quot;&gt;#9902&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;Query&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;fix insert default value datatype (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9816&quot;&gt;#9816&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;what-s-on-in-databend&quot;&gt;What&#x27;s On In Databend&lt;&#x2F;h2&gt;
+&lt;p&gt;Stay connected with the latest news about Databend.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;why-you-should-try-sccache&quot;&gt;Why You Should Try Sccache&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mozilla&#x2F;sccache&quot;&gt;Sccache&lt;&#x2F;a&gt; is a &lt;a href=&quot;https:&#x2F;&#x2F;ccache.dev&#x2F;&quot;&gt;ccache&lt;&#x2F;a&gt;-like project started by the Mozilla team, supporting C&#x2F;CPP, Rust and other languages, and storing caches locally or in a cloud storage backend. The community first added native support for the Github Action Cache Service to Sccache in version 0.3.3, then improved the functionality in &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mozilla&#x2F;sccache&#x2F;releases&#x2F;tag&#x2F;v0.4.0-pre.6&quot;&gt;v0.4.0-pre.6&lt;&#x2F;a&gt; so that the production CI can now use it.&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Now, &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;opendal&quot;&gt;opendal&lt;&#x2F;a&gt;, open-sourced by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&quot;&gt;Datafuse Labs&lt;&#x2F;a&gt;, acts as a storage access layer for sccache to interface with various storage services (s3&#x2F;gcs&#x2F;azlob etc.).&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Learn More&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&#x2F;blog&#x2F;sccache&quot;&gt;Blog | Why You Should Try Sccache&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;what-s-up-next&quot;&gt;What&#x27;s Up Next&lt;&#x2F;h2&gt;
+&lt;p&gt;We&#x27;re always open to cutting-edge technologies and innovative ideas. You&#x27;re more than welcome to join the community and bring them to Databend.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;try-using-build-info&quot;&gt;Try using &lt;code&gt;build-info&lt;&#x2F;code&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;To get information about git commits, build options and credits, we now use &lt;code&gt;vergen&lt;&#x2F;code&gt; and &lt;code&gt;cargo-license&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;danielschemmel&#x2F;build-info&quot;&gt;build-info&lt;&#x2F;a&gt; can collect build-information of your Rust crate. It might be possible to use it to refactor the relevant logic in &lt;code&gt;common-building&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;rust&quot; style=&quot;background-color:#151515;color:#e8e8d3;&quot; class=&quot;language-rust &quot;&gt;&lt;code class=&quot;language-rust&quot; data-lang=&quot;rust&quot;&gt;&lt;span style=&quot;color:#8fbfdc;&quot;&gt;pub struct &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;BuildInfo &lt;&#x2F;span&gt;&lt;span&gt;{
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbfdc;&quot;&gt;pub &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;timestamp&lt;&#x2F;span&gt;&lt;span&gt;: DateTime&amp;lt;Utc&amp;gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbfdc;&quot;&gt;pub &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;profile&lt;&#x2F;span&gt;&lt;span&gt;: String,
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbfdc;&quot;&gt;pub &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;optimization_level&lt;&#x2F;span&gt;&lt;span&gt;: OptimizationLevel,
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbfdc;&quot;&gt;pub &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;crate_info&lt;&#x2F;span&gt;&lt;span&gt;: CrateInfo,
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbfdc;&quot;&gt;pub &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;compiler&lt;&#x2F;span&gt;&lt;span&gt;: CompilerInfo,
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbfdc;&quot;&gt;pub &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;version_control&lt;&#x2F;span&gt;&lt;span&gt;: Option&amp;lt;VersionControl&amp;gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;issues&#x2F;9874&quot;&gt;Issue 9874: Refactor: Try using build-info&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Please let us know if you&#x27;re interested in contributing to this issue, or pick up a good first issue at &lt;a href=&quot;https:&#x2F;&#x2F;link.databend.rs&#x2F;i-m-feeling-lucky&quot;&gt;https:&#x2F;&#x2F;link.databend.rs&#x2F;i-m-feeling-lucky&lt;&#x2F;a&gt; to get started.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;changelog&quot;&gt;Changelog&lt;&#x2F;h2&gt;
+&lt;p&gt;You can check the changelog of Databend Nightly for details about our latest developments.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.9.30-nightly&quot;&gt;v0.9.30-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.9.29-nightly&quot;&gt;v0.9.29-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.9.28-nightly&quot;&gt;v0.9.28-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.9.27-nightly&quot;&gt;v0.9.27-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.9.26-nightly&quot;&gt;v0.9.26-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.9.25-nightly&quot;&gt;v0.9.25-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.9.24-nightly&quot;&gt;v0.9.24-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.9.23-nightly&quot;&gt;v0.9.23-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.9.22-nightly&quot;&gt;v0.9.22-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;contributors&quot;&gt;Contributors&lt;&#x2F;h2&gt;
+&lt;p&gt;Thanks a lot to the contributors for their excellent work this week.&lt;&#x2F;p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;andylokandy&quot;&gt;&lt;img alt=&quot;andylokandy&quot; src=&quot;https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;9637710?v=4&amp;s=117&quot; width=&quot;117&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;th&gt;&lt;th align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ariesdevil&quot;&gt;&lt;img alt=&quot;ariesdevil&quot; src=&quot;https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;7812909?v=4&amp;s=117&quot; width=&quot;117&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;th&gt;&lt;th align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;b41sh&quot;&gt;&lt;img alt=&quot;b41sh&quot; src=&quot;https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;1070352?v=4&amp;s=117&quot; width=&quot;117&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;th&gt;&lt;th align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;BohuTANG&quot;&gt;&lt;img alt=&quot;BohuTANG&quot; src=&quot;https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;172204?v=4&amp;s=117&quot; width=&quot;117&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;th&gt;&lt;th align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;apps&#x2F;dependabot&quot;&gt;&lt;img alt=&quot;dependabot[bot]&quot; src=&quot;https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;in&#x2F;29110?v=4&amp;s=117&quot; width=&quot;117&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;th&gt;&lt;th align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;drmingdrmer&quot;&gt;&lt;img alt=&quot;drmingdrmer&quot; src=&quot;https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;44069?v=4&amp;s=117&quot; width=&quot;117&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;andylokandy&quot;&gt;andylokandy&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ariesdevil&quot;&gt;ariesdevil&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;b41sh&quot;&gt;b41sh&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;BohuTANG&quot;&gt;BohuTANG&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;apps&#x2F;dependabot&quot;&gt;dependabot[bot]&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;drmingdrmer&quot;&gt;drmingdrmer&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;everpcpc&quot;&gt;&lt;img alt=&quot;everpcpc&quot; src=&quot;https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;1808802?v=4&amp;s=117&quot; width=&quot;117&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;th&gt;&lt;th align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;flaneur2020&quot;&gt;&lt;img alt=&quot;flaneur2020&quot; src=&quot;https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;129800?v=4&amp;s=117&quot; width=&quot;117&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;th&gt;&lt;th align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;johnhaxx7&quot;&gt;&lt;img alt=&quot;johnhaxx7&quot; src=&quot;https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;12479235?v=4&amp;s=117&quot; width=&quot;117&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;th&gt;&lt;th align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;leiysky&quot;&gt;&lt;img alt=&quot;leiysky&quot; src=&quot;https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;22445410?v=4&amp;s=117&quot; width=&quot;117&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;th&gt;&lt;th align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;lichuang&quot;&gt;&lt;img alt=&quot;lichuang&quot; src=&quot;https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;1998569?v=4&amp;s=117&quot; width=&quot;117&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;th&gt;&lt;th align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;apps&#x2F;mergify&quot;&gt;&lt;img alt=&quot;mergify[bot]&quot; src=&quot;https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;in&#x2F;10562?v=4&amp;s=117&quot; width=&quot;117&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;everpcpc&quot;&gt;everpcpc&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;flaneur2020&quot;&gt;flaneur2020&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;johnhaxx7&quot;&gt;johnhaxx7&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;leiysky&quot;&gt;leiysky&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;lichuang&quot;&gt;lichuang&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;apps&#x2F;mergify&quot;&gt;mergify[bot]&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;PsiACE&quot;&gt;&lt;img alt=&quot;PsiACE&quot; src=&quot;https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;36896360?v=4&amp;s=117&quot; width=&quot;117&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;th&gt;&lt;th align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;RinChanNOWWW&quot;&gt;&lt;img alt=&quot;RinChanNOWWW&quot; src=&quot;https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;33975039?v=4&amp;s=117&quot; width=&quot;117&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;th&gt;&lt;th align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;soyeric128&quot;&gt;&lt;img alt=&quot;soyeric128&quot; src=&quot;https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;106025534?v=4&amp;s=117&quot; width=&quot;117&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;th&gt;&lt;th align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;sundy-li&quot;&gt;&lt;img alt=&quot;sundy-li&quot; src=&quot;https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;3325189?v=4&amp;s=117&quot; width=&quot;117&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;th&gt;&lt;th align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;TCeason&quot;&gt;&lt;img alt=&quot;TCeason&quot; src=&quot;https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;33082201?v=4&amp;s=117&quot; width=&quot;117&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;th&gt;&lt;th align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Xuanwo&quot;&gt;&lt;img alt=&quot;Xuanwo&quot; src=&quot;https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;5351546?v=4&amp;s=117&quot; width=&quot;117&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;PsiACE&quot;&gt;PsiACE&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;RinChanNOWWW&quot;&gt;RinChanNOWWW&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;soyeric128&quot;&gt;soyeric128&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;sundy-li&quot;&gt;sundy-li&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;TCeason&quot;&gt;TCeason&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Xuanwo&quot;&gt;Xuanwo&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;xudong963&quot;&gt;&lt;img alt=&quot;xudong963&quot; src=&quot;https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;41979257?v=4&amp;s=117&quot; width=&quot;117&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;th&gt;&lt;th align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;youngsofun&quot;&gt;&lt;img alt=&quot;youngsofun&quot; src=&quot;https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;5782159?v=4&amp;s=117&quot; width=&quot;117&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;th&gt;&lt;th align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;zhang2014&quot;&gt;&lt;img alt=&quot;zhang2014&quot; src=&quot;https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;8087042?v=4&amp;s=117&quot; width=&quot;117&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;th&gt;&lt;th align=&quot;center&quot;&gt;&lt;&#x2F;th&gt;&lt;th align=&quot;center&quot;&gt;&lt;&#x2F;th&gt;&lt;th align=&quot;center&quot;&gt;&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;xudong963&quot;&gt;xudong963&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;youngsofun&quot;&gt;youngsofun&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;zhang2014&quot;&gt;zhang2014&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td align=&quot;center&quot;&gt;&lt;&#x2F;td&gt;&lt;td align=&quot;center&quot;&gt;&lt;&#x2F;td&gt;&lt;td align=&quot;center&quot;&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;h2 id=&quot;connect-with-us&quot;&gt;Connect With Us&lt;&#x2F;h2&gt;
+&lt;p&gt;We&#x27;d love to hear from you. Feel free to run the code and see if Databend works for you. Submit an issue with your problem if you need help.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;&quot;&gt;DatafuseLabs Community&lt;&#x2F;a&gt; is open to everyone who loves data warehouses. Please join the community and share your thoughts.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&quot;&gt;Databend Official Website&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;discussions&quot;&gt;GitHub Discussions&lt;&#x2F;a&gt; (Feature requests, bug reports, and contributions)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;Datafuse_Labs&quot;&gt;Twitter&lt;&#x2F;a&gt; (Stay in the know)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;link.databend.rs&#x2F;join-slack&quot;&gt;Slack Channel&lt;&#x2F;a&gt; (Chat with the community)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</description>
+        </item>
+        <item>
+            <title>This Week in Databend #79</title>
+            <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
+            <link>https://weekly.databend.rs/2023-02-01-databend-weekly/</link>
+            <guid>https://weekly.databend.rs/2023-02-01-databend-weekly/</guid>
+            <description>&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&quot;&gt;Databend&lt;&#x2F;a&gt; is a powerful cloud data warehouse. Built for elasticity and efficiency. Free and open. Also available in the cloud: &lt;a href=&quot;https:&#x2F;&#x2F;app.databend.com&quot;&gt;https:&#x2F;&#x2F;app.databend.com&lt;&#x2F;a&gt; .&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Special Note:&lt;&#x2F;strong&gt; &lt;a href=&quot;https:&#x2F;&#x2F;weekly.databend.rs&#x2F;&quot;&gt;&lt;em&gt;This Week in Databend&lt;&#x2F;em&gt;&lt;&#x2F;a&gt; will be gradually migrated to the &lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&#x2F;blog&quot;&gt;&lt;em&gt;Databend Blog&lt;&#x2F;em&gt;&lt;&#x2F;a&gt;. We will keep the content in sync until the final migration is complete.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h2 id=&quot;what-s-new&quot;&gt;What&#x27;s New&lt;&#x2F;h2&gt;
+&lt;p&gt;Check out what we&#x27;ve done this week to make Databend even better for you.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;features-improvements-sparkles&quot;&gt;Features &amp;amp; Improvements ✨&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;strong&gt;AST&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;add syntax about parsing presign options with content type (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9771&quot;&gt;#9771&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;Format&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;add TSV file format back (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9732&quot;&gt;#9732&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;Functions&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;support array functions prepend and append (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9844&quot;&gt;#9844&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;support array concat (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9804&quot;&gt;#9804&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;Query&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;add topn runtime filter in native storage format (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9738&quot;&gt;#9738&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;enable hashtable state pass from partial to final (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9809&quot;&gt;#9809&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;Storage&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;add pruning stats to EXPLAIN (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9724&quot;&gt;#9724&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;cache bloom index object (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9712&quot;&gt;#9712&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;code-refactoring-tada&quot;&gt;Code Refactoring 🎉&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&#x27;select from stage&#x27; use ParquetTable (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9801&quot;&gt;#9801&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;Meta&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;expose a single &amp;quot;kvapi&amp;quot; as public interface (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9791&quot;&gt;#9791&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;do not remove the last node from a cluster (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9781&quot;&gt;#9781&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;AST&#x2F;Expression&#x2F;Planner&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;unify Span and Result (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9713&quot;&gt;#9713&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;Executor&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;merge simple pipe and resize pipe (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9782&quot;&gt;#9782&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;bug-fixes-wrench&quot;&gt;Bug Fixes 🔧&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;strong&gt;Base&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;fix not linux and macos jemalloc fallback to std (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9786&quot;&gt;#9786&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;Config&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;fix table_meta_cache can&#x27;t be disabled (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9767&quot;&gt;#9767&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;Meta&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;when import data to meta-service dir, the specified &amp;quot;id&amp;quot; has to be one of the &amp;quot;initial_cluster&amp;quot; (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9755&quot;&gt;#9755&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;Query&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;fix and refactor aggregator (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9748&quot;&gt;#9748&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;fix memory leak for data port (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9762&quot;&gt;#9762&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;fix panic when cast jsonb to string (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9813&quot;&gt;#9813&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;Storage&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;fix up max_file_size may oom (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9740&quot;&gt;#9740&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;what-s-on-in-databend&quot;&gt;What&#x27;s On In Databend&lt;&#x2F;h2&gt;
+&lt;p&gt;Stay connected with the latest news about Databend.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;dml-command-update&quot;&gt;DML Command - UPDATE&lt;&#x2F;h3&gt;
+&lt;p&gt;Modifies rows in a table with new values.&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;&#x2F;strong&gt; Databend guarantees data integrity. In Databend, Insert, Update, and Delete operations are guaranteed to be atomic, which means that all data in the operation must succeed or all must fail.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Syntax&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#151515;color:#e8e8d3;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span&gt;UPDATE &amp;lt;table_name&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;SET &amp;lt;col_name&amp;gt; = &amp;lt;value&amp;gt; [ , &amp;lt;col_name&amp;gt; = &amp;lt;value&amp;gt; , ... ]
+&lt;&#x2F;span&gt;&lt;span&gt;    [ FROM &amp;lt;table_name&amp;gt; ]
+&lt;&#x2F;span&gt;&lt;span&gt;    [ WHERE &amp;lt;condition&amp;gt; ]
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;strong&gt;Learn More&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&#x2F;doc&#x2F;sql-commands&#x2F;dml&#x2F;dml-update&quot;&gt;Docs | DML Command - UPDATE&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;what-s-up-next&quot;&gt;What&#x27;s Up Next&lt;&#x2F;h2&gt;
+&lt;p&gt;We&#x27;re always open to cutting-edge technologies and innovative ideas. You&#x27;re more than welcome to join the community and bring them to Databend.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;support-arrow-flight-sql-protocol&quot;&gt;Support Arrow Flight SQL Protocol&lt;&#x2F;h3&gt;
+&lt;p&gt;Currently Databend supports the MySQL protocol, and it would be great if Databend could support the Arrow Flight SQL protocol as well.&lt;&#x2F;p&gt;
+&lt;p&gt;Typically a lakehouse stores data in parquet files using the MySQL protocol while Databend has to do deserialization from parquet to arrow and then back to MySQL data types. Again on the caller end users use data frames or MySQL result iterators, which also requires serialization of types. With Arrow Flight SQL all of these back and forth serialization costs can be avoided.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;issues&#x2F;9832&quot;&gt;Issue 9832: Feature: Support Arrow Flight SQL protocol&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Please let us know if you&#x27;re interested in contributing to this issue, or pick up a good first issue at &lt;a href=&quot;https:&#x2F;&#x2F;link.databend.rs&#x2F;i-m-feeling-lucky&quot;&gt;https:&#x2F;&#x2F;link.databend.rs&#x2F;i-m-feeling-lucky&lt;&#x2F;a&gt; to get started.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;changelog&quot;&gt;Changelog&lt;&#x2F;h2&gt;
+&lt;p&gt;You can check the changelog of Databend Nightly for details about our latest developments.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.9.21-nightly&quot;&gt;v0.9.21-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.9.20-nightly&quot;&gt;v0.9.20-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.9.19-nightly&quot;&gt;v0.9.19-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.9.18-nightly&quot;&gt;v0.9.18-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.9.17-nightly&quot;&gt;v0.9.17-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.9.16-nightly&quot;&gt;v0.9.16-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.9.15-nightly&quot;&gt;v0.9.15-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;contributors&quot;&gt;Contributors&lt;&#x2F;h2&gt;
+&lt;p&gt;Thanks a lot to the contributors for their excellent work this week.&lt;&#x2F;p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;andylokandy&quot;&gt;&lt;img alt=&quot;andylokandy&quot; src=&quot;https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;9637710?v=4&amp;s=117&quot; width=&quot;117&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;th&gt;&lt;th align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ariesdevil&quot;&gt;&lt;img alt=&quot;ariesdevil&quot; src=&quot;https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;7812909?v=4&amp;s=117&quot; width=&quot;117&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;th&gt;&lt;th align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;b41sh&quot;&gt;&lt;img alt=&quot;b41sh&quot; src=&quot;https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;1070352?v=4&amp;s=117&quot; width=&quot;117&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;th&gt;&lt;th align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;BohuTANG&quot;&gt;&lt;img alt=&quot;BohuTANG&quot; src=&quot;https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;172204?v=4&amp;s=117&quot; width=&quot;117&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;th&gt;&lt;th align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dantengsky&quot;&gt;&lt;img alt=&quot;dantengsky&quot; src=&quot;https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;22081156?v=4&amp;s=117&quot; width=&quot;117&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;th&gt;&lt;th align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;apps&#x2F;dependabot&quot;&gt;&lt;img alt=&quot;dependabot&quot; src=&quot;https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;in&#x2F;29110?v=4&amp;s=117&quot; width=&quot;117&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;andylokandy&quot;&gt;andylokandy&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ariesdevil&quot;&gt;ariesdevil&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;b41sh&quot;&gt;b41sh&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;BohuTANG&quot;&gt;BohuTANG&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dantengsky&quot;&gt;dantengsky&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;apps&#x2F;dependabot&quot;&gt;dependabot&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;drmingdrmer&quot;&gt;&lt;img alt=&quot;drmingdrmer&quot; src=&quot;https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;44069?v=4&amp;s=117&quot; width=&quot;117&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;th&gt;&lt;th align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;everpcpc&quot;&gt;&lt;img alt=&quot;everpcpc&quot; src=&quot;https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;1808802?v=4&amp;s=117&quot; width=&quot;117&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;th&gt;&lt;th align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;flaneur2020&quot;&gt;&lt;img alt=&quot;flaneur2020&quot; src=&quot;https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;129800?v=4&amp;s=117&quot; width=&quot;117&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;th&gt;&lt;th align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;johnhaxx7&quot;&gt;&lt;img alt=&quot;johnhaxx7&quot; src=&quot;https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;12479235?v=4&amp;s=117&quot; width=&quot;117&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;th&gt;&lt;th align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;leiysky&quot;&gt;&lt;img alt=&quot;leiysky&quot; src=&quot;https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;22445410?v=4&amp;s=117&quot; width=&quot;117&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;th&gt;&lt;th align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;apps&#x2F;mergify&quot;&gt;&lt;img alt=&quot;mergify[bot]&quot; src=&quot;https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;in&#x2F;10562?v=4&amp;s=117&quot; width=&quot;117&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;drmingdrmer&quot;&gt;drmingdrmer&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;everpcpc&quot;&gt;everpcpc&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;flaneur2020&quot;&gt;flaneur2020&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;johnhaxx7&quot;&gt;johnhaxx7&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;leiysky&quot;&gt;leiysky&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;apps&#x2F;mergify&quot;&gt;mergify[bot]&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;PsiACE&quot;&gt;&lt;img alt=&quot;PsiACE&quot; src=&quot;https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;36896360?v=4&amp;s=117&quot; width=&quot;117&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;th&gt;&lt;th align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;RinChanNOWWW&quot;&gt;&lt;img alt=&quot;RinChanNOWWW&quot; src=&quot;https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;33975039?v=4&amp;s=117&quot; width=&quot;117&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;th&gt;&lt;th align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;soyeric128&quot;&gt;&lt;img alt=&quot;soyeric128&quot; src=&quot;https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;106025534?v=4&amp;s=117&quot; width=&quot;117&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;th&gt;&lt;th align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;sundy-li&quot;&gt;&lt;img alt=&quot;sundy-li&quot; src=&quot;https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;3325189?v=4&amp;s=117&quot; width=&quot;117&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;th&gt;&lt;th align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;TCeason&quot;&gt;&lt;img alt=&quot;TCeason&quot; src=&quot;https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;33082201?v=4&amp;s=117&quot; width=&quot;117&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;th&gt;&lt;th align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Xuanwo&quot;&gt;&lt;img alt=&quot;Xuanwo&quot; src=&quot;https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;5351546?v=4&amp;s=117&quot; width=&quot;117&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;PsiACE&quot;&gt;PsiACE&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;RinChanNOWWW&quot;&gt;RinChanNOWWW&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;soyeric128&quot;&gt;soyeric128&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;sundy-li&quot;&gt;sundy-li&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;TCeason&quot;&gt;TCeason&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Xuanwo&quot;&gt;Xuanwo&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;youngsofun&quot;&gt;&lt;img alt=&quot;youngsofun&quot; src=&quot;https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;5782159?v=4&amp;s=117&quot; width=&quot;117&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;th&gt;&lt;th align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;yufan022&quot;&gt;&lt;img alt=&quot;yufan022&quot; src=&quot;https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;30121694?v=4&amp;s=117&quot; width=&quot;117&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;th&gt;&lt;th align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;zhang2014&quot;&gt;&lt;img alt=&quot;zhang2014&quot; src=&quot;https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;8087042?v=4&amp;s=117&quot; width=&quot;117&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;th&gt;&lt;th align=&quot;center&quot;&gt;&lt;&#x2F;th&gt;&lt;th align=&quot;center&quot;&gt;&lt;&#x2F;th&gt;&lt;th align=&quot;center&quot;&gt;&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;youngsofun&quot;&gt;youngsofun&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;yufan022&quot;&gt;yufan022&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;zhang2014&quot;&gt;zhang2014&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td align=&quot;center&quot;&gt;&lt;&#x2F;td&gt;&lt;td align=&quot;center&quot;&gt;&lt;&#x2F;td&gt;&lt;td align=&quot;center&quot;&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;h2 id=&quot;connect-with-us&quot;&gt;Connect With Us&lt;&#x2F;h2&gt;
+&lt;p&gt;We&#x27;d love to hear from you. Feel free to run the code and see if Databend works for you. Submit an issue with your problem if you need help.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;&quot;&gt;DatafuseLabs Community&lt;&#x2F;a&gt; is open to everyone who loves data warehouses. Please join the community and share your thoughts.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&quot;&gt;Databend Official Website&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;discussions&quot;&gt;GitHub Discussions&lt;&#x2F;a&gt; (Feature requests, bug reports, and contributions)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;Datafuse_Labs&quot;&gt;Twitter&lt;&#x2F;a&gt; (Stay in the know)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;link.databend.rs&#x2F;join-slack&quot;&gt;Slack Channel&lt;&#x2F;a&gt; (Chat with the community)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</description>
+        </item>
         <item>
             <title>This Week in Databend #78</title>
             <pubDate>Wed, 25 Jan 2023 00:00:00 +0000</pubDate>
