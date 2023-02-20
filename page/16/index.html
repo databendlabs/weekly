@@ -53,6 +53,71 @@
         <div class="posts">
                 <div class="post on-list">
                     
+    <h1 class="post-title"><a href="https://weekly.databend.rs/2021-09-08-datafuse-weekly/">This week in Datafuse #6</a></h1>
+    <div class="post-meta-inline">
+        
+    <span class="post-date">
+            2021-09-08
+        </span>
+
+    </div>
+
+    
+
+                    
+        <div class="post-content">
+            <p>Datafuse is an open source elastic and scalable cloud warehouse, it offers blazing fast query and combines elasticity, simplicity, low cost of the cloud, built to make the Data Cloud easy.</p>
+<h2 id="big-changes">Big changes</h2>
+<p>Below is a list of some major changes that we don’t want you to miss.</p>
+<ul>
+<li><strong>remove DataType::Utf8</strong> by <a href="https://github.com/zhyass">@zhyass</a>. (<a href="https://github.com/datafuselabs/datafuse/pull/1606">#1606</a>)</li>
+<li><strong>support system.engines table</strong> by <a href="https://github.com/b41sh">@b41sh</a> (<a href="https://github.com/datafuselabs/datafuse/pull/1755">#1755</a>, <a href="https://github.com/datafuselabs/datafuse/pull/1758">#1758</a>)</li>
+<li><strong>support system.config table</strong> by <a href="https://github.com/GrapeBaBa">@GrapeBaBa</a> (<a href="https://github.com/datafuselabs/datafuse/pull/1738">#1738</a>)</li>
+<li><strong>refactor Aggregator for improve performance and prepare refactor transform_aggregator_final</strong>  by <a href="https://github.com/zhang2014">@zhang2014</a>. (<a href="https://github.com/datafuselabs/datafuse/pull/1701">#1701</a>)</li>
+<li><strong>support user namespace API</strong> by <a href="https://github.com/BohuTANG">@BohuTANG</a>. (<a href="https://github.com/datafuselabs/datafuse/pull/1727">#1727</a>)</li>
+<li><strong>add timezone support for DateTime32</strong> by <a href="https://github.com/sundy-li">@sundy-li</a>. (<a href="https://github.com/datafuselabs/datafuse/pull/1750">#1750</a>)</li>
+<li><strong>refactor all warp services to axum</strong> by <a href="https://github.com/ZhiHanZ">@ZhiHanZ</a>. (<a href="https://github.com/datafuselabs/datafuse/pull/1702">#1702</a>) &amp; <a href="https://github.com/PsiACE">@PsiACE</a> (<a href="https://github.com/datafuselabs/datafuse/pull/1716">#1716</a>, <a href="https://github.com/datafuselabs/datafuse/pull/1753">#1753</a>)</li>
+<li><strong>streaming put for DAL</strong> by <a href="https://github.com/dantengsky">@dantengsky</a>. (<a href="https://github.com/datafuselabs/datafuse/pull/1707">#1707</a>)</li>
+<li><strong>support substring(string, start, length)</strong> by <a href="https://github.com/tangwz">@tangwz</a>. (<a href="https://github.com/datafuselabs/datafuse/pull/1710">#1710</a> &amp; <a href="https://github.com/datafuse-extras/sqlparser-rs/pull/6">datafuse-extras/sqlparser-rs#6</a>)</li>
+<li><strong>add date functions</strong>
+<ul>
+<li><code>yesterday</code>/<code>tomorrow</code>/<code>timeSlot()</code> by <a href="https://github.com/dust1">@dust1</a> (<a href="https://github.com/datafuselabs/datafuse/pull/1673">#1673</a>, <a href="https://github.com/datafuselabs/datafuse/pull/1715">#1715</a>)</li>
+<li><code>toYYYYMM</code> by <a href="https://github.com/ygf11">@ygf11</a> (<a href="https://github.com/datafuselabs/datafuse/pull/1726">#1726</a>, <a href="https://github.com/datafuselabs/datafuse/pull/1742">#1742</a>)</li>
+</ul>
+</li>
+</ul>
+<h2 id="changlogs">Changlogs</h2>
+<p>You can check the changelogs of Datafuse nightly to learn about our latest developments.</p>
+<ul>
+<li><a href="https://github.com/datafuselabs/datafuse/releases/tag/v0.4.102-nightly">v0.4.102-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/datafuse/releases/tag/v0.4.101-nightly">v0.4.101-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/datafuse/releases/tag/v0.4.100-nightly">v0.4.100-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/datafuse/releases/tag/v0.4.99-nightly">v0.4.99-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/datafuse/releases/tag/v0.4.98-nightly">v0.4.98-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/datafuse/releases/tag/v0.4.97-nightly">v0.4.97-nightly</a></li>
+<li><a href="https://github.com/datafuselabs/datafuse/releases/tag/v0.4.96-nightly">v0.4.96-nightly</a></li>
+</ul>
+<h2 id="ecosystem-upstream">Ecosystem/Upstream</h2>
+<p>From open source, for open source. The Datafuse team is also committed to contributing to the Rust ecosystem and upstream dependencies.</p>
+<ul>
+<li><a href="https://github.com/jorgecarleitao/arrow2/pull/346">arrow2 #346: Added support for compute to BinaryArray</a> by <a href="https://github.com/zhyass/">@zhyass</a></li>
+</ul>
+<h2 id="meet-us">Meet Us</h2>
+<p>Please join the <a href="https://github.com/datafuselabs/">Datafuse Community</a> if you are interested in Datafuse.</p>
+<p>We are looking forward to seeing you try our code. We have a strong team behind you to ensure a smooth experience in trying our code for your projects.
+If you are a hacker passionate about database internals, feel free to play with our code.
+You can submit <a href="https://github.com/datafuselabs/datafuse/issues">issues</a> for any problems you find. We also highly appreciate any of your pull requests.</p>
+<ul>
+<li><a href="https://github.com/datafuselabs/datafuse/discussions">GitHub Discussions</a></li>
+<li><a href="https://link.databend.rs/join-slack">Slack Channel</a></li>
+</ul>
+
+        </div>
+
+                </div>
+            
+                <div class="post on-list">
+                    
     <h1 class="post-title"><a href="https://weekly.databend.rs/2021-09-01-datafuse-weekly/">This week in Datafuse #5</a></h1>
     <div class="post-meta-inline">
         
@@ -302,66 +367,19 @@ You can submit <a href="https://github.com/datafuselabs/datafuse/issues">issues<
         </div>
 
                 </div>
-            
-                <div class="post on-list">
-                    
-    <h1 class="post-title"><a href="https://weekly.databend.rs/2021-08-04-datafuse-weekly/">This week in Datafuse #1</a></h1>
-    <div class="post-meta-inline">
-        
-    <span class="post-date">
-            2021-08-04
-        </span>
-
-    </div>
-
-    
-
-                    
-        <div class="post-content">
-            <p>Datafuse, a Modern Real-Time Data Processing &amp; Analytics DBMS with Cloud-Native Architecture, built to make the Data Cloud easy.</p>
-<h2 id="big-changes">Big changes</h2>
-<p>Below is a list of some major changes that we don’t want you to miss.</p>
-<ul>
-<li><strong>Datafuse CLI</strong>: All-in-one tool for setting up, managing with Datafuse. by <a href="https://github.com/BohuTANG">@BohuTANG</a> (<a href="https://github.com/datafuselabs/datafuse/pull/950">#950</a>).</li>
-<li><strong>arrow -&gt; arrow2</strong>: Improve performance in some scenarios, especially aggregate functions, <a href="https://github.com/datafuselabs/datafuse/pull/1239#issuecomment-890861288">see benchmark</a>. by <a href="https://github.com/sundy-li">@sundy-li</a> (<a href="https://github.com/datafuselabs/datafuse/pull/1239">#1239</a>).</li>
-<li><strong>catalog as meta-store client &amp; TableMetaCache</strong>. by <a href="https://github.com/dantengsky">@dantengsky</a> (<a href="https://github.com/datafuselabs/datafuse/pull/1212">#1212</a>)</li>
-<li><strong>disk backed meta store</strong> under dev. by <a href="https://github.com/drmingdrmer">@drmingdrmer</a> (<a href="https://github.com/datafuselabs/datafuse/pull/1248">#1212</a>)</li>
-<li><strong>migrate to rust 2021</strong>: Powered by <code>nightly-2021-08-03</code>, thanks to the Rust team. by <a href="https://github.com/PsiACE">@PsiACE</a> (<a href="https://github.com/datafuselabs/datafuse/pull/1159">#1159</a>).</li>
-</ul>
-<h2 id="changlogs">Changlogs</h2>
-<p>You can check the changelogs of Datafuse nightly to learn about our latest developments.</p>
-<ul>
-<li><a href="https://github.com/datafuselabs/datafuse/releases/tag/v0.4.70-nightly">v0.4.70-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/datafuse/releases/tag/v0.4.69-nightly">v0.4.69-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/datafuse/releases/tag/v0.4.68-nightly">v0.4.68-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/datafuse/releases/tag/v0.4.67-nightly">v0.4.67-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/datafuse/releases/tag/v0.4.66-nightly">v0.4.66-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/datafuse/releases/tag/v0.4.65-nightly">v0.4.65-nightly</a></li>
-<li><a href="https://github.com/datafuselabs/datafuse/releases/tag/v0.4.64-nightly">v0.4.64-nightly</a></li>
-</ul>
-<h2 id="ecosystem-upstream">Ecosystem/Upstream</h2>
-<p>From open source, for open source. The Datafuse team is also committed to contributing to the Rust ecosystem and upstream dependencies.</p>
-<h3 id="in-progress">In Progress</h3>
-<ul>
-<li><a href="https://github.com/jorgecarleitao/arrow2/pull/246">arrow2 #246: Sort improve</a>. by <a href="https://github.com/sundy-li">@sundy-li</a></li>
-<li><a href="https://github.com/jonhoo/msql-srv/pull/22">msql-srv #22: Bump deps</a>. by <a href="https://github.com/PsiACE/">@PsiACE</a></li>
-</ul>
-<h2 id="meet-us">Meet Us</h2>
-<p>You are welcome to join the <a href="https://github.com/datafuselabs/">Datafuse Community</a>. We look forward to you being one of our contributors or trialers.</p>
-<ul>
-<li><a href="https://github.com/datafuselabs/datafuse/discussions">GitHub Discussions</a></li>
-<li><a href="https://link.databend.rs/join-slack">Slack Channel</a></li>
-</ul>
-
-        </div>
-
-                </div>
             <div class="pagination">
                 <div class="pagination__buttons">
                     <span class="button previous">
                         <a href="https://weekly.databend.rs/page/15/">
                             <span class="button__icon">←</span>&nbsp;
                             <span class="button__text">Newer posts</span>
+                        </a>
+                    </span>
+                
+                    <span class="button next">
+                        <a href="https://weekly.databend.rs/page/17/">
+                            <span class="button__text">Older posts</span>&nbsp;
+                            <span class="button__icon">→</span>
                         </a>
                     </span>
                 </div>

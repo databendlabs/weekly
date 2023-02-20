@@ -324,6 +324,10 @@
         <lastmod>2023-02-08</lastmod>
     </url>
     <url>
+        <loc>https://weekly.databend.rs/2023-02-15-databend-weekly/</loc>
+        <lastmod>2023-02-15</lastmod>
+    </url>
+    <url>
         <loc>https://weekly.databend.rs/archive/</loc>
     </url>
     <url>
@@ -349,6 +353,9 @@
     </url>
     <url>
         <loc>https://weekly.databend.rs/page/16/</loc>
+    </url>
+    <url>
+        <loc>https://weekly.databend.rs/page/17/</loc>
     </url>
     <url>
         <loc>https://weekly.databend.rs/page/2/</loc>
