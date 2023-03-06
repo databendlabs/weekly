@@ -104,7 +104,7 @@ In order to be compatible with <a href="https://docs.snowflake.com/en/sql-refere
 <li><code>Array</code>: Used to represent dense or sparse arrays of arbitrary size, where the index is a non-negative integer (up to 2^31-1), and values are <code>Variant</code> types.</li>
 </ul>
 <p><strong>For more information</strong> see <a href="https://databend.rs/dev/rfcs/query/semi-structured-data-types">Semi-structured data types design</a>. <strong>For ongoing work</strong> see <a href="https://github.com/datafuselabs/databend/pull/4348">databend#4348</a>.</p>
-<h2 id="changlogs">Changlogs</h2>
+<h2 id="changelogs">Changelogs</h2>
 <p>You can check the changelogs of Databend nightly to learn about our latest developments.</p>
 <ul>
 <li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.6.86-nightly">v0.6.86-nightly</a></li>
@@ -188,7 +188,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 <li><a href="https://databend.rs/user/data-loading/loading-from-external-location">Loading files from S3 External Location</a>.</li>
 <li><a href="https://databend.rs/user/sql-statement/dml/dml-copy">COPY command</a></li>
 </ul>
-<h2 id="changlogs">Changlogs</h2>
+<h2 id="changelogs">Changelogs</h2>
 <p>You can check the changelogs of Databend nightly to learn about our latest developments.</p>
 <ul>
 <li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.6.79-nightly">v0.6.79-nightly</a></li>
@@ -294,7 +294,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 <li>Enable the newer symbol mangling scheme. In the latest nightly Rust, this means that <code>-C symbol-manging-version=v0</code>. It generates smaller symbols, and we observe a great memory reduction.</li>
 <li>Consider allocate more virtual memory. Of course, this is definitely a valid approach, but it may require adding another dozen GiB.</li>
 </ol>
-<h2 id="changlogs">Changlogs</h2>
+<h2 id="changelogs">Changelogs</h2>
 <p>You can check the changelogs of Databend nightly to learn about our latest developments.</p>
 <ul>
 <li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.6.66-nightly">v0.6.72-nightly</a></li>
@@ -358,8 +358,8 @@ If you are a hacker passionate about database internals, feel free to play with 
 </ul>
 <h2 id="performance-improvement">Performance Improvement</h2>
 <ul>
-<li><strong>refactor if to get better performence</strong> by <a href="https://github.com/Veeupup">@Veeupup</a>. (<a href="https://github.com/datafuselabs/databend/pull/4160">#4160</a>)</li>
-<li><strong>improve storage accessor initate logic</strong> by <a href="https://github.com/BohuTANG">@BohuTANG</a>. (<a href="https://github.com/datafuselabs/databend/pull/4159">#4159</a>)</li>
+<li><strong>refactor if to get better performance</strong> by <a href="https://github.com/Veeupup">@Veeupup</a>. (<a href="https://github.com/datafuselabs/databend/pull/4160">#4160</a>)</li>
+<li><strong>improve storage accessor initiate logic</strong> by <a href="https://github.com/BohuTANG">@BohuTANG</a>. (<a href="https://github.com/datafuselabs/databend/pull/4159">#4159</a>)</li>
 </ul>
 <h2 id="bug-fixes">Bug fixes</h2>
 <ul>
@@ -378,7 +378,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 <p>This project has now been separated from Databend and is offered as a separate project -&gt; <a href="https://github.com/datafuselabs/opendal">datafuselabs/opendal</a>.</p>
 <p>Please see <a href="https://github.com/datafuselabs/databend/discussions/3662">proposal: Vision of Databend DAL</a> for the vision of OpenDAL.</p>
 <p>See its change history details in <a href="https://github.com/datafuselabs/databend/issues/3677">#3677</a>.</p>
-<h2 id="changlogs">Changlogs</h2>
+<h2 id="changelogs">Changelogs</h2>
 <p>You can check the changelogs of Databend nightly to learn about our latest developments.</p>
 <ul>
 <li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.6.66-nightly">v0.6.66-nightly</a></li>
@@ -437,7 +437,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 <h2 id="improvement">Improvement</h2>
 <ul>
 <li><strong>refactor some ErrorCode to MetaError in metasrv</strong> by <a href="https://github.com/lichuang">@lichuang</a>. (<a href="https://github.com/datafuselabs/databend/pull/4023">#4023</a>)</li>
-<li><strong>implment backtrack for parser and add a human-friendly pretty printer for errors</strong> by <a href="https://github.com/andylokandy">@andylokandy</a>. (<a href="https://github.com/datafuselabs/databend/pull/4045">#4045</a>)</li>
+<li><strong>implement backtrack for parser and add a human-friendly pretty printer for errors</strong> by <a href="https://github.com/andylokandy">@andylokandy</a>. (<a href="https://github.com/datafuselabs/databend/pull/4045">#4045</a>)</li>
 <li><strong>add tenant empty check</strong> by <a href="https://github.com/BohuTANG">@BohuTANG</a>. (<a href="https://github.com/datafuselabs/databend/pull/4057">#4057</a>)</li>
 <li><strong>refactor all string2number functions</strong> by <a href="https://github.com/Xuanw">@Xuanwo</a>. (<a href="https://github.com/datafuselabs/databend/pull/4070">#4070</a>)</li>
 </ul>
@@ -460,7 +460,7 @@ We also release a minor version periodically, about 6 weeks, influenced by the i
 <p>We currently have almost a thousand dependencies and have had to intervene manually in this process.
 If possible, it is essential to introduce a proper automatic batch upgrade mechanism with a rollback scheme.</p>
 <p>For more information, please see <a href="https://databend.rs/dev/development/routine-maintenance">databend.rs - Databend routine maintenance</a>.</p>
-<h2 id="changlogs">Changlogs</h2>
+<h2 id="changelogs">Changelogs</h2>
 <p>You can check the changelogs of Databend nightly to learn about our latest developments.</p>
 <ul>
 <li><a href="https://github.com/datafuselabs/databend/releases/tag/v0.6.59-nightly">v0.6.59-nightly</a></li>

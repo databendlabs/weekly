@@ -783,7 +783,7 @@
 &lt;h3 id=&quot;features-improvements-sparkles&quot;&gt;Features &amp;amp; Improvements ✨&lt;&#x2F;h3&gt;
 &lt;p&gt;&lt;strong&gt;Meta&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
 &lt;ul&gt;
-&lt;li&gt;use &lt;code&gt;expressin::TableSchema&lt;&#x2F;code&gt; to replace obsolete &lt;code&gt;datavalues::DataSchema&lt;&#x2F;code&gt; (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9506&quot;&gt;#9506&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;use &lt;code&gt;expression::TableSchema&lt;&#x2F;code&gt; to replace obsolete &lt;code&gt;datavalues::DataSchema&lt;&#x2F;code&gt; (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9506&quot;&gt;#9506&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;code&gt;iter()&lt;&#x2F;code&gt; iterate every tree and every records in theses trees (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9621&quot;&gt;#9621&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;p&gt;&lt;strong&gt;Expression&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
@@ -833,7 +833,7 @@
 &lt;h3 id=&quot;bug-fixes-wrench&quot;&gt;Bug Fixes 🔧&lt;&#x2F;h3&gt;
 &lt;p&gt;&lt;strong&gt;Expression&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
 &lt;ul&gt;
-&lt;li&gt;constant folder should run repeatly until stable (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9572&quot;&gt;#9572&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;constant folder should run repeatedly until stable (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9572&quot;&gt;#9572&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;code&gt;check_date()&lt;&#x2F;code&gt; and &lt;code&gt;to_string(boolean)&lt;&#x2F;code&gt; may panic (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9561&quot;&gt;#9561&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;p&gt;&lt;strong&gt;Planner&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
@@ -955,7 +955,7 @@ Databend provides a program for this job: &lt;code&gt;databend-meta-upgrade-09&l
 &lt;&#x2F;ul&gt;
 &lt;p&gt;&lt;strong&gt;Expression&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
 &lt;ul&gt;
-&lt;li&gt;move negative funtions to binder (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9484&quot;&gt;#9484&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;move negative functions to binder (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9484&quot;&gt;#9484&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;li&gt;use error_to_null() to eval try_cast (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9545&quot;&gt;#9545&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;p&gt;&lt;strong&gt;Functions&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
@@ -1189,7 +1189,7 @@ Databend provides a program for this job: &lt;code&gt;databend-meta-upgrade-09&l
 &lt;ul&gt;
 &lt;li&gt;rangefilter support in (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9330&quot;&gt;#9330&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;li&gt;try to improve object storage io read (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9335&quot;&gt;#9335&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
-&lt;li&gt;supprot table compression (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9370&quot;&gt;#9370&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;support table compression (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9370&quot;&gt;#9370&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;p&gt;&lt;strong&gt;Metrics&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
 &lt;ul&gt;
@@ -1591,7 +1591,7 @@ Databend provides a program for this job: &lt;code&gt;databend-meta-upgrade-09&l
 &lt;h3 id=&quot;features-improvements-sparkles&quot;&gt;Features &amp;amp; Improvements ✨&lt;&#x2F;h3&gt;
 &lt;p&gt;&lt;strong&gt;Planner&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
 &lt;ul&gt;
-&lt;li&gt;optimize topk in cluser mode (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9092&quot;&gt;#9092&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;optimize topk in cluster mode (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;9092&quot;&gt;#9092&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;p&gt;&lt;strong&gt;Query&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
 &lt;ul&gt;
@@ -1943,7 +1943,7 @@ Databend provides a program for this job: &lt;code&gt;databend-meta-upgrade-09&l
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;issues&#x2F;8903&quot;&gt;Issue 8903: feat: add compression option to create table&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;If you find it interesting, try to solve it or participate in discussions and PR reviews. Or you can click on &lt;a href=&quot;https:&#x2F;&#x2F;link.databend.rs&#x2F;i-m-feeling-lucky&quot;&gt;https:&#x2F;&#x2F;link.databend.rs&#x2F;i-m-feeling-lucky&lt;&#x2F;a&gt; to pick up a good first issue, good luck!&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.8.125-nightly&quot;&gt;v0.8.125-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -2084,7 +2084,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;p&gt;We have noticed that it is very much faster than &lt;code&gt;cargo test&lt;&#x2F;code&gt; on many projects. However, there are still some challenges in applying this to Databend. For example, for different types of tests, the number of threads has to be adjusted to ensure that the tests are performed quickly and correctly. Also, some of the tests may need to be rewritten to get better results.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;issues&#x2F;4376&quot;&gt;Issue 4376: switch to nexttest in ci&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;If you find it interesting, try to solve it or participate in discussions and PR reviews. Or you can click on &lt;a href=&quot;https:&#x2F;&#x2F;link.databend.rs&#x2F;i-m-feeling-lucky&quot;&gt;https:&#x2F;&#x2F;link.databend.rs&#x2F;i-m-feeling-lucky&lt;&#x2F;a&gt; to pick up a good first issue, good luck!&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.8.115-nightly&quot;&gt;v0.8.115-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -2277,7 +2277,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;issues&#x2F;8625&quot;&gt;Issue 8625: performance: enable xor filter index for IN&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;If you find it interesting, try to solve it or participate in discussions and PR reviews. Or you can click on &lt;a href=&quot;https:&#x2F;&#x2F;link.databend.rs&#x2F;i-m-feeling-lucky&quot;&gt;https:&#x2F;&#x2F;link.databend.rs&#x2F;i-m-feeling-lucky&lt;&#x2F;a&gt; to pick up a good first issue, good luck!&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.8.105-nightly&quot;&gt;v0.8.105-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -2340,7 +2340,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;p&gt;&lt;strong&gt;hive&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;hive predict pushdown (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;8469&quot;&gt;#8469&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
-&lt;li&gt;suport substr &amp;amp;&amp;amp; order by with null values compatible with hive functions (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;8558&quot;&gt;#8558&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;support substr &amp;amp;&amp;amp; order by with null values compatible with hive functions (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;8558&quot;&gt;#8558&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;p&gt;&lt;strong&gt;rbac&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
 &lt;ul&gt;
@@ -2449,7 +2449,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;&#x2F;ul&gt;
 &lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;issues&#x2F;8601&quot;&gt;Issue 8601: Feature: replace RwLock&lt;HashMap&gt; and Mutex&lt;HashMap&gt; by using DashMap&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;If you find it interesting, try to solve it or participate in discussions and PR reviews. Or you can click on &lt;a href=&quot;https:&#x2F;&#x2F;link.databend.rs&#x2F;i-m-feeling-lucky&quot;&gt;https:&#x2F;&#x2F;link.databend.rs&#x2F;i-m-feeling-lucky&lt;&#x2F;a&gt; to pick up a good first issue, good luck!&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.8.99-nightly&quot;&gt;v0.8.99-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -2648,7 +2648,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;opendal&#x2F;issues&#x2F;856&quot;&gt;Issue 856: Implement memcached services support via kv adapter&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;p&gt;If you find these interesting, try to solve them or participate in discussions and PR reviews. Or you can click on &lt;a href=&quot;https:&#x2F;&#x2F;link.databend.rs&#x2F;i-m-feeling-lucky&quot;&gt;https:&#x2F;&#x2F;link.databend.rs&#x2F;i-m-feeling-lucky&lt;&#x2F;a&gt; to pick up a good first issue, good luck!&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.8.90-nightly&quot;&gt;v0.8.90-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -2777,7 +2777,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&#x2F;doc&#x2F;contributing&#x2F;rfcs&#x2F;cache&quot;&gt;RFC | Cache&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;issues&#x2F;6803&quot;&gt;Tracking issue for Cache Support in databend&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.8.79-nightly&quot;&gt;v0.8.79-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -2937,7 +2937,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;discussions&#x2F;8149&quot;&gt;Proposal: Datatype Timestamp Remove the Precision Argument&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;8154&quot;&gt;PR | remove precision in timestamp type&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.8.61-nightly&quot;&gt;v0.8.61-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -3024,7 +3024,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;&#x2F;ul&gt;
 &lt;p&gt;&lt;strong&gt;new expression&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
 &lt;ul&gt;
-&lt;li&gt;reorder comparision funciton priority (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;7991&quot;&gt;#7991&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;reorder comparison function priority (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;7991&quot;&gt;#7991&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;p&gt;&lt;strong&gt;unit tests&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
 &lt;ul&gt;
@@ -3059,7 +3059,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;p&gt;In the past, Databend used a Bloom Filter (Bitmap Index) to check if a key was exists. Databend has enabled Bloom Index at the block level (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;6639&quot;&gt;#6639&lt;&#x2F;a&gt;) and delivered an 8x read performance improvement in certain scenarios (&lt;code&gt;index &#x2F; data ~= 10%&lt;&#x2F;code&gt;). Due to the implementation policy, it can take up very large amounts of storage space and has poor performance when it comes to point queries.&lt;&#x2F;p&gt;
 &lt;p&gt;Now, Databend is making a number of improvements to enhance the insert and read capabilities of large data sets. Some of this work revolves around the index.&lt;&#x2F;p&gt;
 &lt;p&gt;We introduced the &lt;a href=&quot;https:&#x2F;&#x2F;arxiv.org&#x2F;pdf&#x2F;2201.01174.pdf&quot;&gt;Xor Fliter&lt;&#x2F;a&gt; to replace the Bloom Filter (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;7870&quot;&gt;#7870&lt;&#x2F;a&gt;), which in some scenarios gives about twice the performance improvement and requires very little data to be scanned. Recent work has also included distributed index pruning (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;7867&quot;&gt;#7867&lt;&#x2F;a&gt;) and local parallel execution of pruning (especially the index pruning) (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;7893&quot;&gt;#7893&lt;&#x2F;a&gt;) , which we believe will further improve cpu and network utilisation and hence performance.&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.8.54-nightly&quot;&gt;v0.8.54-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -3190,7 +3190,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;p&gt;&lt;em&gt;Databend Automated Testing with SQLancer&lt;&#x2F;em&gt; is one of the Databend community&#x27;s projects in the Open Source Promotion Plan 2022. &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;hanyisong&quot;&gt;@hanyisong&lt;&#x2F;a&gt; helped us with this important work, which has now been merged into &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;sqlancer&#x2F;sqlancer&quot;&gt;sqlancer&#x2F;sqlancer&lt;&#x2F;a&gt; repository.&lt;&#x2F;p&gt;
 &lt;p&gt;SQLancer (Synthesized Query Lancer) is a tool to automatically test Database Management Systems (DBMS) in order to find logic bugs in their implementation.&lt;&#x2F;p&gt;
 &lt;p&gt;Learn more at &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;sqlancer&#x2F;sqlancer&#x2F;pull&#x2F;568&quot;&gt;https:&#x2F;&#x2F;github.com&#x2F;sqlancer&#x2F;sqlancer&#x2F;pull&#x2F;568&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.8.53-nightly&quot;&gt;v0.8.53-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -3325,7 +3325,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;p&gt;JSON (JavaScript Object Notation) is a commonly used semi-structured data type. With the self-describing schema structure, JSON can hold all data types. The JSON data shared by various platforms through open interfaces, and the public datasets and application logs stored in JSON format. &lt;&#x2F;p&gt;
 &lt;p&gt;Databend supports structured data types, as well as JSON. This post dives deeply into the JSON data type in Databend.&lt;&#x2F;p&gt;
 &lt;p&gt;Learn more at &lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&#x2F;blog&#x2F;json-datatypes&quot;&gt;https:&#x2F;&#x2F;databend.rs&#x2F;blog&#x2F;json-datatypes&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.8.42-nightly&quot;&gt;v0.8.42-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -3479,7 +3479,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;p&gt;View dashboard: &lt;a href=&quot;https:&#x2F;&#x2F;perf.databend.rs&#x2F;&quot;&gt;https:&#x2F;&#x2F;perf.databend.rs&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.8.35-nightly&quot;&gt;v0.8.35-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -3616,7 +3616,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;li&gt;Observability Improvement by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ClSlaid&quot;&gt;@ClSlaid&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;Blocking API Support by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Xuanwo&quot;&gt;@Xuanwo&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.8.28-nightly&quot;&gt;v0.8.28-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -3769,7 +3769,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;p&gt;&lt;strong&gt;Databend Have Achieved the OpenSSF Best Practice Badge&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;The Open Source Security Foundation (OpenSSF) Best Practices badge is a way for Free&#x2F;Libre and Open Source Software (FLOSS) projects to show that they follow best practices.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;bestpractices.coreinfrastructure.org&#x2F;projects&#x2F;6375&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;bestpractices.coreinfrastructure.org&#x2F;projects&#x2F;6375&#x2F;badge&quot; alt=&quot;CII Best Practices&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.8.19-nightly&quot;&gt;v0.8.19-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -3857,7 +3857,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;&#x2F;ul&gt;
 &lt;p&gt;&lt;strong&gt;storage&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
 &lt;ul&gt;
-&lt;li&gt;use pipline to refactor compact (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;7244&quot;&gt;#7244&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;use pipeline to refactor compact (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;7244&quot;&gt;#7244&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;p&gt;&lt;strong&gt;sessions&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
 &lt;ul&gt;
@@ -3914,7 +3914,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;&#x2F;ul&gt;
 &lt;p&gt;Currently we implemented an experimental airbyte destination allow you to send data from your airbyte source to databend.&lt;&#x2F;p&gt;
 &lt;p&gt;Learn more: &lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&#x2F;doc&#x2F;integrations&#x2F;data-tool&#x2F;airbyte&quot;&gt;https:&#x2F;&#x2F;databend.rs&#x2F;doc&#x2F;integrations&#x2F;data-tool&#x2F;airbyte&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.8.7-nightly&quot;&gt;v0.8.7-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -3990,7 +3990,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;&#x2F;ul&gt;
 &lt;p&gt;&lt;strong&gt;query&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
 &lt;ul&gt;
-&lt;li&gt;parquet schema case in-senstive match &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;7045&quot;&gt;#7045&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;parquet schema case in-sensitive match &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;7045&quot;&gt;#7045&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;p&gt;&lt;strong&gt;new expression&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
 &lt;ul&gt;
@@ -4050,7 +4050,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;opendal&quot;&gt;opendal&lt;&#x2F;a&gt; has just added support for Google Cloud Storage and released 0.13.0. Recent improvements include a new &lt;code&gt;Builder&lt;&#x2F;code&gt; with sync support and some useful layers.&lt;&#x2F;li&gt;
 &lt;li&gt;The v0.2.0 release of &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;opensrv&quot;&gt;opensrv&lt;&#x2F;a&gt; supports streaming writes to mysql result sets and simplifies metadata for clickhouse.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.7.172-nightly&quot;&gt;v0.7.172-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -4189,7 +4189,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;p&gt;&lt;strong&gt;Deprecate clickhouse&#x27;s tcp protocol support&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;As the Clickhouse TCP protocol is almost a black box and requires a lot of effort to ensure compatibility, Databend has removed compatibility with the Clickhouse TCP protocol. See &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;7012&quot;&gt;Deprecate clickhouse&#x27;s tcp protocol support #7012&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;Databend will focus on Clickhouse HTTP protocol compatibility to ensure compatibility with the existing ecosystem.&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.7.159-nightly&quot;&gt;v0.7.159-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -4354,7 +4354,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;discussions&#x2F;5438&quot;&gt;RFC: Formal Type System&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;issues&#x2F;6547&quot;&gt;Tracking issue for new expression framework&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.7.152-nightly&quot;&gt;v0.7.152-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -4488,7 +4488,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&#x2F;doc&#x2F;reference&#x2F;sql&#x2F;dml&#x2F;dml-copy-into-table-url&quot;&gt;DOC | COPY INTO &lt;code&gt;&amp;lt;table&amp;gt;&lt;&#x2F;code&gt; FROM REMOTE FILES&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;6691&quot;&gt;PR| add support for COPY from https&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.7.143-nightly&quot;&gt;v0.7.143-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -4583,7 +4583,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;ul&gt;
 &lt;li&gt;fix range delete panic and incorrect statistics (of in_memory_size) (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;6609&quot;&gt;#6609&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;li&gt;disable null values in join (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;6616&quot;&gt;#6616&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;code&gt;COPY&lt;&#x2F;code&gt; shoud be able to run under new planner (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;6624&quot;&gt;#6624&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;COPY&lt;&#x2F;code&gt; should be able to run under new planner (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;6624&quot;&gt;#6624&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;li&gt;fix InSubquery returns error result (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;6641&quot;&gt;#6641&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;li&gt;fix variant map access filter (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;6645&quot;&gt;#6645&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;li&gt;adhoc fix session leak (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;6672&quot;&gt;#6672&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
@@ -4611,7 +4611,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&#x2F;doc&#x2F;manage&#x2F;metasrv&#x2F;metasrv-grpc&quot;&gt;DOC | Send &amp;amp; Receive gRPC Metadata&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;issues&#x2F;6084&quot;&gt;Tracking Issue | databend-meta adds cli command to send RPC to a running meta cluster&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.7.135-nightly&quot;&gt;v0.7.135-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -4708,7 +4708,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;h2 id=&quot;tips&quot;&gt;Tips&lt;&#x2F;h2&gt;
 &lt;p&gt;Let&#x27;s learn a weekly tip from Databend.&lt;&#x2F;p&gt;
 &lt;h3 id=&quot;presign-statement&quot;&gt;Presign Statement&lt;&#x2F;h3&gt;
-&lt;p&gt;Generates the pre-signed URL for a staged file by the stage name and file path you provide. The pre-signed URL enables you to access the file through a web browswer or an API request.&lt;&#x2F;p&gt;
+&lt;p&gt;Generates the pre-signed URL for a staged file by the stage name and file path you provide. The pre-signed URL enables you to access the file through a web browser or an API request.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;strong&gt;Syntax&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
 &lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#151515;color:#e8e8d3;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span&gt;PRESIGN [ { DOWNLOAD | UPLOAD }] @&amp;lt;stage_name&amp;gt;&#x2F;...&#x2F;&amp;lt;file_name&amp;gt; [ EXPIRE = &amp;lt;expire_in_seconds&amp;gt; ]
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
@@ -4726,7 +4726,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&#x2F;doc&#x2F;reference&#x2F;sql&#x2F;ddl&#x2F;presign&#x2F;presign&quot;&gt;DOC | PRESIGN&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;issues&#x2F;6215&quot;&gt;Tracking Issue | Add PRESIGN Support&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.7.128-nightly&quot;&gt;v0.7.128-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -4854,7 +4854,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&#x2F;doc&#x2F;faq&#x2F;how-to-tracing#error-tracking-and-performance-monitoring-with-sentry&quot;&gt;DOC | Error Tracking and Performance Monitoring with Sentry&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;6226&quot;&gt;PR | Integration with Sentry&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.7.120-nightly&quot;&gt;v0.7.120-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -4992,7 +4992,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&#x2F;doc&#x2F;reference&#x2F;sql&#x2F;dml&#x2F;dml-delete-from&quot;&gt;DOC | DELETE&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;5691&quot;&gt;PR | statement &lt;code&gt;delete from... &lt;&#x2F;code&gt;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.7.108-nightly&quot;&gt;v0.7.108-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -5116,7 +5116,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&#x2F;doc&#x2F;reference&#x2F;sql&#x2F;ddl&#x2F;clusterkey&#x2F;dml-alter-cluster-key&quot;&gt;DOC | ALTER CLUSTER KEY&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&#x2F;doc&#x2F;reference&#x2F;sql&#x2F;ddl&#x2F;clusterkey&#x2F;dml-drop-cluster-key&quot;&gt;DOC | DROP CLUSTER KEY&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.7.97-nightly&quot;&gt;v0.7.97-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -5211,7 +5211,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;h3 id=&quot;bug-fixes&quot;&gt;Bug fixes&lt;&#x2F;h3&gt;
 &lt;ul&gt;
 &lt;li&gt;fix read quoted string (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;5870&quot;&gt;#5870&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
-&lt;li&gt;corretly handle catalog in statements (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;5909&quot;&gt;#5909&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;correctly handle catalog in statements (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;5909&quot;&gt;#5909&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;li&gt;fix correlated subquery with joins (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;5947&quot;&gt;#5947&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;li&gt;server panic when exceeds max active sessions (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;5928&quot;&gt;#5928&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;li&gt;fix status cause mysql client hang (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;5961&quot;&gt;#5961&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
@@ -5280,7 +5280,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&#x2F;doc&#x2F;reference&#x2F;sql&#x2F;query-syntax&#x2F;dml-join&quot;&gt;DOC | JOIN&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.7.87-nightly&quot;&gt;v0.7.87-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -5332,7 +5332,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;h3 id=&quot;features&quot;&gt;Features&lt;&#x2F;h3&gt;
 &lt;ul&gt;
 &lt;li&gt;undrop database (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;5770&quot;&gt;#5770&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
-&lt;li&gt;support async insert mode to imporve throughput (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;5567&quot;&gt;#5567&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;support async insert mode to improve throughput (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;5567&quot;&gt;#5567&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;li&gt;support alter table cluster key (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;5718&quot;&gt;#5718&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;p&gt;&lt;strong&gt;meta&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
@@ -5388,9 +5388,9 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;p&gt;&lt;strong&gt;Learn more:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&#x2F;doc&#x2F;contributing&#x2F;rfcs&#x2F;async-insert&quot;&gt;RFC | Async Insert Mode&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;5567&#x2F;&quot;&gt;PR 5567 | Support async insert mode to imporve throughput&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;5567&#x2F;&quot;&gt;PR 5567 | Support async insert mode to improve throughput&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.7.77-nightly&quot;&gt;v0.7.77-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -5450,7 +5450,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;&#x2F;ul&gt;
 &lt;p&gt;&lt;strong&gt;new parser&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
 &lt;ul&gt;
-&lt;li&gt;implment string unescape (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;5638&quot;&gt;#5638&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;implement string unescape (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;5638&quot;&gt;#5638&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;li&gt;allow mysql-style hex number and single-item array (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;5654&quot;&gt;#5654&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;p&gt;&lt;strong&gt;stage related&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
@@ -5522,7 +5522,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&#x2F;doc&#x2F;reference&#x2F;sql&#x2F;dml&#x2F;dml-copy-into-table&quot;&gt;Doc | COPY INTO &amp;lt;table&amp;gt;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;5655&quot;&gt;PR 5655 | Add decompress support for COPY INTO and streaming loading&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.7.68-nightly&quot;&gt;v0.7.68-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -5656,7 +5656,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&#x2F;doc&#x2F;learn&#x2F;analyze-funnel-with-databend&quot;&gt;Doc | Databend &lt;code&gt;WINDOW_FUNNEL&lt;&#x2F;code&gt; Function&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;blob&#x2F;main&#x2F;common&#x2F;functions&#x2F;src&#x2F;aggregates&#x2F;aggregate_window_funnel.rs&quot;&gt;Source Code | Databend &lt;code&gt;WINDOW_FUNNEL&lt;&#x2F;code&gt; Function&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.7.60-nightly&quot;&gt;v0.7.60-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -5727,7 +5727,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;&#x2F;ul&gt;
 &lt;h3 id=&quot;improvement&quot;&gt;Improvement&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-&lt;li&gt;avoid ub and delele unnecessary unsafe (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;5338&quot;&gt;#5338&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;avoid ub and delete unnecessary unsafe (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;5338&quot;&gt;#5338&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;li&gt;fix get function unnecessary double column loop (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;5349&quot;&gt;#5349&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;li&gt;display friendly error if not started with valid flags (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;5443&quot;&gt;#5443&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
@@ -5774,7 +5774,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&#x2F;doc&#x2F;reference&#x2F;functions&#x2F;aggregate-functions&#x2F;aggregate-retention&quot;&gt;Databend Retention Function&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;4970&quot;&gt;Support aggregate function &lt;code&gt;RETENTION&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.7.52-nightly&quot;&gt;v0.7.52-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -5868,7 +5868,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;li&gt;Databend Cluster mode only works on shared storage(AWS S3 or MinIO s3-like storage).&lt;&#x2F;li&gt;
 &lt;li&gt;This cluster mainly used for testing purpose, it is not targeted for production use.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.7.44-nightly&quot;&gt;v0.7.44-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -5943,7 +5943,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;li&gt;&lt;code&gt;statement query &amp;lt;desired_query_schema_type&amp;gt; &amp;lt;options&amp;gt; &amp;lt;labels&amp;gt;&lt;&#x2F;code&gt;: the sql statement output is expected success with desired result.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;p&gt;You can check out &lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&#x2F;doc&#x2F;contributing&#x2F;rfcs&#x2F;new_sql_logic_test_framework&quot;&gt;RFC | New SQL Logic Test Framework&lt;&#x2F;a&gt; to learn more.&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.7.38-nightly&quot;&gt;v0.7.38-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -6027,7 +6027,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;Congratulations, now you can use Databend to analyze data.&lt;&#x2F;p&gt;
 &lt;p&gt;You can check out &lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&#x2F;doc&#x2F;load-data&#x2F;mysql&quot;&gt;https:&#x2F;&#x2F;databend.rs&#x2F;doc&#x2F;load-data&#x2F;mysql&lt;&#x2F;a&gt; to learn more.&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.7.31-nightly&quot;&gt;v0.7.31-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -6105,7 +6105,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;&#x2F;ul&gt;
 &lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;datafuse-1253727613.cos.ap-hongkong.myqcloud.com&#x2F;integration&#x2F;integration-gui-jupyter.png&quot; alt=&quot;Databend with Jupyter Notebook&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;You can check out &lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&#x2F;doc&#x2F;integrations&#x2F;gui-tool&#x2F;jupyter&quot;&gt;https:&#x2F;&#x2F;databend.rs&#x2F;doc&#x2F;integrations&#x2F;gui-tool&#x2F;jupyter&lt;&#x2F;a&gt; to learn more.&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.7.24-nightly&quot;&gt;v0.7.24-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -6180,7 +6180,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend-perf&#x2F;tree&#x2F;main&#x2F;collector&quot;&gt;collector&lt;&#x2F;a&gt;: stores daily performance data for each nightly release.&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend-perf&#x2F;tree&#x2F;main&#x2F;benchmarks&quot;&gt;benchmarks&lt;&#x2F;a&gt;: contains the benchmark suite defined by the yaml format.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.7.17-nightly&quot;&gt;v0.7.17-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -6248,7 +6248,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;li&gt;Generate Nginx logs and Analyze them in Databend&lt;&#x2F;li&gt;
 &lt;&#x2F;ol&gt;
 &lt;p&gt;To learn more about how to implement it, check out &lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&#x2F;doc&#x2F;learn&#x2F;analyze-nginx-logs-with-databend-and-vector&quot;&gt;Analyzing Nginx Logs with Databend and Vector&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.7.10-nightly&quot;&gt;v0.7.10-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -6298,7 +6298,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;h2 id=&quot;performance-improvement&quot;&gt;Performance Improvement&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;datavalues: Simd selected for StringColumn&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;LiuYuHui&quot;&gt;@LiuYuHui&lt;&#x2F;a&gt;, (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;4528&quot;&gt;#4528&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;databend-query: impove performance of insert-into literal values&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ygf11&quot;&gt;@ygf11&lt;&#x2F;a&gt;, (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;4497&quot;&gt;#4497&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;databend-query: improve performance of insert-into literal values&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ygf11&quot;&gt;@ygf11&lt;&#x2F;a&gt;, (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;4497&quot;&gt;#4497&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;build-test-ci&quot;&gt;Build&#x2F;Test&#x2F;CI&lt;&#x2F;h2&gt;
 &lt;ul&gt;
@@ -6322,7 +6322,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;p&gt;v0.7.0-nightly also includes several new user-facing features, performance optimizations, and many other improvements, activate your object storage for big data analytics!&lt;&#x2F;p&gt;
 &lt;p&gt;To learn more, please check out &lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&#x2F;blog&#x2F;databend-0-7-0-release&quot;&gt;Announcing Databend v0.7.0 - Deploy easier, query faster&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;p&gt;Want to know what will happen in v0.8.0? Please check &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;issues&#x2F;4591&quot;&gt;Checklist proposal: Nightly v0.8&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.7.3-nightly&quot;&gt;v0.7.3-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -6425,7 +6425,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&#x2F;doc&#x2F;performance&#x2F;ec2-s3-performance&quot;&gt;Databend On Amazon S3 Performance&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&#x2F;doc&#x2F;performance&#x2F;ec2-wasabi-performance&quot;&gt;Databend On Wasabi Performance&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.6.100-nightly&quot;&gt;v0.6.100-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -6507,7 +6507,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&#x2F;doc&#x2F;develop&#x2F;go&quot;&gt;With Go&lt;&#x2F;a&gt;: https:&#x2F;&#x2F;databend.rs&#x2F;doc&#x2F;develop&#x2F;go&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&#x2F;doc&#x2F;develop&#x2F;python&quot;&gt;With Python&lt;&#x2F;a&gt;: https:&#x2F;&#x2F;databend.rs&#x2F;doc&#x2F;develop&#x2F;python&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.6.93-nightly&quot;&gt;v0.6.93-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -6574,7 +6574,7 @@ In order to be compatible with &lt;a href=&quot;https:&#x2F;&#x2F;docs.snowflake
 &lt;li&gt;&lt;code&gt;Array&lt;&#x2F;code&gt;: Used to represent dense or sparse arrays of arbitrary size, where the index is a non-negative integer (up to 2^31-1), and values are &lt;code&gt;Variant&lt;&#x2F;code&gt; types.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;p&gt;&lt;strong&gt;For more information&lt;&#x2F;strong&gt; see &lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&#x2F;dev&#x2F;rfcs&#x2F;query&#x2F;semi-structured-data-types&quot;&gt;Semi-structured data types design&lt;&#x2F;a&gt;. &lt;strong&gt;For ongoing work&lt;&#x2F;strong&gt; see &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;4348&quot;&gt;databend#4348&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.6.86-nightly&quot;&gt;v0.6.86-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -6645,7 +6645,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&#x2F;user&#x2F;data-loading&#x2F;loading-from-external-location&quot;&gt;Loading files from S3 External Location&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&#x2F;user&#x2F;sql-statement&#x2F;dml&#x2F;dml-copy&quot;&gt;COPY command&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.6.79-nightly&quot;&gt;v0.6.79-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -6738,7 +6738,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;li&gt;Enable the newer symbol mangling scheme. In the latest nightly Rust, this means that &lt;code&gt;-C symbol-manging-version=v0&lt;&#x2F;code&gt;. It generates smaller symbols, and we observe a great memory reduction.&lt;&#x2F;li&gt;
 &lt;li&gt;Consider allocate more virtual memory. Of course, this is definitely a valid approach, but it may require adding another dozen GiB.&lt;&#x2F;li&gt;
 &lt;&#x2F;ol&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.6.66-nightly&quot;&gt;v0.6.72-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -6789,8 +6789,8 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;performance-improvement&quot;&gt;Performance Improvement&lt;&#x2F;h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;refactor if to get better performence&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Veeupup&quot;&gt;@Veeupup&lt;&#x2F;a&gt;. (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;4160&quot;&gt;#4160&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;improve storage accessor initate logic&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;BohuTANG&quot;&gt;@BohuTANG&lt;&#x2F;a&gt;. (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;4159&quot;&gt;#4159&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;refactor if to get better performance&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Veeupup&quot;&gt;@Veeupup&lt;&#x2F;a&gt;. (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;4160&quot;&gt;#4160&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;improve storage accessor initiate logic&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;BohuTANG&quot;&gt;@BohuTANG&lt;&#x2F;a&gt;. (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;4159&quot;&gt;#4159&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;bug-fixes&quot;&gt;Bug fixes&lt;&#x2F;h2&gt;
 &lt;ul&gt;
@@ -6809,7 +6809,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;p&gt;This project has now been separated from Databend and is offered as a separate project -&amp;gt; &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;opendal&quot;&gt;datafuselabs&#x2F;opendal&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;p&gt;Please see &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;discussions&#x2F;3662&quot;&gt;proposal: Vision of Databend DAL&lt;&#x2F;a&gt; for the vision of OpenDAL.&lt;&#x2F;p&gt;
 &lt;p&gt;See its change history details in &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;issues&#x2F;3677&quot;&gt;#3677&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.6.66-nightly&quot;&gt;v0.6.66-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -6855,7 +6855,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;h2 id=&quot;improvement&quot;&gt;Improvement&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;refactor some ErrorCode to MetaError in metasrv&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;lichuang&quot;&gt;@lichuang&lt;&#x2F;a&gt;. (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;4023&quot;&gt;#4023&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;implment backtrack for parser and add a human-friendly pretty printer for errors&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;andylokandy&quot;&gt;@andylokandy&lt;&#x2F;a&gt;. (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;4045&quot;&gt;#4045&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;implement backtrack for parser and add a human-friendly pretty printer for errors&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;andylokandy&quot;&gt;@andylokandy&lt;&#x2F;a&gt;. (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;4045&quot;&gt;#4045&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;strong&gt;add tenant empty check&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;BohuTANG&quot;&gt;@BohuTANG&lt;&#x2F;a&gt;. (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;4057&quot;&gt;#4057&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;strong&gt;refactor all string2number functions&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Xuanw&quot;&gt;@Xuanwo&lt;&#x2F;a&gt;. (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;4070&quot;&gt;#4070&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
@@ -6878,7 +6878,7 @@ We also release a minor version periodically, about 6 weeks, influenced by the i
 &lt;p&gt;We currently have almost a thousand dependencies and have had to intervene manually in this process.
 If possible, it is essential to introduce a proper automatic batch upgrade mechanism with a rollback scheme.&lt;&#x2F;p&gt;
 &lt;p&gt;For more information, please see &lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&#x2F;dev&#x2F;development&#x2F;routine-maintenance&quot;&gt;databend.rs - Databend routine maintenance&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.6.59-nightly&quot;&gt;v0.6.59-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -6955,7 +6955,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;li&gt;Online playground&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;p&gt;For more information, please see &lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&#x2F;dev&#x2F;roadmap&quot;&gt;databend.rs - Roadmap 2022&lt;&#x2F;a&gt; or &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;issues&#x2F;3706&quot;&gt;issue - Roadmap 2022&lt;&#x2F;a&gt; .&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.6.52-nightly&quot;&gt;v0.6.52-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -7001,7 +7001,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;&#x2F;ul&gt;
 &lt;h3 id=&quot;bug-fixes&quot;&gt;Bug fixes&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;support escape &lt;code&gt;\t&lt;&#x2F;code&gt; &lt;code&gt;\n&lt;&#x2F;code&gt; for field_delimitor &amp;amp; record_delimitor&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;sundy-li&#x2F;&quot;&gt;@sundy-li&lt;&#x2F;a&gt;. (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;3923&quot;&gt;#3923&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;support escape &lt;code&gt;\t&lt;&#x2F;code&gt; &lt;code&gt;\n&lt;&#x2F;code&gt; for field_delimiter &amp;amp; record_delimiter&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;sundy-li&#x2F;&quot;&gt;@sundy-li&lt;&#x2F;a&gt;. (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;3923&quot;&gt;#3923&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;strong&gt;fix pruning get error when expression is not monotonic&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;zhyass&quot;&gt;@zhyass&lt;&#x2F;a&gt;. (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;3940&quot;&gt;#3940&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;strong&gt;parallel import data error&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dantengsky&quot;&gt;@dantengsky&lt;&#x2F;a&gt;. (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;3964&quot;&gt;#3964&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
@@ -7022,7 +7022,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&#x2F;learn&#x2F;lessons&#x2F;analyze-ontime-with-databend-on-ec2-and-s3&quot;&gt;Analyze OnTime datasets with Databend on AWS EC2 and S3&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.6.45-nightly&quot;&gt;v0.6.45-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -7074,7 +7074,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;h2 id=&quot;build-test-ci&quot;&gt;Build&#x2F;Test&#x2F;CI&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;introduce databend Dev container&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ZhiHanZ&quot;&gt;@ZhiHanZ&lt;&#x2F;a&gt;. (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;datafuse&#x2F;pull&#x2F;3853&quot;&gt;#3853&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;use peotry to manage all python packages&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Xuanwo&quot;&gt;@Xuanwo&lt;&#x2F;a&gt;. (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;datafuse&#x2F;pull&#x2F;3902&quot;&gt;#3902&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;use poetry to manage all python packages&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Xuanwo&quot;&gt;@Xuanwo&lt;&#x2F;a&gt;. (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;datafuse&#x2F;pull&#x2F;3902&quot;&gt;#3902&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3 id=&quot;bug-fixes&quot;&gt;Bug fixes&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -7100,7 +7100,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;p&gt;&lt;strong&gt;debug or get into dev container&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
 &lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#151515;color:#e8e8d3;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span&gt;.&#x2F;scripts&#x2F;setup&#x2F;run_docker.sh &#x2F;bin&#x2F;bash
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.6.38-nightly&quot;&gt;v0.6.38-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -7170,7 +7170,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;&#x2F;ul&gt;
 &lt;p&gt;Want to find out how we will improve the DataType system? Please check the &lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&#x2F;dev&#x2F;rfcs&#x2F;query&#x2F;new-datatype-system&quot;&gt;RFC - New datatype system design&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;p&gt;Plan to jump to specific implementation and track progress? &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;3794&quot;&gt;Databend#3794&lt;&#x2F;a&gt; might be for you.&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.6.32-nightly&quot;&gt;v0.6.32-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -7275,7 +7275,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;ul&gt;
 &lt;li&gt;Read More: https:&#x2F;&#x2F;databend.rs&#x2F;dev&#x2F;development&#x2F;tracing#explore-and-diagnose-with-tokio-console&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.6.25-nightly&quot;&gt;v0.6.25-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -7371,7 +7371,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cf6a4c;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt; row in set (&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cf6a4c;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cf6a4c;&quot;&gt;02&lt;&#x2F;span&gt;&lt;span&gt; sec)
 &lt;&#x2F;span&gt;&lt;span&gt;Read &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cf6a4c;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt; rows, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cf6a4c;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt; B in &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cf6a4c;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cf6a4c;&quot;&gt;018&lt;&#x2F;span&gt;&lt;span&gt; sec., &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cf6a4c;&quot;&gt;55&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cf6a4c;&quot;&gt;59&lt;&#x2F;span&gt;&lt;span&gt; rows&#x2F;sec., &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cf6a4c;&quot;&gt;55&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cf6a4c;&quot;&gt;59&lt;&#x2F;span&gt;&lt;span&gt; B&#x2F;sec.
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.6.18-nightly&quot;&gt;v0.6.18-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -7482,7 +7482,7 @@ Introduce a rule system that allows developer to write transformation rules easi
 &lt;&#x2F;ul&gt;
 &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.6.11-nightly&quot;&gt;v0.6.11-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -7578,11 +7578,11 @@ To learn about the main changes in v0.6, please see &lt;a href=&quot;https:&#x2F
 &lt;p&gt;Our current build &#x2F; test system is quite complex. We have Makeflie, Dockerfile(s), and a lot of shell &#x2F; python scripts. We want to build a build&#x2F;test&#x2F;benchmark system based on the Rust style, so if you have any good ideas, please feel free to share to us. Related discussion &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;discussions&#x2F;3419&quot;&gt;#3419&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Refactor CI pipleline into stages&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Refactor CI pipeline into stages&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;If you&#x27;re interested in GitHub workflows, then take a look at this proposal. By &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;issues&#x2F;3344&quot;&gt;refactoring CI&lt;&#x2F;a&gt;, we have effectively reduced blocking and been able to maintain it better. Related discussion &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;discussions&#x2F;3415&quot;&gt;#3415&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.6.4-nightly&quot;&gt;v0.6.4-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -7654,7 +7654,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;performance-improvement&quot;&gt;Performance Improvement&lt;&#x2F;h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;string performence improvement&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Veeupup&quot;&gt;@Veeupup&lt;&#x2F;a&gt;. (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;3288&quot;&gt;#3288&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;string performance improvement&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Veeupup&quot;&gt;@Veeupup&lt;&#x2F;a&gt;. (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;3288&quot;&gt;#3288&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3 id=&quot;bug-fixes&quot;&gt;Bug fixes&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -7714,7 +7714,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;&#x2F;span&gt;&lt;span&gt;
 &lt;&#x2F;span&gt;&lt;span&gt;1 rows in set. Elapsed: 1.368 sec. 
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.5.38-nightly&quot;&gt;v0.5.38-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -7797,7 +7797,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;li&gt;Copy data from stage. &lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&#x2F;sqlstatement&#x2F;data-loading&#x2F;copy-data-from-stage&#x2F;&quot;&gt;&amp;gt; learn more&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;Load data into a table using HTTP streaming API. &lt;a href=&quot;https:&#x2F;&#x2F;databend.rs&#x2F;sqlstatement&#x2F;data-loading&#x2F;http-streaming-load&#x2F;&quot;&gt;&amp;gt; learn more&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.5.31-nightly&quot;&gt;v0.5.31-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -7873,7 +7873,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;blockquote&gt;
 &lt;p&gt;If you are interested in scalar functions that work with strings, you can check &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;issues&#x2F;3004&quot;&gt;#3004&lt;&#x2F;a&gt;. You can comment like: &lt;code&gt;&#x2F;assignme&lt;&#x2F;code&gt; in the subtask issue to make this subtask assigned to you.&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.5.26-nightly&quot;&gt;v0.5.26-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -7934,7 +7934,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;li&gt;&lt;strong&gt;fix not projection schema for fuse table&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;zhang2014&quot;&gt;@zhang2014&lt;&#x2F;a&gt;. (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;2839&quot;&gt;#2839&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;strong&gt;create users with different hostnames&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Junnplus&quot;&gt;@Junnplus&lt;&#x2F;a&gt; (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;2727&quot;&gt;#2727&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.5.20-nightly&quot;&gt;v0.5.20-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -7982,7 +7982,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;li&gt;&lt;strong&gt;support graceful shutdown in metasrv&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;sunisdown&quot;&gt;@sunisdown&lt;&#x2F;a&gt;. (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;2699&quot;&gt;#2699&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;strong&gt;add math functions&lt;&#x2F;strong&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;degress&lt;&#x2F;code&gt;&#x2F;&lt;code&gt;radians&lt;&#x2F;code&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Junnplus&quot;&gt;@Junnplus&lt;&#x2F;a&gt; (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;2643&quot;&gt;#2643&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;degrees&lt;&#x2F;code&gt;&#x2F;&lt;code&gt;radians&lt;&#x2F;code&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Junnplus&quot;&gt;@Junnplus&lt;&#x2F;a&gt; (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;2643&quot;&gt;#2643&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;code&gt;log&lt;&#x2F;code&gt;&#x2F;&lt;code&gt;ln&lt;&#x2F;code&gt;&#x2F;&lt;code&gt;log2&lt;&#x2F;code&gt;&#x2F;&lt;code&gt;log10&lt;&#x2F;code&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;flaneur2020&quot;&gt;@flaneur2020&lt;&#x2F;a&gt; (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;2669&quot;&gt;#2669&lt;&#x2F;a&gt; &amp;amp; &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;2733&quot;&gt;#2733&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;&#x2F;li&gt;
@@ -8000,7 +8000,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;li&gt;&lt;strong&gt;fix number table fail to generate rows&lt;&#x2F;strong&gt;  by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;junli1026&quot;&gt;@junli1026&lt;&#x2F;a&gt; (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;2691&quot;&gt;#2691&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;strong&gt;transform like pattern to regex&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;zhyass&quot;&gt;@zhyass&lt;&#x2F;a&gt;. (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;2661&quot;&gt;#2661&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.5.13-nightly&quot;&gt;v0.5.13-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -8074,7 +8074,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;li&gt;&lt;strong&gt;update file descriptor limit for debug test&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;sunisdown&quot;&gt;@sunisdown&lt;&#x2F;a&gt;. (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;2544&quot;&gt;#2544&lt;&#x2F;a&gt; &amp;amp; &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;2552&quot;&gt;#2552&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;strong&gt;pass limit+offset to sort pipeline&lt;&#x2F;strong&gt;  by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;junli1026&quot;&gt;@junli1026&lt;&#x2F;a&gt; (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;2569&quot;&gt;#2569&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.5.6-nightly&quot;&gt;v0.5.6-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -8134,7 +8134,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;li&gt;&lt;strong&gt;move some cli commands from sync to async&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;yufan022&quot;&gt;@yufan022&lt;&#x2F;a&gt; (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;2297&quot;&gt;#2297&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;strong&gt;store TableInfo to sled tree&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ariesdevil&quot;&gt;@ariesdevil&lt;&#x2F;a&gt;. (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;2387&quot;&gt;#2387&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;strong&gt;add optimization for literal false filter&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;junli1026&quot;&gt;@junli1026&lt;&#x2F;a&gt; (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;2427&quot;&gt;#2427&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;eliminate Limit to optmize source to empty source&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;junli1026&quot;&gt;@junli1026&lt;&#x2F;a&gt; (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;2447&quot;&gt;#2447&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;eliminate Limit to optimize source to empty source&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;junli1026&quot;&gt;@junli1026&lt;&#x2F;a&gt; (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;2447&quot;&gt;#2447&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;strong&gt;add databend_main and databend_test proc macros&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;zhang2014&quot;&gt;@zhang2014&lt;&#x2F;a&gt;. (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;2434&quot;&gt;#2434&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3 id=&quot;bug-fixes&quot;&gt;Bug fixes&lt;&#x2F;h3&gt;
@@ -8145,7 +8145,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;li&gt;&lt;strong&gt;fix: http services force shutdown after some secs&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;youngsofun&quot;&gt;@youngsofun&lt;&#x2F;a&gt;. (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;2425&quot;&gt;#2425&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;strong&gt;fix get_table bug and parquet table bug&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;drmingdrmer&quot;&gt;@drmingdrmer&lt;&#x2F;a&gt; (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;2400&quot;&gt;#2400&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.4.149-nightly&quot;&gt;v0.4.149-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -8208,7 +8208,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;li&gt;&lt;strong&gt;fix graceful shutdown takes at most 1 minute&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;zhang2014&quot;&gt;@zhang2014&lt;&#x2F;a&gt;. (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;2249&quot;&gt;#2249&lt;&#x2F;a&gt;) &lt;&#x2F;li&gt;
 &lt;li&gt;&lt;strong&gt;fix query metrics exporter issue in prometheus&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ZhiHanZ&quot;&gt;@ZhiHanZ&lt;&#x2F;a&gt;. (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;2333&quot;&gt;#2333&lt;&#x2F;a&gt;) &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.4.142-nightly&quot;&gt;v0.4.142-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -8263,7 +8263,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;fix namespace failure when restart query&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;zhang2014&quot;&gt;@zhang2014&lt;&#x2F;a&gt;. (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;2108&quot;&gt;#2108&lt;&#x2F;a&gt;) &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.4.136-nightly&quot;&gt;v0.4.136-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -8308,7 +8308,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;li&gt;&lt;strong&gt;merge GetTableActionResult and TableInfo into one struct TableInfo&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;drmingdrmer&quot;&gt;@drmingdrmer&lt;&#x2F;a&gt; (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;2020&quot;&gt;#2020&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;strong&gt;decouple ScanPlan with Table&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dantengsky&quot;&gt;@dantengsky&lt;&#x2F;a&gt;. (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;1976&quot;&gt;#1976&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.4.130-nightly&quot;&gt;v0.4.130-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -8371,7 +8371,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;li&gt;&lt;strong&gt;make config clearer&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;BohuTANG&quot;&gt;@BohuTANG&lt;&#x2F;a&gt;.(&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;1989&quot;&gt;#1989&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;strong&gt;make date32 physical type to be int32&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;sundy-li&quot;&gt;@sundy-li&lt;&#x2F;a&gt;. (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;1990&quot;&gt;#1990&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.4.123-nightly&quot;&gt;v0.4.123-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -8430,7 +8430,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;li&gt;&lt;strong&gt;fix protocol seq in AuthSwitchRequest&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;sundy-li&quot;&gt;@sundy-li&lt;&#x2F;a&gt;. (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;1890&quot;&gt;#1890&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;strong&gt;fix get_sled_db() should not panic while holding a lock&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;drmingdrmer&quot;&gt;@drmingdrmer&lt;&#x2F;a&gt;. (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;1918&quot;&gt;#1918&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.4.116-nightly&quot;&gt;v0.4.116-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -8472,7 +8472,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;add LocalKVStore: a KVApi impl backed with a sled tree&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;drmingdrmer&quot;&gt;@drmingdrmer&lt;&#x2F;a&gt;. (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;1754&quot;&gt;#1754&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;strong&gt;initial work for saving table meta in obj storage&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dantengsky&quot;&gt;@dantengsky&lt;&#x2F;a&gt;. (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;1694&quot;&gt;#1694&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;add Interval suppport&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;junli1026&quot;&gt;@junli1026&lt;&#x2F;a&gt; (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;1752&quot;&gt;#1752&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;add Interval support&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;junli1026&quot;&gt;@junli1026&lt;&#x2F;a&gt; (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;1752&quot;&gt;#1752&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;strong&gt;add toStartOfYear,toStartOfISOYear&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dust1&quot;&gt;@dust1&lt;&#x2F;a&gt; (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;1826&quot;&gt;#1826&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;strong&gt;add toYYYYMMDDhhmmss&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ygf11&quot;&gt;@ygf11&lt;&#x2F;a&gt; (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;1767&quot;&gt;#1767&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;strong&gt;add a basic credits table&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;PsiACE&quot;&gt;@PsiACE&lt;&#x2F;a&gt; (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;1778&quot;&gt;#1778&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
@@ -8487,7 +8487,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;RFC: New SQL planner framework&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;leiysky&quot;&gt;@leiysky&lt;&#x2F;a&gt;. (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;pull&#x2F;1837&quot;&gt;#1837&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Databend nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;databend&#x2F;releases&#x2F;tag&#x2F;v0.4.109-nightly&quot;&gt;v0.4.109-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -8540,7 +8540,7 @@ If you are a hacker passionate about database internals, feel free to play with 
 &lt;&#x2F;ul&gt;
 &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Datafuse nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;datafuse&#x2F;releases&#x2F;tag&#x2F;v0.4.102-nightly&quot;&gt;v0.4.102-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -8583,7 +8583,7 @@ You can submit &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#
 &lt;li&gt;&lt;strong&gt;cross compile for arm-based architecture&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ZhiHanZ&quot;&gt;@ZhiHanZ&lt;&#x2F;a&gt;. (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;datafuse&#x2F;pull&#x2F;1689&quot;&gt;#1689&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;strong&gt;refactor some warp services to axum&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ZhiHanZ&quot;&gt;@ZhiHanZ&lt;&#x2F;a&gt;. (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;datafuse&#x2F;pull&#x2F;1654&quot;&gt;#1654&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Datafuse nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;datafuse&#x2F;releases&#x2F;tag&#x2F;v0.4.95-nightly&quot;&gt;v0.4.95-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -8635,7 +8635,7 @@ You can submit &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#
 &lt;li&gt;&lt;strong&gt;Object Store Data Access Layer&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dantengsky&quot;&gt;@dantengsky&lt;&#x2F;a&gt;. (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;datafuse&#x2F;pull&#x2F;1442&quot;&gt;#1442&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;strong&gt;making distributed systems more robust&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;drmingdrmer&quot;&gt;@drmingdrmer&lt;&#x2F;a&gt;. (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;datafuse&#x2F;pull&#x2F;1569&quot;&gt;#1569&lt;&#x2F;a&gt; &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;datafuse&#x2F;pull&#x2F;1546&quot;&gt;#1546&lt;&#x2F;a&gt; etc.)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Datafuse nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;datafuse&#x2F;releases&#x2F;tag&#x2F;v0.4.88-nightly&quot;&gt;v0.4.88-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -8687,7 +8687,7 @@ You can submit &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#
 &lt;li&gt;&lt;strong&gt;fix panic while reading data parts&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dantengsky&quot;&gt;@dantengsky&lt;&#x2F;a&gt;. (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;datafuse&#x2F;pull&#x2F;1489&quot;&gt;#1489&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;strong&gt;add datafuse design whitepaper to website&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;BohuTANG&quot;&gt;@BohuTANG&lt;&#x2F;a&gt;. (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;datafuse&#x2F;pull&#x2F;1490&quot;&gt;#1490&lt;&#x2F;a&gt; &amp;amp; &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;datafuse&#x2F;pull&#x2F;1493&quot;&gt;#1493&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Datafuse nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;datafuse&#x2F;releases&#x2F;tag&#x2F;v0.4.81-nightly&quot;&gt;v0.4.81-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -8734,7 +8734,7 @@ You can submit &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#
 &lt;li&gt;&lt;strong&gt;support kill for query or connection statement&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;zhang2014&quot;&gt;@zhang2014&lt;&#x2F;a&gt;. (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;datafuse&#x2F;pull&#x2F;1280&quot;&gt;#1280&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;strong&gt;flatten the directory structure &amp;amp; unify the name style&lt;&#x2F;strong&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;PsiACE&quot;&gt;@PsiACE&lt;&#x2F;a&gt;. (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;datafuse&#x2F;pull&#x2F;1404&quot;&gt;#1404&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Datafuse nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;datafuse&#x2F;releases&#x2F;tag&#x2F;v0.4.74-nightly&quot;&gt;v0.4.74-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -8782,7 +8782,7 @@ You can submit &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#
 &lt;li&gt;&lt;strong&gt;disk backed meta store&lt;&#x2F;strong&gt; under dev. by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;drmingdrmer&quot;&gt;@drmingdrmer&lt;&#x2F;a&gt; (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;datafuse&#x2F;pull&#x2F;1248&quot;&gt;#1212&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;strong&gt;migrate to rust 2021&lt;&#x2F;strong&gt;: Powered by &lt;code&gt;nightly-2021-08-03&lt;&#x2F;code&gt;, thanks to the Rust team. by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;PsiACE&quot;&gt;@PsiACE&lt;&#x2F;a&gt; (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;datafuse&#x2F;pull&#x2F;1159&quot;&gt;#1159&lt;&#x2F;a&gt;).&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;changlogs&quot;&gt;Changlogs&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;changelogs&quot;&gt;Changelogs&lt;&#x2F;h2&gt;
 &lt;p&gt;You can check the changelogs of Datafuse nightly to learn about our latest developments.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;datafuse&#x2F;releases&#x2F;tag&#x2F;v0.4.70-nightly&quot;&gt;v0.4.70-nightly&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -8801,7 +8801,7 @@ You can submit &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jonhoo&#x2F;msql-srv&#x2F;pull&#x2F;22&quot;&gt;msql-srv #22: Bump deps&lt;&#x2F;a&gt;. by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;PsiACE&#x2F;&quot;&gt;@PsiACE&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;meet-us&quot;&gt;Meet Us&lt;&#x2F;h2&gt;
-&lt;p&gt;You are welcome to join the &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;&quot;&gt;Datafuse Community&lt;&#x2F;a&gt;. We look forward to you being one of our contributors or trialers.&lt;&#x2F;p&gt;
+&lt;p&gt;You are welcome to join the &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;&quot;&gt;Datafuse Community&lt;&#x2F;a&gt;. We look forward to you being one of our contributors or trailers.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;datafuselabs&#x2F;datafuse&#x2F;discussions&quot;&gt;GitHub Discussions&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;link.databend.rs&#x2F;join-slack&quot;&gt;Slack Channel&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
