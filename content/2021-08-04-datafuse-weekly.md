@@ -17,7 +17,7 @@ Below is a list of some major changes that we don’t want you to miss.
 - **disk backed meta store** under dev. by [@drmingdrmer](https://github.com/drmingdrmer) ([#1212](https://github.com/datafuselabs/datafuse/pull/1248))
 - **migrate to rust 2021**: Powered by `nightly-2021-08-03`, thanks to the Rust team. by [@PsiACE](https://github.com/PsiACE) ([#1159](https://github.com/datafuselabs/datafuse/pull/1159)).
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Datafuse nightly to learn about our latest developments.
 
@@ -40,7 +40,7 @@ From open source, for open source. The Datafuse team is also committed to contri
 
 ## Meet Us
 
-You are welcome to join the [Datafuse Community](https://github.com/datafuselabs/). We look forward to you being one of our contributors or trialers.
+You are welcome to join the [Datafuse Community](https://github.com/datafuselabs/). We look forward to you being one of our contributors or trailers.
 
 - [GitHub Discussions](https://github.com/datafuselabs/datafuse/discussions)
 - [Slack Channel](https://link.databend.rs/join-slack)

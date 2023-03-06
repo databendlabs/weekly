@@ -18,7 +18,7 @@ Below is a list of some major changes that we don’t want you to miss.
 - **Object Store Data Access Layer** by [@dantengsky](https://github.com/dantengsky). ([#1442](https://github.com/datafuselabs/datafuse/pull/1442))
 - **making distributed systems more robust** by [@drmingdrmer](https://github.com/drmingdrmer). ([#1569](https://github.com/datafuselabs/datafuse/pull/1569) [#1546](https://github.com/datafuselabs/datafuse/pull/1546) etc.)
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Datafuse nightly to learn about our latest developments.
 

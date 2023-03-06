@@ -21,7 +21,7 @@ Below is a list of some major changes that we don’t want you to miss.
 
 - **add LocalKVStore: a KVApi impl backed with a sled tree** by [@drmingdrmer](https://github.com/drmingdrmer). ([#1754](https://github.com/datafuselabs/databend/pull/1754))
 - **initial work for saving table meta in obj storage** by [@dantengsky](https://github.com/dantengsky). ([#1694](https://github.com/datafuselabs/databend/pull/1694))
-- **add Interval suppport** by [@junli1026](https://github.com/junli1026) ([#1752](https://github.com/datafuselabs/databend/pull/1752))
+- **add Interval support** by [@junli1026](https://github.com/junli1026) ([#1752](https://github.com/datafuselabs/databend/pull/1752))
 - **add toStartOfYear,toStartOfISOYear** by [@dust1](https://github.com/dust1) ([#1826](https://github.com/datafuselabs/databend/pull/1826))
 - **add toYYYYMMDDhhmmss** by [@ygf11](https://github.com/ygf11) ([#1767](https://github.com/datafuselabs/databend/pull/1767))
 - **add a basic credits table** by [@PsiACE](https://github.com/PsiACE) ([#1778](https://github.com/datafuselabs/databend/pull/1778))
@@ -37,7 +37,7 @@ Below is a list of some major changes that we don’t want you to miss.
 - **RFC: New SQL planner framework** by [@leiysky](https://github.com/leiysky). ([#1837](https://github.com/datafuselabs/databend/pull/1837)
 
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

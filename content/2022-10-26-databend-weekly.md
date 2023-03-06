@@ -183,7 +183,7 @@ The community also plans to add support for the following Key-Value services:
 
 If you find these interesting, try to solve them or participate in discussions and PR reviews. Or you can click on <https://link.databend.rs/i-m-feeling-lucky> to pick up a good first issue, good luck!
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

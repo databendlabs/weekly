@@ -14,7 +14,7 @@ Below is a list of some major changes that we don't want you to miss.
 ### Features
 
 - undrop database ([#5770](https://github.com/datafuselabs/databend/pull/5770))
-- support async insert mode to imporve throughput ([#5567](https://github.com/datafuselabs/databend/pull/5567))
+- support async insert mode to improve throughput ([#5567](https://github.com/datafuselabs/databend/pull/5567))
 - support alter table cluster key ([#5718](https://github.com/datafuselabs/databend/pull/5718))
 
 **meta**
@@ -78,9 +78,9 @@ After doing this, inserts into the same table will be parsed and planned individ
 **Learn more:**
 
 - [RFC | Async Insert Mode](https://databend.rs/doc/contributing/rfcs/async-insert)
-- [PR 5567 | Support async insert mode to imporve throughput](https://github.com/datafuselabs/databend/pull/5567/)
+- [PR 5567 | Support async insert mode to improve throughput](https://github.com/datafuselabs/databend/pull/5567/)
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

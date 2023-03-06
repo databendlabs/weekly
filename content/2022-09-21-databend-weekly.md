@@ -103,7 +103,7 @@ Databend supports structured data types, as well as JSON. This post dives deeply
 
 Learn more at <https://databend.rs/blog/json-datatypes>
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

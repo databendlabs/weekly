@@ -1,0 +1,13 @@
+# If there are words that you think should not be treated as typo.
+# Please list here along with a comment.
+[default.extend-words]
+# Preserved for NdJson
+"Nd" = "Nd"
+# Microsoft K8s Servier
+"AKS" = "AKS"
+# Wrong cases
+"ba" = "ba"
+"ue" = "ue"
+"INOUT" = "INOUT"
+"ser" = "ser"
+"Ser" = "Ser"

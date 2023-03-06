@@ -50,7 +50,7 @@ In order to be compatible with [Snowflake's SQL syntax](https://docs.snowflake.c
 
 **For more information** see [Semi-structured data types design](https://databend.rs/dev/rfcs/query/semi-structured-data-types). **For ongoing work** see [databend#4348](https://github.com/datafuselabs/databend/pull/4348).
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

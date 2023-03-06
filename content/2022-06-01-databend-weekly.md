@@ -20,7 +20,7 @@ Below is a list of some major changes that we don't want you to miss.
 
 **new parser**
 
-- implment string unescape ([#5638](https://github.com/datafuselabs/databend/pull/5638))
+- implement string unescape ([#5638](https://github.com/datafuselabs/databend/pull/5638))
 - allow mysql-style hex number and single-item array ([#5654](https://github.com/datafuselabs/databend/pull/5654))
 
 **stage related**
@@ -104,7 +104,7 @@ The `COMPRESSION` option is a string that represents the compression algorithm.
 - [Doc | COPY INTO \<table\>](https://databend.rs/doc/reference/sql/dml/dml-copy-into-table)
 - [PR 5655 | Add decompress support for COPY INTO and streaming loading](https://github.com/datafuselabs/databend/pull/5655)
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

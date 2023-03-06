@@ -41,7 +41,7 @@ Below is a list of some major changes that we don't want you to miss.
 
 ## Performance Improvement
 
-- **string performence improvement** by [@Veeupup](https://github.com/Veeupup). ([#3288](https://github.com/datafuselabs/databend/pull/3288))
+- **string performance improvement** by [@Veeupup](https://github.com/Veeupup). ([#3288](https://github.com/datafuselabs/databend/pull/3288))
 
 ### Bug fixes
 
@@ -119,7 +119,7 @@ databend :) select * from databend;
 1 rows in set. Elapsed: 1.368 sec. 
 ```
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

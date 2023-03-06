@@ -32,7 +32,7 @@ Below is a list of some major changes that we don't want you to miss.
 
 ### Improvement
 
-- avoid ub and delele unnecessary unsafe ([#5338](https://github.com/datafuselabs/databend/pull/5338))
+- avoid ub and delete unnecessary unsafe ([#5338](https://github.com/datafuselabs/databend/pull/5338))
 - fix get function unnecessary double column loop ([#5349](https://github.com/datafuselabs/databend/pull/5349))
 - display friendly error if not started with valid flags ([#5443](https://github.com/datafuselabs/databend/pull/5443))
 
@@ -90,7 +90,7 @@ FROM
 - [Databend Retention Function](https://databend.rs/doc/reference/functions/aggregate-functions/aggregate-retention)
 - [Support aggregate function `RETENTION`](https://github.com/datafuselabs/databend/pull/4970)
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

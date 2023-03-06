@@ -59,7 +59,7 @@ To view the source code, please visit [GitHub - datafuselabs/databend-perf](http
 - [collector](https://github.com/datafuselabs/databend-perf/tree/main/collector): stores daily performance data for each nightly release.
 - [benchmarks](https://github.com/datafuselabs/databend-perf/tree/main/benchmarks): contains the benchmark suite defined by the yaml format.
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

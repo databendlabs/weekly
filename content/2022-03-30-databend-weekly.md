@@ -29,7 +29,7 @@ Below is a list of some major changes that we don't want you to miss.
 ## Performance Improvement
 
 - **datavalues: Simd selected for StringColumn** by [@LiuYuHui](https://github.com/LiuYuHui), ([#4528](https://github.com/datafuselabs/databend/pull/4528))
-- **databend-query: impove performance of insert-into literal values** by [@ygf11](https://github.com/ygf11), ([#4497](https://github.com/datafuselabs/databend/pull/4497))
+- **databend-query: improve performance of insert-into literal values** by [@ygf11](https://github.com/ygf11), ([#4497](https://github.com/datafuselabs/databend/pull/4497))
 
 
 ## Build/Test/CI
@@ -61,7 +61,7 @@ To learn more, please check out [Announcing Databend v0.7.0 - Deploy easier, que
 Want to know what will happen in v0.8.0? Please check [Checklist proposal: Nightly v0.8](https://github.com/datafuselabs/databend/issues/4591).
 
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

@@ -45,7 +45,7 @@ Below is a list of some major changes that we don't want you to miss.
 
 **storage**
 
-- use pipline to refactor compact ([#7244](https://github.com/datafuselabs/databend/pull/7244))
+- use pipeline to refactor compact ([#7244](https://github.com/datafuselabs/databend/pull/7244))
 
 **sessions**
 
@@ -114,7 +114,7 @@ Currently we implemented an experimental airbyte destination allow you to send d
 
 Learn more: <https://databend.rs/doc/integrations/data-tool/airbyte>
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

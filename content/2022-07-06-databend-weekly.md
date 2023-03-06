@@ -108,7 +108,7 @@ DATABEND_SENTRY_DSN="<your-sentry-dsn>" SENTRY_TRACES_SAMPLE_RATE=1.0 LOG_LEVEL=
 - [DOC | Error Tracking and Performance Monitoring with Sentry](https://databend.rs/doc/faq/how-to-tracing#error-tracking-and-performance-monitoring-with-sentry)
 - [PR | Integration with Sentry](https://github.com/datafuselabs/databend/pull/6226)
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

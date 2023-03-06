@@ -25,7 +25,7 @@ Below is a list of some major changes that we don't want you to miss.
 ## Build/Test/CI
 
 - **introduce databend Dev container** by [@ZhiHanZ](https://github.com/ZhiHanZ). ([#3853](https://github.com/datafuselabs/datafuse/pull/3853))
-- **use peotry to manage all python packages** by [@Xuanwo](https://github.com/Xuanwo). ([#3902](https://github.com/datafuselabs/datafuse/pull/3902))
+- **use poetry to manage all python packages** by [@Xuanwo](https://github.com/Xuanwo). ([#3902](https://github.com/datafuselabs/datafuse/pull/3902))
 
 ### Bug fixes
 
@@ -65,7 +65,7 @@ In [#3853](https://github.com/datafuselabs/datafuse/pull/3853) , we have introdu
 ./scripts/setup/run_docker.sh /bin/bash
 ```
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

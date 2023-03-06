@@ -113,7 +113,7 @@ After deletion, the data in the `bookstore` table is shown as follows:
 - [DOC | DELETE](https://databend.rs/doc/reference/sql/dml/dml-delete-from)
 - [PR | statement `delete from... `](https://github.com/datafuselabs/databend/pull/5691)
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

@@ -99,7 +99,7 @@ ALTER TABLE <name> DROP CLUSTER KEY
 - [DOC | ALTER CLUSTER KEY](https://databend.rs/doc/reference/sql/ddl/clusterkey/dml-alter-cluster-key)
 - [DOC | DROP CLUSTER KEY](https://databend.rs/doc/reference/sql/ddl/clusterkey/dml-drop-cluster-key)
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

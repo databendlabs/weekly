@@ -77,7 +77,7 @@ Databend using Rust's tracing ecosystem [tokio-tracing](https://github.com/tokio
 
 - Read More: https://databend.rs/dev/development/tracing#explore-and-diagnose-with-tokio-console
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

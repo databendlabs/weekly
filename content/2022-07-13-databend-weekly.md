@@ -65,7 +65,7 @@ Let's learn a weekly tip from Databend.
 
 ### Presign Statement
 
-Generates the pre-signed URL for a staged file by the stage name and file path you provide. The pre-signed URL enables you to access the file through a web browswer or an API request.
+Generates the pre-signed URL for a staged file by the stage name and file path you provide. The pre-signed URL enables you to access the file through a web browser or an API request.
 
 **Syntax**
 
@@ -91,7 +91,7 @@ PRESIGN @my_stage/books.csv
 - [DOC | PRESIGN](https://databend.rs/doc/reference/sql/ddl/presign/presign)
 - [Tracking Issue | Add PRESIGN Support](https://github.com/datafuselabs/databend/issues/6215)
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

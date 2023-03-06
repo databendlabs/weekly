@@ -111,7 +111,7 @@ OpenDAL v0.15.0 has been released with new features 🤩 :
 - Observability Improvement by [@ClSlaid](https://github.com/ClSlaid)
 - Blocking API Support by [@Xuanwo](https://github.com/Xuanwo)
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

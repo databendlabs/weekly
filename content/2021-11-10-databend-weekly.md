@@ -21,7 +21,7 @@ Below is a list of some major changes that we don't want you to miss.
 - **add join API to join a node to cluster** by [@drmingdrmer](https://github.com/drmingdrmer) ([#2701](https://github.com/datafuselabs/databend/pull/2701))
 - **support graceful shutdown in metasrv** by [@sunisdown](https://github.com/sunisdown). ([#2699](https://github.com/datafuselabs/databend/pull/2699))
 - **add math functions**
-  - `degress`/`radians` by [@Junnplus](https://github.com/Junnplus) ([#2643](https://github.com/datafuselabs/databend/pull/2643))
+  - `degrees`/`radians` by [@Junnplus](https://github.com/Junnplus) ([#2643](https://github.com/datafuselabs/databend/pull/2643))
   - `log`/`ln`/`log2`/`log10` by [@flaneur2020](https://github.com/flaneur2020) ([#2669](https://github.com/datafuselabs/databend/pull/2669) & [#2733](https://github.com/datafuselabs/databend/pull/2733))
 
 ## Improvement
@@ -37,7 +37,7 @@ Below is a list of some major changes that we don't want you to miss.
 - **fix number table fail to generate rows**  by [@junli1026](https://github.com/junli1026) ([#2691](https://github.com/datafuselabs/databend/pull/2691))
 - **transform like pattern to regex** by [@zhyass](https://github.com/zhyass). ([#2661](https://github.com/datafuselabs/databend/pull/2661))
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 
