@@ -32,7 +32,7 @@ Below is a list of some major changes that we don’t want you to miss.
 
 - **fix namespace failure when restart query** by [@zhang2014](https://github.com/zhang2014). ([#2108](https://github.com/datafuselabs/databend/pull/2108)) 
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

@@ -42,7 +42,7 @@ Below is a list of some major changes that we don’t want you to miss.
 - **update file descriptor limit for debug test** by [@sunisdown](https://github.com/sunisdown). ([#2544](https://github.com/datafuselabs/databend/pull/2544) & [#2552](https://github.com/datafuselabs/databend/pull/2552))
 - **pass limit+offset to sort pipeline**  by [@junli1026](https://github.com/junli1026) ([#2569](https://github.com/datafuselabs/databend/pull/2569))
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

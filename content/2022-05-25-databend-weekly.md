@@ -106,7 +106,7 @@ GROUP BY level ORDER BY level ASC;
 - [Doc | Databend `WINDOW_FUNNEL` Function](https://databend.rs/doc/learn/analyze-funnel-with-databend)
 - [Source Code | Databend `WINDOW_FUNNEL` Function](https://github.com/datafuselabs/databend/blob/main/common/functions/src/aggregates/aggregate_window_funnel.rs)
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

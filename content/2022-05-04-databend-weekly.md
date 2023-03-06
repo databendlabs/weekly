@@ -59,7 +59,7 @@ So, we plan to refactor this testing solution to introduce an extended version o
 
 You can check out [RFC | New SQL Logic Test Framework](https://databend.rs/doc/contributing/rfcs/new_sql_logic_test_framework) to learn more.
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

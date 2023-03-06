@@ -38,7 +38,7 @@ Below is a list of some major changes that we don't want you to miss.
 - **fix not projection schema for fuse table** by [@zhang2014](https://github.com/zhang2014). ([#2839](https://github.com/datafuselabs/databend/pull/2839))
 - **create users with different hostnames** by [@Junnplus](https://github.com/Junnplus) ([#2727](https://github.com/datafuselabs/databend/pull/2727))
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

@@ -27,7 +27,7 @@ Below is a list of some major changes that we don’t want you to miss.
 - **move some cli commands from sync to async** by [@yufan022](https://github.com/yufan022) ([#2297](https://github.com/datafuselabs/databend/pull/2297))
 - **store TableInfo to sled tree** by [@ariesdevil](https://github.com/ariesdevil). ([#2387](https://github.com/datafuselabs/databend/pull/2387))
 - **add optimization for literal false filter** by [@junli1026](https://github.com/junli1026) ([#2427](https://github.com/datafuselabs/databend/pull/2427))
-- **eliminate Limit to optmize source to empty source** by [@junli1026](https://github.com/junli1026) ([#2447](https://github.com/datafuselabs/databend/pull/2447))
+- **eliminate Limit to optimize source to empty source** by [@junli1026](https://github.com/junli1026) ([#2447](https://github.com/datafuselabs/databend/pull/2447))
 - **add databend_main and databend_test proc macros** by [@zhang2014](https://github.com/zhang2014). ([#2434](https://github.com/datafuselabs/databend/pull/2434))
 
 ### Bug fixes
@@ -38,7 +38,7 @@ Below is a list of some major changes that we don’t want you to miss.
 - **fix: http services force shutdown after some secs** by [@youngsofun](https://github.com/youngsofun). ([#2425](https://github.com/datafuselabs/databend/pull/2425))
 - **fix get_table bug and parquet table bug** by [@drmingdrmer](https://github.com/drmingdrmer) ([#2400](https://github.com/datafuselabs/databend/pull/2400))
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

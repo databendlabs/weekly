@@ -88,7 +88,7 @@ We've also updated some of Databend's performance, if you're interested in that,
 - [Databend On Amazon S3 Performance](https://databend.rs/doc/performance/ec2-s3-performance)
 - [Databend On Wasabi Performance](https://databend.rs/doc/performance/ec2-wasabi-performance)
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

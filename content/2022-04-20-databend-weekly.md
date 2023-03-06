@@ -64,7 +64,7 @@ To experience it, there are only three steps:
 
 You can check out <https://databend.rs/doc/integrations/gui-tool/jupyter> to learn more.
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

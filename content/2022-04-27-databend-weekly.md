@@ -82,7 +82,7 @@ Congratulations, now you can use Databend to analyze data.
 
 You can check out <https://databend.rs/doc/load-data/mysql> to learn more.
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

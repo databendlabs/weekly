@@ -29,7 +29,7 @@ Below is a list of some major changes that we don't want you to miss.
 **hive**
 
 - hive predict pushdown ([#8469](https://github.com/datafuselabs/databend/pull/8469))
-- suport substr && order by with null values compatible with hive functions ([#8558](https://github.com/datafuselabs/databend/pull/8558))
+- support substr && order by with null values compatible with hive functions ([#8558](https://github.com/datafuselabs/databend/pull/8558))
 
 **rbac**
 
@@ -158,7 +158,7 @@ Using DashMap will bring two advantages:
 
 If you find it interesting, try to solve it or participate in discussions and PR reviews. Or you can click on <https://link.databend.rs/i-m-feeling-lucky> to pick up a good first issue, good luck!
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

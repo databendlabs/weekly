@@ -76,7 +76,7 @@ mysql> SELECT mean2number(150, 250);
 Read 1 rows, 1 B in 0.018 sec., 55.59 rows/sec., 55.59 B/sec.
 ```
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

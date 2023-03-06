@@ -111,7 +111,7 @@ As the Clickhouse TCP protocol is almost a black box and requires a lot of effor
 
 Databend will focus on Clickhouse HTTP protocol compatibility to ensure compatibility with the existing ecosystem.
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

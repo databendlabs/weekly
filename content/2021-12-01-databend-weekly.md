@@ -56,7 +56,7 @@ Databend now supports the loading of data via the following methods:
 - Copy data from stage. [> learn more](https://databend.rs/sqlstatement/data-loading/copy-data-from-stage/)
 - Load data into a table using HTTP streaming API. [> learn more](https://databend.rs/sqlstatement/data-loading/http-streaming-load/)
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

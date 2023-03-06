@@ -164,7 +164,7 @@ Well done, we did it.
 - [RFC: Formal Type System](https://github.com/datafuselabs/databend/discussions/5438)
 - [Tracking issue for new expression framework](https://github.com/datafuselabs/databend/issues/6547)
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

@@ -24,7 +24,7 @@ Below is a list of some major changes that we don’t want you to miss.
   - `yesterday`/`tomorrow`/`timeSlot()` by [@dust1](https://github.com/dust1) ([#1673](https://github.com/datafuselabs/datafuse/pull/1673), [#1715](https://github.com/datafuselabs/datafuse/pull/1715))
   - `toYYYYMM` by [@ygf11](https://github.com/ygf11) ([#1726](https://github.com/datafuselabs/datafuse/pull/1726), [#1742](https://github.com/datafuselabs/datafuse/pull/1742))
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Datafuse nightly to learn about our latest developments.
 

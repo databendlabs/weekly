@@ -25,7 +25,7 @@ Below is a list of some major changes that we don't want you to miss.
 
 ### Bug fixes
 
-- **support escape `\t` `\n` for field_delimitor & record_delimitor** by [@sundy-li](https://github.com/sundy-li/). ([#3923](https://github.com/datafuselabs/databend/pull/3923))
+- **support escape `\t` `\n` for field_delimiter & record_delimiter** by [@sundy-li](https://github.com/sundy-li/). ([#3923](https://github.com/datafuselabs/databend/pull/3923))
 - **fix pruning get error when expression is not monotonic** by [@zhyass](https://github.com/zhyass). ([#3940](https://github.com/datafuselabs/databend/pull/3940))
 - **parallel import data error** by [@dantengsky](https://github.com/dantengsky). ([#3964](https://github.com/datafuselabs/databend/pull/3964))
 
@@ -50,7 +50,7 @@ This article provides step-by-step instructions on how to deploy Databend on EC2
 
 - [Analyze OnTime datasets with Databend on AWS EC2 and S3](https://databend.rs/learn/lessons/analyze-ontime-with-databend-on-ec2-and-s3)
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

@@ -98,7 +98,7 @@ Next, we will consider using OpenDAL to take over Databend's existing in-memory 
 - [RFC | Cache](https://databend.rs/doc/contributing/rfcs/cache)
 - [Tracking issue for Cache Support in databend](https://github.com/datafuselabs/databend/issues/6803)
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

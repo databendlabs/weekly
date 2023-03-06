@@ -36,7 +36,7 @@ Below is a list of some major changes that we don't want you to miss.
 
 **query**
 
-- parquet schema case in-senstive match [#7045](https://github.com/datafuselabs/databend/pull/7045)
+- parquet schema case in-sensitive match [#7045](https://github.com/datafuselabs/databend/pull/7045)
 
 **new expression**
 
@@ -103,7 +103,7 @@ Learn more: <https://databend.rs/doc/reference/sql/query-syntax/dml-with>
 - [opendal](https://github.com/datafuselabs/opendal) has just added support for Google Cloud Storage and released 0.13.0. Recent improvements include a new `Builder` with sync support and some useful layers.
 - The v0.2.0 release of [opensrv](https://github.com/datafuselabs/opensrv) supports streaming writes to mysql result sets and simplifies metadata for clickhouse.
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

@@ -113,7 +113,7 @@ copy into ontime200 from 'https://repo.databend.rs/dataset/stateful/ontime_200[6
 - [DOC | COPY INTO `<table>` FROM REMOTE FILES](https://databend.rs/doc/reference/sql/dml/dml-copy-into-table-url)
 - [PR| add support for COPY from https](https://github.com/datafuselabs/databend/pull/6691)
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

@@ -28,8 +28,8 @@ Below is a list of some major changes that we don't want you to miss.
 
 ## Performance Improvement
 
-- **refactor if to get better performence** by [@Veeupup](https://github.com/Veeupup). ([#4160](https://github.com/datafuselabs/databend/pull/4160))
-- **improve storage accessor initate logic** by [@BohuTANG](https://github.com/BohuTANG). ([#4159](https://github.com/datafuselabs/databend/pull/4159))
+- **refactor if to get better performance** by [@Veeupup](https://github.com/Veeupup). ([#4160](https://github.com/datafuselabs/databend/pull/4160))
+- **improve storage accessor initiate logic** by [@BohuTANG](https://github.com/BohuTANG). ([#4159](https://github.com/datafuselabs/databend/pull/4159))
 
 ## Bug fixes
 
@@ -54,7 +54,7 @@ Please see [proposal: Vision of Databend DAL](https://github.com/datafuselabs/da
 
 See its change history details in [#3677](https://github.com/datafuselabs/databend/issues/3677).
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

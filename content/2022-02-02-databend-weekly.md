@@ -61,7 +61,7 @@ It's February 2022 and just in time for the Chinese New Year, let's take a look 
 
 For more information, please see [databend.rs - Roadmap 2022](https://databend.rs/dev/roadmap) or [issue - Roadmap 2022](https://github.com/datafuselabs/databend/issues/3706) .
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

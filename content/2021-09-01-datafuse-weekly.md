@@ -18,7 +18,7 @@ Below is a list of some major changes that we don’t want you to miss.
 - **cross compile for arm-based architecture** by [@ZhiHanZ](https://github.com/ZhiHanZ). ([#1689](https://github.com/datafuselabs/datafuse/pull/1689))
 - **refactor some warp services to axum** by [@ZhiHanZ](https://github.com/ZhiHanZ). ([#1654](https://github.com/datafuselabs/datafuse/pull/1654))
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Datafuse nightly to learn about our latest developments.
 

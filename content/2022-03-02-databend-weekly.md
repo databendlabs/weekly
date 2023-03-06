@@ -57,7 +57,7 @@ SELECT * FROM ontime;
 - [Loading files from S3 External Location](https://databend.rs/user/data-loading/loading-from-external-location).
 - [COPY command](https://databend.rs/user/sql-statement/dml/dml-copy)
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

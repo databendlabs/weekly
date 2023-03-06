@@ -50,7 +50,7 @@ We observed that this phenomenon is mainly due to memory overflow during linking
 3. Consider allocate more virtual memory. Of course, this is definitely a valid approach, but it may require adding another dozen GiB.
 
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

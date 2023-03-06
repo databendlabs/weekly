@@ -36,7 +36,7 @@ Below is a list of some major changes that we don’t want you to miss.
 - **fix protocol seq in AuthSwitchRequest** by [@sundy-li](https://github.com/sundy-li). ([#1890](https://github.com/datafuselabs/databend/pull/1890))
 - **fix get_sled_db() should not panic while holding a lock** by [@drmingdrmer](https://github.com/drmingdrmer). ([#1918](https://github.com/datafuselabs/databend/pull/1918))
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

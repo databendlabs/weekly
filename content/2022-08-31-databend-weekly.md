@@ -129,7 +129,7 @@ The Open Source Security Foundation (OpenSSF) Best Practices badge is a way for 
 
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/6375/badge)](https://bestpractices.coreinfrastructure.org/projects/6375)
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

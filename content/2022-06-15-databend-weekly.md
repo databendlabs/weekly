@@ -54,7 +54,7 @@ Below is a list of some major changes that we don't want you to miss.
 ### Bug fixes
 
 - fix read quoted string ([#5870](https://github.com/datafuselabs/databend/pull/5870))
-- corretly handle catalog in statements ([#5909](https://github.com/datafuselabs/databend/pull/5909))
+- correctly handle catalog in statements ([#5909](https://github.com/datafuselabs/databend/pull/5909))
 - fix correlated subquery with joins ([#5947](https://github.com/datafuselabs/databend/pull/5947))
 - server panic when exceeds max active sessions ([#5928](https://github.com/datafuselabs/databend/pull/5928))
 - fix status cause mysql client hang ([#5961](https://github.com/datafuselabs/databend/pull/5961))
@@ -144,7 +144,7 @@ Output:
 
 - [DOC | JOIN](https://databend.rs/doc/reference/sql/query-syntax/dml-join)
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

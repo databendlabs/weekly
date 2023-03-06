@@ -102,7 +102,7 @@ SQLancer (Synthesized Query Lancer) is a tool to automatically test Database Man
 
 Learn more at <https://github.com/sqlancer/sqlancer/pull/568>
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

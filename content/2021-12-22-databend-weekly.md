@@ -78,7 +78,7 @@ In fact, we have a number of plans for refactoring the SQL layer, which may even
   - [[Tracking] Refactor SQL Parser](https://github.com/datafuselabs/databend/issues/1218)
   - [[Tracking] Refactor PlanBuilder](https://github.com/datafuselabs/databend/issues/1219)
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

@@ -50,7 +50,7 @@ Want to find out how we will improve the DataType system? Please check the [RFC 
 
 Plan to jump to specific implementation and track progress? [Databend#3794](https://github.com/datafuselabs/databend/pull/3794) might be for you.
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

@@ -144,7 +144,7 @@ The storage stores the same value for `now()` which represents instants as the n
 - [Proposal: Datatype Timestamp Remove the Precision Argument](https://github.com/datafuselabs/databend/discussions/8149)
 - [PR | remove precision in timestamp type](https://github.com/datafuselabs/databend/pull/8154)
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

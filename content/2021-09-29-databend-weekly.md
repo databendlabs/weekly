@@ -36,7 +36,7 @@ Below is a list of some major changes that we don’t want you to miss.
 - **make config clearer** by [@BohuTANG](https://github.com/BohuTANG).([#1989](https://github.com/datafuselabs/databend/pull/1989))
 - **make date32 physical type to be int32** by [@sundy-li](https://github.com/sundy-li). ([#1990](https://github.com/datafuselabs/databend/pull/1990))
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

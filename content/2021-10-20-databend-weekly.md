@@ -40,7 +40,7 @@ Below is a list of some major changes that we don’t want you to miss.
 - **fix graceful shutdown takes at most 1 minute** by [@zhang2014](https://github.com/zhang2014). ([#2249](https://github.com/datafuselabs/databend/pull/2249)) 
 - **fix query metrics exporter issue in prometheus** by [@ZhiHanZ](https://github.com/ZhiHanZ). ([#2333](https://github.com/datafuselabs/databend/pull/2333)) 
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

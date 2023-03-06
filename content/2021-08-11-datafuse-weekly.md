@@ -19,7 +19,7 @@ Below is a list of some major changes that we don’t want you to miss.
 - **support kill for query or connection statement** by [@zhang2014](https://github.com/zhang2014). ([#1280](https://github.com/datafuselabs/datafuse/pull/1280))
 - **flatten the directory structure & unify the name style** by [@PsiACE](https://github.com/PsiACE). ([#1404](https://github.com/datafuselabs/datafuse/pull/1404))
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Datafuse nightly to learn about our latest developments.
 

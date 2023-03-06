@@ -53,7 +53,7 @@ You can use Databend to analyze Nginx access logs in just four steps:
 
 To learn more about how to implement it, check out [Analyzing Nginx Logs with Databend and Vector](https://databend.rs/doc/learn/analyze-nginx-logs-with-databend-and-vector).
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

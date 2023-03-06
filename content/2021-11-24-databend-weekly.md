@@ -50,7 +50,7 @@ Want to learn how to add scalar functions to Databend? We have a document discus
 
 > If you are interested in scalar functions that work with strings, you can check [#3004](https://github.com/datafuselabs/databend/issues/3004). You can comment like: `/assignme` in the subtask issue to make this subtask assigned to you.
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

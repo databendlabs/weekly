@@ -19,7 +19,7 @@ Below is a list of some major changes that we don’t want you to miss.
 - **fix panic while reading data parts** by [@dantengsky](https://github.com/dantengsky). ([#1489](https://github.com/datafuselabs/datafuse/pull/1489))
 - **add datafuse design whitepaper to website** by [@BohuTANG](https://github.com/BohuTANG). ([#1490](https://github.com/datafuselabs/datafuse/pull/1490) & [#1493](https://github.com/datafuselabs/datafuse/pull/1493))
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Datafuse nightly to learn about our latest developments.
 

@@ -64,7 +64,7 @@ Read the following article to start your first Databend cluster:
 - Databend Cluster mode only works on shared storage(AWS S3 or MinIO s3-like storage).
 - This cluster mainly used for testing purpose, it is not targeted for production use.
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

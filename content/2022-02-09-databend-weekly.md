@@ -19,7 +19,7 @@ Below is a list of some major changes that we don't want you to miss.
 ## Improvement
 
 - **refactor some ErrorCode to MetaError in metasrv** by [@lichuang](https://github.com/lichuang). ([#4023](https://github.com/datafuselabs/databend/pull/4023))
-- **implment backtrack for parser and add a human-friendly pretty printer for errors** by [@andylokandy](https://github.com/andylokandy). ([#4045](https://github.com/datafuselabs/databend/pull/4045))
+- **implement backtrack for parser and add a human-friendly pretty printer for errors** by [@andylokandy](https://github.com/andylokandy). ([#4045](https://github.com/datafuselabs/databend/pull/4045))
 - **add tenant empty check** by [@BohuTANG](https://github.com/BohuTANG). ([#4057](https://github.com/datafuselabs/databend/pull/4057))
 - **refactor all string2number functions** by [@Xuanwo](https://github.com/Xuanw). ([#4070](https://github.com/datafuselabs/databend/pull/4070))
 
@@ -54,7 +54,7 @@ If possible, it is essential to introduce a proper automatic batch upgrade mecha
 
 For more information, please see [databend.rs - Databend routine maintenance](https://databend.rs/dev/development/routine-maintenance).
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

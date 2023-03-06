@@ -48,7 +48,7 @@ Below is a list of some major changes that we don't want you to miss.
 
 **new expression**
 
-- reorder comparision funciton priority ([#7991](https://github.com/datafuselabs/databend/pull/7991))
+- reorder comparison function priority ([#7991](https://github.com/datafuselabs/databend/pull/7991))
 
 **unit tests**
 
@@ -90,7 +90,7 @@ Now, Databend is making a number of improvements to enhance the insert and read 
 
 We introduced the [Xor Fliter](https://arxiv.org/pdf/2201.01174.pdf) to replace the Bloom Filter ([#7870](https://github.com/datafuselabs/databend/pull/7870)), which in some scenarios gives about twice the performance improvement and requires very little data to be scanned. Recent work has also included distributed index pruning ([#7867](https://github.com/datafuselabs/databend/pull/7867)) and local parallel execution of pruning (especially the index pruning) ([#7893](https://github.com/datafuselabs/databend/pull/7893)) , which we believe will further improve cpu and network utilisation and hence performance.
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

@@ -59,7 +59,7 @@ Below is a list of some major changes that we don't want you to miss.
 
 - fix range delete panic and incorrect statistics (of in_memory_size) ([#6609](https://github.com/datafuselabs/databend/pull/6609))
 - disable null values in join ([#6616](https://github.com/datafuselabs/databend/pull/6616))
-- `COPY` shoud be able to run under new planner ([#6624](https://github.com/datafuselabs/databend/pull/6624))
+- `COPY` should be able to run under new planner ([#6624](https://github.com/datafuselabs/databend/pull/6624))
 - fix InSubquery returns error result ([#6641](https://github.com/datafuselabs/databend/pull/6641))
 - fix variant map access filter ([#6645](https://github.com/datafuselabs/databend/pull/6645))
 - adhoc fix session leak ([#6672](https://github.com/datafuselabs/databend/pull/6672))
@@ -103,7 +103,7 @@ Databend allows you to send and receive gRPC (gRPC Remote Procedure Calls) metad
 - [DOC | Send & Receive gRPC Metadata](https://databend.rs/doc/manage/metasrv/metasrv-grpc)
 - [Tracking Issue | databend-meta adds cli command to send RPC to a running meta cluster](https://github.com/datafuselabs/databend/issues/6084)
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

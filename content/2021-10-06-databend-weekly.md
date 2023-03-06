@@ -24,7 +24,7 @@ Below is a list of some major changes that we don’t want you to miss.
 - **merge GetTableActionResult and TableInfo into one struct TableInfo** by [@drmingdrmer](https://github.com/drmingdrmer) ([#2020](https://github.com/datafuselabs/databend/pull/2020))
 - **decouple ScanPlan with Table** by [@dantengsky](https://github.com/dantengsky). ([#1976](https://github.com/datafuselabs/databend/pull/1976))
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

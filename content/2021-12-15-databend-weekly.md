@@ -66,11 +66,11 @@ We currently have some discussions about proposals on the GitHub that may help y
 
   Our current build / test system is quite complex. We have Makeflie, Dockerfile(s), and a lot of shell / python scripts. We want to build a build/test/benchmark system based on the Rust style, so if you have any good ideas, please feel free to share to us. Related discussion [#3419](https://github.com/datafuselabs/databend/discussions/3419).
 
-- **Refactor CI pipleline into stages**
+- **Refactor CI pipeline into stages**
 
   If you're interested in GitHub workflows, then take a look at this proposal. By [refactoring CI](https://github.com/datafuselabs/databend/issues/3344), we have effectively reduced blocking and been able to maintain it better. Related discussion [#3415](https://github.com/datafuselabs/databend/discussions/3415).
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 

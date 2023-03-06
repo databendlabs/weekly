@@ -60,7 +60,7 @@ Databend has now completely updated its online documentation, supports for multi
 - [With Go](https://databend.rs/doc/develop/go): https://databend.rs/doc/develop/go
 - [With Python](https://databend.rs/doc/develop/python): https://databend.rs/doc/develop/python
 
-## Changlogs
+## Changelogs
 
 You can check the changelogs of Databend nightly to learn about our latest developments.
 
